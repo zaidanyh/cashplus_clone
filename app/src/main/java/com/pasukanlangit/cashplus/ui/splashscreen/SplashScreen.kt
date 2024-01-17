@@ -2,7 +2,10 @@ package com.pasukanlangit.cashplus.ui.splashscreen
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.ui.Modifier
 import androidx.core.content.pm.PackageInfoCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
@@ -11,7 +14,7 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 import com.google.gson.GsonBuilder
 import com.pasukanlangit.cashplus.MainActivityNavComp
-import com.pasukanlangit.cashplus.databinding.ActivitySplashScreenBinding
+import com.pasukanlangit.cashplus.ui.compose.SplashScreenView
 import com.pasukanlangit.cashplus.ui.ewallet.EWalletActivity
 import com.pasukanlangit.cashplus.ui.login.LoginActivity
 import com.pasukanlangit.cashplus.ui.onboarding.OnBoardingActivity
@@ -32,7 +35,6 @@ import org.koin.android.ext.android.inject
 
 class SplashScreen : AppCompatActivity() {
 
-    private lateinit var binding: ActivitySplashScreenBinding
     private val sharedPrefDataSource : SharedPrefDataSource by inject()
 
     private var token: String? = null
@@ -40,11 +42,10 @@ class SplashScreen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        val wic = WindowInsetsControllerCompat(window, window.decorView)
-        wic.isAppearanceLightStatusBars = false
+        hideSystemUi()
+        setContent {
+            SplashScreenView(modifier = Modifier.fillMaxSize())
+        }
 
         uuid = sharedPrefDataSource.getUUID()
         token = sharedPrefDataSource.getAccessToken()
@@ -78,6 +79,12 @@ class SplashScreen : AppCompatActivity() {
             }
             finishSplash()
         }
+    }
+
+    private fun hideSystemUi() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val wic = WindowInsetsControllerCompat(window, window.decorView)
+        wic.isAppearanceLightStatusBars = false
     }
 
     private fun finishSplash() {
