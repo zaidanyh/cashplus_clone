@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.ultravoucher.InputVoucherDataFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Masukkan Data Pembeli"/>
+
+    <EditText
+        android:id="@+id/edt_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textSize="12sp"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_white_border_slate200_rounded_8"/>
+
+    <EditText
+        android:id="@+id/edt_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textSize="12sp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_border_slate200_rounded_8"/>
+
+    <EditText
+        android:id="@+id/edt_input_nohp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textSize="12sp"
+        android:hint="Nomor Hp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_border_slate200_rounded_8"/>
+
+    <Button
+        android:id="@+id/btn_topup"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:text="Top Up"
+        style="@style/ButtonPrimary.SelectorButtonPrimary"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+</LinearLayout>

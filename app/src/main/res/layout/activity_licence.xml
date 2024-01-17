@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".ui.pages.others.LicenceActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="@string/licence"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_image_licence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <TextView
+            android:id="@+id/txt_cashplus_licence_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:text="@string/licence_desc"
+            android:textColor="#1E293B"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5"/>
+        
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:src="@drawable/img_bi_full"
+            app:layout_constraintTop_toBottomOf="@id/txt_cashplus_licence_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLine_center"/>
+        
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:src="@drawable/img_verihubs"
+            app:layout_constraintTop_toBottomOf="@id/txt_cashplus_licence_title"
+            app:layout_constraintStart_toEndOf="@id/guideLine_center"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/img_3"
+            android:layout_width="@dimen/dimen_48"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:src="@drawable/img_ppatk"
+            app:layout_constraintTop_toBottomOf="@id/img_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLine_center"/>
+
+        <ImageView
+            android:id="@+id/img_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:src="@drawable/img_nobu"
+            app:layout_constraintTop_toBottomOf="@id/img_2"
+            app:layout_constraintStart_toEndOf="@id/img_3"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

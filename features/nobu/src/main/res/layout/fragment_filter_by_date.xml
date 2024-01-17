@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.history.FilterByDateFragment">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18sp"
+        android:text="@string/choose_filter_method"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_filter_last_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle">
+
+        <TextView
+            android:id="@+id/menu_last_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/last_week"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_detail_date_last_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/menu_last_week"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/date_last_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="21 Agu 2022"
+                android:textColor="#1E293B"/>
+
+            <ImageView
+                android:layout_width="@dimen/dimen_12"
+                android:layout_height="@dimen/dimen_12"
+                android:layout_marginHorizontal="@dimen/dimen_6"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_arrow_forward"
+                app:tint="#292D32"
+                tools:tint="#292D32"/>
+
+            <TextView
+                android:id="@+id/date_now1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="27 Agu 2022"
+                android:textColor="#1E293B"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_last_week"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:background="@drawable/bg_selector_clicked"
+            android:button="@null"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_filter_last_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_filter_last_week">
+
+        <TextView
+            android:id="@+id/menu_last_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/last_month"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_detail_date_last_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/menu_last_month"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/date_last_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="28 Jul 2022"
+                android:textColor="#1E293B"/>
+
+            <ImageView
+                android:layout_width="@dimen/dimen_12"
+                android:layout_height="@dimen/dimen_12"
+                android:layout_marginHorizontal="@dimen/dimen_6"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_arrow_forward"
+                app:tint="#292D32"
+                tools:tint="#292D32"/>
+
+            <TextView
+                android:id="@+id/date_now2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="27 Agu 2022"
+                android:textColor="#1E293B"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_last_month"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:background="@drawable/bg_selector_clicked"
+            android:button="@null"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_filter_last_quarter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_filter_last_month">
+
+        <TextView
+            android:id="@+id/menu_last_quarter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/last_quarter"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_detail_date_last_quarter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/menu_last_quarter"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/date_last_quarter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="29 Mei 2022"
+                android:textColor="#1E293B"/>
+
+            <ImageView
+                android:layout_width="@dimen/dimen_12"
+                android:layout_height="@dimen/dimen_12"
+                android:layout_marginHorizontal="@dimen/dimen_6"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_arrow_forward"
+                app:tint="#292D32"
+                tools:tint="#292D32"/>
+
+            <TextView
+                android:id="@+id/date_now3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="27 Agu 2022"
+                android:textColor="#1E293B"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_last_quarter"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:background="@drawable/bg_selector_clicked"
+            android:button="@null"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_custom_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_filter_last_quarter">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_by_date"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:background="@drawable/bg_selector_clicked"
+            android:button="@null"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/menu_custom_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/custom_filter"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_detail_custom_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/menu_custom_filter">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/set_date_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/dimen_6"
+                android:paddingVertical="@dimen/dimen_12"
+                android:paddingHorizontal="@dimen/dimen_16"
+                android:background="@drawable/bg_slate100_border_slate200_rounded_12">
+
+                <TextView
+                    android:id="@+id/txtFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:text="@string/from"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvDateFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="13sp"
+                    tools:text="26 Agu 2022"
+                    android:textColor="#1E293B"
+                    app:layout_constraintTop_toBottomOf="@id/txtFrom"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/set_date_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dimen_6"
+                android:paddingVertical="@dimen/dimen_12"
+                android:paddingHorizontal="@dimen/dimen_16"
+                android:background="@drawable/bg_slate100_border_slate200_rounded_12">
+
+                <TextView
+                    android:id="@+id/txtTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:text="@string/to"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvDateTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="13sp"
+                    tools:text="27 Agu 2022"
+                    android:textColor="#1E293B"
+                    app:layout_constraintTop_toBottomOf="@id/txtTo"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_24"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/submit"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_custom_filter"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

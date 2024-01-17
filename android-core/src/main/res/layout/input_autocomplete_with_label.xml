@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nilai emas (gr)"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="12sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:textSize="12sp"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:inputType="textPhonetic"
+        android:imeOptions="actionNext"
+        android:drawableEnd="@drawable/icon_expand"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_8"
+        android:background="@drawable/selector_background_input"/>
+</merge>

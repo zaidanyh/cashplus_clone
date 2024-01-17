@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/completing_kyc_graph"
+    app:startDestination="@id/kycIdentityFragment">
+
+    <fragment
+        android:id="@+id/kycIdentityFragment"
+        android:name="com.pasukanlangit.id.kyc_presentation.pages.completing.KycIdentityFragment"
+        android:label="fragment_kyc_identity"
+        tools:layout="@layout/fragment_kyc_identity">
+        <action
+            android:id="@+id/kycIdentityToKycSelfie"
+            app:destination="@id/kycSelfieFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/kycSelfieFragment"
+        android:name="com.pasukanlangit.id.kyc_presentation.pages.completing.KycSelfieFragment"
+        android:label="fragment_kyc_selfie"
+        tools:layout="@layout/fragment_kyc_selfie">
+        <action
+            android:id="@+id/kycSelfieToKycDone"
+            app:destination="@id/kycDoneFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/kycDoneFragment"
+        android:name="com.pasukanlangit.id.kyc_presentation.pages.completing.KycDoneFragment"
+        android:label="fragment_kyc_done"
+        tools:layout="@layout/fragment_kyc_done"/>
+</navigation>

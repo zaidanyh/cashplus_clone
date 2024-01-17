@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph_cashgold"
+    app:startDestination="@id/cashGoldHomeFragment">
+
+    <fragment
+        android:id="@+id/cashGoldHomeFragment"
+        android:name="com.pasukanlangit.id.ui_cashgold_buy.home.CashGoldHomeFragment"
+        android:label="CashGoldHomeFragment"
+        tools:layout="@layout/fragment_cash_gold_home"/>
+    <fragment
+        android:id="@+id/addressGoldHomeFragment"
+        android:name="com.pasukanlangit.id.ui_cashgold_address.home.AddressGoldHomeFragment"
+        android:label="AddressGoldHomeFragment"
+        tools:layout="@layout/fragment_address_gold_home" />
+    <fragment
+        android:id="@+id/updateProfileCashGoldFragment"
+        android:name="com.pasukanlangit.id.ui_cashgold_updateprofile.UpdateProfileCashGoldFragment"
+        android:label="fragment_update_profile_cash_gold"
+        tools:layout="@layout/fragment_update_profile_cash_gold" />
+</navigation>

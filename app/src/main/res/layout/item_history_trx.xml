@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent_border_slate200_rounded_12"
+    android:padding="@dimen/dimen_16">
+
+    <ImageView
+        android:id="@+id/icon_arrow_income"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_income_oblique"
+        app:layout_constraintTop_toTopOf="@id/tv_trx_history_title"
+        app:layout_constraintBottom_toBottomOf="@id/tv_trx_history_title"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_trx_history_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:textColor="#1E293B"
+        tools:text="Pulsa Telkomsel 5000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_arrow_income"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_trx_history_destination_and_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        android:textColor="#334155"
+        tools:text="Nomor Tujuan 081217482868 #PULSA"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trx_history_title"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_trx_history_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Sabtu, 04 Juni 2022"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/tv_trx_history_destination_and_category"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_trx_history_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        tools:text="Rp 5.000"
+        android:textColor="#64748B"
+        app:layout_constraintTop_toBottomOf="@id/tv_trx_history_date"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_trx_history_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="4dp"
+        android:paddingHorizontal="24dp"
+        android:background="@drawable/bg_red50_rounded_12"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Gagal"
+        android:textColor="#FF3822"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

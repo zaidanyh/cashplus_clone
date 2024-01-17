@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.register.FirstRegisterFragment">
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/phone_number"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/input_msidn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:startIconDrawable="@drawable/icon_phone_line"
+        app:startIconTint="?colorPrimaryVariant"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/txtPhoneNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_msidn_reg"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/edt_referral"
+            android:digits="0123456789"
+            android:hint="@string/input_phone_number"
+            style="@style/InputWithBorderGrey" />
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+    <TextView
+        android:id="@+id/txtReferralCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/referral_code_optional"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toBottomOf="@id/input_msidn_reg"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/input_referral_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:startIconDrawable="@drawable/icon_mist_fill"
+        app:startIconTint="?colorPrimaryVariant"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/txtReferralCode">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_referral"
+            android:layout_width="match_parent"
+            style="@style/InputWithBorderGrey"
+            android:inputType="textPhonetic"
+            android:imeOptions="actionDone"
+            android:hint="@string/input_referral"/>
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+    <TextView
+        android:id="@+id/txt_make_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11sp"
+        android:text="@string/make_sure_referral_correct"
+        android:textColor="#0A57FF"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/input_referral_code"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@drawable/color_indicator_state"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/txt_make_sure"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

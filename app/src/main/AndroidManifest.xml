@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pasukanlangit.cashplus">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="DataExtractionRules,LockedOrientationActivity"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".ui.pages.others.settings.profile.close.ReasonCloseAccountActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.pages.others.settings.profile.close.CloseAccountActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ewallet.InputManualActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.product.StatusProductActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.pages.history.print.PrintActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.injectvoucher.ScanBarcodeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.injectvoucher.InjectVoucherActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.omni.packageomni.PackageOmniActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.omni.EnterNumOmniActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.pages.others.LicenceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pembayaran_game_menu.DetailGameMenuActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivityNavComp"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.cashplus.id"
+                    android:pathPrefix="/game_menu"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ewallet.EWalletActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivityNavComp"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.cashplus.id"
+                    android:pathPrefix="/detail_menu_e_wallet"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ewallet.EwalletListActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivityNavComp"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.cashplus.id"
+                    android:pathPrefix="/menu_e_wallet"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pasukanlangit.id.cash_transfer.presentation.local.transfer.TransferActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.pasukanlangit.id.cash_transfer.presentation.local.ListRekeningActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.onlinestore.image.ImagePhotoViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.register.EnterOTPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.others.ShareReferralActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.history.HistoryDetailTransportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".test_pdf.DownloadService"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".test_pdf.TestDownloadPdfActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.others.settings.password.ChangePasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".test_pdf.WebviewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splashscreen.update.UpdateAppsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.history.detailhotel.DetailHistoryHotelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.history.detailtokoonline.TrackingTokoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.history.voucher.HistoryTicketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ultravoucher.VoucherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.history.detailtokoonline.DetailHistoryTokoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pembayarancart.PembayaranCartLangsungActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pembayarancart.pay.PayOnlineStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.addressbook.add.AddAddressBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.addressbook.AddressBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pembayarancart.PembayaranCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pembayarancart.pay.EnterPinOnlineStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.cartproduct.CartProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivityNavComp"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android:intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.cashplus.id"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android:intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="open"
+                    android:scheme="cashplus" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.checkout.TagihanResultActivity" />
+        <activity
+            android:name=".ui.onboarding.OnBoardingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.others.settings.pin.ChangePinWithoutLastPinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.gotomekka.MekkaListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.checkout.EnterPinPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pembayaran_game_menu.GameMenuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splashscreen.RootedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ResetPasswordPublicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.info_promo.DetailPromoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.others.settings.password.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.others.settings.pin.ChangePinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.others.settings.profile.ChangeProfilActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.pembayaran_bulanan.PembayaranBulananActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivityNavComp"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.cashplus.id"
+                    android:pathPrefix="/pembayaran_tagihan"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.onlinestore.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.checkout.PembayaranTagihanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pages.history.HistoryDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.pasukanlangit.cashplus.ui.pages.history.HistoryDetailActivity.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity
+            android:name=".ui.pembayaran_pln.TopUpPlnActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivityNavComp"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.cashplus.id"
+                    android:pathPrefix="/pln"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity> <!-- <service -->
+        <!-- android:name=".utils.TrxPendingService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" /> -->
+        <receiver
+            android:name=".utils.TrxPendingReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.onlinestore.AllProductEcommerceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.checkout.PembayaranActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pembayaran_provider.TopUpProviderActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivityNavComp"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.cashplus.id"
+                    android:pathPrefix="/pulsa_data"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.checkout.EnterPinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.info_promo.InfoPromoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.all_menus.AllMenusProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splashscreen.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name=".utils.MyFirebase"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.profit.ProfitRecapitulationActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_dashboard"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_24"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_global_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:text="@string/recapitulation_profit"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/icon_document_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_document_download"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/icon_document_filter"/>
+
+        <ImageView
+            android:id="@+id/icon_document_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_12"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_document_filter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="@drawable/bg_white_rounded_top_16"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_back"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_16"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_empty"
+                android:layout_width="240dp"
+                android:layout_height="204dp"
+                android:src="@drawable/illustration_empty"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_trx_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="15sp"
+                android:text="@string/recap_transaction_is_empty"
+                android:textColor="#334155"
+                app:layout_constraintTop_toBottomOf="@id/img_empty"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_trx_empty_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/recap_trans_current_day"
+                android:textColor="#334155"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/txt_trx_empty"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edt_search_trans"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingVertical="0dp"
+                android:paddingHorizontal="@dimen/dimen_10"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:hint="@string/find_transaction"
+                android:textColor="#334155"
+                android:textColorHint="#94A3B8"
+                android:drawableStart="@drawable/ic_search_normal"
+                android:drawablePadding="@dimen/dimen_8"
+                android:inputType="textPhonetic"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_desc_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="Menampilkan data 26 Aug - 31 Aug 2023"
+                android:textColor="#1E293B"
+                app:layout_constraintTop_toBottomOf="@id/edt_search_trans"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/wrapper_recapitulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                app:layout_constraintTop_toBottomOf="@id/tv_desc_filter">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wrapper_sales"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_4"
+                    android:padding="@dimen/dimen_8"
+                    android:background="@drawable/bg_transparent_border_slate200_rounded_8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_left">
+
+                    <TextView
+                        android:id="@+id/txt_total_sales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"
+                        android:text="@string/total_sales"
+                        android:textColor="#334155"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/decoration1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_decoration_blue"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_sales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        tools:text="Rp 282.200"
+                        android:textColor="#1E293B"
+                        app:layout_constraintTop_toBottomOf="@id/txt_total_sales"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".33"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wrapper_purchases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_4"
+                    android:padding="@dimen/dimen_8"
+                    android:background="@drawable/bg_transparent_border_slate200_rounded_8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_left"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_right">
+
+                    <TextView
+                        android:id="@+id/txt_total_purchases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"
+                        android:text="@string/total_purchases"
+                        android:textColor="#334155"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/decoration2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_decoration_blue"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_purchases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        tools:text="Rp 275.500"
+                        android:textColor="#1E293B"
+                        app:layout_constraintTop_toBottomOf="@id/txt_total_purchases"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".66"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wrapper_profit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_4"
+                    android:padding="@dimen/dimen_8"
+                    android:background="@drawable/bg_transparent_border_slate200_rounded_8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_right"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/txt_total_profit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"
+                        android:text="@string/total_profit"
+                        android:textColor="#334155"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/decoration3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_decoration_blue"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_profit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        tools:text="Rp 6.700"
+                        android:textColor="#1E293B"
+                        app:layout_constraintTop_toBottomOf="@id/txt_total_profit"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recap_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_6"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_recap_profit"
+                app:layout_constraintTop_toBottomOf="@id/wrapper_recapitulation"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_search_not_found"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingVertical="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_8"
+                android:background="@drawable/bg_red50_rounded_4"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                tools:text="Pencarian transaksi tidak ditemukan"
+                android:textColor="#FF3822"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/wrapper_recapitulation"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_recapitulation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/dimen_16">
+
+                <View
+                    android:id="@+id/view_shimmer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_38"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:background="#ddd"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                    android:id="@+id/view_shimmer2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:background="#ddd"
+                    app:layout_constraintWidth_percent=".7"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintTop_toBottomOf="@id/view_shimmer1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wrapper_shimmer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6"
+                    app:layout_constraintTop_toBottomOf="@id/view_shimmer2">
+
+                    <View
+                        android:id="@+id/view_shimmer3"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginHorizontal="@dimen/dimen_8"
+                        android:background="#ddd"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/shimmer_guideline_left"/>
+
+                    <View
+                        android:id="@+id/view_shimmer4"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:layout_marginHorizontal="@dimen/dimen_8"
+                        android:background="#ddd"
+                        app:layout_constraintWidth_percent=".2"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintTop_toBottomOf="@id/view_shimmer3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/shimmer_guideline_left"/>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/shimmer_guideline_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".333"/>
+
+                    <View
+                        android:id="@+id/view_shimmer5"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginHorizontal="@dimen/dimen_8"
+                        android:background="#ddd"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_guideline_left"
+                        app:layout_constraintEnd_toStartOf="@id/shimmer_guideline_right"/>
+
+                    <View
+                        android:id="@+id/view_shimmer6"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:layout_marginHorizontal="@dimen/dimen_8"
+                        android:background="#ddd"
+                        app:layout_constraintWidth_percent=".2"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintTop_toBottomOf="@id/view_shimmer5"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_guideline_left"
+                        app:layout_constraintEnd_toStartOf="@id/shimmer_guideline_right"/>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/shimmer_guideline_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".666"/>
+
+                    <View
+                        android:id="@+id/view_shimmer7"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginHorizontal="@dimen/dimen_8"
+                        android:background="#ddd"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_guideline_right"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/view_shimmer8"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:layout_marginHorizontal="@dimen/dimen_8"
+                        android:background="#ddd"
+                        app:layout_constraintWidth_percent=".2"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintTop_toBottomOf="@id/view_shimmer7"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_guideline_right"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/wrapper_shimmer1">
+
+                    <include layout="@layout/item_recap_shimmer"/>
+                    <include layout="@layout/item_recap_shimmer"/>
+                    <include layout="@layout/item_recap_shimmer"/>
+                    <include layout="@layout/item_recap_shimmer"/>
+                    <include layout="@layout/item_recap_shimmer"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dummy_gram">100gr</string>
+    <string name="label_saldo_gold">Total emas saya</string>
+    <string name="qty_min">1</string>
+    <string name="full_address_cashgold">%1$s, %2$s, %3$s (%4$s)</string>
+    <string name="label_diskon">Diskon Aplikasi</string>
+    <string name="label_apps_fee">Biaya Aplikasi</string>
+</resources>

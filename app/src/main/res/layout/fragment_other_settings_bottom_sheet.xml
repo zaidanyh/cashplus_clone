@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_20"
+    tools:context=".ui.pages.others.settings.OtherSettingsBottomSheet">
+
+    <TextView
+        android:id="@+id/txtSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        android:text="@string/setting"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:paddingVertical="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/change_profile"
+        android:textColor="#334155"
+        android:drawablePadding="@dimen/dimen_16"
+        app:drawableStartCompat="@drawable/ic_edit_profile"
+        app:layout_constraintTop_toBottomOf="@id/txtSetting"/>
+
+    <View
+        android:id="@+id/gap1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#F1F5F9"
+        app:layout_constraintTop_toBottomOf="@id/btn_edit_profile"/>
+
+    <TextView
+        android:id="@+id/btn_edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:paddingVertical="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/email_configuration"
+        android:textColor="#334155"
+        android:drawablePadding="@dimen/dimen_16"
+        app:drawableStartCompat="@drawable/ic_edit_email"
+        app:layout_constraintTop_toBottomOf="@id/gap1"/>
+
+    <View
+        android:id="@+id/gap2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#F1F5F9"
+        app:layout_constraintTop_toBottomOf="@id/btn_edit_email"/>
+
+    <TextView
+        android:id="@+id/btn_change_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:paddingVertical="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/change_pin"
+        android:textColor="#334155"
+        android:drawablePadding="@dimen/dimen_16"
+        app:drawableStartCompat="@drawable/ic_edit_pin"
+        app:layout_constraintTop_toBottomOf="@id/gap2"/>
+
+    <View
+        android:id="@+id/gap3"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#F1F5F9"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_pin"/>
+
+    <TextView
+        android:id="@+id/btn_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:paddingVertical="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/change_password"
+        android:textColor="#334155"
+        android:drawablePadding="@dimen/dimen_16"
+        app:drawableStartCompat="@drawable/ic_edit_password"
+        app:layout_constraintTop_toBottomOf="@id/gap3"/>
+
+    <View
+        android:id="@+id/gap4"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#F1F5F9"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_password"/>
+
+    <TextView
+        android:id="@+id/btn_e_kyc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:paddingVertical="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/e_kyc"
+        android:textColor="#334155"
+        android:drawablePadding="@dimen/dimen_16"
+        app:drawableStartCompat="@drawable/ic_e_kyc"
+        app:layout_constraintTop_toBottomOf="@id/gap4"/>
+
+    <View
+        android:id="@+id/gap5"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#F1F5F9"
+        app:layout_constraintTop_toBottomOf="@id/btn_e_kyc"/>
+
+    <TextView
+        android:id="@+id/btn_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:paddingVertical="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/sign_out"
+        android:textColor="#334155"
+        android:drawablePadding="@dimen/dimen_16"
+        app:drawableStartCompat="@drawable/ic_logout"
+        app:layout_constraintTop_toBottomOf="@id/gap5"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

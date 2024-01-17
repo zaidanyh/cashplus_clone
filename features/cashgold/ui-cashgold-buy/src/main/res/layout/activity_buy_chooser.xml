@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".buy.BuyChooserActivity">
+
+    <com.pasukanlangit.id.ui_core.components.CashGoldAppBarView
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_24"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/pilih_metode_pembelian_anda"/>
+
+        <com.pasukanlangit.id.ui_core.components.CardGrayTitleDescriptionView
+            android:id="@+id/buy_with_rupiah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:title="Beli dengan rupiah"
+            app:description="Transaksi emas dengan berdasarkan nominal rupiah"
+            />
+
+        <com.pasukanlangit.id.ui_core.components.CardGrayTitleDescriptionView
+            android:id="@+id/buy_with_gram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:title="Beli dengan gram"
+            app:description="Transaksi emas berdasarkan besaran gram"
+            />
+    </LinearLayout>
+
+</LinearLayout>

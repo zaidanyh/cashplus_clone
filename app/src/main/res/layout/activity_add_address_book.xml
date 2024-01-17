@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".ui.addressbook.add.AddAddressBookActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="Tambah Alamat"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/name_receiver"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:inputType="textPersonName"
+                android:hint="@string/placeholder_john_doe"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+
+            <TextView
+                android:id="@+id/label_edt_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/no_tlp"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:inputType="phone"
+                android:hint="@string/placeholder_telp"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_alamat"/>
+
+            <TextView
+                android:id="@+id/label_edt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/address_label"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_phone" />
+
+            <EditText
+                android:id="@+id/edt_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:textSize="12sp"
+                android:inputType="text"
+                android:hint="@string/placeholder_address_type"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_email"/>
+
+            <TextView
+                android:id="@+id/label_edt_provinsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/province"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_type" />
+
+            <AutoCompleteTextView
+                android:id="@+id/province_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:layout_centerHorizontal="true"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:inputType="textPhonetic"
+                android:hint="@string/province"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/city_list"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_provinsi" />
+
+            <TextView
+                android:id="@+id/label_edt_districts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/city"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/province_list" />
+
+            <AutoCompleteTextView
+                android:id="@+id/city_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:layout_centerHorizontal="true"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:inputType="textPhonetic"
+                android:hint="@string/city"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/subdistrict_list"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_districts" />
+
+            <TextView
+                android:id="@+id/label_edt_subdistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/districts"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/city_list" />
+
+            <AutoCompleteTextView
+                android:id="@+id/subdistrict_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:layout_centerHorizontal="true"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:inputType="textPhonetic"
+                android:hint="@string/districts"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/edt_full_address"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_subdistrict" />
+
+            <TextView
+                android:id="@+id/label_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/address"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subdistrict_list" />
+
+            <EditText
+                android:id="@+id/edt_full_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:inputType="text"
+                android:hint="@string/address"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                app:layout_constraintTop_toBottomOf="@+id/label_address"/>
+
+            <TextView
+                android:id="@+id/label_postalcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/postal_code"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_full_address" />
+
+            <EditText
+                android:id="@+id/edt_postal_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:inputType="numberDecimal"
+                android:hint="@string/postal_code"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                app:layout_constraintTop_toBottomOf="@+id/label_postalcode"/>
+
+            <CheckBox
+                android:id="@+id/cb_main_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_postal_code" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_6"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:text="@string/add_to_main_address"
+                android:textColor="#1E293B"
+                app:layout_constraintBottom_toBottomOf="@id/cb_main_address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cb_main_address"
+                app:layout_constraintTop_toTopOf="@+id/cb_main_address" />
+
+            <Button
+                android:id="@+id/btn_add_update"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginVertical="@dimen/dimen_24"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:background="@drawable/bg_primary_rounded_16"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="13sp"
+                android:text="@string/add_label"
+                android:textAllCaps="false"
+                android:textColor="#F8FAFC"
+                app:layout_constraintTop_toBottomOf="@+id/cb_main_address"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

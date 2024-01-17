@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".find.FindDetailHotelActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_dashboard"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_24"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/titleFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:text="@string/hotel"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingTop="@dimen/dimen_20"
+        android:paddingBottom="@dimen/dimen_20"
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_16"
+        android:background="@drawable/bg_white_border_slate200_rounded_12"
+        android:transitionName="@string/layout_hotel"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_back">
+
+        <TextView
+            android:id="@+id/tvCityName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            tools:text="Surabaya"
+            android:textColor="#334155"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideRight"/>
+
+        <TextView
+            android:id="@+id/txtDateCheckIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="11sp"
+            android:text="@string/checkin"
+            android:textColor="#94A3B8"
+            app:layout_constraintTop_toBottomOf="@id/tvCityName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLeft"/>
+
+        <TextView
+            android:id="@+id/tv_date_checkin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="Sab, 12 Nov 2022"
+            android:textColor="#334155"
+            app:layout_constraintTop_toBottomOf="@id/txtDateCheckIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLeft"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".4"/>
+
+        <TextView
+            android:id="@+id/txtDateCheckOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginHorizontal="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="11sp"
+            android:text="@string/checkout"
+            android:textColor="#94A3B8"
+            app:layout_constraintTop_toBottomOf="@id/tvCityName"
+            app:layout_constraintStart_toEndOf="@id/guideLeft"
+            app:layout_constraintEnd_toStartOf="@id/guideRight"/>
+
+        <TextView
+            android:id="@+id/tv_date_checkout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginHorizontal="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="Min, 13 Nov 2022"
+            android:textColor="#334155"
+            app:layout_constraintTop_toBottomOf="@id/txtDateCheckIn"
+            app:layout_constraintStart_toEndOf="@id/guideLeft"
+            app:layout_constraintEnd_toStartOf="@id/guideRight"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".8"/>
+
+        <TextView
+            android:id="@+id/txtRoomVisitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="11sp"
+            android:text="@string/sum_room_visitor"
+            android:textColor="#94A3B8"
+            app:layout_constraintTop_toBottomOf="@id/tv_date_checkin"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvRoomVisitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="1 Kamar 2 Tamu 0 Anak"
+            android:textColor="#334155"
+            app:layout_constraintTop_toBottomOf="@id/txtRoomVisitor"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:paddingStart="@dimen/dimen_12"
+            android:paddingEnd="@dimen/dimen_12"
+            android:background="@drawable/bg_blue50_rounded_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/change"
+            android:textColor="#0A57FF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_12">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_hotel_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginHorizontal="@dimen/dimen_8"
+                    tools:src="@drawable/ic_empty"
+                    app:riv_corner_radius="@dimen/dimen_12"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_image_hotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginBottom="@dimen/dimen_4"
+                    android:layout_marginHorizontal="1dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_image_hotels"
+                    tools:itemCount="7"
+                    app:layout_constraintTop_toBottomOf="@id/img_hotel_main"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_name_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                tools:text="POP! Hotel Diponegoro Surabaya"
+                android:textColor="#334155"/>
+
+            <RatingBar
+                android:id="@+id/ratingHotel"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:theme="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:numStars="5"
+                android:stepSize="0.5"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_hotel"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layout_marginHorizontal="@dimen/dimen_16">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:src="@drawable/icon_location_small" />
+
+                <TextView
+                    android:id="@+id/tv_hotel_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="13sp"
+                    tools:text="Diponegoro Street No. 33, Surabaya, East Java"
+                    android:textColor="#334155"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/room_choice"
+                android:textColor="#334155"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_room_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_12"
+                android:layout_marginHorizontal="@dimen/dimen_6"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_hotels_room"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/hotelProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

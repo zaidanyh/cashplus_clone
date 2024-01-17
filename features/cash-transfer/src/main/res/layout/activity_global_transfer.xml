@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.global.GlobalTransferActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_dashboard"
+        app:layout_constraintHeight_percent=".18"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_24"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_global_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:text="@string/global_transfer"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_empty_global_bank_saved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_white_border_slate200_rounded_12"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_back">
+
+        <ImageView
+            android:id="@+id/icon_empty_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list_rekening_empty"
+            app:layout_constraintWidth_percent=".5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/empty_list_bank"
+            android:textColor="#334155"
+            android:textAlignment="center"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintTop_toBottomOf="@id/icon_empty_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+            android:id="@+id/btn_create_now"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:background="@drawable/bg_primary_rounded_20"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:text="@string/create_now"
+            app:layout_constraintWidth_percent=".7"
+            app:layout_constraintTop_toBottomOf="@id/txtState"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_list_global_bank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:visibility="gone"
+        android:background="@drawable/bg_white_border_slate200_rounded_12"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_back"
+        app:layout_constraintBottom_toTopOf="@id/line_breaker">
+
+        <TextView
+            android:id="@+id/txt_global_bank_saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/bank_saved"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/edt_search_global_bank_saved"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:paddingVertical="0dp"
+            android:paddingHorizontal="@dimen/dimen_12"
+            android:drawableEnd="@drawable/ic_baseline_search"
+            android:drawablePadding="@dimen/dimen_4"
+            android:background="@drawable/bg_transparent_border_slate200_rounded_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:hint="@string/find_bank_or_number_bank"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8"
+            android:inputType="textPhonetic"
+            android:importantForAutofill="no"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/txt_global_bank_saved"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_global_bank_saved"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            tools:listitem="@layout/item_global_bank_saved"
+            tools:itemCount="2"
+            app:layout_constraintTop_toBottomOf="@id/edt_search_global_bank_saved"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line_breaker"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:background="#E2E8F0"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_list"/>
+
+    <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+        android:id="@+id/btn_add_list"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginBottom="@dimen/dimen_28"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/add_rekening"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

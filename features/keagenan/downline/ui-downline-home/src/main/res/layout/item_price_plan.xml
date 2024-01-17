@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_16"
+    android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+    <TextView
+        android:id="@+id/tv_name_price_plan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        tools:text="Master Plan"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_desc_price_plan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Price plan untuk master agen"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_price_plan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btn_set_markup_product"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:padding="@dimen/dimen_4"
+        android:src="@drawable/ic_set_product_markup_plan"
+        app:layout_constraintTop_toTopOf="@id/btn_choose_price_plan"
+        app:layout_constraintBottom_toBottomOf="@id/btn_choose_price_plan"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btn_delete_markup"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:padding="@dimen/dimen_4"
+        android:src="@drawable/ic_delete_markup_plan"
+        app:layout_constraintTop_toTopOf="@id/btn_choose_price_plan"
+        app:layout_constraintBottom_toBottomOf="@id/btn_choose_price_plan"
+        app:layout_constraintStart_toEndOf="@id/btn_edit_markup"/>
+
+    <ImageView
+        android:id="@+id/btn_edit_markup"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:padding="@dimen/dimen_4"
+        android:src="@drawable/ic_edit_markup_plan"
+        app:layout_constraintTop_toTopOf="@id/btn_choose_price_plan"
+        app:layout_constraintBottom_toBottomOf="@id/btn_choose_price_plan"
+        app:layout_constraintStart_toEndOf="@id/btn_set_markup_product"/>
+
+    <TextView
+        android:id="@+id/btn_choose_price_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_32"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_primary_rounded_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc_price_plan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

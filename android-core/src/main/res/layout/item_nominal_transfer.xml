@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8"
+    android:layout_marginHorizontal="@dimen/dimen_4"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingVertical="@dimen/dimen_8"
+    android:background="@drawable/bg_transparent_border_slate200_rounded_10">
+
+    <ImageView
+        android:id="@+id/img_money"
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/icon_money"/>
+
+    <TextView
+        android:id="@+id/tv_nominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        tools:text="Rp. 50.000"
+        android:textColor="#3C4D5F"/>
+</LinearLayout>

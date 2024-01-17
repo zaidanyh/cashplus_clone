@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+    android:layout_height="220dp"
+    android:layout_marginEnd="@dimen/dimen_12"
+    android:background="@drawable/bg_white_border_slate100_rounded_8">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_produk_item"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_hotel"
+        android:padding="@dimen/dimen_8"
+        app:riv_corner_radius="@dimen/dimen_8"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RatingBar
+        android:id="@+id/ratingbar_product"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        tools:rating="4.4"
+        android:theme="@style/RatingBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_produk_item" />
+
+    <TextView
+        android:id="@+id/tv_title_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginHorizontal="@dimen/dimen_8"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_medium"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#3C4D5F"
+        tools:text="HARRIS Hotel Conventions Bekasi"
+        app:layout_constraintTop_toBottomOf="@id/ratingbar_product"/>
+
+    <TextView
+        android:id="@+id/tv_discont_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:background="@drawable/bg_red50_rounded_4"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="@dimen/dimen_6"
+        tools:text="20%"
+        android:textColor="#E9484B"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_product" />
+
+    <TextView
+        android:id="@+id/tv_price_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_4"
+        tools:text="Rp.12.500.000"
+        android:textColor="#CBD5E1"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_discont_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_discont_product"
+        app:layout_constraintTop_toTopOf="@+id/tv_discont_product" />
+
+    <TextView
+        android:id="@+id/tv_price_after_discount_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_8"
+        android:textSize="13sp"
+        tools:text="Rp 12.000.000"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#FF6150"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/tv_discont_product"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

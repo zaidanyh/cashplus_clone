@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="215dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginEnd="12dp"
+    android:background="@drawable/bg_white_border_slate100_rounded_16"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wrapper_image_and_type"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="@dimen/dimen_12"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_produk_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dummy_hotel"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel"
+                android:textColor="#FF6150"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:textSize="10sp"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="16dp"
+                android:id="@+id/tv_type_item_hotel"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/bg_red50_rounded_12"
+                tools:ignore="SmallSp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_title_item_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#475569"
+        tools:text="HARRIS Hotel Conventions Bekasi"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_image_and_type"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        tools:text="Bali"
+        android:textColor="#FFBE0B"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_produk_item"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="110dp"-->
+<!--        android:contentDescription="@string/hotel_img"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/dummy_hotel"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_type_item_hotel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:background="@drawable/border_type_background"-->
+<!--        android:paddingStart="6dp"-->
+<!--        android:paddingTop="2dp"-->
+<!--        android:paddingEnd="6dp"-->
+<!--        android:paddingBottom="2dp"-->
+<!--        android:text="@string/hotel_type"-->
+<!--        android:textSize="5sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/iv_produk_item"-->
+<!--        tools:ignore="SmallSp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_title_item_hotel"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="6dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:ellipsize="end"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:maxLines="2"-->
+<!--        android:scrollHorizontally="true"-->
+<!--        android:textSize="9sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/tv_type_item_hotel"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iv_produk_item"-->
+<!--        tools:ignore="SmallSp"-->
+<!--        tools:text="HARRIS Hotel Conventions Bekasi" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_location"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="6dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textSize="10sp"-->
+<!--        app:drawableStartCompat="@drawable/icon_location_small"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_title_item_hotel"-->
+<!--        tools:ignore="SmallSp"-->
+<!--        tools:text="4/5" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

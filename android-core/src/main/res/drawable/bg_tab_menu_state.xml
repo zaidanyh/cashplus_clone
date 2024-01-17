@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_transparent_border_slate200_rounded_20" android:state_selected="false"/>
+    <item android:drawable="@drawable/bg_primary_rounded_20" android:state_selected="true"/>
+</selector>

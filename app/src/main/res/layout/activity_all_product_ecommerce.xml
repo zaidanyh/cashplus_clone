@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".ui.onlinestore.AllProductEcommerceActivity">
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        android:background="?colorPrimaryVariant"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back_produck_all"
+            android:layout_width="@dimen/dimen_38"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:padding="@dimen/dimen_8"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/product"
+            android:textColor="#F8FAFC"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:src="@drawable/icon_shopping_bag"/>
+
+        <TextView
+            android:id="@+id/tv_qty"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_16"
+            android:layout_alignEnd="@id/iv_cart"
+            android:layout_alignTop="@id/iv_cart"
+            android:background="@drawable/background_red_circle"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:textColor="#F8FAFC"
+            android:textSize="11sp"
+            android:translationX="@dimen/dimen_4"
+            android:translationY="-5dp"
+            tools:text="0" />
+    </RelativeLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/product_all_graph" />
+</androidx.constraintlayout.widget.ConstraintLayout>

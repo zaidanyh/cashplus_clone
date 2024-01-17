@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".presentation.creation.QrisActivationActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="Buat Akun NeoPay"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/wrapper_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_16"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1">
+
+            <TextView
+                android:id="@+id/first"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:gravity="center"
+                android:background="@drawable/background_indicator_regis_circle"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:text="1"
+                android:textColor="@drawable/color_indicator_state"
+                android:enabled="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="11sp"
+                android:text="Lengkapi Data"
+                android:textColor="@drawable/color_desc_state"
+                android:textAlignment="center"
+                android:enabled="true"
+                app:layout_constraintTop_toBottomOf="@id/first"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/indicator_to_second"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight=".125"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:background="#E2E8F0"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1">
+
+            <TextView
+                android:id="@+id/second"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:gravity="center"
+                android:background="@drawable/background_indicator_regis_circle"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:text="2"
+                android:textColor="@drawable/color_indicator_state"
+                android:enabled="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="11sp"
+                android:text="@string/term_condition"
+                android:textColor="@drawable/color_desc_state"
+                android:textAlignment="center"
+                android:enabled="false"
+                app:layout_constraintTop_toBottomOf="@id/second"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/indicator_to_third"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight=".125"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:background="#E2E8F0"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1">
+
+            <TextView
+                android:id="@+id/third"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:gravity="center"
+                android:background="@drawable/background_indicator_regis_circle"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:text="3"
+                android:textColor="@drawable/color_indicator_state"
+                android:enabled="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="11sp"
+                android:text="Verifikasi OTP"
+                android:textColor="@drawable/color_desc_state"
+                android:textAlignment="center"
+                android:enabled="false"
+                app:layout_constraintTop_toBottomOf="@id/third"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_activation"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_activation"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_indicator"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

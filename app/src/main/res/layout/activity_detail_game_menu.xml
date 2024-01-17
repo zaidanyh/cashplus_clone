@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pembayaran_game_menu.DetailGameMenuActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="Voucher Game"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtCustomerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/customer_id"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_customer_id"
+        style="@style/InputWithBorderGrey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:textSize="12sp"
+        android:hint="@string/input_customer_id"
+        android:inputType="textPhonetic"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@id/txtCustomerId"/>
+
+    <TextView
+        android:id="@+id/txtZoneId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/zone_id"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/edt_customer_id"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_zone_id"
+        style="@style/InputWithBorderGrey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:textSize="12sp"
+        android:hint="@string/input_zone_id"
+        android:inputType="number"
+        android:maxLength="8"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@id/txtZoneId"/>
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/username_customer"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/edt_zone_id"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_username"
+        style="@style/InputWithBorderGrey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:textSize="12sp"
+        android:hint="@string/input_username_customer"
+        android:inputType="textPhonetic"
+        android:maxLength="16"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@id/txtUsername"/>
+
+    <TextView
+        android:id="@+id/txtServerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/server_name"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/edt_username"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_server"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+        app:layout_constraintTop_toBottomOf="@id/txtServerName"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_game_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_8"
+        app:layout_constraintTop_toBottomOf="@id/spinner_server"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/rv_game_voucher_shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/spinner_server"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_data_shimmer" />
+            <include layout="@layout/item_data_shimmer" />
+            <include layout="@layout/item_data_shimmer" />
+            <include layout="@layout/item_data_shimmer" />
+            <include layout="@layout/item_data_shimmer" />
+            <include layout="@layout/item_data_shimmer" />
+            <include layout="@layout/item_data_shimmer" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

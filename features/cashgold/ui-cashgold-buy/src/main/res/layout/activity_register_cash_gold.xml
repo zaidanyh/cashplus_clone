@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorOnBackground"
+    tools:context=".register.RegisterCashGoldActivity">
+
+    <com.pasukanlangit.id.ui_core.components.CashGoldAppBarView
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:paddingVertical="@dimen/dimen_24"
+        android:background="@drawable/bg_white_rounded_bottom_medium"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:orientation="vertical">
+
+        <com.pasukanlangit.id.core.presentation.components.InputWithLabelView
+            android:id="@+id/input_user"
+            app:label="User"
+            app:placeholderText="Masukkan nama user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.pasukanlangit.id.core.presentation.components.InputWithLabelView
+            android:id="@+id/input_email"
+            app:label="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="12dp"
+            app:placeholderText="Masukkan email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.pasukanlangit.id.core.presentation.components.InputWithLabelView
+            android:id="@+id/input_phone_number"
+            app:label="Nomor Telepon"
+            android:inputType="number"
+            android:layout_marginTop="12dp"
+            app:placeholderText="Masukkan no telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.pasukanlangit.id.core.presentation.components.InputWithLabelView
+            android:id="@+id/input_ktp"
+            app:label="Nomor KTP"
+            android:inputType="number"
+            android:layout_marginTop="12dp"
+            app:placeholderText="Masukkan no KTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.pasukanlangit.id.core.presentation.components.InputWithLabelView
+            android:id="@+id/input_npwp"
+            app:label="Nomor NPWP"
+            android:inputType="number"
+            android:layout_marginTop="12dp"
+            android:imeOptions="actionDone"
+            app:isInputOptional="true"
+            app:placeholderText="Masukkan no NPWP jika ada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.pasukanlangit.id.ui_core.components.ButtonCashGoldPrimaryView
+            android:id="@+id/btn_register"
+            android:text="@string/register"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

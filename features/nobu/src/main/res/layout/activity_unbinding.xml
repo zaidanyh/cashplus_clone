@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".presentation.binding.UnbindingActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="Pengaturan Akun"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtAccountDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:text="@string/account_detail"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_detail_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="@dimen/dimen_16"
+        android:background="@drawable/bg_white_border_slate200_rounded_12"
+        app:layout_constraintTop_toBottomOf="@id/txtAccountDetail">
+
+        <TextView
+            android:id="@+id/txtFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/fullname"
+            android:textColor="#475569"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            tools:text="Nama Tester"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toBottomOf="@id/txtFullname"/>
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/phone_number"
+            android:textColor="#475569"
+            app:layout_constraintTop_toBottomOf="@id/tvFullname"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            tools:text="081334322456"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toBottomOf="@id/txtPhone"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/email_address"
+            android:textColor="#475569"
+            app:layout_constraintTop_toBottomOf="@id/tvPhone"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtEmailIsEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:paddingVertical="@dimen/dimen_4"
+            android:paddingHorizontal="@dimen/dimen_12"
+            android:background="@drawable/bg_yellow50_rounded_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/email_is_empty"
+            android:textColor="#DBA800"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/txtEmail"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            tools:text="test@cashplus.id"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toBottomOf="@id/txtEmail"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtBenefit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:text="@string/benefit"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_detail_account"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_benefit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="@dimen/dimen_16"
+        android:background="@drawable/bg_white_border_slate200_rounded_12"
+        app:layout_constraintTop_toBottomOf="@id/txtBenefit">
+
+        <ImageView
+            android:id="@+id/img_benefit1"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_16"
+            android:src="@drawable/ic_copy_success"
+            app:layout_constraintTop_toTopOf="@id/txt_benefit1"
+            app:layout_constraintBottom_toBottomOf="@id/txt_benefit1"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_benefit1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:text="@string/connecting_benefit_1"
+            android:textColor="#334155"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_benefit1"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/img_benefit2"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_16"
+            android:src="@drawable/ic_copy_success"
+            app:layout_constraintTop_toTopOf="@id/txt_benefit2"
+            app:layout_constraintBottom_toBottomOf="@id/txt_benefit2"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_benefit2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:text="@string/connecting_benefit_2"
+            android:textColor="#334155"
+            app:layout_constraintTop_toBottomOf="@id/txt_benefit1"
+            app:layout_constraintStart_toEndOf="@id/img_benefit2"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_state_bind"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_benefit"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btn_state_bind"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/need_help"
+            android:textColor="#334155"/>
+
+        <TextView
+            android:id="@+id/btn_call_cs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="12sp"
+            android:text="@string/call_us_cs"
+            android:textColor="#0A57FF"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

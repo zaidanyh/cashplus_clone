@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dimen_12"
+    android:paddingHorizontal="@dimen/dimen_16"
+    android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+    <ImageView
+        android:id="@+id/img_bank_saved"
+        android:layout_width="64dp"
+        android:layout_height="@dimen/dimen_42"
+        app:layout_constraintTop_toTopOf="@id/account_bank_name"
+        app:layout_constraintBottom_toBottomOf="@id/account_bank_num"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/account_bank_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="Anak Gamtenk"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_bank_saved"
+        app:layout_constraintEnd_toStartOf="@id/btn_delete_bank"/>
+
+    <TextView
+        android:id="@+id/account_bank_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        tools:text="816152677817"
+        android:textColor="#334155"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/account_bank_name"
+        app:layout_constraintStart_toEndOf="@id/img_bank_saved"
+        app:layout_constraintEnd_toStartOf="@id/btn_delete_bank"/>
+
+    <ImageView
+        android:id="@+id/btn_delete_bank"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:background="@drawable/bg_red600_rounded_4"
+        android:paddingVertical="@dimen/dimen_4"
+        android:paddingHorizontal="@dimen/dimen_6"
+        android:src="@drawable/ic_icon_trash"
+        tools:tint="@android:color/white"
+        app:tint="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

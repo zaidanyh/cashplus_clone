@@ -1,0 +1,16 @@
+<resources>
+    <string name="dari">Dari</string>
+    <string name="sampai">Sampai</string>
+    <string name="ending_balance">Ending Balance</string>
+    <string name="tanggal_transaksi">Tanggal Transaksi</string>
+    <string name="data_kosong">Data Kosong</string>
+    <string name="saat_ini_data_masih_kosong">Saat ini data masih kosong</string>
+    <string name="penerima">Penerima</string>
+    <string name="cek_mutation_downline">Cek mutasi downline</string>
+    <string name="cek_mutation_subdownline">Cek mutasi subdownline</string>
+    <string name="cek_detail_transfer">Cek detail transfer</string>
+    <string name="cek_sumary_transfer">Cek summary transfer</string>
+    <string name="username">Username</string>
+    <string name="nama_downline">Nama Downline</string>
+    <string name="status_transaksi">Status Transaksi</string>
+</resources>

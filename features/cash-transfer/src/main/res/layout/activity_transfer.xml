@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context="com.pasukanlangit.id.cash_transfer.presentation.local.transfer.TransferActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="Transfer Uang"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtDestinationRekening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        android:text="@string/destination_rekening"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_account_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingVertical="@dimen/dimen_12"
+        android:paddingHorizontal="@dimen/dimen_24"
+        android:background="@drawable/bg_slate100_border_slate200_rounded_12"
+        app:layout_constraintTop_toBottomOf="@id/txtDestinationRekening">
+
+        <ImageView
+            android:id="@+id/img_bank"
+            android:layout_width="72dp"
+            android:layout_height="@dimen/dimen_42"
+            android:background="@drawable/bg_grey_slate100_rounded_8"
+            android:src="@drawable/ic_indonesia_flag"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_Bank_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            tools:text="Anak Gamtenk"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_bank"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_bank_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15sp"
+            tools:text="816152677817"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/tv_Bank_name"
+            app:layout_constraintStart_toEndOf="@id/img_bank"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/nominal"
+        android:textColor="#3C4D5F"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_account_bank"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/input_nominal_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/txtNominal">
+
+        <EditText
+            android:id="@+id/edt_nominal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+            android:paddingHorizontal="14dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:hint="@string/input_nominal"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:importantForAutofill="no"/>
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_nominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_nominal_transfer"
+        app:layout_constraintTop_toBottomOf="@id/input_nominal_transfer"/>
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/description_optional"
+        android:textColor="#3C4D5F"
+        app:layout_constraintTop_toBottomOf="@id/rv_nominal"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingVertical="@dimen/dimen_12"
+        android:paddingHorizontal="14dp"
+        android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:hint="@string/input_transfer_news"
+        android:gravity="top"
+        android:textColor="#3C4D5F"
+        android:textColorHint="#94A3B8"
+        android:inputType="textMultiLine"
+        android:maxLength="23"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@id/txtDesc"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@drawable/color_indicator_state"
+        android:enabled="false"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/edt_desc"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

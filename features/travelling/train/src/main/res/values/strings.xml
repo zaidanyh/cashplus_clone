@@ -1,0 +1,23 @@
+<resources>
+    <string name="train">Kereta</string>
+    <string name="layout_train">Layout Kereta</string>
+    <string name="train_schedule_date">Tanggal Keberangkatan</string>
+    <string name="train_departure">Stasiun Keberangkatan</string>
+    <string name="train_destination">Stasiun Tujuan</string>
+    <string name="input_name_station">Masukkan nama stasiun</string>
+    <string name="choose_train_departure">Pilih Stasiun Keberangkatan</string>
+    <string name="choose_train_destination">Pilih Stasiun Tujuan</string>
+    <string name="passenger">Penumpang</string>
+    <string name="train_passenger_list">%1$s Dewasa %2$s Bayi</string>
+    <string name="find_train">Cari Kereta</string>
+    <string name="city_code_format">%1$s (%2$s)</string>
+    <string name="adult">Dewasa</string>
+    <string name="adult_condition">Usia 3+ tahun</string>
+    <string name="infant">Bayi</string>
+    <string name="infant_condition">Usia dibawah 3 tahun</string>
+    <string name="train_date">Tanggal Keberangkatan</string>
+    <string name="title_person">Titel</string>
+    <string name="sold_out_ticket">Tiket habis</string>
+    <string name="format_summary_order">ID-%1$s, %2$s (%3$s) - (%4$s)</string>
+    <string name="transaction_train_ticket">Pembelian Tiket Kereta Berhasil.\nKode Booking anda \"<b>%1$s</b>\"\nUntuk lebih detail silahkan menuju ke halaman Riwayat Pesanan</string>
+</resources>

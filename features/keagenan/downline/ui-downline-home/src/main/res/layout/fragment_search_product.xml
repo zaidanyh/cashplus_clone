@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".priceplan.findproduct.SearchProductFragment">
+
+    <View
+        android:id="@+id/gap_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_16"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:src="@drawable/close_icon_red"
+        app:layout_constraintTop_toBottomOf="@id/gap_top"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        android:text="@string/find_product"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/gap_top"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtFindProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/name_product"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/icon_close"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_search_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingVertical="0dp"
+        android:paddingHorizontal="@dimen/dimen_12"
+        android:background="@drawable/bg_transparent_border_slate200_rounded_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:hint="@string/input_name_product"
+        android:textColor="#1E293B"
+        android:textColorHint="#94A3B8"
+        android:inputType="textPhonetic"
+        android:importantForAutofill="no"
+        android:drawableEnd="@drawable/ic_baseline_search"
+        app:layout_constraintTop_toBottomOf="@id/txtFindProduct"/>
+
+    <TextView
+        android:id="@+id/txtNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/search_product_not_found"
+        android:textColor="#FF3822"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/edt_search_product"/>
+
+    <Button
+        android:id="@+id/btn_find_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_32"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="0dp"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        android:text="@string/find_product"
+        android:textColor="@drawable/color_indicator_state"
+        android:textAllCaps="false"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/txtNotFound"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

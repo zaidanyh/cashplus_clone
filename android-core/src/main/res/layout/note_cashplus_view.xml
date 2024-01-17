@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@+id/wrapper_note"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_blue50_rounded_6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:drawablePadding="6dp"
+        android:textSize="12sp"
+        android:textColor="#0A57FF"
+        android:layout_marginTop="4dp"
+        tools:text="peringatan"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_semibold"
+        app:drawableStartCompat="@drawable/icon_information" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#0A57FF"
+        android:paddingStart="16dp"
+        android:layout_marginTop="4dp"
+        tools:text="Description" />
+
+    <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+        android:id="@+id/btn_action"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        tools:text="Tambah Alamat"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:layout_height="42dp"/>
+
+</merge>

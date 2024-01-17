@@ -1,0 +1,12 @@
+<resources>
+    <string name="closest_agent">Agen Terdekat</string>
+    <string name="pencarian_agen_terdekat">Pencarian agen terdekat</string>
+    <string name="daftar_agen_terdekat_sekitar_anda">Daftar agen terdekat sekitar anda</string>
+    <string name="closest_agent_not_found">Saat ini tidak ditemukan agen terdekat</string>
+    <string name="search_closest_agent">Cari Agen Terdekat</string>
+    <string name="distance_format">%1$s km</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="your_location">Lokasimu</string>
+    <string name="provide_request_permission_location">Berikan izin akses lokasi untuk mengetahui lokasi anda</string>
+    <string name="location_is_disabled"><b>GPS Anda tampaknya sedang nonaktif</b>\napakah Anda ingin mengaktifkan?</string>
+</resources>

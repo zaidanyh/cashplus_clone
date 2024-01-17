@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".ui.pages.others.settings.profile.ChangeProfilActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="@string/change_profile"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_8"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar"
+        app:layout_constraintBottom_toTopOf="@id/btn_close_account">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/nik"
+                android:textColor="#3C4D5F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+                android:id="@+id/input_nik_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                app:hintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/textView7">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nik_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:paddingHorizontal="@dimen/dimen_12"
+                    android:background="@drawable/bg_input_state_enabled"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_nik"
+                    android:textColor="#1E293B"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@id/edt_name_changeprofile"/>
+            </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/name"
+                android:textColor="#3C4D5F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_nik_profile" />
+
+            <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+                android:id="@+id/input_name_changeprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                app:hintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/textView8">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_name_changeprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42"
+                    android:paddingHorizontal="@dimen/dimen_12"
+                    android:background="@drawable/bg_input_state_enabled"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_name"
+                    android:textColor="#1E293B"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@id/edt_owner_name"/>
+
+            </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+            <TextView
+                android:id="@+id/textview24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/name_owner"
+                android:textColor="#3C4D5F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_name_changeprofile" />
+
+            <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+                android:id="@+id/input_owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                app:hintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/textview24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_owner_name"
+                    android:layout_width="match_parent"
+                    android:layout_height='@dimen/dimen_42'
+                    android:paddingHorizontal="@dimen/dimen_12"
+                    android:background="@drawable/bg_input_state_enabled"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_name_owner"
+                    android:textColor="#1E293B"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@id/edt_place_of_born"/>
+            </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+            <TextView
+                android:id="@+id/label_place_of_born"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/place_of_birth"
+                android:textColor="#3C4D5F"
+                app:layout_constraintTop_toBottomOf="@id/input_owner_name"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+                android:id="@+id/input_place_of_born"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                app:hintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/label_place_of_born">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_place_of_born"
+                    android:layout_width="match_parent"
+                    android:layout_height='@dimen/dimen_42'
+                    android:paddingHorizontal="@dimen/dimen_12"
+                    android:background="@drawable/bg_input_state_enabled"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_place_of_birth"
+                    android:textColor="#1E293B"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@id/edt_date_of_birth" />
+            </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+            <TextView
+                android:id="@+id/label_date_of_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/date_birth"
+                android:textColor="#3C4D5F"
+                app:layout_constraintTop_toBottomOf="@id/input_place_of_born"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+                android:id="@+id/input_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                app:hintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/label_date_of_birth">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_date_of_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height='@dimen/dimen_42'
+                    android:paddingHorizontal="@dimen/dimen_12"
+                    android:background="@drawable/bg_input_state_enabled"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_date_birth"
+                    android:textColor="#1E293B"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:cursorVisible="false"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@id/edt_address_changeprofile"/>
+            </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+            <TextView
+                android:id="@+id/label_edt_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/address"
+                android:textColor="#3C4D5F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_date_of_birth" />
+
+            <EditText
+                android:id="@+id/edt_address_changeprofile"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:paddingVertical="@dimen/dimen_10"
+                android:gravity="top"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_address"
+                android:inputType="text|textMultiLine"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:importantForAutofill="no"
+                app:layout_constraintTop_toBottomOf="@id/label_edt_alamat"/>
+
+            <TextView
+                android:id="@+id/label_edt_provinsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/province"
+                android:textSize="13sp"
+                android:textColor="#3C4D5F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_address_changeprofile" />
+
+            <AutoCompleteTextView
+                android:id="@+id/province_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/choose_province"
+                android:inputType="textPhonetic"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/district_list"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_provinsi" />
+
+            <TextView
+                android:id="@+id/label_edt_districts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/city"
+                android:textColor="#3C4D5F"
+                app:layout_constraintTop_toBottomOf="@+id/province_list"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/district_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/choose_city"
+                android:inputType="textPhonetic"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/subdistrict_list"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_districts" />
+
+            <TextView
+                android:id="@+id/label_edt_subdistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/districts"
+                android:textColor="#3C4D5F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/district_list" />
+
+            <AutoCompleteTextView
+                android:id="@+id/subdistrict_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/choose_districts"
+                android:inputType="textPhonetic"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/village_list"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_subdistrict" />
+
+            <TextView
+                android:id="@+id/label_edt_village"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/village"
+                android:textColor="#3C4D5F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subdistrict_list" />
+
+            <AutoCompleteTextView
+                android:id="@+id/village_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/choose_village"
+                android:inputType="textPhonetic"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/edt_postal_code"
+                app:layout_constraintTop_toBottomOf="@+id/label_edt_village" />
+
+            <TextView
+                android:id="@+id/label_postalcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/postal_code"
+                android:textColor="#3C4D5F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/village_list" />
+
+            <EditText
+                android:id="@+id/edt_postal_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_postal_code"
+                android:inputType="numberDecimal"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:maxLength="5"
+                android:importantForAutofill="no"
+                app:layout_constraintTop_toBottomOf="@+id/label_postalcode"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_close_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginBottom="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_transparent_border_red_rounded_20"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/close_account"
+        android:textAllCaps="false"
+        android:textColor="#FF3822"
+        app:layout_constraintBottom_toTopOf="@id/btn_update_profile"/>
+
+    <Button
+        android:id="@+id/btn_update_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/simpan"
+        android:textAllCaps="false"
+        android:textColor="@drawable/color_indicator_state"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

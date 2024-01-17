@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Cashgold"
+    android:background="#F8FAFC"
+    tools:context="com.pasukanlangit.id.ui_cashgold_updateprofile.UpdateProfileCashGoldFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dimen_24"
+            android:paddingHorizontal="@dimen/dimen_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3C4D5F"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/full_name"
+                android:textColor="#3C4D5F"/>
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_full_name"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:inputType="textPersonName"
+                android:maxLength="32"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/nik_number"
+                android:textColor="#3C4D5F"/>
+
+            <EditText
+                android:id="@+id/edt_ktp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_nik_number"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:inputType="number"
+                android:maxLength="16"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/gender"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/status"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_status"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/place_of_birth"
+                android:textColor="#3C4D5F"/>
+
+            <EditText
+                android:id="@+id/edt_born_place"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_place_of_birth"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:inputType="text"
+                android:maxLength="16"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/date_birth"
+                android:textColor="#3C4D5F"/>
+
+            <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+                android:id="@+id/input_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_calender"
+                app:endIconTint="#6A7A8A"
+                app:hintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:errorEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_born_date"
+                    android:layout_width="match_parent"
+                    android:layout_height='@dimen/dimen_42'
+                    android:paddingHorizontal="@dimen/dimen_12"
+                    android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_date_birth"
+                    android:textColor="#1E293B"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="date"/>
+            </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/email"
+                android:textColor="#3C4D5F"/>
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_email"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:inputType="textEmailAddress"
+                android:maxLength="64"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/phone_number"
+                android:textColor="#3C4D5F"/>
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_phone_number"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/religion"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_religion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:text="@string/alamat"
+                android:textColor="#3C4D5F"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/province"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/auto_complete_province"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/choose_province"
+                android:inputType="text"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:maxLength="32"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/auto_complete_district"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/city"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/auto_complete_district"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/choose_city"
+                android:inputType="text"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:maxLength="32"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/auto_complete_sub_district"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/districts"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/auto_complete_sub_district"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/choose_districts"
+                android:inputType="text"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:maxLength="32"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/auto_complete_village"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/village"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/auto_complete_village"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:drawableEnd="@drawable/icon_expand"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/choose_village"
+                android:inputType="text"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:maxLength="32"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/edt_postal_code"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/postal_code"
+                android:textColor="#3C4D5F"/>
+
+            <EditText
+                android:id="@+id/edt_postal_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_postal_code"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:inputType="number"
+                android:maxLength="8"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/edt_full_address"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/address"
+                android:textColor="#3C4D5F"/>
+
+            <EditText
+                android:id="@+id/edt_full_address"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:paddingVertical="@dimen/dimen_10"
+                android:gravity="top"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_address"
+                android:inputType="text|textMultiLine"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:textColor="#3C4D5F"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/pendidikan_and_pekerjaan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/npwp"
+                android:textColor="#3C4D5F"/>
+
+            <EditText
+                android:id="@+id/edt_npwp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_12"
+                android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:hint="@string/input_npwp"
+                android:textColor="#313F4E"
+                android:textColorHint="#94A3B8"
+                android:inputType="number"
+                android:maxLength="16"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/last_education"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_last_education"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/profession"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_profession"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/source_of_income"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_source_of_income"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:text="@string/annual_income"
+                android:textColor="#3C4D5F"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_annual_income"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+                android:spinnerMode="dropdown" />
+
+            <com.pasukanlangit.id.ui_core.components.ButtonCashGoldPrimaryView
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:text="@string/simpan" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".presentation.via_merchant.ViaMerchantResultFragment">
+
+    <ImageView
+        android:id="@+id/iv_payment"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="@dimen/dimen_20"
+        tools:src="@drawable/ic_bank_mandiri"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="12sp"
+        android:text="@string/transfer_va"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/iv_payment"/>
+
+    <View
+        android:id="@+id/bg_no_rek"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_slate100_border_slate200_rounded_8"
+        app:layout_constraintTop_toBottomOf="@id/txtTransfer"/>
+
+    <TextView
+        android:id="@+id/tv_rek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        tools:text="7510642087"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/bg_no_rek"
+        app:layout_constraintBottom_toBottomOf="@id/bg_no_rek"
+        app:layout_constraintStart_toStartOf="@id/bg_no_rek"
+        app:layout_constraintEnd_toStartOf="@id/btn_copy_norek"/>
+
+    <TextView
+        android:id="@+id/btn_copy_norek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/bg_primary_light_border_blue600_rounded_6"
+        android:textSize="11sp"
+        android:text="@string/copy"
+        android:textColor="#3797FF"
+        app:layout_constraintTop_toTopOf="@id/bg_no_rek"
+        app:layout_constraintBottom_toBottomOf="@id/bg_no_rek"
+        app:layout_constraintEnd_toEndOf="@id/bg_no_rek"/>
+
+    <TextView
+        android:id="@+id/label_nominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/nominal"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_nominal_topup_confirm"
+        app:layout_constraintBottom_toBottomOf="@id/tv_nominal_topup_confirm"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_nominal_topup_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="Rp 50.000"
+        android:textAlignment="textEnd"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/bg_no_rek"
+        app:layout_constraintStart_toEndOf="@id/label_nominal"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/label_unix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/admin_fee"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_admin_cost"
+        app:layout_constraintBottom_toBottomOf="@id/tv_admin_cost"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_admin_cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="textEnd"
+        android:textSize="13sp"
+        tools:text="Rp 4.500"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/tv_nominal_topup_confirm"
+        app:layout_constraintStart_toEndOf="@id/label_unix"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/label_tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="13sp"
+        android:text="@string/total_transfer"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/tv_admin_cost"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/bg_total_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_slate100_border_slate200_rounded_8"
+        app:layout_constraintTop_toBottomOf="@id/label_tv_total"/>
+
+    <TextView
+        android:id="@+id/tv_total_topup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        tools:text="Rp 50.133"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/bg_total_transfer"
+        app:layout_constraintBottom_toBottomOf="@id/bg_total_transfer"
+        app:layout_constraintStart_toStartOf="@id/bg_total_transfer"
+        app:layout_constraintEnd_toStartOf="@id/btn_copy_total"/>
+
+    <TextView
+        android:id="@+id/btn_copy_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/bg_primary_light_border_blue600_rounded_6"
+        android:textSize="11sp"
+        android:text="@string/copy"
+        android:textColor="#3797FF"
+        app:layout_constraintTop_toTopOf="@id/bg_total_transfer"
+        app:layout_constraintBottom_toBottomOf="@id/bg_total_transfer"
+        app:layout_constraintEnd_toEndOf="@id/bg_total_transfer"/>
+
+    <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/close"
+        app:layout_constraintTop_toBottomOf="@id/bg_total_transfer"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

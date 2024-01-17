@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_12"
+    android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+    <TextView
+        android:id="@+id/tv_name_package"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Combo SAKTI MAX 2GB + Nelpon &amp; SMS"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_duration_package"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18sp"
+        tools:text="30 Days"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_package"
+        app:layout_constraintBottom_toTopOf="@id/tv_price_package"/>
+
+    <TextView
+        android:id="@+id/tv_price_package"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        tools:text="Rp 31.000"
+        android:textColor="#EA580C"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

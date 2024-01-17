@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topup_ovo_navgraph.xml"
+    app:startDestination="@id/inputNumberOvoFragment">
+
+    <fragment
+        android:id="@+id/inputNumberOvoFragment"
+        android:name="com.pasukanlangit.cashplus.ui.topup.topup_ovo.InputNumberOvoFragment"
+        android:label="fragment_input_number_ovo"
+        tools:layout="@layout/fragment_input_number_ovo" >
+        <action
+            android:id="@+id/action_inputNumberOvoFragment_to_topUpOvoConfirmationFragment"
+            app:destination="@id/topUpOvoConfirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topUpOvoConfirmationFragment"
+        android:name="com.pasukanlangit.cashplus.ui.topup.topup_ovo.TopUpOvoConfirmationFragment"
+        android:label="fragment_top_up_ovo_confirmation"
+        tools:layout="@layout/fragment_top_up_ovo_confirmation" >
+        <action
+            android:id="@+id/action_topUpOvoConfirmationFragment_to_topUpOvoWaitingFragment"
+            app:destination="@id/topUpOvoWaitingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topUpOvoWaitingFragment"
+        android:name="com.pasukanlangit.cashplus.ui.topup.topup_ovo.TopUpOvoWaitingFragment"
+        android:label="fragment_top_up_ovo_waiting"
+        tools:layout="@layout/fragment_top_up_ovo_waiting" />
+</navigation>

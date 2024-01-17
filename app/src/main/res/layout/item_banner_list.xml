@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_border_slate100_rounded_12">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_item_banner_list"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:contentDescription="@string/banner_image"
+        android:scaleType="centerCrop"
+        android:padding="1dp"
+        tools:src='@drawable/banner_1'
+        app:riv_corner_radius_top_left="@dimen/dimen_12"
+        app:riv_corner_radius_top_right="@dimen/dimen_12"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_title_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="Nikmati Cash Back untuk Produk tertentu"
+        android:textColor="#313F4E"
+        app:layout_constraintTop_toBottomOf="@id/img_item_banner_list"/>
+
+    <TextView
+        android:id="@+id/tv_description_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        android:layout_marginBottom="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum justo tortor, congue nec purus quis, sollicitudin gravida augue. Sed diam magna, condimentum sed aliquam eget, efficitur ut est."
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_banner"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

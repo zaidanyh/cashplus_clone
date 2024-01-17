@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cashGoldHomeFragment"
+        android:icon="@drawable/ic_menu_home"
+        android:title="@string/menu_home" />
+
+    <item android:id="@+id/addressGoldHomeFragment"
+        android:icon="@drawable/ic_menu_address"
+        android:title="@string/menu_address" />
+
+    <item android:id="@+id/updateProfileCashGoldFragment"
+        android:icon="@drawable/ic_menu_profile"
+        android:title="@string/menu_profile" />
+
+</menu>

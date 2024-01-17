@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".ui.pembayaran_bulanan.PembayaranBulananActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="Pembayaran"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_pembayaran_bulanan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:background="?colorPrimaryVariant"
+        android:clipToPadding="true"
+        app:tabRippleColor="@null"
+        app:tabIndicatorHeight="0dp"
+        app:tabInlineLabel="true"
+        app:tabMode="scrollable"
+        app:tabBackground="@drawable/bg_tab_layout_state"
+        app:tabIndicatorColor="?colorPrimaryVariant"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearanceMixed"
+        app:tabTextColor="@android:color/white"
+        app:tabIndicatorAnimationDuration="700"
+        app:layout_constraintTop_toBottomOf="@id/appBar"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_bulanan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout_pembayaran_bulanan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_border_slate100_rounded_12"
+    tools:context=".ui.pages.history.print.EditStructFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pasukanlangit.id.core.presentation.components.NoteCashplusView
+                android:id="@+id/wrapper_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:title="Peringatan"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                app:description="Gunakan syntax berikut untuk melakukan formating text: \n[L] = untuk teks rata kiri\n[R] = untuk teks rata kanan\n[C] = untuk teks rata tengah"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/edt_preview"
+                android:layout_width="match_parent"
+                android:minHeight="370dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:gravity="top"
+                android:focusedByDefault="true"
+                android:paddingHorizontal="12dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/bg_white_border_slate200_rounded_8"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#334155"
+                app:layout_constraintTop_toBottomOf="@+id/wrapper_note"
+                tools:targetApi="o" />
+
+            <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplus
+                android:id="@+id/btn_print"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginVertical="@dimen/dimen_20"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:textSize="13sp"
+                android:padding="0dp"
+                android:text="@string/preview"
+                app:layout_constraintTop_toBottomOf="@id/edt_preview"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

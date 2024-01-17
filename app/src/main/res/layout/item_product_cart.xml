@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <CheckBox
+        android:id="@+id/cb_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_product" />
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="6dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@id/cb_item"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/logo_metro" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_product"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/tv_price_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="14sp"
+            tools:text="@tools:sample/lorem" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:textSize="10sp"
+        android:textColor="?colorPrimaryVariant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_product"
+        android:text="@string/add_note"/>
+
+    <EditText
+        android:id="@+id/edt_note"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:maxLines="1"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="gone"
+        android:hint="Warna hitam"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:textSize="12sp"
+        tools:visibility="visible"
+        android:backgroundTint="?colorPrimaryVariant"
+        app:layout_constraintTop_toBottomOf="@id/add_note"/>
+
+    <ImageButton
+        android:id="@+id/btn_increase_qty"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_note"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_icon_plus"
+        app:tint="@drawable/selector_icon_qty" />
+
+    <EditText
+        android:id="@+id/edt_qty"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:text="1"
+        android:imeOptions="actionDone"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:backgroundTint="?colorPrimaryVariant"
+        app:layout_constraintTop_toTopOf="@id/btn_increase_qty"
+        app:layout_constraintBottom_toBottomOf="@id/btn_increase_qty"
+        app:layout_constraintEnd_toStartOf="@id/btn_increase_qty"/>
+
+    <ImageButton
+        android:id="@+id/btn_decrease_qty"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_note"
+        app:layout_constraintEnd_toStartOf="@id/edt_qty"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_icon_minus"
+        app:tint="@drawable/selector_icon_qty" />
+
+    <ImageButton
+        android:id="@+id/btn_delete_cart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_note"
+        app:layout_constraintEnd_toStartOf="@id/btn_decrease_qty"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_icon_trash" />
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#B7EAEAEA"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_qty"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

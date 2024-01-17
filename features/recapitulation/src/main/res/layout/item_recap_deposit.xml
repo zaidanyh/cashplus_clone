@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_12"
+    android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_arrow_income"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:src="@drawable/ic_arrow_income_oblique"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_deposit_type"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_product_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="SHD10"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toTopOf="@id/tv_deposit_type"
+        app:layout_constraintBottom_toBottomOf="@id/tv_deposit_type"
+        app:layout_constraintStart_toEndOf="@id/ic_arrow_income"
+        app:layout_constraintEnd_toStartOf="@id/tv_deposit_type"/>
+
+    <TextView
+        android:id="@+id/tv_deposit_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="@dimen/dimen_12"
+        android:background="@drawable/bg_orange50_rounded_12"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="DB"
+        android:textColor="#EA580C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ic_arrow_income, tv_product_code, tv_deposit_type"/>
+
+    <View
+        android:id="@+id/line_breaker_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="#F1F5F9"
+        app:layout_constraintTop_toBottomOf="@id/barrier_header"/>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="SHOPEEPAY SESUAI DENOM 10.000"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="@id/tv_provider_code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_provider_code"/>
+    
+    <TextView
+        android:id="@+id/tv_provider_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="SHOPEE"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/line_breaker_top"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_dest_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="6281346011222"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"/>
+
+    <TextView
+        android:id="@+id/txt_value_deposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/value"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/tv_dest_deposit"/>
+
+    <TextView
+        android:id="@+id/tv_value_deposit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 14.625"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_value_deposit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".425"/>
+
+    <TextView
+        android:id="@+id/txt_ending_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/ending_balance"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/tv_dest_deposit"
+        app:layout_constraintStart_toEndOf="@id/guideline_center"/>
+
+    <TextView
+        android:id="@+id/tv_ending_balance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 20.597"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_ending_balance"
+        app:layout_constraintStart_toEndOf="@id/guideline_center"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tv_value_deposit, tv_ending_balance"/>
+
+    <View
+        android:id="@+id/line_breaker_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="#F1F5F9"
+        app:layout_constraintTop_toBottomOf="@id/barrier_footer"/>
+
+    <TextView
+        android:id="@+id/tv_date_deposit_mutation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="02/06/2023 10:20:47"
+        android:textColor="#334155"
+        android:drawablePadding="@dimen/dimen_6"
+        tools:drawableStart="@drawable/ic_calendar_linear_outline"
+        app:drawableStartCompat="@drawable/ic_calendar_linear_outline"
+        app:layout_constraintTop_toTopOf="@id/tv_mutation_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_mutation_category"/>
+
+    <TextView
+        android:id="@+id/tv_mutation_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="#EMONEY"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/line_breaker_bottom"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

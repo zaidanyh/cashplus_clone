@@ -1,0 +1,11 @@
+package com.pasukanlangit.cashplus.model.request_body
+
+import com.google.gson.annotations.SerializedName
+
+data class QrisRegistrationRequest(
+    @field:SerializedName("uuid")
+    val uuid: String,
+
+    @field:SerializedName("amt")
+    val amt: String
+)

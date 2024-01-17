@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_6"
+    android:paddingBottom="@dimen/dimen_6"
+    android:paddingStart="@dimen/dimen_20"
+    android:paddingEnd="@dimen/dimen_20"
+    android:background="@drawable/bg_blue50_rounded_16"
+    android:fontFamily="@font/poppins_regular"
+    android:textSize="12sp"
+    tools:text="Jakarta"
+    android:textColor="#0A57FF"/>

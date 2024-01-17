@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_8"
+    android:background="@drawable/bg_transparent_border_slate200_rounded_12"
+    android:padding="@dimen/dimen_8">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".225" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".7" />
+    
+    <View
+        android:id="@+id/img_shimmer"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="@dimen/dimen_4"
+        android:background="#ddd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideLine_left"/>
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginEnd="@dimen/dimen_4"
+        android:background="#ddd"
+        app:layout_constraintTop_toBottomOf="@id/img_shimmer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideLine_left"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideLine_right"
+        app:layout_constraintStart_toEndOf="@id/guideLine_left"
+        app:layout_constraintTop_toTopOf="parent">
+        
+        <View
+            android:id="@+id/flight_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_28"
+            android:background="#ddd"
+            app:layout_constraintTop_toTopOf="parent"/>
+        
+        <View
+            android:id="@+id/departure_code_shimmer"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="#ddd"
+            app:layout_constraintWidth_percent=".3"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/flight_shimmer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/departure_time_shimmer"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="#ddd"
+            app:layout_constraintWidth_percent=".3"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/departure_code_shimmer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/destination_code_shimmer"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="#ddd"
+            app:layout_constraintWidth_percent=".3"
+            app:layout_constraintHorizontal_bias=".75"
+            app:layout_constraintTop_toBottomOf="@id/flight_shimmer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/destination_time_shimmer"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="#ddd"
+            app:layout_constraintWidth_percent=".3"
+            app:layout_constraintHorizontal_bias=".75"
+            app:layout_constraintTop_toBottomOf="@id/departure_code_shimmer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/estimation_shimmer"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="#ddd"
+            app:layout_constraintWidth_percent=".5"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/departure_time_shimmer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:background="#ddd"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideLine_right"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

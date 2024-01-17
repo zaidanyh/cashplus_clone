@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_20"
+    tools:context="com.pasukanlangit.id.cash_transfer.presentation.local.transfer.DetailTransferBottomSheetFragment">
+
+    <TextView
+        android:id="@+id/txtDetailTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="@string/detail_transfer"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ic_close"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:src="@drawable/close_icon_red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_account_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:paddingVertical="@dimen/dimen_12"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_slate100_border_slate200_rounded_12"
+        app:layout_constraintTop_toBottomOf="@id/txtDetailTransfer">
+
+        <ImageView
+            android:id="@+id/img_bank"
+            android:layout_width="72dp"
+            android:layout_height="@dimen/dimen_42"
+            android:background="@drawable/bg_grey_slate100_rounded_8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            tools:text="Anak Gamtenk"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_bank"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_bank_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            tools:text="816152677817"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/tv_bank_name"
+            app:layout_constraintStart_toEndOf="@id/img_bank"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtNominalTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:text="@string/amount_transfer"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="@id/tvNominalTransfer"
+        app:layout_constraintBottom_toBottomOf="@id/tvNominalTransfer"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNominalTransfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="Rp 50.000"
+        android:textColor="#475569"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_account_bank"
+        app:layout_constraintStart_toEndOf="@id/txtNominalTransfer"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtAdminCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:text="@string/transfer_fee"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="@id/tvAdminCost"
+        app:layout_constraintBottom_toBottomOf="@id/tvAdminCost"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvAdminCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="Rp 4.000"
+        android:textColor="#475569"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/tvNominalTransfer"
+        app:layout_constraintStart_toEndOf="@id/txtAdminCost"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_fee_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:text="@string/service_fee"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="@id/tv_fee_more"
+        app:layout_constraintBottom_toBottomOf="@id/tv_fee_more"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_fee_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:text="@string/admin_free"
+        android:textColor="#475569"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/tvAdminCost"
+        app:layout_constraintStart_toEndOf="@id/txt_fee_more"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:background="#E2E8F0"
+        app:layout_constraintTop_toBottomOf="@id/txt_fee_more"/>
+
+    <TextView
+        android:id="@+id/txtTotalTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:text="@string/pay_total"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="@id/tvTotalTransfer"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalTransfer"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTotalTransfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="Rp 54.350"
+        android:textColor="#475569"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintStart_toEndOf="@id/txtTotalTransfer"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/dimen_48"
+        android:layout_height="@dimen/dimen_24"
+        android:src="@drawable/icon_cashplus_colored"
+        android:layout_marginTop="@dimen/dimen_4"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalTransfer"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_saldo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        app:layout_constraintBottom_toBottomOf="@id/img_logo"
+        app:layout_constraintStart_toEndOf="@id/img_logo"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/txtSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/your_deposit_with_colon"
+            android:textColor="#475569"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvSaldo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="Rp 60.000"
+            android:textColor="#475569"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtSaldo"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtLessBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/less_deposit"
+        android:textColor="#FF6150"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textColor="@drawable/color_indicator_state"
+        android:enabled="true"
+        app:layout_constraintTop_toBottomOf="@id/txtLessBalance"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

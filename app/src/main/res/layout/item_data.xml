@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_border_slate200_rounded_12"
+    android:paddingVertical="@dimen/dimen_12"
+    android:paddingHorizontal="@dimen/dimen_16">
+
+    <ImageView
+        android:id="@+id/iv_operator"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        tools:src="@drawable/icon_telkom"
+        app:layout_constraintTop_toTopOf="@id/tv_short_desc"
+        app:layout_constraintBottom_toBottomOf="@id/tv_short_desc"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_short_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Paket Data Telkomsel 52GB"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_operator"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Telkomsel Data Bulk Nasional 50GB (3G 4G) + 2GB OMG 30 Hari"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/tv_short_desc" />
+
+    <TextView
+        android:id="@+id/tv_data_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="@dimen/dimen_12"
+        android:background="@drawable/bg_pink50_rounded_4"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/promo"
+        android:textColor="#DB2777"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/tv_price_data"
+        app:layout_constraintBottom_toBottomOf="@id/tv_price_data"
+        app:layout_constraintEnd_toStartOf="@id/tv_price_data"/>
+
+    <TextView
+        android:id="@+id/tv_price_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="Rp 50.250"
+        android:textColor="#EA580C"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

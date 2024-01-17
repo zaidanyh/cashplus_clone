@@ -1,0 +1,13 @@
+<resources>
+    <string name="cek">Cek</string>
+    <string name="cek_rebate">Cek Komisi</string>
+    <string name="detail_rebate">Detail Komisi</string>
+    <string name="total_all_rebate">Sisa komisi</string>
+    <string name="total_rebate">Total komisi</string>
+    <string name="kode_produk">Kode Produk</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="sembunyikan">Sembunyikan</string>
+    <string name="check_rebate_by_date">Komisi anda dari tanggal <b>%1$s</b> sampai dengan <b>%2$s</b>.</string>
+    <string name="check_rebate_1_day">Komisi anda di tanggal <b>%1$s</b></string>
+    <string name="check_rebate_this_day">Komisi anda <b>hari ini</b></string>
+</resources>

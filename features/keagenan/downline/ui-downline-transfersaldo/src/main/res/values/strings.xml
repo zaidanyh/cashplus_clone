@@ -1,0 +1,8 @@
+<resources>
+    <string name="name_and_number">Nama atau Nomor DownLine</string>
+    <string name="find_name_or_number">Cari nama atau nomor</string>
+    <string name="input_name_or_number_required">Nomor tujuan dan nominal tidak boleh kosong</string>
+    <string name="destination_not_accordance">Nomor tujuan tidak sesuai. Silahkan sesuaikan dengan daftar</string>
+    <string name="transfer_deposit_downline_successfully">Transfer deposit sebesar %1$s ke nomor downline %2$s berhasil.</string>
+    <string name="transaction_already_exist">Transaksi dengan tujuan %1$s dan nominal %2$s sudah ada sebelumnya.\nSilahkan coba nominal lain untuk mencegah transaksi ganda</string>
+</resources>

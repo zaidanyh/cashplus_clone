@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_activation"
+    app:startDestination="@id/completingData">
+
+    <fragment
+        android:id="@+id/completingData"
+        android:name="com.pasukanlangit.id.nobu.presentation.creation.CompletingDataFragment"
+        android:label="fragment_completing_data"
+        tools:layout="@layout/fragment_completing_data">
+        <action
+            android:id="@+id/completingDataToTermCond"
+            app:destination="@id/termCondition"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/termCondition"
+        android:name="com.pasukanlangit.id.nobu.presentation.creation.TermConditionFragment"
+        android:label="fragment_term_condition"
+        tools:layout="@layout/fragment_term_condition">
+        <action
+            android:id="@+id/termConditionToOTP"
+            app:destination="@id/otpActivation"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <argument
+            android:name="completingToTerm"
+            app:argType="com.pasukanlangit.id.nobu.domain.temp.AccountCreation"/>
+    </fragment>
+    <fragment
+        android:id="@+id/otpActivation"
+        android:name="com.pasukanlangit.id.nobu.presentation.creation.OTPActivationFragment"
+        android:label="fragment_otp_activation"
+        tools:layout="@layout/fragment_o_t_p_activation"/>
+</navigation>

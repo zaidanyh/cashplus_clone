@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".ui.pages.help.HelpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_dashboard"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_24"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_app_bar"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:text="@string/help"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/statusBar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_cs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:text="Customer Service"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_header"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtQuestionMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/any_question_more"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_cs"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_wa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_white_border_slate200_rounded_8"
+        app:layout_constraintTop_toBottomOf="@id/txtQuestionMore">
+
+        <ImageView
+            android:id="@+id/img_wa"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:src="@drawable/ic_whatsapp_cs"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_24"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:text="@string/wa_cs"
+            android:textColor="#334155"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_wa"
+            app:layout_constraintEnd_toStartOf="@id/icon_forward_wa"/>
+
+        <ImageView
+            android:id="@+id/icon_forward_wa"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:padding="@dimen/dimen_6"
+            android:src="@drawable/ic_arrow_forward_ios"
+            app:tint="#334155"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_telegram"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_marginTop="14dp"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_white_border_slate200_rounded_8"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_wa">
+
+        <ImageView
+            android:id="@+id/img_telegram"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:src="@drawable/ic_telegram_cs"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_24"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:text="@string/telegram_cs"
+            android:textColor="#334155"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_telegram"
+            app:layout_constraintEnd_toStartOf="@id/icon_forward_tele"/>
+
+        <ImageView
+            android:id="@+id/icon_forward_tele"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:padding="@dimen/dimen_6"
+            android:src="@drawable/ic_arrow_forward_ios"
+            app:tint="#334155"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_important_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="@dimen/dimen_12"
+        android:background="@drawable/bg_blue50_rounded_8"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_telegram">
+
+        <ImageView
+            android:id="@+id/ic_info"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_16"
+            android:src="@drawable/icon_information"
+            app:layout_constraintTop_toTopOf="@id/txt_important_info"
+            app:layout_constraintBottom_toBottomOf="@id/txt_important_info"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_important_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            android:text="@string/important_info"
+            android:textColor="#006FE6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ic_info"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/important_info_desc"
+            android:textColor="#006FE6"
+            app:layout_constraintTop_toBottomOf="@id/txt_important_info"
+            app:layout_constraintStart_toStartOf="@id/txt_important_info"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

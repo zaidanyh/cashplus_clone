@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.register.SecondRegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:text="@string/account_name"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+            android:id="@+id/input_name_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false"
+            app:startIconDrawable="@drawable/icon_user_follow_line"
+            app:startIconTint="?colorPrimaryVariant"
+            app:errorEnabled="true"
+            app:layout_constraintTop_toBottomOf="@id/txtName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_name_reg"
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/edt_owner_name"
+                android:hint="@string/input_name"
+                style="@style/InputWithBorderGrey" />
+        </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+        <TextView
+            android:id="@+id/txtNameAgency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:text="@string/name_owner"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toBottomOf="@id/input_name_reg"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+            android:id="@+id/input_owner_name_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false"
+            app:startIconDrawable="@drawable/icon_user_shared_2_line"
+            app:startIconTint="?colorPrimaryVariant"
+            app:layout_constraintTop_toBottomOf="@id/txtNameAgency">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_owner_name_reg"
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/edt_email_reg"
+                android:hint="@string/input_name_owner"
+                style="@style/InputWithBorderGrey"/>
+        </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+        <TextView
+            android:id="@+id/txtInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/utility_owner_name"
+            android:textColor="#94A3B8"
+            app:layout_constraintTop_toBottomOf="@id/input_owner_name_reg"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:text="@string/email_address"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toBottomOf="@id/txtInstruction"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+            android:id="@+id/input_email_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false"
+            app:startIconDrawable="@drawable/icon_mail_line"
+            app:startIconTint="?colorPrimaryVariant"
+            app:errorEnabled="true"
+            app:layout_constraintTop_toBottomOf="@id/txtEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email_reg"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+                android:hint="@string/input_email"
+                style="@style/InputWithBorderGrey"/>
+        </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_term_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:buttonTint="?colorPrimaryVariant"
+            app:layout_constraintTop_toBottomOf="@id/input_email_reg"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_privacy_policy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/label_privacy_policy"
+            android:textColor="#64748B"
+            app:layout_constraintBottom_toBottomOf="@+id/checkbox_term_reg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_term_reg"
+            app:layout_constraintTop_toTopOf="@+id/checkbox_term_reg" />
+
+        <Button
+            android:id="@+id/btn_send_otp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:background="@drawable/background_button_state"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:text="@string/send_otp"
+            android:textAllCaps="false"
+            android:textColor="@drawable/color_indicator_state"
+            android:enabled="false"
+            app:layout_constraintTop_toBottomOf="@id/btn_privacy_policy"/>
+
+        <TextView
+            android:id="@+id/label_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/label_otp"
+            android:textColor="#64748B"
+            app:layout_constraintTop_toBottomOf="@id/btn_send_otp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

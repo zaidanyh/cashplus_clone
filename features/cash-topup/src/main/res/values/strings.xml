@@ -1,0 +1,25 @@
+<resources>
+    <string name="method_top_up">Metode pengisian</string>
+    <string name="transfer_to_account">Transfer ke Rekening</string>
+    <string name="unique_code">Kode Unik</string>
+    <string name="on_behalf_of_format">atas nama %1$s</string>
+    <string name="top_up_information">Pastikan nominal transfer sesuai hingga digit terakhir untuk mempermudah transaksi anda.</string>
+    <string name="transfer_va">Transfer ke %1$s Virtual Account</string>
+    <string name="pay_code_alfa">Kode Bayar Alfamart</string>
+    <string name="top_up_via_e_wallet_processing">Silahkan buka aplikasi %1$s anda untuk melakukan transaksi topup, proses topup akan kadaluarsa pada</string>
+    <string name="second">detik</string>
+    <string name="detail_top_up">Detail Topup</string>
+    <string name="top_up_successfully">Isi ulang berhasil</string>
+    <string name="check_history">Cek History</string>
+    <string name="top_up_balance_qris">Topup Saldo via QRIS</string>
+    <string name="nominal_top_up_qris_format">Nominal Topup %1$s</string>
+    <string name="qr_code_expired_in">Kode QR berlaku sampai dengan</string>
+    <string name="qr_code_is_expired">Kode QR telah kadaluarsa, silahkan buat kode QR baru</string>
+    <string name="generate_qr_code_failed">Kode QR gagal dibuat, silahkan buat kode QR baru</string>
+    <string name="waiting_expired">Tunggu (%02d:%02d)</string>
+    <string name="instruction_topup_qr_code">Tunjukkan kode QR untuk melakukan topup\nsaldo via QRIS di aplikasi mobile.</string>
+    <string name="generate_new_qr_code">Minta QR Baru</string>
+    <string name="save_image">Simpan QR</string>
+    <string name="qr_code_saved">Gambar kode QR berhasil disimpan</string>
+    <string name="qr_code_not_saved">Gambar kode QR gagal disimpan</string>
+</resources>

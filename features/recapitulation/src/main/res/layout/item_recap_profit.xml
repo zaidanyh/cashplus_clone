@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_12"
+    android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+    <TextView
+        android:id="@+id/tv_short_dsc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Amazon Gift Card"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_product_code"/>
+
+    <TextView
+        android:id="@+id/tv_product_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="WOLF60"
+        android:textColor="#1570EF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="Amazon Gift Card $10"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/tv_short_dsc"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".37"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tv_description"/>
+
+    <TextView
+        android:id="@+id/txt_capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/capital"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/barrier_body"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_capital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 282.000"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_capital"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_left"/>
+
+    <TextView
+        android:id="@+id/txt_profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/profit"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/barrier_body"
+        app:layout_constraintStart_toEndOf="@id/guideline_left"/>
+
+    <TextView
+        android:id="@+id/tv_profit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 2.000"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_profit"
+        app:layout_constraintStart_toEndOf="@id/guideline_left"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".75"/>
+
+    <TextView
+        android:id="@+id/txt_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/quantity"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/barrier_body"
+        app:layout_constraintStart_toEndOf="@id/guideline_right"/>
+
+    <TextView
+        android:id="@+id/tv_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="1"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_qty"
+        app:layout_constraintStart_toEndOf="@id/guideline_right"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="recapitulation_profit">Rekap Profit</string>
+    <string name="recapitulation_debit_credit">Rekap Debit Kredit</string>
+    <string name="recapitulation_debit_or_credit">Rekap Debit/Kredit</string>
+    <string name="recap_transaction_is_empty">Belum ada transaksi</string>
+    <string name="recap_trans_current_day">Anda belum melakukan\ntransaksi <b>%1$s</b></string>
+    <string name="recap_deposit_is_empty">Riwayat debit kredit kosong</string>
+    <string name="recap_deposit_current">Anda belum melakukan\ndeposit <b>%1$s</b></string>
+    <string name="find_transaction">Cari transaksi</string>
+    <string name="filter_desc">Menampilkan data <b>%1$s</b></string>
+    <string name="result_find">Menampilkan pencarian <b>%1$s</b></string>
+    <string name="total_sales">Total\npenjualan</string>
+    <string name="total_purchases">Total\npembelian</string>
+    <string name="total_profit">Total\nlaba</string>
+    <string name="total_debit">Total Debit</string>
+    <string name="total_credit">Total Kredit</string>
+    <string name="description">Deskripsi</string>
+    <string name="capital">Modal</string>
+    <string name="profit">Untung</string>
+    <string name="quantity">Qty</string>
+    <string name="last_14_days">14 Hari Terakhir</string>
+    <string name="filter_no_change">Tidak ada perubahan pada filter</string>
+    <string name="save_recap_required">Jumlah data kurang dari 5 tidak bisa diekspor</string>
+    <string name="save_recap_successfully">Rekap %1$s tanggal %2$s BERHASIL disimpan</string>
+    <string name="save_recap_failed">Rekap %1$s tanggal %2$s GAGAL disimpan</string>
+</resources>

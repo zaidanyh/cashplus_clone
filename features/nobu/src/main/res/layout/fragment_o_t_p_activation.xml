@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.creation.OTPActivationFragment">
+
+    <TextView
+        android:id="@+id/txtOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"
+        android:text="@string/field_otp"
+        android:textColor="#334155"
+        app:layout_constraintVertical_bias=".15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.mukesh.OtpView
+        android:id="@+id/input_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:inputType="number"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"
+        android:textColor="#334155"
+        app:OtpItemCount="4"
+        app:OtpItemSpacing="@dimen/dimen_10"
+        app:OtpLineColor="#CBD5E1"
+        app:OtpViewType="rectangle"
+        app:OtpItemRadius="@dimen/dimen_4"
+        app:layout_constraintTop_toBottomOf="@id/txtOTP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtWarningOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:layout_marginHorizontal="@dimen/dimen_28"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"
+        android:text="@string/danger_otp"
+        android:textColor="#475569"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/input_otp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txtOTP"
+        app:layout_constraintBottom_toTopOf="@id/txtWarningOTP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_12"
+    android:background="@drawable/bg_transparent_border_slate200_rounded_12">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_32"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_name_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            tools:text="Amazon Gift Card"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_product"
+            app:layout_constraintEnd_toStartOf="@id/btn_edit_price"/>
+
+        <ImageView
+            android:id="@+id/btn_edit_price"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="@dimen/dimen_10"
+            android:background="@drawable/bg_primary_rounded_8"
+            android:src="@drawable/ic_edit_box_line"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <TextView
+        android:id="@+id/tv_desc_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="Amazon Gift Card $13"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_product_code"/>
+
+    <TextView
+        android:id="@+id/tv_product_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="AMAZON11"
+        android:textColor="#1570EF"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_header"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/line_breaking"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:background="#F1F5F9"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc_product"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".32"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".68"/>
+
+    <TextView
+        android:id="@+id/txt_capital_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/capital_price"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/line_breaking"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_capital_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 165.120"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_capital_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_left"/>
+
+    <TextView
+        android:id="@+id/txt_selling_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/outlet_price"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/line_breaking"
+        app:layout_constraintStart_toEndOf="@id/guide_line_left"/>
+
+    <TextView
+        android:id="@+id/tv_selling_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 170.000"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_selling_price"
+        app:layout_constraintStart_toEndOf="@id/guide_line_left"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_right"/>
+
+    <TextView
+        android:id="@+id/txt_profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/profit"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/line_breaking"
+        app:layout_constraintStart_toEndOf="@id/guide_line_right"/>
+
+    <TextView
+        android:id="@+id/tv_profit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 4.880"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_profit"
+        app:layout_constraintStart_toEndOf="@id/guide_line_right"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/minta_saldo_graph.xml"
+    app:startDestination="@id/enterNominalFragment">
+
+    <fragment
+        android:id="@+id/enterNominalFragment"
+        android:name="com.pasukanlangit.id.ui_downline_home.mintasaldoqr.EnterNominalFragment"
+        android:label="fragment_enter_nominal"
+        tools:layout="@layout/fragment_enter_nominal" >
+        <action
+            android:id="@+id/action_enterNominalFragment_to_QRResultFragment"
+            app:destination="@id/QRResultFragment"
+            app:popUpTo="@id/enterNominalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QRResultFragment"
+        android:name="com.pasukanlangit.id.ui_downline_home.mintasaldoqr.QRResultFragment"
+        android:label="fragment_q_r_result"
+        tools:layout="@layout/fragment_q_r_result" >
+        <argument
+            android:name="nominal"
+            app:argType="string" />
+    </fragment>
+</navigation>

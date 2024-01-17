@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="2dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/dimen_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_24"
+        tools:context=".presentation.components.GenericConfirmDialogFragment">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            tools:text="Cek Rincian"
+            android:textColor="#334155"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/img_confirm"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:src="@drawable/illustration_confirm"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginHorizontal="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            tools:text="Apakah rincian data yang anda isikan sudah benar ?"
+            android:textColor="#475569"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/img_confirm"/>
+
+        <Button
+            android:id="@+id/btn_positive"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginHorizontal="@dimen/dimen_4"
+            android:padding="0dp"
+            android:background="@drawable/bg_primary_rounded_12"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            tools:text="Ya, Benar"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"/>
+
+        <Button
+            android:id="@+id/btn_negative"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginHorizontal="@dimen/dimen_4"
+            android:padding="0dp"
+            android:background="@drawable/bg_blue50_rounded_12"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            tools:text="Ubah"
+            android:textColor="#0A57FF"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/btn_positive"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

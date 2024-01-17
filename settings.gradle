@@ -1,0 +1,61 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+include ':app'
+
+//========= cashgold ======================
+include ':features:cashgold'
+include ':features:cashgold:ui-cashgold-buy'
+include ':features:cashgold:ui-cashgold-withdraw'
+include ':features:cashgold:ui-cashgold-address'
+include ':features:cashgold:ui-cashgold-updateprofile'
+include ':features:cashgold:ui-core'
+include ':features:cashgold:ui-cashgold-navigation'
+include ':features:cashgold:cashgold-datasource'
+include ':features:cashgold:cashgold-domain'
+//========== end of cashgold ===============
+
+//========= keagenan ======================
+include ':features:keagenan:rebate'
+include ':features:keagenan:downline:ui-downline-home'
+include ':features:keagenan:downline:ui-downline-register'
+include ':features:keagenan:downline:ui-downline-transfersaldo'
+include ':features:keagenan:downline:ui-downline-nearby-agent'
+include ':features:keagenan:downline:ui-downline-mutasi-summary-detail'
+include ':features:keagenan:downline:datasource-downline'
+include ':features:keagenan:downline:domain-downline'
+//========= end of keagenan ======================
+
+//========= kyc ==============
+include ':features:kyc:kyc-domain'
+include ':features:kyc:kyc-presentation'
+include ':features:kyc:kyc-datasource'
+//========= end of kyc ==============
+
+//========= Scan QR ================
+include ':features:nobu'
+
+//========= Travelling =========
+include ':features:travelling:datasource'
+include ':features:travelling:domain'
+include ':features:travelling:flight'
+include ':features:travelling:train'
+include ':features:travelling:ship'
+include ':features:travelling:hotel'
+
+//========= Cash Transfer =========
+include ':features:cash-transfer'
+
+//========= Cash Topup =========
+include ':features:cash-topup'
+
+//======= Recapitulation =======
+include ':features:recapitulation'
+
+rootProject.name = "CashPlus"
+include ':android-core'
+include ':library-core'

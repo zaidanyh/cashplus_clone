@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    app:cardCornerRadius="@dimen/dimen_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:paddingVertical="@dimen/dimen_32"
+        tools:context=".presentation.binding.InputOTPBindingFragment">
+
+        <TextView
+            android:id="@+id/otpSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:text="@string/sending_otp"
+            android:textColor="#475569"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginHorizontal="@dimen/dimen_20"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:text="@string/send_otp_desc"
+            android:textColor="#475569"
+            app:layout_constraintTop_toBottomOf="@id/otpSend"/>
+
+        <com.mukesh.OtpView
+            android:id="@+id/input_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:inputType="number"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:textColor="#334155"
+            app:OtpItemCount="4"
+            app:OtpItemSpacing="@dimen/dimen_10"
+            android:itemBackground="#F8FAFC"
+            app:OtpLineColor="#CBD5E1"
+            app:OtpLineWidth="1dp"
+            app:OtpViewType="rectangle"
+            app:OtpItemRadius="@dimen/dimen_4"
+            app:layout_constraintTop_toBottomOf="@id/txtDesc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginHorizontal="@dimen/dimen_20"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/danger_otp"
+            android:textColor="#0A57FF"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/input_otp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#12ACE3"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

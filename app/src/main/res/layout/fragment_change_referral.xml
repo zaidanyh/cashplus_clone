@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_20"
+    android:orientation="vertical"
+    tools:context=".ui.pages.others.ChangeReferralFragment">
+
+    <TextView
+        android:id="@+id/txtUplineReferral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:text="@string/referral_induk"
+        android:textColor="#475569"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_referral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4">
+
+        <TextView
+            android:id="@+id/tv_referral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            tools:text="081334299822"
+            android:textColor="#1E293B"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_referral_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="Master Pohon Metrik"
+            android:textColor="#DBA800"
+            app:layout_constraintTop_toBottomOf="@id/tv_referral"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/btn_copy_referral"
+            android:layout_width="@dimen/dimen_28"
+            android:layout_height="@dimen/dimen_28"
+            android:src="@drawable/ic_copy_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <EditText
+        android:id="@+id/edt_referral_code"
+        android:layout_width="match_parent"
+        style="@style/InputWithBorderGrey"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:inputType="textPhonetic"
+        android:hint="@string/input_referral"
+        android:importantForAutofill="no"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_action"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/background_button_state"
+        android:textSize="13sp"
+        android:text="@string/change"
+        android:textAllCaps="false"
+        android:textColor="@drawable/color_indicator_state"/>
+</LinearLayout>

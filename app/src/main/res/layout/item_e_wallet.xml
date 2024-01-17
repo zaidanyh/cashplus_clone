@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_12"
+    android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+    <ImageView
+        android:id="@+id/iv_product_e_wallet"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_short_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="SALDO DANA 10K"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/iv_product_e_wallet"
+        app:layout_constraintBottom_toBottomOf="@id/iv_product_e_wallet"
+        app:layout_constraintStart_toEndOf="@id/iv_product_e_wallet"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Saldo DANA 10K"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/iv_product_e_wallet"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="Rp 10.400"
+        android:textColor="#EA580C"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:animateLayoutChanges="true"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:src="@drawable/icon_cashplus_colored"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_38"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/phone_number"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/input_msidn_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:startIconDrawable="@drawable/icon_phone_line"
+        app:startIconTint="#0A57FF"
+        app:layout_constraintTop_toBottomOf="@id/txtPhoneNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_msidn_masuk"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionNext"
+            android:digits="0123456789"
+            android:hint="@string/input_phone_number"
+            style="@style/InputWithBorderGrey" />
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/password"
+        android:textColor="#1E293B"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/input_msidn_masuk"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/input_pw_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/icon_lock_password_line"
+        app:startIconTint="?colorPrimaryVariant"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_pw_masuk"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:hint="@string/input_password"
+            style="@style/InputWithBorderGrey"
+            android:imeOptions="actionDone" />
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+    <TextView
+        android:id="@+id/btn_method_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:padding="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        android:text="@string/login_with_password"
+        android:textColor="?colorPrimaryVariant"
+        app:layout_constraintTop_toBottomOf="@id/input_pw_masuk"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/btn_forgot_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:padding="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="12sp"
+        android:text="@string/forgot_password_question"
+        android:textColor="?colorPrimaryVariant"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_pw_masuk" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@drawable/color_indicator_state"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/btn_method_login"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#E2E8F0"
+        android:layout_marginStart="@dimen/dimen_16"
+        app:layout_constraintTop_toTopOf="@id/textView7"
+        app:layout_constraintBottom_toBottomOf="@id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textView7"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:paddingHorizontal="@dimen/dimen_28"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/or"
+        android:textColor="#1E293B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#E2E8F0"
+        android:layout_marginEnd="@dimen/dimen_16"
+        app:layout_constraintTop_toTopOf="@id/textView7"
+        app:layout_constraintBottom_toBottomOf="@id/textView7"
+        app:layout_constraintStart_toEndOf="@id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_transparent_border_primary_rounded_20"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#0A57FF"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

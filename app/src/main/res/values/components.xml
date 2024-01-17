@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- input with border grey -->
+    <style name="InputWithBorderGrey" >
+        <item name="android:layout_height">@dimen/dimen_42</item>
+        <item name="android:background">@drawable/bg_transparent_border_slate200_rounded_10</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#1E293B</item>
+        <item name="android:textColorHint">#94A3B8</item>
+    </style>
+
+    <style name="ButtonPrimary" >
+        <item name="android:layout_height">@dimen/dimen_42</item>
+        <item name="android:background">@drawable/bg_primary_rounded_16</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">13sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonPrimary.SelectorButtonPrimary" >
+        <item name="android:background">@drawable/selector_button_primary_cashplus_rounded</item>
+    </style>
+
+    <style name="LabelRegularWrap14" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ListSpinner">
+        <item name="android:layout_height">@dimen/dimen_42</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:paddingStart">2dp</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_20</item>
+    </style>
+
+    <style name="ListSpinner.margin_small">
+        <item name="android:layout_height">@dimen/dimen_42</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16</item>
+        <item name="android:paddingStart">@dimen/dimen_12</item>
+        <item name="android:paddingEnd">@dimen/dimen_12</item>
+    </style>
+    <style name="labelList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">#1E293B</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="labelViewAll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:paddingTop">@dimen/dimen_4</item>
+        <item name="android:paddingBottom">@dimen/dimen_4</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0A57FF</item>
+    </style>
+</resources>

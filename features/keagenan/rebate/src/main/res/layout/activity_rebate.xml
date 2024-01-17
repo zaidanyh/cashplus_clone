@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context="com.pasukanlangit.id.rebate.presentation.RebateActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appbar"
+        app:title="@string/cek_rebate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_center_guide_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5"/>
+
+        <com.pasukanlangit.id.rebate.component.DatePickerWithLabel
+            android:id="@+id/date_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24"
+            app:label="Dari"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/vertical_center_guide_line"/>
+
+        <com.pasukanlangit.id.rebate.component.DatePickerWithLabel
+            android:id="@+id/date_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24"
+            app:label="Sampai"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vertical_center_guide_line"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_cek"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginHorizontal="@dimen/dimen_4"
+            android:background="@drawable/bg_primary_rounded_8"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:text="@string/cek_rebate"
+            android:textColor="#F8FAFC"
+            app:layout_constraintTop_toBottomOf="@id/date_from"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper_rebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:padding="@dimen/dimen_16"
+            android:background="@drawable/bg_white_border_slate100_rounded_8"
+            app:layout_constraintTop_toBottomOf="@id/btn_cek">
+
+            <TextView
+                android:id="@+id/label_rebate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:text="@string/total_rebate"
+                android:textColor="#475569"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_rebate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="18sp"
+                tools:text="Rp 10.000"
+                android:textColor="#1E293B"
+                app:layout_constraintTop_toBottomOf="@id/label_rebate"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtCheckRebate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:text="@string/check_rebate_this_day"
+                android:textColor="#006FE6"
+                app:layout_constraintTop_toBottomOf="@id/tv_rebate"/>
+
+            <RelativeLayout
+                android:id="@+id/wrapper_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                app:layout_constraintTop_toBottomOf="@id/txtCheckRebate"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/btn_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/selengkapnya"
+                    android:textColor="#334155"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/icon_forward"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:layout_alignTop="@id/btn_more"
+                    android:layout_alignBottom="@id/btn_more"
+                    android:layout_toEndOf="@id/btn_more"
+                    android:src="@drawable/ic_arrow_forward"
+                    app:tint="#334155"
+                    tools:tint="#334155"/>
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper_remaining_rebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:padding="@dimen/dimen_16"
+            android:background="@drawable/bg_white_border_slate100_rounded_8"
+            app:layout_constraintTop_toBottomOf="@id/wrapper_rebate">
+
+            <TextView
+                android:id="@+id/label_remaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/total_all_rebate"
+                android:textSize="12sp"
+                android:textColor="#475569"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_remaining_rebate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="18sp"
+                tools:text="Rp 100.000"
+                android:textColor="#1E293B"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/label_remaining"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

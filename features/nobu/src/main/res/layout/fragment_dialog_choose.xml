@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    app:cardCornerRadius="@dimen/dimen_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_32"
+        tools:context=".presentation.DialogChooseFragment">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:text="@string/notification"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:text="@string/have_account_nobu"
+            android:textColor="#334155"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"/>
+
+        <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+            android:id="@+id/btn_have"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:text="@string/already"
+            app:layout_constraintTop_toBottomOf="@id/txtQuestion"/>
+
+        <com.pasukanlangit.id.core.presentation.components.ButtonSecondaryCashplusRounded
+            android:id="@+id/btn_not_have"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:text="@string/not_have"
+            app:layout_constraintTop_toBottomOf="@id/btn_have"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_up_ewallet_graph"
+    app:startDestination="@id/input_number_e_wallet_fragment">
+
+    <fragment
+        android:id="@+id/input_number_e_wallet_fragment"
+        android:name="com.pasukanlangit.cash_topup.presentation.via_ewallet.InputNumberEWalletFragment"
+        android:label="fragment_input_number_e_wallet"
+        tools:layout="@layout/fragment_input_number_e_wallet">
+        <action
+            android:id="@+id/action_input_to_detail_top_up"
+            app:destination="@id/detail_top_up_via_e_wallet"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detail_top_up_via_e_wallet"
+        android:name="com.pasukanlangit.cash_topup.presentation.via_ewallet.DetailTopUpEWalletFragment"
+        android:label="fragment_detail_top_up_via_e_wallet"
+        tools:layout="@layout/fragment_detail_top_up_e_wallet">
+        <argument
+            android:name="topUpEWalletData"
+            app:argType="com.pasukanlangit.cash_topup.utils.MenuViaTopUpPayment"/>
+        <action
+            android:id="@+id/action_detail_to_processing_top_up"
+            app:destination="@id/top_up_via_e_wallet_processing"/>
+    </fragment>
+    <fragment
+        android:id="@+id/top_up_via_e_wallet_processing"
+        android:name="com.pasukanlangit.cash_topup.presentation.via_ewallet.TopUpViaEWalletProcessingFragment"
+        android:label="fragment_top_up_via_e_wallet_processing"
+        tools:layout="@layout/fragment_top_up_via_e_wallet_processing">
+        <argument
+            android:name="processingTopUpViaEWallet"
+            app:argType="com.pasukanlangit.cash_topup.utils.MenuViaTopUpPayment"/>
+    </fragment>
+</navigation>

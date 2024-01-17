@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/corier_graph.xml"
+    app:startDestination="@id/typeCourierFragment">
+
+    <fragment
+        android:id="@+id/typeCourierFragment"
+        android:name="com.pasukanlangit.cashplus.ui.pembayarancart.courir.TypeCourierFragment"
+        android:label="fragment_type_corier"
+        tools:layout="@layout/fragment_type_corier" >
+        <action
+            android:id="@+id/action_typeCourierFragment_to_listCourirByTypeFragment"
+            app:destination="@id/listCourirByTypeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+        />
+    </fragment>
+    <fragment
+        android:id="@+id/listCourirByTypeFragment"
+        android:name="com.pasukanlangit.cashplus.ui.pembayarancart.courir.ListCourierByTypeFragment"
+        android:label="fragment_list_courir_b_type"
+        tools:layout="@layout/fragment_list_courir_b_type" >
+        <argument
+            android:name="courierType"
+            app:argType="com.pasukanlangit.cashplus.ui.pembayarancart.courir.Courier" />
+    </fragment>
+
+</navigation>

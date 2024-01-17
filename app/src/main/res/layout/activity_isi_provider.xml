@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.pembayaran_provider.TopUpProviderActivity">
+
+   <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+       android:id="@+id/appBar"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dimen_app_bar"
+       app:title="Pulsa &amp; Paket Data"
+       app:layout_constraintTop_toTopOf="parent"/>
+
+   <TextView
+       android:id="@+id/txtCustomerNumber"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/dimen_20"
+       android:layout_marginStart="@dimen/dimen_16"
+       android:fontFamily="@font/poppins_regular"
+       android:textSize="13sp"
+       android:text="@string/customer_number"
+       android:textColor="#334155"
+       app:layout_constraintTop_toBottomOf="@id/appBar"
+       app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/input_nomer_pulsa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingStart="@dimen/dimen_38"
+        android:paddingEnd="@dimen/dimen_12"
+        android:drawableEnd="@drawable/ic_book_phone_medium"
+        android:background="@drawable/bg_white_border_slate200_rounded_10"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:hint="@string/input_customer_number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomerNumber"/>
+
+    <ImageView
+        android:id="@+id/iv_operator"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginStart="@dimen/dimen_6"
+        app:layout_constraintStart_toStartOf="@id/input_nomer_pulsa"
+        app:layout_constraintTop_toTopOf="@id/input_nomer_pulsa"
+        app:layout_constraintBottom_toBottomOf="@id/input_nomer_pulsa" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:tabRippleColor="@null"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearanceRegular"
+        app:tabIndicatorColor="?colorPrimaryVariant"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="0dp"
+        android:clipToPadding="true"
+        app:tabTextColor="#334155"
+        app:tabBackground="@drawable/bg_tab_menu_state"
+        app:tabSelectedTextColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/input_nomer_pulsa"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

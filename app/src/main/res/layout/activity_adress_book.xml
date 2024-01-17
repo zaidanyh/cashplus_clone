@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addressbook.AddressBookActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="Daftar Alamat"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_8"
+        tools:listitem="@layout/item_addressbook"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintBottom_toTopOf="@id/wrapper_bottom"/>
+
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/btn_add_address"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginEnd="@dimen/dimen_16"
+        app:fab_colorNormal="?colorPrimaryVariant"
+        app:layout_constraintBottom_toTopOf="@id/wrapper_bottom"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:indeterminateTint="?colorPrimaryVariant"/>
+
+    <LinearLayout
+        android:id="@+id/wrapper_bottom"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_chose_address"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="@string/choose_address_btn"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:enabled="false"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/selector_button_primary_cashplus_rounded"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

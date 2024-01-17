@@ -1,0 +1,28 @@
+<resources>
+    <string name="ship">Kapal</string>
+    <string name="layout_ship">Layout Kapal</string>
+    <string name="ship_schedule_date">Tanggal Keberangkatan</string>
+    <string name="harbor_departure">Keberangkatan</string>
+    <string name="harbor_arrival">Tujuan</string>
+    <string name="input_harbor_name">Masukkan nama pelabuhan</string>
+    <string name="choose_harbor">Pilih Pelabuhan</string>
+    <string name="passenger">Penumpang</string>
+    <string name="harbor_passenger_list">%1$s Dewasa %2$s Bayi</string>
+    <string name="find_ship">Cari Kapal</string>
+    <string name="male">Laki-laki</string>
+    <string name="female">Perempuan</string>
+    <string name="infant">Bayi</string>
+    <string name="infant_condition">Usia dibawah 2 tahun</string>
+    <string name="detail_package">Detail Paket</string>
+    <string name="seat_available">Ketersediaan Kursi</string>
+    <string name="seat_male">Kursi Laki-Laki</string>
+    <string name="seat_female">Kursi Perempuan</string>
+    <string name="available">Tersedia</string>
+    <string name="title_person">Titel</string>
+    <string name="unavailable">Tidak Tersedia</string>
+    <string name="format_estimation_full">Estimasi Perjalanan\n%1$d Hari %2$d Jam %3$d Menit</string>
+    <string name="format_estimation_hours">Estimasi Perjalanan\n%1$d Jam %2$d Menit</string>
+    <string name="ticket_reservation">Reservasi Tiket</string>
+    <string name="format_passenger_fill_data">Dewasa %1$d (%2$d)</string>
+    <string name="transaction_ship">Pemesanan Kapal Berhasil.\nKode Booking anda \"<b>%1$s</b>\"\nUntuk lebih detail silahkan menuju ke halaman Riwayat Pesanan</string>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_16"
+    tools:context=".ui.injectvoucher.DetailInjectVoucherFragment">
+
+    <TextView
+        android:id="@+id/txtDetailPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="@string/detail_order"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/product"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="@id/tv_product_inject_voucher"
+        app:layout_constraintBottom_toBottomOf="@id/tv_product_inject_voucher"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_product_inject_voucher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Smart 1,25GB All + 1,75GB (01‑05) 7 Hari"
+        android:textColor="#334155"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/txtDetailPayment"
+        app:layout_constraintStart_toEndOf="@id/txtProduct"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/price"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="@id/tv_price_inject_voucher"
+        app:layout_constraintBottom_toBottomOf="@id/tv_price_inject_voucher"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_price_inject_voucher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 10.000"
+        android:textColor="#334155"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_inject_voucher"
+        app:layout_constraintStart_toEndOf="@id/txtPrice"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/amount"
+        android:textColor="#475569"
+        app:layout_constraintTop_toTopOf="@id/tv_amount_inject_voucher"
+        app:layout_constraintBottom_toBottomOf="@id/tv_amount_inject_voucher"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_amount_inject_voucher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="5"
+        android:textColor="#334155"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_inject_voucher"
+        app:layout_constraintStart_toEndOf="@id/txtAmount"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/line_dotted"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:background="@drawable/line_dotted_gap_8"
+        app:layout_constraintTop_toBottomOf="@id/tv_amount_inject_voucher"/>
+
+    <TextView
+        android:id="@+id/txtTotalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/total_fee"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_total_payment"
+        app:layout_constraintBottom_toBottomOf="@id/tv_total_payment"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_total_payment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Rp 50.000"
+        android:textColor="#334155"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/line_dotted"
+        app:layout_constraintStart_toEndOf="@id/txtTotalPayment"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:paddingVertical="0dp"
+        android:textSize="13sp"
+        android:text="@string/pay"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_payment"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

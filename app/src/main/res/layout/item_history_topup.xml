@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_transparent_border_slate200_rounded_12"
+    android:padding="@dimen/dimen_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_arrow_income"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_arrow_income_oblique"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:textColor="#1E293B"
+            tools:text="Pulsa Telkomsel 5000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon_arrow_income"
+            app:layout_constraintEnd_toStartOf="@id/tv_trx_history_status"/>
+
+        <TextView
+            android:id="@+id/tv_trx_history_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="2dp"
+            android:paddingHorizontal="@dimen/dimen_20"
+            android:background="@drawable/bg_red50_rounded_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="Gagal"
+            android:textColor="#FF3822"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8">
+
+        <TextView
+            android:id="@+id/tv_type_top_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="Nomor Rekening"
+            android:textColor="#475569"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper_no_rek"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="@drawable/bg_grey_slate100_rounded_8"
+            app:layout_constraintTop_toBottomOf="@id/tv_type_top_up">
+
+            <TextView
+                android:id="@+id/tv_no_rek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_12"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"
+                tools:text="022232443432"
+                android:textColor="#334155"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_copy_norek"/>
+
+            <TextView
+                android:id="@+id/btn_copy_norek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_12"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="@dimen/dimen_16"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_primary_light_border_blue600_rounded_6"
+                android:textSize="11sp"
+                android:text="Salin"
+                android:textColor="#3797FF"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txt_receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="atas nama"
+            android:textColor="#475569"
+            app:layout_constraintTop_toTopOf="@id/tv_receiver_name"
+            app:layout_constraintBottom_toBottomOf="@id/tv_receiver_name"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_receiver_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="12sp"
+            tools:text="Alisson Becker"
+            android:textColor="#0A57FF"
+            app:layout_constraintTop_toBottomOf="@id/wrapper_no_rek"
+            app:layout_constraintStart_toEndOf="@id/txt_receiver_name"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8">
+
+        <TextView
+            android:id="@+id/tv_trx_history_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:textColor="#334155"
+            tools:text="Sabtu, 04 Juni 2022"
+            app:layout_constraintTop_toTopOf="@id/wrapper_top_up_value"
+            app:layout_constraintBottom_toBottomOf="@id/wrapper_top_up_value"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_top_up_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/dimen_4"
+            android:paddingHorizontal="@dimen/dimen_16"
+            android:background="@drawable/bg_grey_slate100_rounded_8"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_history_topup_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="Rp 10.000"
+                android:textColor="#64748B"/>
+
+            <ImageView
+                android:id="@+id/btn_copied_nominal"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:src="@drawable/ic_copied_nominal"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

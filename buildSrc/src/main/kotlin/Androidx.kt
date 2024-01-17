@@ -1,0 +1,21 @@
+object Androidx {
+    private const val ktx_core_version = "1.7.0"
+    private const val app_compact_version = "1.5.1"
+    private const val constraint_layout_version = "2.1.4"
+    private const val material_version = "1.6.1"
+    private const val legacy_support_version = "1.0.0"
+    private const val recyclerview_version = "1.2.1"
+    private const val cameraX_version = "1.1.0"
+    private const val paging_version = "3.1.1"
+
+    const val ktx_core = "androidx.core:core-ktx:$ktx_core_version"
+    const val app_compact = "androidx.appcompat:appcompat:$app_compact_version"
+    const val constrain_layout = "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    const val material = "com.google.android.material:material:$material_version"
+    const val legacy_support = "androidx.legacy:legacy-support-v4:$legacy_support_version"
+    const val recyclerview = "androidx.recyclerview:recyclerview:$recyclerview_version"
+    const val cameraX = "androidx.camera:camera-camera2:$cameraX_version"
+    const val cameraLifecycle = "androidx.camera:camera-lifecycle:$cameraX_version"
+    const val cameraView = "androidx.camera:camera-view:$cameraX_version"
+    const val pagination = "androidx.paging:paging-runtime-ktx:$paging_version"
+}

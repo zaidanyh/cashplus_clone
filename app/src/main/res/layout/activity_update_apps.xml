@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.splashscreen.update.UpdateAppsActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"
+        android:text="@string/title_update_app"
+        android:textColor="#1E293B"
+        android:textAlignment="center"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".025"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/dimen_6"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintBottom_toTopOf="@id/btn_update">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_new_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/dimen_4"
+                android:paddingHorizontal="@dimen/dimen_16"
+                android:background="@drawable/bg_blue50_rounded_16"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="2.3.3"
+                android:textColor="#3797FF"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/img_illustration"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:src="@drawable/illustration_waiting"
+                app:layout_constraintTop_toBottomOf="@id/tv_new_version"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_list_update_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginHorizontal="@dimen/dimen_20"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                tools:text="List update terbaru versi 2.3.3"
+                android:textColor="#334155"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/img_illustration"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_new_features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginHorizontal="@dimen/dimen_20"
+                app:layout_constraintTop_toBottomOf="@id/tv_list_update_version">
+
+                <ImageView
+                    android:id="@+id/icon_new_features"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20"
+                    android:src="@drawable/icon_sparkles"
+                    app:layout_constraintTop_toTopOf="@id/txt_new_features"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_new_features"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txt_new_features"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14sp"
+                    android:text="@string/new_features"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon_new_features"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_new_features"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_update_app"
+                    android:nestedScrollingEnabled="false"
+                    app:layout_constraintTop_toBottomOf="@id/txt_new_features"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_improvement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginHorizontal="@dimen/dimen_20"
+                app:layout_constraintTop_toBottomOf="@id/layout_new_features">
+
+                <ImageView
+                    android:id="@+id/icon_improvement"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20"
+                    android:src="@drawable/icon_diamond"
+                    app:layout_constraintTop_toTopOf="@id/txt_improvement"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_improvement"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txt_improvement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14sp"
+                    android:text="@string/improvement"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon_improvement"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_improvement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_update_app"
+                    android:nestedScrollingEnabled="false"
+                    app:layout_constraintTop_toBottomOf="@id/txt_improvement"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_fix_bug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginHorizontal="@dimen/dimen_20"
+                app:layout_constraintTop_toBottomOf="@id/layout_improvement">
+
+                <ImageView
+                    android:id="@+id/icon_fix_bug"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20"
+                    android:src="@drawable/icon_bug"
+                    app:layout_constraintTop_toTopOf="@id/txt_fix_bug"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_fix_bug"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txt_fix_bug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14sp"
+                    android:text="@string/fix_bug"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon_fix_bug"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_fix_bug"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_12"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_update_app"
+                    android:nestedScrollingEnabled="false"
+                    app:layout_constraintTop_toBottomOf="@id/txt_fix_bug"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_update"
+        style="@style/ButtonPrimary"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:text="@string/update_now"
+        app:layout_constraintBottom_toTopOf="@id/btn_skip"/>
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_24"
+        android:background="@drawable/bg_transparent_border_slate200_rounded_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/next_time"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

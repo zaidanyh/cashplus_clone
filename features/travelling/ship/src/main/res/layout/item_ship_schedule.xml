@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_border_slate200_rounded_12"
+    android:padding="@dimen/dimen_12">
+
+    <TextView
+        android:id="@+id/tv_name_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"
+        tools:text="KM.NGGAPULU"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    <TextView
+        android:id="@+id/tv_number_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        tools:text="NP-128-B"
+        android:textColor="#0A57FF"
+        app:layout_constraintTop_toTopOf="@id/tv_class_ship"
+        app:layout_constraintBottom_toBottomOf="@id/tv_class_ship"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_class_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_4"
+        android:paddingStart="@dimen/dimen_20"
+        android:paddingEnd="@dimen/dimen_20"
+        android:background="@drawable/bg_green50_border_green100_rounded_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="EKONOMI EKS KABIN KLS 1"
+        android:textColor="#22C55E"
+        android:drawablePadding="@dimen/dimen_8"
+        tools:drawableEnd="@drawable/icon_information"
+        tools:drawableTint="#22C55E"
+        app:drawableEndCompat="@drawable/icon_information"
+        app:drawableTint="#22C55E"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_ship"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:padding="@dimen/dimen_12"
+        android:background="@drawable/bg_sky50_border_slate200_dotted"
+        app:layout_constraintTop_toBottomOf="@id/tv_class_ship">
+        
+        <LinearLayout
+            android:id="@+id/wrapper_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_harbor_departure_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                tools:text="Tanjung Perak"
+                android:textColor="#475569"/>
+
+            <TextView
+                android:id="@+id/tv_harbor_departure_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"
+                tools:text="Surabaya"
+                android:textColor="#334155"/>
+
+            <TextView
+                android:id="@+id/tv_time_departure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="12sp"
+                tools:text="19:00"
+                android:textColor="#334155"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line_route_lg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/wrapper_departure"
+            app:layout_constraintEnd_toStartOf="@id/wrapper_arrival"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_harbor_arrival_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                tools:text="Tanjung Priok"
+                android:textColor="#475569"/>
+
+            <TextView
+                android:id="@+id/tv_harbor_arrival_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"
+                tools:text="Jakarta"
+                android:textColor="#334155"/>
+
+            <TextView
+                android:id="@+id/tv_time_arrival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="12sp"
+                tools:text="21:00"
+                android:textColor="#334155"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_travel_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="1 Hari perjalanan"
+        android:textColor="#EA580C"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_destination"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_price_ship"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="Rp 250.000/pax"
+        android:textColor="#EA580C"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_destination"
+        app:layout_constraintStart_toEndOf="@id/tv_travel_destination"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/btn_choose_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_4"
+        android:paddingStart="@dimen/dimen_24"
+        android:paddingEnd="@dimen/dimen_24"
+        android:background="@drawable/bg_primary_rounded_20"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        android:text="@string/choose"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_ship"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

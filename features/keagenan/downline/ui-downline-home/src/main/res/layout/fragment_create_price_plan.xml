@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".priceplan.CreatePricePlanFragment">
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:src="@drawable/close_icon_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:id="@+id/txtPricePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="@string/create_price_plan"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtNamePricePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/name_price_plan"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txtPricePlan"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    <EditText
+        android:id="@+id/edt_name_price_plan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingVertical="0dp"
+        android:paddingHorizontal="@dimen/dimen_12"
+        android:background="@drawable/background_input_state"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:hint="@string/name_price_plan_example"
+        android:textColor="#334155"
+        android:textColorHint="#CBD5E1"
+        android:inputType="textPhonetic"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@id/edt_description_price_plan"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@id/txtNamePricePlan"/>
+
+    <TextView
+        android:id="@+id/txtNamePriceCannotChanged"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        android:text="@string/name_price_plan_cannot_changed"
+        android:textColor="#FF6150"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/edt_name_price_plan"/>
+
+    <TextView
+        android:id="@+id/txtMarkup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/keterangan"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txtNamePriceCannotChanged"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_description_price_plan"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingVertical="@dimen/dimen_8"
+        android:paddingHorizontal="@dimen/dimen_12"
+        android:gravity="top"
+        android:background="@drawable/bg_transparent_border_slate200_rounded_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:hint="@string/input_keterangan"
+        android:textColor="#334155"
+        android:textColorHint="#CBD5E1"
+        android:inputType="text|textMultiLine"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@id/txtMarkup"/>
+
+    <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginVertical="@dimen/dimen_24"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="0dp"
+        android:textSize="13sp"
+        android:text="@string/save"
+        app:layout_constraintTop_toBottomOf="@id/edt_description_price_plan"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pasukanlangit.id.ui_cashgold_withdraw">
+
+    <application>
+        <activity
+            android:name=".tag.TagWithDrawActivity"
+            android:exported="true"
+            android:theme="@style/Cashgold"
+            android:screenOrientation="portrait"
+            tools:replace="android:theme"/>
+        <activity
+            android:name=".home.CashGoldWDActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Cashgold"
+            tools:replace="android:theme" />
+    </application>
+
+</manifest>

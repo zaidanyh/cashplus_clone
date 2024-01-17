@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="title" format="string"/>
+    <attr name="label" format="string"/>
+    <attr name="placeholderText" format="string"/>
+    <attr name="isInputOptional" format="boolean"/>
+    <attr name="showOptionalLabel" format="boolean"/>
+
+    <declare-styleable name="NoteCashplusView">
+        <attr name="title" />
+        <attr name="description" format="string" />
+        <attr name="button_action_title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputWithLabelValidationView">
+        <attr name="label"/>
+        <attr name="android:inputType"/>
+        <attr name="isInputOptional"/>
+        <attr name="informationTop" format="string"/>
+        <attr name="android:imeOptions" />
+        <attr name="showOptionalLabel"/>
+        <attr name="placeholderText"/>
+        <attr name="startIconDrawable"/>
+        <attr name="validationType" format="enum">
+            <enum name="INPUT_VALIDATION_NAME" value="0"/>
+            <enum name="INPUT_VALIDATION_PASSWORD" value="1"/>
+            <enum name="INPUT_VALIDATION_EMAIL" value="2"/>
+            <enum name="INPUT_VALIDATION_PHONE" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="InputPasswordAndValidationView">
+        <attr name="gapSize" format="dimension"/>
+        <attr name="android:imeOptions" />
+    </declare-styleable>
+
+    <declare-styleable name="InputWithLabelView">
+        <attr name="label"/>
+        <attr name="android:inputType"/>
+        <attr name="information" format="string"/>
+        <attr name="textAreaMode" format="boolean"/>
+        <attr name="android:drawableEnd" />
+        <attr name="isInputOptional"/>
+        <attr name="android:imeOptions" />
+        <attr name="showOptionalLabel"/>
+        <attr name="isInputFocusable" format="boolean" />
+        <attr name="placeholderText"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputAutoCompleteWithLabelView">
+        <attr name="label"/>
+        <attr name="placeholderText"/>
+        <attr name="isInputOptional"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonWithIconTextView">
+        <attr name="android:text"/>
+        <attr name="android:drawableStart"/>
+        <attr name="android:drawableEnd"/>
+        <attr name="android:textColor" />
+        <attr name="android:backgroundTint"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppBarWithIconBackView">
+        <attr name="title" />
+        <attr name="showBackButton" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_city_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        tools:text="Surabaya"
+        android:textColor="#334155"
+        android:drawablePadding="@dimen/dimen_8"
+        app:drawableEndCompat="@drawable/ic_arrow_right_up_line"
+        tools:drawableEnd="@drawable/ic_arrow_right_up_line"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E8F0"
+        app:layout_constraintTop_toBottomOf="@id/tv_city_name"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

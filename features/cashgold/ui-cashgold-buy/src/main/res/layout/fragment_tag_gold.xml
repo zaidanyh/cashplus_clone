@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dimen_24"
+    android:paddingHorizontal="@dimen/dimen_16"
+    android:theme="@style/Cashgold"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/indogold_logo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:src="@drawable/indogold_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/label_gram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jumlah_emas"
+        android:textSize="13sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/indogold_logo"/>
+
+    <TextView
+        android:id="@+id/tv_gram"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        tools:text="2 gr"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label_gram"
+        />
+
+    <TextView
+        android:id="@+id/label_price_per_gram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/harga_rupiah"
+        android:layout_marginTop="4dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_gram"/>
+
+    <TextView
+        android:id="@+id/tv_price_rupiah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2 gr"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label_price_per_gram"
+        />
+
+    <TextView
+        android:id="@+id/label_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_fee"
+        android:layout_marginTop="4dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_rupiah"/>
+
+    <TextView
+        android:id="@+id/tv_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2 gr"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label_admin"
+        />
+
+
+    <TextView
+        android:id="@+id/label_apps_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:text="discount or apps fee"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_admin"/>
+
+    <TextView
+        android:id="@+id/tv_apps_fee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2 gr"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label_apps_fee"
+        />
+
+    <TextView
+        android:id="@+id/label_pph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pph_22_label"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_apps_fee"/>
+
+    <TextView
+        android:id="@+id/tv_pph"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2 gr"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label_pph"
+        />
+
+    <TextView
+        android:id="@+id/label_ppn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ppn_label"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pph"/>
+
+    <TextView
+        android:id="@+id/tv_ppn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2 gr"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label_ppn"
+        />
+
+    <TextView
+        android:id="@+id/label_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/potongan_harga"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ppn"/>
+
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2 gr"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label_discount"
+        />
+
+    <TextView
+        android:id="@+id/label_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_discount"/>
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2 gr"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label_total"
+        />
+
+<!--    <com.pasukanlangit.id.core.presentation.components.NoteCashGoldView-->
+<!--        android:id="@+id/wrapper_note"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:title="Peringatan"-->
+<!--        app:description="Apabila anda belum melengkapi data NPWP maka akan dikenakan biaya tambahan."-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_total"/>-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/wrapper_note"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_total"-->
+<!--        android:background="@drawable/light_blue_rounded">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textColor="#0A57FF"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text="@string/note"-->
+<!--            android:textStyle="bold"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            app:drawableStartCompat="@drawable/icon_information" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textColor="#0A57FF"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text="@string/note_npwp" />-->
+
+<!--    </LinearLayout>-->
+
+    <com.pasukanlangit.id.ui_core.components.ButtonCashGoldPrimaryView
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:text="@string/pay"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_total" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".6"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

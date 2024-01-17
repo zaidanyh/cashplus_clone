@@ -1,0 +1,31 @@
+<resources>
+    <string name="flight">Pesawat</string>
+    <string name="flight_schedule">Jadwal Penerbangan</string>
+    <string name="departure">Keberangkatan</string>
+    <string name="destination">Tujuan</string>
+    <string name="passenger">Penumpang</string>
+    <string name="choose_departure">Pilih Bandara Keberangkatan</string>
+    <string name="choose_destination">Pilih Bandara Tujuan</string>
+    <string name="passenger_list">%1$s Dewasa %2$s Anak %3$s Bayi</string>
+    <string name="find_ticket">Cari Tiket</string>
+    <string name="departure_airport">Bandara Keberangkatan</string>
+    <string name="destination_airport">Bandara Tujuan</string>
+    <string name="input_name_airport">Masukkan nama bandara</string>
+    <string name="adult">Dewasa</string>
+    <string name="adult_condition">Usia 17 Tahun keatas</string>
+    <string name="child">Anak</string>
+    <string name="child_condition">Usia 2 sampai 17 Tahun</string>
+    <string name="infant">Bayi</string>
+    <string name="infant_condition">Usia dibawah 2 Tahun</string>
+    <string name="layout_flight">Layout Flight</string>
+    <string name="flight_date">Tanggal Penerbangan</string>
+    <string name="content_arrow">Content Arrow</string>
+    <string name="button_change">Button Change</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="price_flight">%1$s/pax</string>
+    <string name="flight_route">%1$s(%2$s)</string>
+    <string name="title_person">Titel</string>
+    <string name="airport_tax">Pajak Bandara</string>
+    <string name="flight_order_format">%1$s %2$s\n%3$s</string>
+    <string name="transaction_ticket">Pembelian Tiket Pesawat Berhasil.\nKode Booking anda \"<b>%1$s</b>\"\nUntuk lebih detail silahkan menuju ke halaman Riwayat Pesanan</string>
+</resources>

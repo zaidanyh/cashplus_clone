@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.omni.packageomni.DetailPackageFragment">
+
+    <TextView
+        android:id="@+id/txtDetailPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="@string/detail_package"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_package_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="Combo SAKTI MAX 2GB + Nelpon &amp; SMS"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txtDetailPackage"/>
+
+    <View
+        android:id="@+id/line_dashed_top"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/line_dashed"
+        app:layout_constraintTop_toBottomOf="@id/tv_package_name"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_detail_package"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_detail_package_omni"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/line_dashed_top"/>
+
+    <View
+        android:id="@+id/line_dashed_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/line_dashed"
+        app:layout_constraintTop_toBottomOf="@id/rv_detail_package"/>
+
+    <TextView
+        android:id="@+id/txtAdminCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/admin_fee"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_admin_cost"
+        app:layout_constraintBottom_toBottomOf="@id/tv_admin_cost"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_admin_cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:text="@string/admin_free"
+        android:textColor="#334155"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/line_dashed_bottom"
+        app:layout_constraintStart_toEndOf="@id/txtAdminCost"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:text="@string/pay_total"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_total_price"
+        app:layout_constraintBottom_toBottomOf="@id/tv_total_price"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        tools:text="Rp 88.000"
+        android:textColor="#334155"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/tv_admin_cost"
+        app:layout_constraintStart_toEndOf="@id/txtTotalPrice"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_margin="@dimen/dimen_16"
+        android:padding="0dp"
+        android:background="@drawable/bg_primary_rounded_20"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/buy"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_price"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

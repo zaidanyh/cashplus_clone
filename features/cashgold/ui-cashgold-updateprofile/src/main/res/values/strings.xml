@@ -1,0 +1,63 @@
+<resources>
+    <string name="profile">Profil</string>
+    <string name="pendidikan_and_pekerjaan"><![CDATA[Pendidikan & Pekerjaan]]></string>
+    <string name="simpan">Simpan</string>
+    <string name="alamat">Alamat KTP</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="status">Status</string>
+    <string name="religion">Agama</string>
+    <string name="npwp">NPWP</string>
+    <string name="input_npwp">Masukkan NPWP</string>
+    <string name="last_education">Pendidikan terakhir</string>
+    <string name="profession">Profesi</string>
+    <string name="source_of_income">Sumber penghasilan</string>
+    <string name="annual_income">Penghasilan tahunan</string>
+    <string-array name="item_gender">
+        <item>Pilih jenis kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+    <string-array name="item_status">
+        <item>Pilih status</item>
+        <item>Belum Menikah</item>
+        <item>Menikah</item>
+    </string-array>
+    <string-array name="item_religion">
+        <item>Pilih agama</item>
+        <item>Islam</item>
+        <item>Kristen Protestan</item>
+        <item>Katholik</item>
+        <item>Hindu</item>
+        <item>Buddha</item>
+        <item>Konghucu</item>
+    </string-array>
+    <string-array name="item_last_education">
+        <item>Atur pendidikan terakhir</item>
+        <item>SMA/SMK Sederajat</item>
+        <item>Diploma I/II</item>
+        <item>Diploma III/Sarjana Muda</item>
+        <item>Diploma IV/Strata I</item>
+        <item>Strata II</item>
+        <item>Strata III</item>
+    </string-array>
+    <string-array name="item_profession">
+        <item>Atur profesi</item>
+        <item>Belum Bekerja</item>
+        <item>Pelajar</item>
+        <item>ASN/Pegawai Negeri Sipil</item>
+        <item>Karyawan Swasta</item>
+        <item>Pengusaha</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="item_source_of_income">
+        <item>Atur sumber penghasilan</item>
+        <item>Gaji</item>
+    </string-array>
+    <string-array name="item_annual_income">
+        <item>Atur penghasilan tahunan</item>
+        <item>&#60; 60 Juta per Tahun</item>
+        <item>60 &#8208; 120 Juta per Tahun</item>
+        <item>120 &#8208; 600 Juta per Tahun</item>
+        <item>&#62; 600 Juta per Tahun</item>
+    </string-array>
+</resources>

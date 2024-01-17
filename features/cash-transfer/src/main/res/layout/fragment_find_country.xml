@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.global.find.FindCountryFragment">
+
+    <TextView
+        android:id="@+id/txt_choose_dest_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="@string/choose_destination_country"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_find_dest_country"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:paddingVertical="0dp"
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_12"
+        android:background="@drawable/bg_white_border_slate200_rounded_20"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:hint="@string/find_destination_country"
+        android:textColor="#1E293B"
+        android:textColorHint="#94A3B8"
+        android:inputType="textPhonetic"
+        android:importantForAutofill="no"
+        android:drawableEnd="@drawable/ic_baseline_search"
+        android:drawablePadding="@dimen/dimen_4"
+        app:layout_constraintTop_toBottomOf="@id/txt_choose_dest_country"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_countries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_6"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_countries"
+        app:layout_constraintTop_toBottomOf="@id/edt_find_dest_country"/>
+
+    <View
+        android:id="@+id/gap_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_28"
+        app:layout_constraintTop_toBottomOf="@id/edt_find_dest_country"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

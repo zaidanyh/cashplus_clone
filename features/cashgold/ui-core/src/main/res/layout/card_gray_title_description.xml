@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_gray_rounded"
+    android:padding="@dimen/dimen_24">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        tools:text="Beli dengan rupiah"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        tools:text="Transaksi emas dengan berdasarkan nominal rupiah"
+        android:textSize="14sp"
+        android:textColor="#6A7A8A"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:src="@drawable/arrow_forward_yellow"/>
+
+</merge>

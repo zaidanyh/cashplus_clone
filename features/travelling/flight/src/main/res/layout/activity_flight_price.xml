@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context="com.pasukanlangit.id.travelling.flight.detail.FlightPriceActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_dashboard"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_24"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/titleFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:text="@string/detail_order"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="@dimen/dimen_16"
+        android:background="@drawable/bg_white_border_slate200_rounded_12"
+        android:transitionName="@string/layout_flight"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_back">
+
+        <TextView
+            android:id="@+id/txtFlightSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/flight_schedule"
+            android:textColor="#334155"
+            android:transitionName="@string/flight_schedule"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_date_flight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            tools:text="22 Sept 2022"
+            android:textColor="#334155"
+            android:transitionName="@string/flight_date"
+            app:layout_constraintTop_toBottomOf="@id/txtFlightSchedule"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            tools:text="Surabaya(SUB)"
+            android:textColor="#475569"
+            android:transitionName="@string/departure"
+            app:layout_constraintTop_toBottomOf="@id/tv_date_flight"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ic_arrow_forward"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="#1E293B"
+            tools:tint="#1E293B"
+            android:transitionName="@string/content_arrow"
+            app:layout_constraintTop_toTopOf="@id/tv_departure"
+            app:layout_constraintBottom_toBottomOf="@id/tv_departure"
+            app:layout_constraintStart_toEndOf="@id/tv_departure"/>
+
+        <TextView
+            android:id="@+id/tv_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            tools:text="Jakarta(CGK)"
+            android:textColor="#475569"
+            android:transitionName="@string/destination"
+            app:layout_constraintTop_toTopOf="@id/tv_departure"
+            app:layout_constraintBottom_toBottomOf="@id/tv_departure"
+            app:layout_constraintStart_toEndOf="@id/ic_arrow_forward"/>
+
+        <TextView
+            android:id="@+id/tv_passengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="1 Dewasa 0 Anak 0 Bayi"
+            android:textColor="#475569"
+            app:layout_constraintTop_toBottomOf="@id/tv_destination"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_content"
+        app:layout_constraintBottom_toTopOf="@id/line_gap">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:padding="@dimen/dimen_16"
+                android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+                <TextView
+                    android:id="@+id/txtFillData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14sp"
+                    android:text="@string/contact_information"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_fill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/ic_thumb_switch"
+                    android:scaleX="1.5"
+                    android:scaleY=".8"
+                    app:track="@drawable/background_switch_state"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/txtAutoFill"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtAutoFill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:text="@string/auto_fill"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toBottomOf="@id/switch_fill"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="13sp"
+                    android:text="@string/full_name"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toBottomOf="@id/txtAutoFill"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <EditText
+                    android:id="@+id/edt_full_name"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_38"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:paddingHorizontal="@dimen/dimen_12"
+                    android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_full_name"
+                    android:textColor="#334155"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    app:layout_constraintTop_toBottomOf="@id/txtFullName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/PointRule1"
+                    android:layout_width="@dimen/dimen_4"
+                    android:layout_height="@dimen/dimen_4"
+                    android:background="@drawable/bg_slate600_circle"
+                    app:layout_constraintTop_toTopOf="@id/txtRule1"
+                    app:layout_constraintBottom_toBottomOf="@id/txtRule1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtRule1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:text="@string/rule_fill_data_1"
+                    android:textColor="#475569"
+                    app:layout_constraintTop_toBottomOf="@id/edt_full_name"
+                    app:layout_constraintStart_toEndOf="@id/PointRule1"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/PointRule2"
+                    android:layout_width="@dimen/dimen_4"
+                    android:layout_height="@dimen/dimen_4"
+                    android:background="@drawable/bg_slate600_circle"
+                    app:layout_constraintTop_toTopOf="@id/txtRule2"
+                    app:layout_constraintBottom_toBottomOf="@id/txtRule2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtRule2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:text="@string/rule_fill_data_2"
+                    android:textColor="#475569"
+                    app:layout_constraintTop_toBottomOf="@id/txtRule1"
+                    app:layout_constraintStart_toEndOf="@id/PointRule2"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="13sp"
+                    android:text="@string/email_address"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toBottomOf="@id/txtRule2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_38"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:paddingStart="@dimen/dimen_12"
+                    android:paddingEnd="@dimen/dimen_12"
+                    android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_email"
+                    android:textColor="#334155"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="textEmailAddress"
+                    android:importantForAutofill="no"
+                    app:layout_constraintTop_toBottomOf="@id/txtEmail"/>
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="13sp"
+                    android:text="@string/phone_number"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toBottomOf="@id/edt_email"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <EditText
+                    android:id="@+id/edt_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_38"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:paddingStart="@dimen/dimen_12"
+                    android:paddingEnd="@dimen/dimen_12"
+                    android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:hint="@string/input_phone_number"
+                    android:textColor="#334155"
+                    android:textColorHint="#94A3B8"
+                    android:inputType="phone"
+                    android:importantForAutofill="no"
+                    app:layout_constraintTop_toBottomOf="@id/txtPhone"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_passengers_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_6"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_passenger_data"
+                tools:itemCount="2"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/wrapper_summary_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:padding="@dimen/dimen_12"
+                android:visibility="gone"
+                android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+                <TextView
+                    android:id="@+id/txtSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="13sp"
+                    android:text="@string/summary_payment"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_flight_order"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:layout_marginEnd="@dimen/dimen_6"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    tools:text="Lion Air - JT573 (2)"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toBottomOf="@id/txtSummary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/guide_line"/>
+                
+                <TextView
+                    android:id="@+id/txtTaxCost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:layout_marginEnd="@dimen/dimen_6"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:text="@string/airport_tax"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toBottomOf="@id/tv_flight_order"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/guide_line"/>
+
+                <TextView
+                    android:id="@+id/txtPayTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:layout_marginEnd="@dimen/dimen_6"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12sp"
+                    android:text="@string/pay_total"
+                    android:textColor="#334155"
+                    app:layout_constraintTop_toBottomOf="@id/txtTaxCost"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/guide_line"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".65"/>
+
+                <TextView
+                    android:id="@+id/tv_price_flight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    tools:text="Rp 407.000"
+                    android:textColor="#334155"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintTop_toTopOf="@id/tv_flight_order"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_flight_order"
+                    app:layout_constraintStart_toEndOf="@id/guide_line"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_tax_airport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    tools:text="Rp. 259.980"
+                    android:textColor="#334155"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintTop_toTopOf="@id/txtTaxCost"
+                    app:layout_constraintBottom_toBottomOf="@id/txtTaxCost"
+                    app:layout_constraintStart_toEndOf="@id/guide_line"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_pay_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="13sp"
+                    tools:text="Rp. 666.980"
+                    android:textColor="#334155"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintTop_toTopOf="@id/txtPayTotal"
+                    app:layout_constraintBottom_toBottomOf="@id/txtPayTotal"
+                    app:layout_constraintStart_toEndOf="@id/guide_line"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_total_payment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingVertical="@dimen/dimen_8"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/gap_bottom">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".55"/>
+
+        <TextView
+            android:id="@+id/txt_balance_not_enough"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/balance_not_enough"
+            android:textColor="#D81600"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLine_center"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_6"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLine_center">
+
+            <TextView
+                android:id="@+id/txt_total_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"
+                android:text="@string/pay_total"
+                android:textColor="#334155"/>
+
+            <TextView
+                android:id="@+id/tv_total_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="14sp"
+                tools:text="Rp 878.030"
+                android:textColor="#EA580C"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_payment"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:background="@drawable/background_button_state"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="12sp"
+            android:text="@string/continue_payment"
+            android:textColor="@drawable/color_indicator_state"
+            android:textAllCaps="false"
+            android:enabled="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideLine_center"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line_gap"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E8F0"
+        app:layout_constraintBottom_toTopOf="@id/wrapper_total_payment"/>
+
+    <View
+        android:id="@+id/gap_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

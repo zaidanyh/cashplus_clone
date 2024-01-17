@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_all_graph.xml"
+    app:startDestination="@id/allProductFragment">
+
+    <fragment
+        android:id="@+id/allProductFragment"
+        android:name="com.pasukanlangit.cashplus.ui.onlinestore.AllProductFragment"
+        android:label="fragment_all_product"
+        tools:layout="@layout/fragment_all_product" >
+        <action
+            android:id="@+id/action_allProductFragment_to_productSearchFragment"
+            app:destination="@id/productSearchFragment" />
+        <argument
+            android:name="typeSearch"
+            app:argType="com.pasukanlangit.cashplus.ui.onlinestore.TypeSearchProduct"
+            android:defaultValue="NONE" />
+        <argument
+            android:name="textHint"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/productSearchFragment"
+        android:name="com.pasukanlangit.cashplus.ui.onlinestore.ProductSearchFragment"
+        android:label="fragment_product_search"
+        tools:layout="@layout/fragment_product_search" >
+        <action
+            android:id="@+id/action_productSearchFragment_to_allProductFragment"
+            app:destination="@id/allProductFragment"
+            app:popUpTo="@id/allProductFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.pages.others.settings.profile.close.CloseAccountActivity">
+
+    <com.pasukanlangit.id.core.presentation.components.AppBarWithIconBackView
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:title="@string/close_account"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_summary_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="@dimen/dimen_12"
+        android:background="@drawable/bg_blue50_border_blue100_rounded_12"
+        app:layout_constraintTop_toBottomOf="@id/app_bar">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/dimen_48"
+            android:layout_height="@dimen/dimen_48"
+            tools:src="#0A57FF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_profile"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_name_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                tools:text="Zinedine Zidane"
+                android:textColor="#1E293B"/>
+            
+            <TextView
+                android:id="@+id/tv_email_phone_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="zinedinezdn10@gmail.com"
+                android:textColor="#334155"
+                android:maxLines="1"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_thing_to_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/things_to_note"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_summary_account"/>
+
+    <View
+        android:id="@+id/point_note_1"
+        android:layout_width="@dimen/dimen_6"
+        android:layout_height="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:background="@drawable/bg_slate600_circle"
+        app:layout_constraintTop_toTopOf="@id/txt_note_1"
+        app:layout_constraintBottom_toBottomOf="@id/txt_note_1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_note_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/note_close_account_1"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_thing_to_note"
+        app:layout_constraintStart_toEndOf="@id/point_note_1"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/point_note_2"
+        android:layout_width="@dimen/dimen_6"
+        android:layout_height="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:background="@drawable/bg_slate600_circle"
+        app:layout_constraintTop_toTopOf="@id/txt_note_2"
+        app:layout_constraintBottom_toBottomOf="@id/txt_note_2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_note_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/note_close_account_2"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_note_1"
+        app:layout_constraintStart_toEndOf="@id/point_note_2"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/point_note_3"
+        android:layout_width="@dimen/dimen_6"
+        android:layout_height="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:background="@drawable/bg_slate600_circle"
+        app:layout_constraintTop_toTopOf="@id/txt_note_3"
+        app:layout_constraintBottom_toBottomOf="@id/txt_note_3"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_note_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/note_close_account_3"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/txt_note_2"
+        app:layout_constraintStart_toEndOf="@id/point_note_3"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="@dimen/dimen_12"
+        android:background="@drawable/bg_slate50_border_slate100_rounded_12"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txt_note_3">
+
+        <TextView
+            android:id="@+id/txt_reason_close_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/reason_close_account"
+            android:textColor="#1E293B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="Ketidaksesuaian denga kebutuhan bisnis"
+            android:textColor="#3C4D5F"
+            app:layout_constraintTop_toBottomOf="@id/txt_reason_close_account"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="0dp"
+        android:background="@drawable/bg_primary_rounded_20"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/next"
+        android:textColor="#F8FAFC"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

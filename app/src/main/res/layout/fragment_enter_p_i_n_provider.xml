@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dimen_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/dimen_24"
+        android:paddingHorizontal="@dimen/dimen_16"
+        tools:context=".ui.pembayaran_provider.EnterPINProviderFragment">
+
+        <TextView
+            android:id="@+id/tv_title_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/input_pin"
+            android:textColor="#475569"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/input_otp_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textColor="#64748B"
+            android:itemBackground="#F8FAFC"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:OtpItemWidth="@dimen/dimen_42"
+            app:OtpItemHeight="@dimen/dimen_42"
+            app:OtpItemSpacing="@dimen/dimen_8"
+            app:OtpViewType="rectangle"
+            app:OtpItemCount="6"
+            app:OtpLineColor="#CBD5E1"
+            app:OtpItemRadius="@dimen/dimen_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_pin" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            tools:text="PIN Yang anda masukkan salah"
+            android:textColor="#FF6150"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/input_otp_transaction"
+            app:layout_constraintEnd_toEndOf="@id/input_otp_transaction"
+            app:layout_constraintTop_toBottomOf="@id/input_otp_transaction"/>
+
+        <TextView
+            android:id="@+id/txtForgotPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:text="@string/forgot_pin_question"
+            android:textColor="#475569"
+            app:layout_constraintTop_toBottomOf="@id/tv_error"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/btn_forgot_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:text="@string/reset_now"
+            android:textColor="#0A57FF"
+            app:layout_constraintTop_toBottomOf="@id/txtForgotPin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/loading_enter_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminateTint="#12ACE3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

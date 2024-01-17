@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.injectvoucher.InjectVoucherActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_dashboard"
+        app:layout_constraintHeight_percent=".175"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_24"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/titleDownline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:text="@string/print_vouchers"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_inject_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_back"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16"
+                android:background="@drawable/bg_white_border_slate200_rounded_20"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/dimen_20"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/txtProvider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/choose_provider"
+                    android:textColor="#334155"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_provider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_38"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16"
+                    android:background="@drawable/bg_spinner_drawable_start"
+                    android:paddingHorizontal="@dimen/dimen_20"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/txtProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/product"
+                    android:textColor="#334155"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_product_voucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_28"
+                    android:layout_marginHorizontal="@dimen/dimen_6"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="4"
+                    android:visibility="gone"
+                    tools:listitem="@layout/item_data_product_model" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wrapper_voucher_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16"
+                    android:padding="@dimen/dimen_16"
+                    android:background="@drawable/bg_transparent_border_slate200_rounded_12"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_operator"
+                        android:layout_width="@dimen/dimen_24"
+                        android:layout_height="@dimen/dimen_24"
+                        android:src="@drawable/icon_telkom"
+                        app:layout_constraintTop_toTopOf="@id/tv_short_desc"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_short_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="13sp"
+                        tools:text="Paket Data Telkomsel 52GB"
+                        android:textColor="#334155"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/iv_operator"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"
+                        tools:text="Telkomsel Data Bulk Nasional 50GB (3G 4G) + 2GB OMG 30 Hari"
+                        android:textColor="#334155"
+                        app:layout_constraintTop_toBottomOf="@id/tv_short_desc" />
+
+                    <TextView
+                        android:id="@+id/btn_change_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="13sp"
+                        android:text="@string/change_product_underline"
+                        android:textColor="#0A57FF"
+                        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/txtPrintType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/print_type"
+                    android:textColor="#334155"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/spinner_print_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_38"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16"
+                    android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wrapper_barcode_voucher_pcs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:layout_marginHorizontal="@dimen/dimen_16"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txtBarcodeVoucher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/serial_number_voucher"
+                        android:textColor="#334155"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edt_barcode_scan_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_38"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/input_serial_number_voucher"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:paddingVertical="0dp"
+                        android:paddingStart="@dimen/dimen_12"
+                        android:paddingEnd="@dimen/dimen_48"
+                        android:textColor="#334155"
+                        android:textColorHint="#94A3B8"
+                        android:textSize="13sp"
+                        app:layout_constraintTop_toBottomOf="@id/txtBarcodeVoucher" />
+
+                    <TextView
+                        android:id="@+id/btn_scan_barcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/bg_primary_rounded_20"
+                        android:drawablePadding="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingHorizontal="@dimen/dimen_8"
+                        android:paddingVertical="@dimen/dimen_4"
+                        android:text="@string/scan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:drawableStartCompat="@drawable/ic_qr_scan"
+                        app:layout_constraintBottom_toBottomOf="@id/edt_barcode_scan_result"
+                        app:layout_constraintEnd_toEndOf="@id/edt_barcode_scan_result"
+                        app:layout_constraintTop_toTopOf="@id/edt_barcode_scan_result" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wrapper_range_input_voucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginHorizontal="@dimen/dimen_16"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txtInitialBarcodeVoucher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/initial_voucher_sn"
+                        android:textColor="#334155"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edt_initial_barcode_scan_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_38"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/input_serial_number_voucher"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:paddingVertical="0dp"
+                        android:paddingStart="@dimen/dimen_12"
+                        android:paddingEnd="@dimen/dimen_48"
+                        android:textColor="#334155"
+                        android:textColorHint="#94A3B8"
+                        android:textSize="13sp"
+                        app:layout_constraintTop_toBottomOf="@id/txtInitialBarcodeVoucher" />
+
+                    <TextView
+                        android:id="@+id/btn_scan_initial_barcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/bg_primary_rounded_20"
+                        android:drawablePadding="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingHorizontal="@dimen/dimen_8"
+                        android:paddingVertical="@dimen/dimen_4"
+                        android:text="@string/scan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:drawableStartCompat="@drawable/ic_qr_scan"
+                        app:layout_constraintBottom_toBottomOf="@id/edt_initial_barcode_scan_result"
+                        app:layout_constraintEnd_toEndOf="@id/edt_initial_barcode_scan_result"
+                        app:layout_constraintTop_toTopOf="@id/edt_initial_barcode_scan_result" />
+
+                    <TextView
+                        android:id="@+id/txtFinalBarcodeVoucher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/final_voucher_sn"
+                        android:textColor="#334155"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/edt_initial_barcode_scan_result" />
+
+                    <EditText
+                        android:id="@+id/edt_final_barcode_scan_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_38"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/input_serial_number_voucher"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:paddingVertical="0dp"
+                        android:paddingStart="@dimen/dimen_12"
+                        android:paddingEnd="@dimen/dimen_48"
+                        android:textColor="#334155"
+                        android:textColorHint="#94A3B8"
+                        android:textSize="13sp"
+                        app:layout_constraintTop_toBottomOf="@id/txtFinalBarcodeVoucher" />
+
+                    <TextView
+                        android:id="@+id/btn_scan_final_barcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/bg_primary_rounded_20"
+                        android:drawablePadding="@dimen/dimen_4"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingHorizontal="@dimen/dimen_8"
+                        android:paddingVertical="@dimen/dimen_4"
+                        android:text="@string/scan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:drawableStartCompat="@drawable/ic_qr_scan"
+                        app:layout_constraintBottom_toBottomOf="@id/edt_final_barcode_scan_result"
+                        app:layout_constraintEnd_toEndOf="@id/edt_final_barcode_scan_result"
+                        app:layout_constraintTop_toTopOf="@id/edt_final_barcode_scan_result" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/btn_next_to_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_38"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginHorizontal="@dimen/dimen_16"
+                    android:background="@drawable/background_button_state"
+                    android:enabled="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="0dp"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#12ACE3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

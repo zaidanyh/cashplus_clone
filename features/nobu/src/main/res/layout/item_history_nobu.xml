@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_8"
+    android:padding="@dimen/dimen_16"
+    android:background="@drawable/bg_white_border_slate200_rounded_12">
+
+    <ImageView
+        android:id="@+id/icon_type"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        tools:src="@drawable/ic_topup_nobu"
+        app:layout_constraintTop_toTopOf="@id/tvRemark"
+        app:layout_constraintBottom_toBottomOf="@id/tvRemark"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvRemark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="@dimen/dimen_6"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        tools:text="Topup Via Cashplus"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_type"
+        app:layout_constraintEnd_toStartOf="@id/tv_status"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/dimen_4"
+        android:paddingHorizontal="@dimen/dimen_16"
+        android:background="@drawable/bg_green50_rounded_12"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/success"
+        android:textColor="#0C965A"
+        app:layout_constraintTop_toTopOf="@id/tvRemark"
+        app:layout_constraintBottom_toBottomOf="@id/tvRemark"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/dateTrx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Sabtu, 04 Juni 2022"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/tvRemark"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/timeTrx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Jam 14:26 WIB"
+        android:textColor="#475569"
+        app:layout_constraintTop_toBottomOf="@id/dateTrx"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="IDR 15.000"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/dateTrx"
+        app:layout_constraintBottom_toBottomOf="@id/timeTrx"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

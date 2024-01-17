@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/bg_input_border_rounded">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_ver_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".4"/>
+
+    <TextView
+        android:id="@+id/tv_payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="INTER_USER"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical"
+        android:drawablePadding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableStartCompat="@drawable/ic_payment_method" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#334155"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_status_trx"
+        tools:text="Rp 200.000"/>
+
+    <TextView
+        android:id="@+id/tv_status_trx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_red50_rounded_12"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingStart="12dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="2dp"
+        android:textColor="#DC2626"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp"
+        tools:text="Failed" />
+
+    <TextView
+        android:id="@+id/tv_balance_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:text="@string/ending_balance"
+        android:textSize="12sp"
+        android:textColor="#64748B"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_ver_left"
+        />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="@string/ending_balance"
+        android:textSize="14sp"
+        android:textColor="#334155"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_ver_left"
+        />
+
+    <TextView
+        android:id="@+id/tv_date_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/tanggal_transaksi"
+        android:layout_marginStart="4dp"
+        android:textSize="12sp"
+        android:textColor="#64748B"
+        app:layout_constraintTop_toTopOf="@+id/tv_balance_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_ver_left" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="@string/tanggal_transaksi"
+        android:layout_marginStart="4dp"
+        android:textSize="14sp"
+        android:textColor="#334155"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_ver_left" />
+
+    <TextView
+        android:id="@+id/tv_downline_name_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="6dp"
+        android:text="@string/penerima"
+        android:textSize="12sp"
+        android:textColor="#64748B"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_ver_left"
+        />
+
+    <TextView
+        android:id="@+id/tv_downline_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="@string/penerima"
+        android:textSize="14sp"
+        android:textColor="#334155"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_downline_name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_ver_left"
+        />
+
+    <TextView
+        android:id="@+id/tv_number_downline_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/number_dest"
+        android:layout_marginStart="4dp"
+        android:textSize="12sp"
+        android:textColor="#64748B"
+        app:layout_constraintTop_toTopOf="@+id/tv_downline_name_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_ver_left" />
+
+    <TextView
+        android:id="@+id/tv_number_downline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="@string/number_dest"
+        android:layout_marginStart="4dp"
+        android:textSize="14sp"
+        android:textColor="#F97316"
+        app:layout_constraintTop_toBottomOf="@+id/tv_number_downline_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_ver_left" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.register.ThirdRegisterFragment">
+
+    <TextView
+        android:id="@+id/txtSetPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/set_pin"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/input_set_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/icon_lock_password_line"
+        app:startIconTint="?colorPrimaryVariant"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/txtSetPIN">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_set_pin"
+            android:layout_width="match_parent"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/edt_confirm_pin"
+            android:hint="@string/input_pin"
+            style="@style/InputWithBorderGrey" />
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+    <TextView
+        android:id="@+id/txtConfirmPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:text="@string/confirm_pin"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toBottomOf="@id/input_set_pin"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/input_confirm_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/icon_lock_password_line"
+        app:startIconTint="?colorPrimaryVariant"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmPIN">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_confirm_pin"
+            android:layout_width="match_parent"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:imeOptions="actionDone"
+            android:hint="@string/input_confirm_pin"
+            style="@style/InputWithBorderGrey" />
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/simpan"
+        android:textAllCaps="false"
+        android:textColor="@drawable/color_indicator_state"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/input_confirm_pin"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bank_graph"
+    app:startDestination="@id/listBankFragment">
+
+    <fragment
+        android:id="@+id/listBankFragment"
+        android:name="com.pasukanlangit.id.cash_transfer.presentation.local.bank_add.ListBankFragment"
+        android:label="fragment_list_bank"
+        tools:layout="@layout/fragment_list_bank">
+        <action
+            android:id="@+id/listBankToRegisBank"
+            app:destination="@id/regisBankAccountFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/regisBankAccountFragment"
+        android:name="com.pasukanlangit.id.cash_transfer.presentation.local.bank_add.RegisBankAccountFragment"
+        android:label="fragment_regis_bank_account"
+        tools:layout="@layout/fragment_regis_bank_account">
+        <argument
+            android:name="bankChosen"
+            app:argType="com.pasukanlangit.id.cash_transfer.domain.model.LocalBankListResponse"/>
+        <argument
+            android:name="bankSaved"
+            app:argType="com.pasukanlangit.id.cash_transfer.domain.model.LocalBankSaved"/>
+    </fragment>
+</navigation>

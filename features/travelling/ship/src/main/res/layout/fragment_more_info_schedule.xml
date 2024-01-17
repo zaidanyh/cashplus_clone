@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_20"
+    tools:context="com.pasukanlangit.id.travelling.ship.schedule.MoreInfoScheduleFragment">
+
+    <TextView
+        android:id="@+id/txtPackageDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:text="@string/detail_package"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/price"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tvPrice"
+        app:layout_constraintBottom_toBottomOf="@id/tvPrice"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Rp 240.000"
+        android:textColor="#64748B"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/txtPackageDetail"
+        app:layout_constraintStart_toEndOf="@id/txtPrice"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtServiceFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/service_fee"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_service_fee"
+        app:layout_constraintBottom_toBottomOf="@id/tv_service_fee"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_service_fee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Rp 10.000"
+        android:textColor="#64748B"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/tvPrice"
+        app:layout_constraintStart_toEndOf="@id/txtServiceFee"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/total_fee"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_total_fee"
+        app:layout_constraintBottom_toBottomOf="@id/tv_total_fee"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_total_fee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Rp 250.000/pax"
+        android:textColor="#64748B"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_fee"
+        app:layout_constraintStart_toEndOf="@id/txtTotal"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtAvailableSeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"
+        android:text="@string/seat_available"
+        android:textColor="#1E293B"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_fee"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    <TextView
+        android:id="@+id/txtSeatMaleAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/seat_male"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_seat_male_is_available"
+        app:layout_constraintBottom_toBottomOf="@id/tv_seat_male_is_available"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_seat_male_is_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:background="@drawable/bg_state_is_available"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Tersedia"
+        android:textColor="@drawable/text_color_is_available"
+        app:layout_constraintTop_toBottomOf="@id/txtAvailableSeal"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtSeatFemaleAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/seat_female"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="@id/tv_seat_female_is_available"
+        app:layout_constraintBottom_toBottomOf="@id/tv_seat_female_is_available"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_seat_female_is_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:background="@drawable/bg_state_is_available"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Tidak tersedia"
+        android:textColor="@drawable/text_color_is_available"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/tv_seat_male_is_available"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_seat_female_is_available"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

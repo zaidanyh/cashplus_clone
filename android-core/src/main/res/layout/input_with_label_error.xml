@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        tools:text="Nilai emas (gr)"
+        android:textColor="#1E293B"/>
+
+    <TextView
+        android:id="@+id/label_optional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/input_label_optional"
+        android:textColor="#94A3B8"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_information_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/input_label_optional"
+        android:textColor="#94A3B8"
+        android:visibility="gone" />
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:startIconTint="#0A57FF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:paddingHorizontal="@dimen/dimen_12"
+            android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8"/>
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+</merge>

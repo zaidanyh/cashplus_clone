@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    app:cardCornerRadius="@dimen/dimen_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="24dp"
+        tools:context=".detail.allProduct.SetAllProductMarkupModal">
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="15sp"
+            android:text="@string/markup_semua_produk"
+            android:textColor="#475569"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:textColor="#64748B"
+            app:layout_constraintTop_toBottomOf="@id/txtLabel"/>
+
+        <TextView
+            android:id="@+id/txtNominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/nominal"
+            android:textColor="#3C4D5E"
+            app:layout_constraintTop_toBottomOf="@id/tv_desc"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/edt_new_markup_value"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="4dp"
+            android:paddingHorizontal="12dp"
+            android:background="@drawable/bg_input_border_rounded"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@null"
+            android:textColor="#475569"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@id/txtNominal"/>
+
+        <com.pasukanlangit.id.core.presentation.components.ButtonPrimaryCashplusRounded
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/submit"
+            android:textColor="#F8FAFC"
+            app:layout_constraintTop_toBottomOf="@id/edt_new_markup_value"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

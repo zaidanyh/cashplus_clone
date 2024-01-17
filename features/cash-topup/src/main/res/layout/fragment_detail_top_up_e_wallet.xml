@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dimen_20"
+    android:paddingHorizontal="@dimen/dimen_16"
+    tools:context=".presentation.via_ewallet.DetailTopUpEWalletFragment">
+
+    <ImageView
+        android:id="@+id/img_e_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_42"
+        android:src="@drawable/ic_ovo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/trx_detail_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/detail_transaction"
+        android:textSize="14sp"
+        android:textColor="#334155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_e_wallet" />
+
+    <TextView
+        android:id="@+id/trx_nominal_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/nominal"
+        android:textColor="#313F4E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trx_detail_label" />
+
+    <TextView
+        android:id="@+id/trx_admin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/admin_fee"
+        android:textSize="12sp"
+        android:textColor="#313F4E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_admin"
+        app:layout_constraintBottom_toBottomOf="@id/tv_admin"/>
+
+    <TextView
+        android:id="@+id/tv_admin_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="@dimen/dimen_6"
+        android:paddingEnd="@dimen/dimen_6"
+        android:background="@drawable/bg_pink100_rounded_8"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="11%"
+        android:textColor="#BE185D"
+        app:layout_constraintTop_toTopOf="@id/trx_admin_label"
+        app:layout_constraintBottom_toBottomOf="@id/trx_admin_label"
+        app:layout_constraintStart_toEndOf="@id/trx_admin_label"/>
+
+    <TextView
+        android:id="@+id/tv_nominal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Nominal"
+        android:textColor="#313F4E"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toEndOf="@id/trx_admin_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trx_detail_label" />
+
+    <TextView
+        android:id="@+id/tv_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        tools:text="Admin"
+        android:textColor="#313F4E"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toEndOf="@id/tv_admin_percentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nominal" />
+
+    <View
+        android:id="@+id/line_dashed"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:background="@drawable/line_dashed"
+        app:layout_constraintTop_toBottomOf="@+id/tv_admin" />
+
+    <TextView
+        android:id="@+id/trx_total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/total"
+        android:textColor="#313F4E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line_dashed" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        tools:text="Admin"
+        android:textColor="#313F4E"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toEndOf="@id/trx_admin_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_dashed" />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="@string/pay"
+        android:textColor="@drawable/color_indicator_state"
+        android:textAllCaps="false"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/tv_total"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.pages.others.KeagenanBottomFragment">
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:src="@drawable/close_icon_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_agen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16sp"
+        android:text="@string/keagenan"
+        android:textColor="#334155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/processing_agency_data"
+        android:textColor="#64748B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_agen" />
+
+    <ImageView
+        android:id="@+id/btn_downline"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:padding="@dimen/dimen_10"
+        android:src="@drawable/ic_downline"
+        android:background="@drawable/bg_blue50_rounded_8"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tf_saldo"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/label_downline"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/downline"
+        android:textColor="#64748B"
+        app:layout_constraintEnd_toEndOf="@+id/btn_downline"
+        app:layout_constraintStart_toStartOf="@+id/btn_downline"
+        app:layout_constraintTop_toBottomOf="@+id/btn_downline" />
+
+    <ImageView
+        android:id="@+id/btn_tf_saldo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:padding="@dimen/dimen_10"
+        android:src="@drawable/ic_transfer_balance"
+        android:background="@drawable/bg_primary_rounded_8"
+        android:backgroundTint="#F3F1FD"
+        app:layout_constraintEnd_toStartOf="@+id/btn_rebate"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toEndOf="@+id/btn_downline"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/label_tf_saldo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/transfer_balance"
+        android:textColor="#64748B"
+        app:layout_constraintEnd_toEndOf="@+id/btn_tf_saldo"
+        app:layout_constraintStart_toStartOf="@+id/btn_tf_saldo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tf_saldo" />
+
+    <ImageView
+        android:id="@+id/btn_rebate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:padding="@dimen/dimen_10"
+        android:src="@drawable/ic_rebate"
+        android:background="@drawable/bg_primary_rounded_8"
+        android:backgroundTint="#EAFDF5"
+        app:layout_constraintEnd_toStartOf="@+id/btn_minta_saldo"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toEndOf="@+id/btn_tf_saldo"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/label_rebate"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/commision_text"
+        android:textColor="#64748B"
+        app:layout_constraintEnd_toEndOf="@+id/btn_rebate"
+        app:layout_constraintStart_toStartOf="@+id/btn_rebate"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rebate" />
+
+    <ImageView
+        android:id="@+id/btn_minta_saldo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:padding="@dimen/dimen_10"
+        android:src="@drawable/ic_receive_balance"
+        android:background="@drawable/bg_primary_rounded_8"
+        android:backgroundTint="#FDF2F8"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_rebate"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/label_minta_saldo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/receive_balance"
+        android:textColor="#64748B"
+        app:layout_constraintEnd_toEndOf="@+id/btn_minta_saldo"
+        app:layout_constraintStart_toStartOf="@+id/btn_minta_saldo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_minta_saldo" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_row_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="label_downline, label_tf_saldo, label_rebate, label_minta_saldo" />
+
+    <ImageView
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:padding="@dimen/dimen_10"
+        android:background="@drawable/bg_primary_rounded_8"
+        android:backgroundTint="#EEF2FF"
+        android:src="@drawable/ic_qr_code_line"
+        app:layout_constraintStart_toStartOf="@+id/btn_downline"
+        app:layout_constraintEnd_toEndOf="@+id/btn_downline"
+        app:layout_constraintTop_toBottomOf="@+id/barrier_row_first" />
+
+    <TextView
+        android:id="@+id/label_scan_qr"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/qr_transfer"
+        android:textColor="#64748B"
+        app:layout_constraintEnd_toEndOf="@+id/btn_scan_qr"
+        app:layout_constraintStart_toStartOf="@+id/btn_scan_qr"
+        app:layout_constraintTop_toBottomOf="@+id/btn_scan_qr" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_row_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="label_minta_saldo,label_scan_qr" />
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_28"
+        app:layout_constraintTop_toBottomOf="@id/barrier_row_second"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

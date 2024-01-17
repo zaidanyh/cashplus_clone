@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "37611567556",
+    "project_id": "cashplus-v1",
+    "storage_bucket": "cashplus-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37611567556:android:a8029771e1a3ee05c28c91",
+        "android_client_info": {
+          "package_name": "com.pasukanlangit.cashplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37611567556-bevajud2rd03fb7hh6ediqfs7sns0v03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUJ0quInHqSNuc9dLq7gEwTJUNxlb9qHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37611567556-bevajud2rd03fb7hh6ediqfs7sns0v03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

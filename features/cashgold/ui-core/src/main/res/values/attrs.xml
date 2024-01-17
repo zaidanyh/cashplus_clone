@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="label" format="string" localization="suggested" />
+    <attr name="placeholderText" format="string"/>
+    <attr name="title" format="string" localization="suggested" />
+    <attr name="description" format="string" localization="suggested" />
+    <attr name="isInputOptional" format="boolean"/>
+
+
+    <declare-styleable name="CoinWithLabelView">
+        <attr name="coinValue" format="string" localization="suggested" />
+    </declare-styleable>
+
+    <declare-styleable name="CashGoldAppBarView">
+        <attr name="hideButtonBack" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CardGrayTitleDescriptionView">
+        <attr name="title" />
+        <attr name="description" />
+    </declare-styleable>
+
+    <declare-styleable name="InputBorderWithLabelView">
+        <attr name="label"/>
+        <attr name="android:inputType"/>
+        <attr name="placeholderText"/>
+    </declare-styleable>
+
+    <declare-styleable name="IconWithLabelRoundedView">
+        <attr name="label"/>
+        <attr name="backgroundRounded" format="reference"/>
+        <attr name="icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CardInfoPriceGoldView">
+        <attr name="label"/>
+<!--        <attr name="returnValue" format="string" localization="suggested" />-->
+        <attr name="price" format="string" localization="suggested" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pembayaran_bulanan.PembayaranKreditFragment">
+
+    <TextView
+        android:id="@+id/txtCustomerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:text="@string/customer_id"
+        android:textColor="#334155"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edt_nomer_kredit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingEnd="@dimen/dimen_12"
+        android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13sp"
+        android:hint="@string/input_customer_id"
+        android:textColor="#1E293B"
+        android:textColorHint="#94A3B8"
+        android:inputType="number"
+        android:maxLength="30"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomerId" />
+
+    <TextView
+        android:id="@+id/txtNominalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:text="@string/nominal_payment"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/edt_nomer_kredit"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout
+        android:id="@+id/input_nominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        app:hintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/txtNominalPayment">
+
+        <EditText
+            android:id="@+id/edt_nominal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:paddingStart="@dimen/dimen_12"
+            android:paddingEnd="@dimen/dimen_12"
+            android:background="@drawable/bg_transparent_border_slate200_rounded_10"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:hint="@string/masukkan_nominal"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8"
+            android:inputType="number"
+            android:maxLength="30"
+            android:importantForAutofill="no"/>
+    </com.pasukanlangit.id.core.presentation.components.CustomTextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_nominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_nominal_transfer"
+        app:layout_constraintTop_toBottomOf="@id/input_nominal"/>
+
+    <TextView
+        android:id="@+id/txtChoosePayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:text="@string/choose_payment"
+        android:textColor="#334155"
+        app:layout_constraintTop_toBottomOf="@id/rv_nominal"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Spinner
+        android:id="@+id/credit_list_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        style="@style/ListSpinner"
+        android:background="@drawable/bg_transparent_spinner_border_slate200_rounded_10"
+        app:layout_constraintTop_toBottomOf="@+id/txtChoosePayment" />
+
+    <Button
+        android:id="@+id/btn_check_credit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:text="@string/check"
+        android:textAllCaps="false"
+        android:textColor="@drawable/color_indicator_state"
+        android:enabled="true"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintTop_toBottomOf="@+id/credit_list_spinner"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

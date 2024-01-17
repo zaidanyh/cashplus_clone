@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dimen_42">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/saldo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel">
+
+        <TextView
+            android:id="@+id/txtRp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="18sp"
+            android:text="@string/text_rupiah"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="@id/tv_value_balance"
+            app:layout_constraintBottom_toBottomOf="@id/tv_value_balance"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_value_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="22sp"
+            tools:text="15.000.000"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtRp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtTapForDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/tap_for_detail"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/tv_value_balance"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iconTap"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:src="@drawable/ic_arrow_income_oblique"
+            app:tint="@android:color/white"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/txtTapForDetail"
+            app:layout_constraintBottom_toBottomOf="@id/txtTapForDetail"
+            app:layout_constraintStart_toEndOf="@id/txtTapForDetail"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btn_binding_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingVertical="@dimen/dimen_6"
+        android:paddingHorizontal="14dp"
+        android:background="@drawable/bg_primary_rounded_20"
+        android:backgroundTint="#0EA5E9"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:text="@string/binding_account"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:drawablePadding="@dimen/dimen_4"
+        app:drawableEndCompat="@drawable/ic_binding_line"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

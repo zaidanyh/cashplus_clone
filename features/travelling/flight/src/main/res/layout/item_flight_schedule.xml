@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_border_slate200_rounded_12"
+    android:padding="@dimen/dimen_8">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".7" />
+
+    <ImageView
+        android:id="@+id/img_flight"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="@dimen/dimen_4"
+        android:padding="@dimen/dimen_6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideLine_left"/>
+
+    <TextView
+        android:id="@+id/tv_flight_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center"
+        android:textColor="#334155"
+        android:textSize="13sp"
+        tools:text="JT-573"
+        app:layout_constraintTop_toBottomOf="@id/img_flight"
+        app:layout_constraintStart_toStartOf="@id/img_flight"
+        app:layout_constraintEnd_toEndOf="@id/img_flight"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideLine_right"
+        app:layout_constraintStart_toEndOf="@id/guideLine_left"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_name_flight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#334155"
+            android:textSize="14sp"
+            tools:text="Lion Air"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_info_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_flight">
+
+            <TextView
+                android:id="@+id/tv_departure_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#475569"
+                android:textSize="12sp"
+                tools:text="SUB" />
+
+            <TextView
+                android:id="@+id/tv_time_departure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#334155"
+                android:textSize="12sp"
+                tools:text="06:00" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_line_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_6"
+            android:src="@drawable/ic_line_route_sm"
+            app:layout_constraintBottom_toBottomOf="@id/wrapper_info_departure"
+            app:layout_constraintStart_toEndOf="@id/wrapper_info_departure"
+            app:layout_constraintTop_toTopOf="@id/wrapper_info_departure" />
+
+        <LinearLayout
+            android:id="@+id/wrapper_info_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/img_line_route"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_flight">
+
+            <TextView
+                android:id="@+id/tv_destination_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#475569"
+                android:textSize="12sp"
+                tools:text="CGK" />
+
+            <TextView
+                android:id="@+id/tv_time_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#334155"
+                android:textSize="12sp"
+                tools:text="07:15" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            tools:text="1 Jam 15 Menit"
+            android:textColor="#0A57FF"
+            app:layout_constraintTop_toBottomOf="@id/wrapper_info_departure"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        tools:text="Rp 840.530/pax"
+        android:textColor="#EA580C"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_choose_flight"
+        app:layout_constraintStart_toEndOf="@id/guideLine_right"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/btn_choose_flight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_6"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_4"
+        android:background="@drawable/background_button_state"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        android:text="@string/choose"
+        android:textColor="@drawable/color_indicator_state"
+        app:layout_constraintWidth_percent=".2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideLine_right"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

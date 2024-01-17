@@ -1,0 +1,32 @@
+package com.pasukanlangit.cashplus.domain.usecase
+
+data class AppUseCases(
+    val registerUseCase: RegisterUseCase,
+    val loginUseCase: LoginUseCase,
+    val loginByOtpUseCase: LoginByOtpUseCase,
+    val resetPasswordUseCase: ResetPasswordUseCase,
+    val resetPINUseCase: ResetPINUseCase,
+    val getProfile: GetProfile,
+    val changeReferral: ChangeReferralUseCase,
+    val logOut: LogoutUseCase,
+    val topUpQris: TopUpQrisUseCase,
+    val uploadPhotoProfile: UpdatePhotoProfile,
+    val verifyOtp: VerifyOtpUseCase,
+    val updateFCMToken: UpdateFCMToken,
+    val getBalanceDashboard: GetBalanceDashboard,
+    val searchHistoryTransaction: SearchHistoryTransaction,
+    val omniMenuUseCase: OmniMenuUseCase,
+    val omniPackageList: OmniPackageList,
+    val getBalance: GetBalance,
+    val omniPackageOrder: OmniPackageOrder,
+    val billPayTransaction: BillPayTransactionUseCase,
+    val injectVoucher: InjectVoucher,
+    val transactionBulk: TransactionBulk,
+    val updateEMail: UpdateEmailUseCase,
+    val productStatusUseCase: ProductStatusUseCase,
+    val updateSellingPrice: UpdateSellingPrice,
+    val calculateUnitPrice: CalculateUnitPrice,
+    val getSellingPrice: GetSellingPrice,
+    val printReceiptUseCase: PrintReceiptUseCase,
+    val deleteAccount: DeleteAccountUseCase
+)

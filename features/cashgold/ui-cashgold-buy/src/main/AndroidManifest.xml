@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pasukanlangit.id.ui_cashgold_buy">
+
+    <application>
+        <activity
+            android:name=".buy.BuyChooserActivity"
+            android:exported="true"
+            android:theme="@style/Cashgold"
+            tools:replace="android:theme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".register.RegisterCashGoldActivity"
+            android:exported="true"
+            android:theme="@style/Cashgold"
+            tools:replace="android:theme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".buy.BuyCashGoldActivity"
+            android:exported="true"
+            android:theme="@style/Cashgold"
+            android:screenOrientation="portrait"
+            tools:replace="android:theme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".schedule.ShipScheduleActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_dashboard"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_24"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_app_bar"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/titleShip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:text="@string/find_ship"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:padding="@dimen/dimen_16"
+        android:background="@drawable/bg_white_border_slate200_rounded_12"
+        android:transitionName="@string/layout_ship"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_back">
+
+        <TextView
+            android:id="@+id/txtShipSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:text="@string/ship_schedule_date"
+            android:textColor="#334155"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            tools:text="22 Sept 2022"
+            android:textColor="#334155"
+            android:drawablePadding="@dimen/dimen_6"
+            app:drawableStartCompat="@drawable/ic_calendar_date_departure"
+            app:layout_constraintTop_toBottomOf="@id/txtShipSchedule"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/line_doted_top"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:background="@drawable/line_dotted_gap_8"
+            app:layout_constraintTop_toBottomOf="@id/tv_date"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/line_doted_top"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_name_harbor_departure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                tools:text="Tanjung Priok"
+                android:textColor="#475569"/>
+
+            <TextView
+                android:id="@+id/tv_city_harbor_departure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="Surabaya"
+                android:textColor="#64748B"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ic_arrow_forward"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="#1E293B"
+            tools:tint="#1E293B"
+            app:layout_constraintTop_toTopOf="@id/wrapper_departure"
+            app:layout_constraintBottom_toBottomOf="@id/wrapper_departure"
+            app:layout_constraintStart_toEndOf="@id/wrapper_departure"/>
+
+        <LinearLayout
+            android:id="@+id/wrapper_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/line_doted_top"
+            app:layout_constraintStart_toEndOf="@id/ic_arrow_forward">
+
+            <TextView
+                android:id="@+id/tv_name_harbor_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                tools:text="Tanjung Priok"
+                android:textColor="#475569"/>
+
+            <TextView
+                android:id="@+id/tv_city_harbor_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                tools:text="Jakarta"
+                android:textColor="#64748B"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_doted_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:background="@drawable/line_dotted_gap_8"
+            app:layout_constraintTop_toBottomOf="@id/wrapper_departure"/>
+
+        <TextView
+            android:id="@+id/tv_passengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            tools:text="1 Dewasa 0 Bayi"
+            android:textColor="#475569"
+            android:transitionName="@string/harbor_passenger_list"
+            app:layout_constraintTop_toTopOf="@id/btn_change"
+            app:layout_constraintBottom_toBottomOf="@id/btn_change"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingStart="@dimen/dimen_16"
+            android:paddingEnd="@dimen/dimen_16"
+            android:background="@drawable/bg_blue50_rounded_16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:text="@string/change"
+            android:textColor="#0A57FF"
+            app:layout_constraintTop_toTopOf="@id/line_doted_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ship_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/dimen_6"
+        tools:listitem="@layout/item_ship_schedule"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/rv_ship_schedule_shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/wrapper_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_ship_schedule_shimmer"/>
+            <include layout="@layout/item_ship_schedule_shimmer"/>
+            <include layout="@layout/item_ship_schedule_shimmer"/>
+            <include layout="@layout/item_ship_schedule_shimmer"/>
+            <include layout="@layout/item_ship_schedule_shimmer"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
