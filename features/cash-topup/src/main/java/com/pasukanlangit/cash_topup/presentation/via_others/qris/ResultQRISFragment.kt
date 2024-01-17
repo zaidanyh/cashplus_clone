@@ -11,13 +11,13 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.provider.MediaStore
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.view.isVisible
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -36,7 +36,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import java.util.*
+import java.util.Objects
 
 class ResultQRISFragment : Fragment() {
 
@@ -202,7 +202,7 @@ class ResultQRISFragment : Fragment() {
             val bitmap = CoreUtils.getBitmapFromView(view)
 
             val outputStream = contentResolver.openOutputStream(Objects.requireNonNull(uri as Uri))
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream!!)
             Objects.requireNonNull(outputStream)
 
             Toast.makeText(requireContext(), getString(R.string.qr_code_saved), Toast.LENGTH_SHORT).show()
