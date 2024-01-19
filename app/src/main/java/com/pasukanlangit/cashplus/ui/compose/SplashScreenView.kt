@@ -130,6 +130,6 @@ fun Modifier.gradientBackground(colors: List<Color>, angle: Float) = this.then(
 
 @Preview
 @Composable
-fun SplashScreenView() {
+fun SplashScreenViewPreview() {
     SplashScreenView()
 }

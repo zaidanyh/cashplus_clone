@@ -158,7 +158,6 @@
         android:layout_marginHorizontal="@dimen/dimen_16"
         android:padding="@dimen/dimen_12"
         android:background="@drawable/bg_slate50_border_slate100_rounded_12"
-        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/txt_note_3">
 
         <TextView
