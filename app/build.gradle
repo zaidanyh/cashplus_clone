@@ -198,6 +198,7 @@ dependencies {
     //glide
     implementation Glide.glide
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation "com.github.bumptech.glide:compose:1.0.0-beta01"
 
     //spinner with search
     implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
