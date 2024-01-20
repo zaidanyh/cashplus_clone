@@ -8,6 +8,7 @@ plugins {
     id 'com.google.firebase.crashlytics'
     id 'com.google.firebase.firebase-perf'
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id("io.gitlab.arturbosch.detekt") version "1.23.0" //static analysis code
 }
 
 android {
@@ -74,6 +75,22 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.1"
     }
+}
+
+detekt {
+    // Builds the AST in parallel. Rules are always executed in parallel.
+    // Can lead to speedups in larger projects. `false` by default.
+    parallel = false
+
+    // Define the detekt configuration(s) you want to use.
+    // Defaults to the default detekt configuration.
+    // config.setFrom("path/to/config.yml")
+
+    // Applies the config files on top of detekt's default config file. `false` by default.
+    buildUponDefaultConfig = false
+
+    // Specifying a baseline file. All findings stored in this file in subsequent runs of detekt.
+    // baseline = file("path/to/baseline.xml")
 }
 
 dependencies {
