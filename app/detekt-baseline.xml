@@ -1,0 +1,1505 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ComplexCondition:AddAddressBookActivity.kt$AddAddressBookActivity$name.isEmpty() || phone.isEmpty() || type.isEmpty() || address.isEmpty() || postalCode.isEmpty()</ID>
+    <ID>ComplexCondition:EnterPinActivity.kt$EnterPinActivity$::trxId.isInitialized &amp;&amp; ::lastPinEntered.isInitialized &amp;&amp; productModel != null &amp;&amp; destination != null &amp;&amp; uuid != null &amp;&amp; token != null</ID>
+    <ID>ComplexCondition:EnterPinActivity.kt$EnterPinActivity$productModel != null &amp;&amp; destination != null &amp;&amp; uuid != null &amp;&amp; accessToken != null</ID>
+    <ID>ComplexCondition:EnterPinPayActivity.kt$EnterPinPayActivity$productModel != null &amp;&amp; destination != null &amp;&amp; uuid != null &amp;&amp; token != null</ID>
+    <ID>ComplexCondition:NetworkModule.kt$ReleaseResponseHeaderInterceptor$message.contains(other = "not login", ignoreCase = true) || message.contains(other = "not valid", ignoreCase = true) || message.contains(other = "tidak masuk", ignoreCase = true) || message.contains(other = "tidak valid", ignoreCase = true)</ID>
+    <ID>ComplexCondition:NetworkModule.kt$ResponseHeaderInterceptor$message.contains(other = "not login", ignoreCase = true) || message.contains(other = "not valid", ignoreCase = true) || message.contains(other = "tidak masuk", ignoreCase = true) || message.contains(other = "tidak valid", ignoreCase = true)</ID>
+    <ID>ConstructorParameterNaming:AddAddressBookRequest.kt$AddAddressBookRequest$val book_address_id : String = ""</ID>
+    <ID>ConstructorParameterNaming:ArbitraryGridDecoration.kt$ArbitraryGridDecoration$private val NUMBER_OF_COLUMNS: Int</ID>
+    <ID>ConstructorParameterNaming:HistoryTopUpResponse.kt$HistoryTopUpDataItem$@field:SerializedName("nama_rek") val bank_acc_name: String?</ID>
+    <ID>ConstructorParameterNaming:ParamPrintTransport.kt$ParamPrintTransport$val booking_code: String</ID>
+    <ID>ConstructorParameterNaming:ParamPrintTransport.kt$ParamPrintTransport$val departure_date: String</ID>
+    <ID>ConstructorParameterNaming:ParamPrintTransport.kt$ParamPrintTransport$val departure_time: String</ID>
+    <ID>ConstructorParameterNaming:ParamPrintTransport.kt$ParamPrintTransport$val print_category: String</ID>
+    <ID>ConstructorParameterNaming:ParamPrintTransport.kt$ParamPrintTransport$val transport_class: String</ID>
+    <ID>ConstructorParameterNaming:ParamPrintTransport.kt$ParamPrintTransport$val transport_name: String</ID>
+    <ID>ConstructorParameterNaming:ParamPrintTransport.kt$ParamPrintTransport$val transport_number: String</ID>
+    <ID>ConstructorParameterNaming:ParamPrintTransport.kt$ParamPrintTransport$val transport_rute: String</ID>
+    <ID>ConstructorParameterNaming:ProductModel.kt$ProductModel$val img_url: String</ID>
+    <ID>ConstructorParameterNaming:ProductModel.kt$ProductModel$val img_url_2: String</ID>
+    <ID>ConstructorParameterNaming:ProductModel.kt$ProductModel$val kode_produk: String</ID>
+    <ID>ConstructorParameterNaming:ProductModel.kt$ProductModel$val kode_provider :String</ID>
+    <ID>ConstructorParameterNaming:ProductModel.kt$ProductModel$val opr_name : String</ID>
+    <ID>ConstructorParameterNaming:ProductModel.kt$ProductModel$val outlet_price: String</ID>
+    <ID>ConstructorParameterNaming:ProductModel.kt$ProductModel$val product_type: String</ID>
+    <ID>ConstructorParameterNaming:ProductModel.kt$ProductModel$val short_dsc: String</ID>
+    <ID>ConstructorParameterNaming:ProductRequest.kt$ProductRequest$@field:SerializedName("is_active") val is_active : String</ID>
+    <ID>ConstructorParameterNaming:ProductRequest.kt$ProductRequest$@field:SerializedName("is_bulk") val is_bulk: String = "0"</ID>
+    <ID>ConstructorParameterNaming:ProductRequest.kt$ProductRequest$@field:SerializedName("is_faktur") val is_faktur : String</ID>
+    <ID>ConstructorParameterNaming:ProductRequest.kt$ProductRequest$@field:SerializedName("kode_provider") val kode_provider : String</ID>
+    <ID>ConstructorParameterNaming:ProductRequest.kt$ProductRequest$@field:SerializedName("opr_name") val opr_name : String ?= null</ID>
+    <ID>ConstructorParameterNaming:RegisterRequestDto.kt$RegisterRequestDto$@field:SerializedName("full_name") var full_name : String</ID>
+    <ID>ConstructorParameterNaming:RegisterRequestDto.kt$RegisterRequestDto$@field:SerializedName("owner_name") var owner_name: String?</ID>
+    <ID>ConstructorParameterNaming:TransactionPayResponse.kt$TransactionPayResponse$val rc_msg : String ?= null</ID>
+    <ID>ConstructorParameterNaming:TransactionRequest.kt$TransactionRequest$@field:SerializedName("kode_produk") val kode_produk: String</ID>
+    <ID>ConstructorParameterNaming:TransactionResponse.kt$TransactionResponse$@field:SerializedName("kode_produk") val kode_produk: String?</ID>
+    <ID>ConstructorParameterNaming:TransactionTAGResponse.kt$TransactionTAGResponse$@field:SerializedName("kode_produk") val kode_produk: String</ID>
+    <ID>ConstructorParameterNaming:UserModel.kt$UserModel$@field:SerializedName("x_access_token") val x_access_token: String?</ID>
+    <ID>CyclomaticComplexMethod:AddAddressBookActivity.kt$AddAddressBookActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:AllMenusProduct.kt$AllMenusProduct$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:ButtomSheetNotif.kt$ButtomSheetNotif$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:CalculateUnitPrice.kt$CalculateUnitPrice$operator fun invoke( uuid: String?, productCode: String, qty: String, dest: String, accessToken: String? ): Flow&lt;DataState&lt;UnitPriceResponse&gt;&gt;</ID>
+    <ID>CyclomaticComplexMethod:ChangeProfilActivity.kt$ChangeProfilActivity$@SuppressLint("ClickableViewAccessibility") override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:DetailGameMenuActivity.kt$DetailGameMenuActivity$private fun observeProduct()</ID>
+    <ID>CyclomaticComplexMethod:EnterOTPActivity.kt$EnterOTPActivity$private fun collectData()</ID>
+    <ID>CyclomaticComplexMethod:EnterPINProviderFragment.kt$EnterPINProviderFragment$private fun observeTransaction()</ID>
+    <ID>CyclomaticComplexMethod:EnterPinActivity.kt$EnterPinActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:EnterPinOnlineStoreActivity.kt$EnterPinOnlineStoreActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:EnterPinPayActivity.kt$EnterPinPayActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:HistoryDetailActivity.kt$HistoryDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:HistoryDetailActivity.kt$HistoryDetailActivity$private fun observeReceipt()</ID>
+    <ID>CyclomaticComplexMethod:LoginActivity.kt$LoginActivity$private fun collectData()</ID>
+    <ID>CyclomaticComplexMethod:MyUtils.kt$MyUtils$@SuppressLint("Recycle") fun generatePdf(context: Context, receipt: String): PdfDocument</ID>
+    <ID>CyclomaticComplexMethod:MyUtils.kt$MyUtils$fun formatReceipt( receipt: String, codeProvider: String, productCode: String, fee: Int? = null, feeCounter: Int? = null ): String</ID>
+    <ID>CyclomaticComplexMethod:NetworkModule.kt$ResponseHeaderInterceptor$override fun intercept(chain: Interceptor.Chain): Response</ID>
+    <ID>CyclomaticComplexMethod:OmniMenuUseCase.kt$OmniMenuUseCase$operator fun invoke( uuid: String, dest: String, accessToken: String ): Flow&lt;DataState&lt;Pair&lt;OmniMenuResponse?, OmniPackageListResponse?&gt;&gt;&gt;</ID>
+    <ID>CyclomaticComplexMethod:OtherFragment.kt$OtherFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:OtherFragment.kt$OtherFragment$private fun collectData()</ID>
+    <ID>CyclomaticComplexMethod:PathUtil.kt$PathUtil$@SuppressLint("Recycle") @Throws(URISyntaxException::class) fun getPath(context: Context, uri: Uri?): String?</ID>
+    <ID>CyclomaticComplexMethod:PembayaranActivity.kt$PembayaranActivity$private fun getDataIntent()</ID>
+    <ID>CyclomaticComplexMethod:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$@SuppressLint("ClickableViewAccessibility") override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:PembayaranTagihanActivity.kt$PembayaranTagihanActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>CyclomaticComplexMethod:PrintReceiptUseCase.kt$PrintReceiptUseCase$operator fun invoke( uuid: String?, productCode: String, trxId: String, adjustPrice: String, accessToken: String? ): Flow&lt;DataState&lt;PrintReceiptResponse&gt;&gt;</ID>
+    <ID>CyclomaticComplexMethod:SplashScreen.kt$SplashScreen$private fun checkNotification() : Boolean</ID>
+    <ID>EmptyFunctionBlock:ChangeEmailFragment.kt$ChangeEmailFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ChangePasswordActivity.kt$ChangePasswordActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ChangePinActivity.kt$ChangePinActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ChangePinWithoutLastPinActivity.kt$ChangePinWithoutLastPinActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ChangeProfilActivity.kt$ChangeProfilActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ChangeReferralFragment.kt$ChangeReferralFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:EditPriceFragment.kt$EditPriceFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:EnterNumOmniActivity.kt$EnterNumOmniActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:FirstRegisterFragment.kt$FirstRegisterFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:InjectVoucherActivity.kt$InjectVoucherActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:InputManualActivity.kt$InputManualActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:LoginActivity.kt$LoginActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:NetworkModule.kt$ReleaseResponseHeaderInterceptor.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:NetworkModule.kt$ResponseHeaderInterceptor.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:OnBoardingActivity.kt$OnBoardingActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:PembayaranKreditFragment.kt$PembayaranKreditFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ResetPasswordActivity.kt$ResetPasswordActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ResetPasswordPublicActivity.kt$ResetPasswordPublicActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:SecondRegisterFragment.kt$SecondRegisterFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:StatusProductActivity.kt$StatusProductActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:ThirdRegisterFragment.kt$ThirdRegisterFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:TopUpQrisFragment.kt$TopUpQrisFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:TopUpSmsFragment.kt$TopUpSmsFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:TopUpTeleponFragment.kt$TopUpTeleponFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:TopupDataFragment.kt$TopupDataFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:TopupPulsaFragment.kt$TopupPulsaFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:UpdatePriceProductFragment.kt$UpdatePriceProductFragment.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:VoucherActivity.kt$VoucherActivity.&lt;no name provided&gt;${ }</ID>
+    <ID>FunctionNaming:CloseAccountView.kt$@Composable fun CloseAccountView( modifier: Modifier = Modifier, visibility: Boolean = false )</ID>
+    <ID>FunctionNaming:CloseAccountView.kt$@Preview @Composable fun CloseAccountViewPreview()</ID>
+    <ID>FunctionNaming:SplashScreenView.kt$@Composable fun SplashScreenView( modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:SplashScreenView.kt$@Preview @Composable fun SplashScreenViewPreview()</ID>
+    <ID>ImplicitDefaultLocale:DownloadService.kt$DownloadService$String.format( "Downloaded (%d/%d) MB", download.currentFileSize, download.totalFileSize )</ID>
+    <ID>ImplicitDefaultLocale:MyUtils.kt$MyUtils$String.format("%032x", bigInt)</ID>
+    <ID>ImplicitDefaultLocale:TestDownloadPdfActivity.kt$TestDownloadPdfActivity.&lt;no name provided&gt;$String.format( "Downloaded (%d/%d) MB", download?.currentFileSize, download?.totalFileSize )</ID>
+    <ID>LongMethod:AddAddressBookActivity.kt$AddAddressBookActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:AllMenusProduct.kt$AllMenusProduct$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:BannerDummy.kt$fun getBannerDummy() : List&lt;BannerDummy&gt;</ID>
+    <ID>LongMethod:ButtomSheetNotif.kt$ButtomSheetNotif$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:CartAdapter.kt$CartAdapter$override fun onBindViewHolder(holder: CartViewHolder, position: Int)</ID>
+    <ID>LongMethod:ChangeProfilActivity.kt$ChangeProfilActivity$@SuppressLint("ClickableViewAccessibility") override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:CloseAccountActivity.kt$CloseAccountActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:CloseAccountView.kt$@Composable fun CloseAccountView( modifier: Modifier = Modifier, visibility: Boolean = false )</ID>
+    <ID>LongMethod:DetailGameMenuActivity.kt$DetailGameMenuActivity$private fun observeProduct()</ID>
+    <ID>LongMethod:DummyTagihan.kt$fun getDummyTagihanMenu() : List&lt;DummyTagihan&gt;</ID>
+    <ID>LongMethod:EWalletActivity.kt$EWalletActivity$private fun observeProductEWallet()</ID>
+    <ID>LongMethod:EnterOTPActivity.kt$EnterOTPActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:EnterOTPActivity.kt$EnterOTPActivity$private fun collectData()</ID>
+    <ID>LongMethod:EnterPINProviderFragment.kt$EnterPINProviderFragment$private fun observeTransaction()</ID>
+    <ID>LongMethod:EnterPinActivity.kt$EnterPinActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:GameMenuActivity.kt$GameMenuActivity$private fun observeGameMenu()</ID>
+    <ID>LongMethod:GetBalanceDashboard.kt$GetBalanceDashboard$operator fun invoke( uuid: String?, accessToken: String? ): Flow&lt;DataState&lt;BalanceAccountResponse&gt;&gt;</ID>
+    <ID>LongMethod:HistoryDetailActivity.kt$HistoryDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:HistoryDetailActivity.kt$HistoryDetailActivity$private fun observeReceipt()</ID>
+    <ID>LongMethod:HistoryTrxFragment.kt$HistoryTrxFragment$private fun collectData()</ID>
+    <ID>LongMethod:HomeFragment.kt$HomeFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:HomeFragment.kt$HomeFragment$private fun collectBalance()</ID>
+    <ID>LongMethod:HotelDummy.kt$fun getDummyHotel() : List&lt;HotelModel&gt;</ID>
+    <ID>LongMethod:InjectVoucherActivity.kt$InjectVoucherActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:InjectVoucherActivity.kt$InjectVoucherActivity$private fun collectInjectVoucher()</ID>
+    <ID>LongMethod:InputManualActivity.kt$InputManualActivity$private fun collectData()</ID>
+    <ID>LongMethod:LoginActivity.kt$LoginActivity$private fun collectData()</ID>
+    <ID>LongMethod:MyFirebase.kt$MyFirebase$private fun sendNotification( remoteMessage: RemoteMessage.Notification, data: Map&lt;String, String&gt; )</ID>
+    <ID>LongMethod:MyUtils.kt$MyUtils$@SuppressLint("Recycle") fun generatePdf(context: Context, receipt: String): PdfDocument</ID>
+    <ID>LongMethod:MyUtils.kt$MyUtils$fun formatReceipt( receipt: String, codeProvider: String, productCode: String, fee: Int? = null, feeCounter: Int? = null ): String</ID>
+    <ID>LongMethod:NetworkModule.kt$ResponseHeaderInterceptor$override fun intercept(chain: Interceptor.Chain): Response</ID>
+    <ID>LongMethod:OtherFragment.kt$OtherFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:OtherFragment.kt$OtherFragment$private fun collectData()</ID>
+    <ID>LongMethod:PackageOmniActivity.kt$PackageOmniActivity$private fun collectData()</ID>
+    <ID>LongMethod:PembayaranActivity.kt$PembayaranActivity$private fun getDataIntent()</ID>
+    <ID>LongMethod:PembayaranAsuransiFragment.kt$PembayaranAsuransiFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranBPJSFragment.kt$PembayaranBPJSFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranCartActivity.kt$PembayaranCartActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranCartLangsungActivity.kt$PembayaranCartLangsungActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranGasNegaraFragment.kt$PembayaranGasNegaraFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranGasPertaminaFragment.kt$PembayaranGasPertaminaFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranKreditFragment.kt$PembayaranKreditFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranMultiFinanceFragment.kt$PembayaranMultiFinanceFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranPBBFragment.kt$PembayaranPBBFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranPDAMFragment.kt$PembayaranPDAMFragment$private fun checkPDAM()</ID>
+    <ID>LongMethod:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$@SuppressLint("ClickableViewAccessibility") override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranSamsatFragment.kt$PembayaranSamsatFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranTagihanActivity.kt$PembayaranTagihanActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranTelkomFragment.kt$PembayaranTelkomFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PembayaranTvFragment.kt$PembayaranTvFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:StatusProductActivity.kt$StatusProductActivity$private fun collectData()</ID>
+    <ID>LongMethod:TopUpTokenPLNFragment.kt$TopUpTokenPLNFragment$private fun observeTokenPLN()</ID>
+    <ID>LongParameterList:BillPayTransactionUseCase.kt$BillPayTransactionUseCase$( uuid: String?, codeProduct: String, destination: String, pin: String, accessToken: String?, qty: String? = null, reqId: String? = null )</ID>
+    <ID>LongParameterList:DirectProductPurchasesViewModel.kt$DirectProductPurchasesViewModel$( uuid: String?, productCode: String, dest: String, pin: String, qty: String, reqId: String, accessToken: String? )</ID>
+    <ID>LongParameterList:ProductModel.kt$ProductModel$( val kode_provider :String, val kode_produk: String, val dsc : String, val short_dsc: String, val category: String, val price : String, val outlet_price: String, val admin: String, val img_url: String, val img_url_2: String, val opr_name : String, val product_type: String )</ID>
+    <ID>LongParameterList:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity$( first: Boolean = false, second: Boolean = false, third: Boolean = false, fourth: Boolean = false, fifth: Boolean = false, sixth: Boolean = false, seventh: Boolean = false, eighth: Boolean = false, other: Boolean = false )</ID>
+    <ID>MagicNumber:AddUpdateAddressBookViewModel.kt$AddUpdateAddressBookViewModel$200</ID>
+    <ID>MagicNumber:AddressBookViewModel.kt$AddressBookViewModel$200</ID>
+    <ID>MagicNumber:AllMenusProduct.kt$AllMenusProduct$3</ID>
+    <ID>MagicNumber:AllMenusProduct.kt$AllMenusProduct$30</ID>
+    <ID>MagicNumber:AllMenusProduct.kt$AllMenusProduct$310</ID>
+    <ID>MagicNumber:AllMenusProduct.kt$AllMenusProduct$5</ID>
+    <ID>MagicNumber:AllMenusViewModel.kt$AllMenusViewModel$200</ID>
+    <ID>MagicNumber:AllProductEcommerceViewModel.kt$AllProductEcommerceViewModel$200</ID>
+    <ID>MagicNumber:AllProductFragment.kt$AllProductFragment$8</ID>
+    <ID>MagicNumber:AllProductPagingAdapter.kt$AllProductPagingAdapter.ViewHolder$100</ID>
+    <ID>MagicNumber:AllProductPagingAdapter.kt$AllProductPagingAdapter.ViewHolder$300</ID>
+    <ID>MagicNumber:AllProductPagingSource.kt$AllProductPagingSource$10</ID>
+    <ID>MagicNumber:AllProductPagingSource.kt$AllProductPagingSource$9</ID>
+    <ID>MagicNumber:AsyncEscPosPresenter.kt$AsyncEscPosPresenter$16</ID>
+    <ID>MagicNumber:BillDetailFragment.kt$BillDetailFragment$3</ID>
+    <ID>MagicNumber:CartAdapter.kt$CartAdapter$300</ID>
+    <ID>MagicNumber:ChangePassViewModel.kt$ChangePassViewModel$200</ID>
+    <ID>MagicNumber:ChangePinActivity.kt$ChangePinActivity.&lt;no name provided&gt;$6</ID>
+    <ID>MagicNumber:ChangePinWithoutLastPinActivity.kt$ChangePinWithoutLastPinActivity$300</ID>
+    <ID>MagicNumber:ChangePinWithoutLastPinActivity.kt$ChangePinWithoutLastPinActivity.&lt;no name provided&gt;$6</ID>
+    <ID>MagicNumber:ChangePinWithoutLastViewModel.kt$ChangePinWithoutLastViewModel$200</ID>
+    <ID>MagicNumber:ChangeProfilActivity.kt$ChangeProfilActivity$16</ID>
+    <ID>MagicNumber:ChangeProfilActivity.kt$ChangeProfilActivity$160</ID>
+    <ID>MagicNumber:ChangeProfilActivity.kt$ChangeProfilActivity$30</ID>
+    <ID>MagicNumber:ChangeProfilActivity.kt$ChangeProfilActivity$32</ID>
+    <ID>MagicNumber:ChangeProfilActivity.kt$ChangeProfilActivity$5</ID>
+    <ID>MagicNumber:ChangeProfileViewModel.kt$ChangeProfileViewModel$200</ID>
+    <ID>MagicNumber:ChangeReferralFragment.kt$ChangeReferralFragment$16</ID>
+    <ID>MagicNumber:ChangeReferralFragment.kt$ChangeReferralFragment.&lt;no name provided&gt;$6</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFF0A57FF</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFF1E293B</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFF334155</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFF3C4D5F</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFF475569</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFFD1E9FF</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFFEFF8FF</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFFF1F5F9</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFFF8FAFC</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0XFFFFFFFF</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0xFF0A57FF</ID>
+    <ID>MagicNumber:CloseAccountView.kt$0xFFF8FAFC</ID>
+    <ID>MagicNumber:DetailGameMenuActivity.kt$DetailGameMenuActivity$24</ID>
+    <ID>MagicNumber:DetailHistoryTokoViewModel.kt$DetailHistoryTokoViewModel$200</ID>
+    <ID>MagicNumber:DetailMenusViewModel.kt$DetailMenusViewModel$200</ID>
+    <ID>MagicNumber:DownloadService.kt$DownloadService$100</ID>
+    <ID>MagicNumber:DownloadService.kt$DownloadService$1000</ID>
+    <ID>MagicNumber:DownloadService.kt$DownloadService$1024</ID>
+    <ID>MagicNumber:DownloadService.kt$DownloadService$4</ID>
+    <ID>MagicNumber:DownloadService.kt$DownloadService$8</ID>
+    <ID>MagicNumber:DummyTagihan.kt$310</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.ASURANSI$9</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.GAS_NEGARA$11</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.GAS_PERTAMINA$10</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.KARTU_KREDIT$8</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.MULTIFINANCE$7</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.PDAM$4</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.SAMSAT$6</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.TAGIHAN_PLN$12</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.TELKOM$3</ID>
+    <ID>MagicNumber:DummyTagihan.kt$PositionPagePembayaranBulanan.TVKABEL$5</ID>
+    <ID>MagicNumber:EWalletActivity.kt$EWalletActivity$16</ID>
+    <ID>MagicNumber:EWalletActivity.kt$EWalletActivity$24</ID>
+    <ID>MagicNumber:EWalletActivity.kt$EWalletActivity$4</ID>
+    <ID>MagicNumber:EditPriceFragment.kt$EditPriceFragment.&lt;no name provided&gt;$9</ID>
+    <ID>MagicNumber:EnterNumOmniActivity.kt$EnterNumOmniActivity$14</ID>
+    <ID>MagicNumber:EnterNumOmniActivity.kt$EnterNumOmniActivity$3</ID>
+    <ID>MagicNumber:EnterNumOmniActivity.kt$EnterNumOmniActivity.&lt;no name provided&gt;$9</ID>
+    <ID>MagicNumber:EnterOTPActivity.kt$EnterOTPActivity$300</ID>
+    <ID>MagicNumber:EnterOTPActivity.kt$EnterOTPActivity.&lt;no name provided&gt;$1000</ID>
+    <ID>MagicNumber:EnterOTPActivity.kt$EnterOTPActivity.&lt;no name provided&gt;$30000</ID>
+    <ID>MagicNumber:EnterOTPActivity.kt$EnterOTPActivity.&lt;no name provided&gt;$3600</ID>
+    <ID>MagicNumber:EnterOTPActivity.kt$EnterOTPActivity.&lt;no name provided&gt;$60</ID>
+    <ID>MagicNumber:EnterPINProviderFragment.kt$EnterPINProviderFragment$100</ID>
+    <ID>MagicNumber:EnterPINProviderFragment.kt$EnterPINProviderFragment$2000</ID>
+    <ID>MagicNumber:EnterPinActivity.kt$EnterPinActivity$5</ID>
+    <ID>MagicNumber:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$200</ID>
+    <ID>MagicNumber:EwalletListActivity.kt$EwalletListActivity$24</ID>
+    <ID>MagicNumber:FirstRegisterFragment.kt$FirstRegisterFragment$16</ID>
+    <ID>MagicNumber:FirstRegisterFragment.kt$FirstRegisterFragment.&lt;no name provided&gt;$9</ID>
+    <ID>MagicNumber:GameMenuActivity.kt$GameMenuActivity$10</ID>
+    <ID>MagicNumber:GameMenuActivity.kt$GameMenuActivity$3</ID>
+    <ID>MagicNumber:GameMenuViewModel.kt$GameMenuViewModel$200</ID>
+    <ID>MagicNumber:GameMenuViewModel.kt$GameMenuViewModel$800</ID>
+    <ID>MagicNumber:HistoryDetailActivity.kt$HistoryDetailActivity$100</ID>
+    <ID>MagicNumber:HistoryDetailActivity.kt$HistoryDetailActivity$3</ID>
+    <ID>MagicNumber:HistoryDetailActivity.kt$HistoryDetailActivity$4</ID>
+    <ID>MagicNumber:HistoryDetailTransportActivity.kt$HistoryDetailTransportActivity$1024</ID>
+    <ID>MagicNumber:HistoryDetailTransportActivity.kt$HistoryDetailTransportActivity$4</ID>
+    <ID>MagicNumber:HistoryDetailTransportActivity.kt$HistoryDetailTransportActivity$8</ID>
+    <ID>MagicNumber:HistoryDetailTransportActivity.kt$HistoryDetailTransportActivity.&lt;no name provided&gt;$100</ID>
+    <ID>MagicNumber:HistoryDetailTransportViewModel.kt$HistoryDetailTransportViewModel$200</ID>
+    <ID>MagicNumber:HistoryDetailViewModel.kt$HistoryDetailViewModel.&lt;no name provided&gt;$200</ID>
+    <ID>MagicNumber:HistoryFragment.kt$HistoryFragment$7</ID>
+    <ID>MagicNumber:HistoryPagingSource.kt$HistoryPagingSource$100</ID>
+    <ID>MagicNumber:HistoryTopUpFragment.kt$HistoryTopUpFragment$24</ID>
+    <ID>MagicNumber:HistoryTopUpPagingSource.kt$HistoryTopUpPagingSource$100</ID>
+    <ID>MagicNumber:HistoryTrxFragment.kt$HistoryTrxFragment$24</ID>
+    <ID>MagicNumber:HistoryTrxFragment.kt$HistoryTrxFragment$300</ID>
+    <ID>MagicNumber:HomeFragment.kt$HomeFragment$10</ID>
+    <ID>MagicNumber:HomeFragment.kt$HomeFragment$100f</ID>
+    <ID>MagicNumber:HomeFragment.kt$HomeFragment$1700</ID>
+    <ID>MagicNumber:HomeFragment.kt$HomeFragment$20</ID>
+    <ID>MagicNumber:HomeFragment.kt$HomeFragment$3</ID>
+    <ID>MagicNumber:HomeFragment.kt$HomeFragment$300</ID>
+    <ID>MagicNumber:HomeFragment.kt$HomeFragment$60</ID>
+    <ID>MagicNumber:HomeFragment.kt$HomeFragment.&lt;no name provided&gt;$2200L</ID>
+    <ID>MagicNumber:HomeViewModel.kt$HomeViewModel$1200</ID>
+    <ID>MagicNumber:HotelDummy.kt$4</ID>
+    <ID>MagicNumber:HotelDummy.kt$5</ID>
+    <ID>MagicNumber:InfoPromoListActivity.kt$InfoPromoListActivity$24</ID>
+    <ID>MagicNumber:InfoPromoListViewModel.kt$InfoPromoListViewModel$1200</ID>
+    <ID>MagicNumber:InjectVoucherActivity.kt$InjectVoucherActivity$24</ID>
+    <ID>MagicNumber:InjectVoucherActivity.kt$InjectVoucherActivity$300</ID>
+    <ID>MagicNumber:InjectVoucherActivity.kt$InjectVoucherActivity$4</ID>
+    <ID>MagicNumber:InjectVoucherActivity.kt$InjectVoucherActivity.&lt;no name provided&gt;$10</ID>
+    <ID>MagicNumber:InputManualActivity.kt$InputManualActivity$10</ID>
+    <ID>MagicNumber:InputManualActivity.kt$InputManualActivity$1000</ID>
+    <ID>MagicNumber:InputManualActivity.kt$InputManualActivity$20000000</ID>
+    <ID>MagicNumber:InputManualActivity.kt$InputManualActivity.&lt;no name provided&gt;$9</ID>
+    <ID>MagicNumber:LoginActivity.kt$LoginActivity$16</ID>
+    <ID>MagicNumber:LoginActivity.kt$LoginActivity$40</ID>
+    <ID>MagicNumber:LoginActivity.kt$LoginActivity.&lt;no name provided&gt;$9</ID>
+    <ID>MagicNumber:MainActivityNavComp.kt$MainActivityNavComp$1700</ID>
+    <ID>MagicNumber:MekkaAdapter.kt$MekkaAdapter$3</ID>
+    <ID>MagicNumber:MenuProductAllAdapter.kt$MenuProductAllAdapter$40</ID>
+    <ID>MagicNumber:MenuProductAllAdapter.kt$MenuProductAllAdapter.MenuViewHolder$100</ID>
+    <ID>MagicNumber:MenuTagihanAdapter.kt$MenuTagihanAdapter$40</ID>
+    <ID>MagicNumber:MenuTagihanAdapter.kt$MenuTagihanAdapter.MenuViewHolder$60</ID>
+    <ID>MagicNumber:MyFirebase.kt$MyFirebase$10000</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$100</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$10F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$12</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$12F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$15</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$16</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$170F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$180</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$24</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$255</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$28</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$3</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$360</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$4</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$48</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$4F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$6</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$66F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$6F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$72F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$7F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$8F</ID>
+    <ID>MagicNumber:MyUtils.kt$MyUtils$90F</ID>
+    <ID>MagicNumber:NetworkModule.kt$60</ID>
+    <ID>MagicNumber:NetworkModule.kt$ReleaseResponseHeaderInterceptor$200</ID>
+    <ID>MagicNumber:OnBoardingActivity.kt$OnBoardingActivity$3</ID>
+    <ID>MagicNumber:OtherChangePinViewModel.kt$OtherChangePinViewModel$200</ID>
+    <ID>MagicNumber:OtherFragment.kt$OtherFragment$1024</ID>
+    <ID>MagicNumber:OtherFragment.kt$OtherFragment$12F</ID>
+    <ID>MagicNumber:OtherFragment.kt$OtherFragment$14F</ID>
+    <ID>MagicNumber:OtherFragment.kt$OtherFragment$3</ID>
+    <ID>MagicNumber:OtherFragment.kt$OtherFragment$4</ID>
+    <ID>MagicNumber:OtherFragment.kt$OtherFragment$5</ID>
+    <ID>MagicNumber:OtherFragment.kt$OtherFragment$6</ID>
+    <ID>MagicNumber:OtherFragment.kt$OtherFragment$7</ID>
+    <ID>MagicNumber:OtherMenus.kt$OtherMenus$3</ID>
+    <ID>MagicNumber:OtherMenus.kt$OtherMenus$4</ID>
+    <ID>MagicNumber:OtherMenus.kt$OtherMenus$5</ID>
+    <ID>MagicNumber:OtherMenus.kt$OtherMenus$6</ID>
+    <ID>MagicNumber:OtherMenus.kt$OtherMenus$7</ID>
+    <ID>MagicNumber:PackageOmniActivity.kt$PackageOmniActivity$10</ID>
+    <ID>MagicNumber:PackageOmniActivity.kt$PackageOmniActivity$24</ID>
+    <ID>MagicNumber:PackageOmniActivity.kt$PackageOmniActivity$300</ID>
+    <ID>MagicNumber:PayOnlineStoreViewModel.kt$PayOnlineStoreViewModel$200</ID>
+    <ID>MagicNumber:PembayaranActivity.kt$PembayaranActivity$300</ID>
+    <ID>MagicNumber:PembayaranAsuransiFragment.kt$PembayaranAsuransiFragment$3</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity$12</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity$16</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity$18</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$10</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$11</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$3</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$4</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$5</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$6</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$7</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$8</ID>
+    <ID>MagicNumber:PembayaranBulananActivity.kt$PembayaranBulananActivity.BulananFragmentAdapter$9</ID>
+    <ID>MagicNumber:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$200</ID>
+    <ID>MagicNumber:PembayaranCartAdapter.kt$PembayaranCartAdapter$300</ID>
+    <ID>MagicNumber:PembayaranCartLangsungActivity.kt$PembayaranCartLangsungActivity$300</ID>
+    <ID>MagicNumber:PembayaranCartViewModel.kt$PembayaranCartViewModel$200</ID>
+    <ID>MagicNumber:PembayaranGasNegaraFragment.kt$PembayaranGasNegaraFragment$3</ID>
+    <ID>MagicNumber:PembayaranGasPertaminaFragment.kt$PembayaranGasPertaminaFragment$3</ID>
+    <ID>MagicNumber:PembayaranKreditFragment.kt$PembayaranKreditFragment$3</ID>
+    <ID>MagicNumber:PembayaranMultiFinanceFragment.kt$PembayaranMultiFinanceFragment$3</ID>
+    <ID>MagicNumber:PembayaranMultiFinanceFragment.kt$PembayaranMultiFinanceFragment$30</ID>
+    <ID>MagicNumber:PembayaranPBBFragment.kt$PembayaranPBBFragment$11</ID>
+    <ID>MagicNumber:PembayaranPBBFragment.kt$PembayaranPBBFragment$3</ID>
+    <ID>MagicNumber:PembayaranPDAMFragment.kt$PembayaranPDAMFragment$3</ID>
+    <ID>MagicNumber:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$16</ID>
+    <ID>MagicNumber:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$3</ID>
+    <ID>MagicNumber:PembayaranSamsatFragment.kt$PembayaranSamsatFragment$3</ID>
+    <ID>MagicNumber:PembayaranSamsatFragment.kt$PembayaranSamsatFragment$30</ID>
+    <ID>MagicNumber:PembayaranTagihanActivity.kt$PembayaranTagihanActivity$3</ID>
+    <ID>MagicNumber:PembayaranTagihanViewModel.kt$PembayaranTagihanViewModel$200</ID>
+    <ID>MagicNumber:PembayaranTelkomFragment.kt$PembayaranTelkomFragment$3</ID>
+    <ID>MagicNumber:PembayaranTvFragment.kt$PembayaranTvFragment$3</ID>
+    <ID>MagicNumber:PembayaranViewModel.kt$PembayaranViewModel$200</ID>
+    <ID>MagicNumber:PreviewFragment.kt$PreviewFragment$3</ID>
+    <ID>MagicNumber:PreviewFragment.kt$PreviewFragment$4</ID>
+    <ID>MagicNumber:PreviewPDFFragment.kt$PreviewPDFFragment$3</ID>
+    <ID>MagicNumber:PreviewPDFFragment.kt$PreviewPDFFragment$4</ID>
+    <ID>MagicNumber:PrintActivity.kt$PrintActivity$203</ID>
+    <ID>MagicNumber:PrintActivity.kt$PrintActivity$24</ID>
+    <ID>MagicNumber:PrintActivity.kt$PrintActivity$32</ID>
+    <ID>MagicNumber:PrintActivity.kt$PrintActivity$48f</ID>
+    <ID>MagicNumber:PrintPreviewFragment.kt$PrintPreviewFragment$3</ID>
+    <ID>MagicNumber:PrintPreviewFragment.kt$PrintPreviewFragment$4</ID>
+    <ID>MagicNumber:ProductDetailActivity.kt$ProductDetailActivity$100</ID>
+    <ID>MagicNumber:ProductHomeAdapter.kt$ProductHomeAdapter.ProductViewHolder$100</ID>
+    <ID>MagicNumber:ProductSearchFragment.kt$ProductSearchFragment$10</ID>
+    <ID>MagicNumber:ProductSearchFragment.kt$ProductSearchFragment$20</ID>
+    <ID>MagicNumber:ProductSearchFragment.kt$ProductSearchFragment$5</ID>
+    <ID>MagicNumber:ProductSearchPagingSource.kt$ProductSearchPagingSource$10</ID>
+    <ID>MagicNumber:ProductSearchPagingSource.kt$ProductSearchPagingSource$9</ID>
+    <ID>MagicNumber:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity$40</ID>
+    <ID>MagicNumber:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity$64</ID>
+    <ID>MagicNumber:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity.&lt;no name provided&gt;$5</ID>
+    <ID>MagicNumber:RegisterViewModel.kt$RegisterViewModel.&lt;no name provided&gt;$200</ID>
+    <ID>MagicNumber:ResetPasswordActivity.kt$ResetPasswordActivity$300</ID>
+    <ID>MagicNumber:ResetPasswordPublicActivity.kt$ResetPasswordPublicActivity$16</ID>
+    <ID>MagicNumber:ResetPasswordPublicActivity.kt$ResetPasswordPublicActivity$300</ID>
+    <ID>MagicNumber:ResetPasswordPublicActivity.kt$ResetPasswordPublicActivity.&lt;no name provided&gt;$9</ID>
+    <ID>MagicNumber:ResetPwViewModel.kt$ResetPwViewModel$200</ID>
+    <ID>MagicNumber:ScanBarcodeActivity.kt$ScanBarcodeActivity$0.5f</ID>
+    <ID>MagicNumber:ScanBarcodeActivity.kt$ScanBarcodeActivity$100</ID>
+    <ID>MagicNumber:SecondRegisterFragment.kt$SecondRegisterFragment$24</ID>
+    <ID>MagicNumber:SecondRegisterFragment.kt$SecondRegisterFragment$32</ID>
+    <ID>MagicNumber:SecondRegisterFragment.kt$SecondRegisterFragment$64</ID>
+    <ID>MagicNumber:SplashScreen.kt$SplashScreen$2000</ID>
+    <ID>MagicNumber:SplashScreen.kt$SplashScreen$3600</ID>
+    <ID>MagicNumber:SplashScreen.kt$SplashScreen$4</ID>
+    <ID>MagicNumber:SplashScreenView.kt$0XFF12ACE3</ID>
+    <ID>MagicNumber:SplashScreenView.kt$0XFF3547F2</ID>
+    <ID>MagicNumber:SplashScreenView.kt$0xFFE2E8F0</ID>
+    <ID>MagicNumber:SplashScreenView.kt$180f</ID>
+    <ID>MagicNumber:SplashScreenView.kt$18f</ID>
+    <ID>MagicNumber:SplashScreenView.kt$6f</ID>
+    <ID>MagicNumber:StatusProductActivity.kt$StatusProductActivity$24</ID>
+    <ID>MagicNumber:TestDownloadPdfActivity.kt$TestDownloadPdfActivity$1024</ID>
+    <ID>MagicNumber:TestDownloadPdfActivity.kt$TestDownloadPdfActivity.&lt;no name provided&gt;$100</ID>
+    <ID>MagicNumber:ThirdRegisterFragment.kt$ThirdRegisterFragment.&lt;no name provided&gt;$6</ID>
+    <ID>MagicNumber:TopUpEcommerceViewModel.kt$TopUpEcommerceViewModel$200</ID>
+    <ID>MagicNumber:TopUpGameViewModel.kt$TopUpGameViewModel$200</ID>
+    <ID>MagicNumber:TopUpPLNViewModel.kt$TopUpPLNViewModel$200</ID>
+    <ID>MagicNumber:TopUpProviderActivity.kt$TopUpProviderActivity$18</ID>
+    <ID>MagicNumber:TopUpProviderActivity.kt$TopUpProviderActivity.ProviderFragmentAdapter$3</ID>
+    <ID>MagicNumber:TopUpQrisFragment.kt$TopUpQrisFragment$3</ID>
+    <ID>MagicNumber:TopUpSmsFragment.kt$TopUpSmsFragment$24</ID>
+    <ID>MagicNumber:TopUpSmsFragment.kt$TopUpSmsFragment$5</ID>
+    <ID>MagicNumber:TopUpSmsFragment.kt$TopUpSmsFragment$6</ID>
+    <ID>MagicNumber:TopUpTagihanPLNFragment.kt$TopUpTagihanPLNFragment$16</ID>
+    <ID>MagicNumber:TopUpTeleponFragment.kt$TopUpTeleponFragment$24</ID>
+    <ID>MagicNumber:TopUpTeleponFragment.kt$TopUpTeleponFragment$5</ID>
+    <ID>MagicNumber:TopUpTeleponFragment.kt$TopUpTeleponFragment$6</ID>
+    <ID>MagicNumber:TopUpTokenPLNFragment.kt$TopUpTokenPLNFragment$16</ID>
+    <ID>MagicNumber:TopUpTokenPLNFragment.kt$TopUpTokenPLNFragment$24</ID>
+    <ID>MagicNumber:TopupDataFragment.kt$TopupDataFragment$24</ID>
+    <ID>MagicNumber:TopupDataFragment.kt$TopupDataFragment$5</ID>
+    <ID>MagicNumber:TopupDataFragment.kt$TopupDataFragment$6</ID>
+    <ID>MagicNumber:TopupProviderViewModel.kt$TopupProviderViewModel$200</ID>
+    <ID>MagicNumber:TopupPulsaFragment.kt$TopupPulsaFragment$24</ID>
+    <ID>MagicNumber:TopupPulsaFragment.kt$TopupPulsaFragment$5</ID>
+    <ID>MagicNumber:TopupPulsaFragment.kt$TopupPulsaFragment$6</ID>
+    <ID>MagicNumber:TransactionPayViewModel.kt$TransactionPayViewModel$200</ID>
+    <ID>MagicNumber:TransactionViewModel.kt$TransactionViewModel$200</ID>
+    <ID>MagicNumber:UpdateListAdapter.kt$UpdateListAdapter.UpdateListViewHolder$20</ID>
+    <ID>MatchingDeclarationName:CourierList.kt$Courier : Parcelable</ID>
+    <ID>MatchingDeclarationName:HotelDummy.kt$HotelModel</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$AddAddressBookRequest(address,type,provinceItem!!.provinceId,postalCode,name,phone,isMainAddress,uuid!!,cityItem!!.cityId, subdistrictItem!!.subdistrictId)</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$AddAddressBookRequest(address,type,provinceItem!!.provinceId,postalCode,name,phone,isMainAddress,uuid!!,cityItem!!.cityId,subdistrictItem!!.subdistrictId, currentAddressBook.bookAddressId)</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$cityResponse.data.singleOrNull { city -&gt; city.cityName == citySelected.name &amp;&amp; city.type == citySelected.type }?.cityId</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$if</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$if(currentAddressBook != null &amp;&amp; currentAddressBook.cityId.isNotEmpty() &amp;&amp; currentAddressBook.cityId == city.cityId) binding.cityList.setText(city.cityName)</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$if(currentAddressBook != null &amp;&amp; currentAddressBook.provinceId.isNotEmpty() &amp;&amp; currentAddressBook.provinceId == province.provinceId) binding.provinceList.setText(province.province)</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$if(currentAddressBook != null &amp;&amp; currentAddressBook.subdistrictId.isNotEmpty() &amp;&amp; currentAddressBook.subdistrictId == subDistrict.subdistrictId) subdistrictList.setText(subDistrict.subdistrictName)</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$val menusAllFragment = ButtomSheetNotif(getString(R.string.address_selector_not_valid), NotifType.NOTIF_INPUT_UNCOMPLETED)</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$val menusAllFragment = ButtomSheetNotif(getString(R.string.input_cannot_empty), NotifType.NOTIF_INPUT_UNCOMPLETED)</ID>
+    <ID>MaxLineLength:AddAddressBookActivity.kt$AddAddressBookActivity$val menusAllFragment = ButtomSheetNotif(getString(R.string.successfully_add_message), NotifType.NOTIF_SUCCESS)</ID>
+    <ID>MaxLineLength:AddUpdateAddressBookViewModel.kt$AddUpdateAddressBookViewModel$class</ID>
+    <ID>MaxLineLength:AddUpdateAddressBookViewModel.kt$AddUpdateAddressBookViewModel$fun</ID>
+    <ID>MaxLineLength:AddressBookViewModel.kt$AddressBookViewModel$class</ID>
+    <ID>MaxLineLength:AllProductEcommerceActivity.kt$AllProductEcommerceActivity$val menusAllFragment = ButtomSheetNotif(getString(R.string.empty_cart), NotifType.NOTIF_INPUT_UNCOMPLETED)</ID>
+    <ID>MaxLineLength:AllProductEcommerceViewModel.kt$AllProductEcommerceViewModel$//// _products.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:AllProductFragment.kt$AllProductFragment$findNavController().navigate(AllProductFragmentDirections.actionAllProductFragmentToProductSearchFragment())</ID>
+    <ID>MaxLineLength:AllProductPagingAdapter.kt$AllProductPagingAdapter$class</ID>
+    <ID>MaxLineLength:AllProductPagingAdapter.kt$AllProductPagingAdapter.ViewHolder$val calculateDiscount = 100 * (productStoreDataItem.price.toDouble() - price) / productStoreDataItem.price.toDouble()</ID>
+    <ID>MaxLineLength:AllProductPagingSource.kt$AllProductPagingSource$class</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun addAddressShipment(addAddressBookRequest: AddAddressBookRequest,accessToken: String) : Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun calculateUnitPrice(request: CalculateUnitPriceRequestDto, accessToken: String): Response&lt;CalculateUnitPriceResponseDto&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun changePinWithoutLastPin(resetPINRequestDto: ResetPINRequestDto, accessToken: String) : Response&lt;OTPResponseDto&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun checkTransaction(transactionCheckRequest: TransactionCheckRequest, token: String) : Response&lt;TransactionHistoryResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun deleteAddressShipment(addAddressBookRequest: AddAddressBookRequest, accessToken: String) : Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getBillNicePay(nicepayRegistrationRequest: NicepayRegistrationRequest, accessToken: String) : Response&lt;BillNicePayResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getCityShipment(cityShipmentRequest: CityShipmentRequest, accessToken: String) : Response&lt;CityShipmentResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getHotelOrderList(hotelListByCityRequest: HotelListByCityRequest,accessToken: String) : Response&lt;HotelListResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getPriceShipment(priceRequest: CourierPriceRequest, accessToken: String) : Response&lt;CourierPriceResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getProductStore(productStoreRequest: ProductStoreRequest, accessToken: String) : Response&lt;ProductStoreResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getProductStoreList(request: TokoOnlineListRequest, accessToken: String) : Response&lt;ProductStoreResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getSubDistrictShipment(subdistrictShipmentRequest: SubdistrictShipmentRequest, accessToken: String) : Response&lt;SubdistrictShipmentResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getTransactionHistory( trxHistoryRequest: TrxHistoryRequest, token: String) : Response&lt;TransactionHistoryResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun getTransactionHistoryTopUp( trxHistoryRequest: TrxHistoryRequest, token: String) : Response&lt;HistoryTopUpResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun orderCheckTokoOnline(orderCheckTokoRequest: OrderCheckTokoRequest, accessToken: String) : Response&lt;OrderCheckTokoResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun orderOnlineStore(orderRequest: OnlineStoreOrderRequest, accessToken: String) : Response&lt;OnlineStoreOrderResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun orderTrackingTokoOnline(request: OrderCheckTokoRequest, accessToken: String) : Response&lt;TrackingOrderResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun registrationNicePay(nicepayRegistrationRequest: NicepayRegistrationRequest,accessToken: String) : Response&lt;NicepayRegistrationResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun registrationNicePayEwallet(ewalletRequest: NicePayEwalletRequest, accessToken: String) : Response&lt;NicePayEwalletResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun registrationQrisNicePay(qrisRegistrationRequest: QrisRegistrationRequest, accessToken: String): Response&lt;QrisRegistrationResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun sendOtpChangePIN(changePinOtpCodeRequest: ResetPinOtpCodeRequest,accessToken: String) : Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun sendTransactionPostPaid(transactionRequest: TransactionRequest, accessToken: String) : Response&lt;TransactionPayResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun sendTransactionPrePaid(transactionRequest: TransactionRequest, token: String) : Response&lt;TransactionResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun sendTransactionTAG(transactionRequest: TransactionRequest, token: String) : Response&lt;TransactionTAGResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun setTrxTOReceived(orderCheckTokoRequest: OrderCheckTokoRequest, accessToken: String) : Response&lt;ErrorMessageResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelper.kt$ApiHelper$suspend fun updateAddressShipment(addAddressBookRequest: AddAddressBookRequest, accessToken: String) : Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:ApiHelperImplement.kt$ApiHelperImplement$)</ID>
+    <ID>MaxLineLength:ApiHelperImplement.kt$ApiHelperImplement$override suspend fun getCurrentVersionApps(request: ProfileRequest): Response&lt;AppsVersionResponse&gt;</ID>
+    <ID>MaxLineLength:ApiHelperImplement.kt$ApiHelperImplement$override suspend fun registerOtpCode(resetPwCodeRequest: ResetPwCodeRequest): Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:ApiHelperImplement.kt$ApiHelperImplement$override suspend fun resetPassword(resetPassRequestDto: ResetPassRequestDto): Response&lt;OTPResponseDto&gt;</ID>
+    <ID>MaxLineLength:ApiHelperImplement.kt$ApiHelperImplement$override suspend fun resetPasswordCode(resetPwCodeRequest: ResetPwCodeRequest): Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:ApiHelperImplement.kt$ApiHelperImplement$override suspend fun sendOtpChangePIN(changePinOtpCodeRequest: ResetPinOtpCodeRequest, accessToken: String): Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:ApiHelperImplement.kt$ApiHelperImplement$override suspend fun uploadKYC(request: KYCRequest, token: String): Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:ApiService.kt$ApiService$suspend</ID>
+    <ID>MaxLineLength:ArbitraryGridDecoration.kt$GridSpanDecoration$// If spanIndex + spanSize equals spanCount (it occupies the last column) you apply the full offset on the end, else only half.</ID>
+    <ID>MaxLineLength:BannerAdapterList.kt$BannerAdapterList$class</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Booking Hotel dan akomodasi lainnya dengan mudah, cepat, dan aman bisa kamu lakukan di Cashplus. Proses pemilihan akomodasi, jenis kamar, dan detail lainnya bisa kamu lakukan di Cashplus dengan aman, lancar, dan dengan harga yang terbaik!."</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Dapatkan kemudahan transaksi Top Up Saldo E-Wallet di Cashplus dengan kecepatan transaksi dan harga yang terbaik "</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Dapatkan kemudahan transaksi Top Up Saldo E-Wallet di Cashplus dengan kecepatan transaksi dan harga yang terbaik"</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Dear Sahabat Cashplus! Dapatkan kemudahan transaksi Top Up Saldo E-Wallet di Cashplus dengan kecepatan transaksi dan harga yang terbaik yang kami berikan. Saldo E-Wallet yang kamu isi / Top up melalui Cashplus akan langsung ke dalam aplikasi E-Wallet kamu, tanpa perlu memasukkan kode voucher atau apapun. Top Up E-Wallet dapat kamu lakukan beberapa kali dalam 1 hari."</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Dear sahabat Cashplus. Jangan sampai kehabisan kuota disaat kamu sedang beraktivitas. Dapatkan kemudahan pengisian kuota All Operator di Cashplus, dengan kecepatan transaksi dan harga terbaik yang kami berikan. Kuota kamu akan langsung masuk ke nomor handphone yang kamu isi. Transaksi bisa kamu lakukan dimanapun dan kapanpun."</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Dengan Cashplus kamu dapat melakukan pembelian token PLN dengan cepat, mudah, dan tentunya dengan harga yang murah!."</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Hai Free Fire Lovers. Top Up Diamonds Free Fire kamu sekarang di Cashplus!. Transaksi cepat, aman, dan harga yang terbaik hanya untuk kamu user Cashplus. Diamonds Free Fire kamu akan langsung masuk ke dalam akun game yang kamu Top Up melalui Cashplus. Ayoo isi sekarang, semua items di Shop menanti kamu!"</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Hai Legends!. Top Up Diamonds Mobile Legends kamu sekarang di Cashplus!. Transaksi cepat, aman, dan harga yang terbaik hanya untuk kamu user Cashplus. Diamonds Mobile Legends kamu akan langsung masuk ke dalam akun game yang kamu Top Up melalui Cashplus. Ayoo isi sekarang, semua items di Shop menanti kamu!"</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Hai Sahabat Cashplus! Segera isi Pulsa kamu di Cashplus. Pulsa dengan harga terbaik, nominal yang bervariasi dan kecepatan yang transaksi terbaik kami sediakan di Cashplus!. Gausah bingung lagi mau isi pulsa dimana, buka aplikasi Cashplus mu, pergi ke menu “Pulsa”, masukkan nomor handphone mu, masukkan pin mu, dan transaksi Sukses! "</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Hai Sahabat Cashplus! Sekarang kamu dapat membeli Emas dan Cetak Emas di Cashplus. Gunakan dan Nikmati kemudahan membeli Emas di CashGold. Dengan melengkapi data-data pengguna melalui KYC, kamu bisa langsung gunakan fitur Cashgold. Harga Emas akan selalu update realtime sesuai harga pasar emas. Setelah kamu membeli Emas di Cashplus, kamu juga bisa memproses pencetakkan emas dengan mudah, dan tentu nya emas yang dicetak tersertifikasi dengan aman."</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Hai sahabat Cashplus!. Saat ini isi Token PLN tidak perlu bingung dan susah. Dengan Cashplus kamu dapat melakukan pembelian token PLN dengan cepat, mudah, dan tentunya dengan harga yang murah!. Buktikan sekarang dan rasakan kemudahan dan kualitas nya!"</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Kamu dapat mewujudkan mimpi kamu untuk pergi Haji dan Umroh melalui Cashplus. Beli paket perjalanan Haji dan Umroh dengan mudah, aman, dan dengan harga yang terbaik."</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Kemudahan transaksi top up Game Call Of Duty Mobile ada di Cashplus !. Dengan variasi nominal Top Up yang kami sediakan Anda dapat mengisi CP Anda dengan sesuai kemauan Anda. Transaksi mudah dan cepat dengan harga yang bersahabat. CP Point akan langsung masuk kedalam akun game kamu setelah transaksi sukses di Cashplus. Transaksi bisa kamu lakukan kapanpun dan dimanapun. Top Up dapat kamu lakukan beberapa kali dalam waktu satu hari. "</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Kemudahan transaksi top up dan Pembelian Voucher Game kami hadirkan di Cashplus !. Dengan variasi nominal Top Up dan Voucher yang kami sediakan Anda dapat Top Up Games sesuai kemauan Anda. Transaksi mudah dan cepat dengan harga yang bersahabat. Transaksi cepat, aman, dan valid. Transaksi bisa kamu lakukan kapanpun dan dimanapun. Top Up dapat kamu lakukan beberapa kali dalam waktu satu hari."</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Sahabat Cashplus, cek dan bayar tagihan PPOB dapat dengan mudah kamu lakukan hanya di Cashplus!. Proses yang cepat dan dengan biaya admin yang murah, tentunya akan kamu nikmati. Hanya dengan 1 Aplikasi, kamu dapat membayar berbagai macam tagihan PPOB."</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Segera isi Pulsa kamu di Cashplus. Pulsa dengan harga terbaik, nominal yang bervariasi dan kecepatan yang transaksi terbaik"</ID>
+    <ID>MaxLineLength:BannerDummy.kt$"Segera isi UC PUBG dengan beli voucher UC PUBG di Cashplus, kami berikan kemudahan transaksi dan harga yang terbaik untuk kamu.Dengan variasi nominal Voucher yang kami sediakan Anda dapat mengisi UC Anda dengan sesuai kemauan Anda. Transaksi mudah dan cepat dengan harga yang bersahabat. Transaksi bisa kamu lakukan kapanpun dan dimanapun."</ID>
+    <ID>MaxLineLength:ButtomSheetNotif.kt$ButtomSheetNotif$Glide.with(this@ButtomSheetNotif).asGif().load(R.raw.cashplus_gagal).into(ivButtomsheet)</ID>
+    <ID>MaxLineLength:CartAdapter.kt$CartAdapter$if (product.note.isNotEmpty()) addNote.text = context.getString(R.string.label_note, product.note)</ID>
+    <ID>MaxLineLength:CartProductActivity.kt$CartProductActivity$putParcelableArrayListExtra(PembayaranCartActivity.KEY_PRODUCT_ORDERED, ArrayList(cartAdapter.getProductChecked()))</ID>
+    <ID>MaxLineLength:CartProductDao.kt$CartProductDao$@Query("UPDATE product_cart SET qty = :qty, isChecked = :isChecked, note = :note WHERE userId = :userId AND productId = :productId")</ID>
+    <ID>MaxLineLength:CartViewModel.kt$CartViewModel$class</ID>
+    <ID>MaxLineLength:CashGoldBannerAdapter.kt$CashGoldBannerAdapter$class</ID>
+    <ID>MaxLineLength:CashGoldModule.kt$private</ID>
+    <ID>MaxLineLength:CategoryProductAdapter.kt$CategoryProductAdapter$class</ID>
+    <ID>MaxLineLength:ChangeEmailFragment.kt$ChangeEmailFragment$tvEmail.setTextColor(if (email.isNullOrEmpty()) Color.parseColor("#DBA800") else Color.parseColor("#1E293B"))</ID>
+    <ID>MaxLineLength:ChangeProfilActivity.kt$ChangeProfilActivity$datePickerDialog</ID>
+    <ID>MaxLineLength:ChangeProfilActivity.kt$ChangeProfilActivity$edtAddressChangeprofile.filters = arrayOf(InputFilter.LengthFilter(160), inputAllTypeWithSomeSpecialChars)</ID>
+    <ID>MaxLineLength:ChangeProfilActivity.kt$ChangeProfilActivity$if</ID>
+    <ID>MaxLineLength:ChangeProfilActivity.kt$ChangeProfilActivity$sdf</ID>
+    <ID>MaxLineLength:ChangeProfilActivity.kt$ChangeProfilActivity$showModalError(getString(R.string.input_min_length_required, getString(R.string.postal_code), 5))</ID>
+    <ID>MaxLineLength:ChooseTopUpFragment.kt$ChooseTopUpFragment$Toast.makeText(requireContext(), "Akun anda belum terhubung ke nobu, silahkan lakukan penghubungan", Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:CloseAccountActivity.kt$CloseAccountActivity$"https://ui-avatars.com/api/?name=${data.full_name}&amp;size=300&amp;rounded=true&amp;background=0A57FF&amp;color=FFFFFF&amp;bold=true"</ID>
+    <ID>MaxLineLength:CloseAccountActivity.kt$CloseAccountActivity$val</ID>
+    <ID>MaxLineLength:CourierListAdapter.kt$CourierListAdapter$class</ID>
+    <ID>MaxLineLength:CourierPriceListAdapter.kt$CourierPriceListAdapter$class</ID>
+    <ID>MaxLineLength:CourierPriceListAdapter.kt$CourierPriceListAdapter$tvTitleCourier.text = "$label ${currentPrice.service} (${MyUtils.getNumberRupiah(currentPrice.cost[0].value)})"</ID>
+    <ID>MaxLineLength:DataAdapter.kt$DataAdapter$class</ID>
+    <ID>MaxLineLength:DataAdapter.kt$DataAdapter.DataViewHolder$.</ID>
+    <ID>MaxLineLength:DataAdapter.kt$DataAdapter.DataViewHolder$tvPriceBuy.text = root.context.getString(R.string.price_with_label, getNumberRupiah(productModel.price.toInt()))</ID>
+    <ID>MaxLineLength:DataProductAdapter.kt$DataProductAdapter$return DataProductViewHolder(ItemDataProductModelBinding.inflate(LayoutInflater.from(parent.context), parent, false))</ID>
+    <ID>MaxLineLength:DetailGameMenuActivity.kt$DetailGameMenuActivity$.</ID>
+    <ID>MaxLineLength:DetailGameMenuActivity.kt$DetailGameMenuActivity$backgroundButton = R.drawable.bg_transparent_border_primary_rounded_20</ID>
+    <ID>MaxLineLength:DetailGameMenuActivity.kt$DetailGameMenuActivity$customerId = "${inputIdGame}${if(spinnerServer.isVisible) "-${serverIdSelected?.serverId}" else ""}${if(edtZoneId.isVisible) "$zoneId" else ""}${if(edtUsername.isVisible) "-$username" else ""}"</ID>
+    <ID>MaxLineLength:DetailGameMenuActivity.kt$DetailGameMenuActivity$serverIdSelected = serverNameList.singleOrNull { server -&gt; server.serverName.lowercase() == serverName.lowercase() }</ID>
+    <ID>MaxLineLength:DetailHistoryHotelActivity.kt$DetailHistoryHotelActivity$// if("""(?i)(HOTEL)""".toRegex().containsMatchIn(typeProduct ?: HistoryDetailActivity.PRODUCT_CODE_INVALID)) {</ID>
+    <ID>MaxLineLength:DetailHistoryHotelActivity.kt$DetailHistoryHotelActivity$// listInfo.add("Info Kereta : Kelas ${jsonObject.getString("train_class")}, Nomer Kereta ${jsonObject.getString("train_number")}")</ID>
+    <ID>MaxLineLength:DetailHistoryHotelActivity.kt$DetailHistoryHotelActivity$// listInfo.add("Penumpang ${i.plus(1)} : ${passengerObject.getString("passenger_title")} ${passengerObject.getString("passenger_fullname")}")</ID>
+    <ID>MaxLineLength:DetailHistoryHotelActivity.kt$DetailHistoryHotelActivity$// listInfo.add("Seat: Gerbong ${passengerObject.getString("passenger_gerbong")}, No ${passengerObject.getString("passenger_seat")}")</ID>
+    <ID>MaxLineLength:DetailHistoryHotelActivity.kt$DetailHistoryHotelActivity$// }else if("""(?i)(KERETA)""".toRegex().containsMatchIn(typeProduct ?: HistoryDetailActivity.PRODUCT_CODE_INVALID)){</ID>
+    <ID>MaxLineLength:DetailHistoryHotelActivity.kt$DetailHistoryHotelActivity$// }else if("""(?i)(PESAWAT)""".toRegex().containsMatchIn(typeProduct ?: HistoryDetailActivity.PRODUCT_CODE_INVALID)){</ID>
+    <ID>MaxLineLength:DetailHistoryTokoActivity.kt$DetailHistoryTokoActivity$"${data.summary.serviceCode} ${data.summary.courierName} - ${data.summary.waybillNumber}"</ID>
+    <ID>MaxLineLength:DetailHistoryTokoActivity.kt$DetailHistoryTokoActivity$ButtomSheetNotif(data.message ?: data.msg ?: "Sukses", NotifType.NOTIF_SUCCESS).show(supportFragmentManager,null)</ID>
+    <ID>MaxLineLength:DetailPackageAdapter.kt$DetailPackageAdapter$return DetailPackageViewHolder(ItemDetailPackageOmniBinding.inflate(LayoutInflater.from(parent.context), parent, false))</ID>
+    <ID>MaxLineLength:DetailPackageAdapter.kt$DetailPackageAdapter.DetailPackageViewHolder$inner</ID>
+    <ID>MaxLineLength:DownlineModule.kt$private</ID>
+    <ID>MaxLineLength:DownloadService.kt$DownloadService$// val response = mainRepository.downloadFile("http://10.9.81.62:3000/api/print/transportation", "{\"date\":\"2423123213\",\"departure\":\"\",\"booking_code\":\"\",\"transport_name\":\"\",\"transport_number\":\"flightcode|trainnumber\",\"transport_class\":\"\",\"transport_rute\":\"Jakarta(CGK)06:00-YogyakartaKulonprogo(YIA)07:15\",\"print_category\":\"PESAWAT\",\"passengers\":[{\"name\":\"dsfsadf\",\"id\":\"12412312\",\"title\":\"Mr\",\"type\":\"Adult|young\",\"seat\":\"\",\"gerbong\":\"\"}]}")</ID>
+    <ID>MaxLineLength:DownloadService.kt$DownloadService$val response = mainRepository.downloadFileExport("https://cashplus.id/api/print/transportation", true, "{\"date\":\"2423123213\",\"departure\":\"\",\"booking_code\":\"\",\"transport_name\":\"\",\"transport_number\":\"flightcode|trainnumber\",\"transport_class\":\"\",\"transport_rute\":\"Jakarta(CGK)06:00-YogyakartaKulonprogo(YIA)07:15\",\"print_category\":\"PESAWAT\",\"passengers\":[{\"name\":\"dsfsadf\",\"id\":\"12412312\",\"title\":\"Mr\",\"type\":\"Adult|young\",\"seat\":\"\",\"gerbong\":\"\"}]}")</ID>
+    <ID>MaxLineLength:EWalletActivity.kt$EWalletActivity$.</ID>
+    <ID>MaxLineLength:EWalletActivity.kt$EWalletActivity$backgroundButton = R.drawable.bg_transparent_border_primary_rounded_20</ID>
+    <ID>MaxLineLength:EWalletActivity.kt$EWalletActivity$if</ID>
+    <ID>MaxLineLength:EWalletActivity.kt$EWalletActivity$private</ID>
+    <ID>MaxLineLength:EWalletActivity.kt$EWalletActivity$val phoneData = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id, null, null)</ID>
+    <ID>MaxLineLength:EWalletActivity.kt$EWalletActivity$val phoneNumber = phoneData.getString(phoneData.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.NUMBER))</ID>
+    <ID>MaxLineLength:EWalletActivity.kt$EWalletActivity$val productEWallet = response.data.data?.filter { product -&gt; product.product_type.isEmpty() }</ID>
+    <ID>MaxLineLength:EditPriceFragment.kt$EditPriceFragment.Companion$fun</ID>
+    <ID>MaxLineLength:EnterNumOmniActivity.kt$EnterNumOmniActivity$private</ID>
+    <ID>MaxLineLength:EnterNumOmniActivity.kt$EnterNumOmniActivity$val isHasPhoneNumber = cursor.getString(cursor.getColumnIndexOrThrow(ContactsContract.Contacts.HAS_PHONE_NUMBER)).toInt() &gt; 0</ID>
+    <ID>MaxLineLength:EnterNumOmniActivity.kt$EnterNumOmniActivity$val phoneData = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id, null, null)</ID>
+    <ID>MaxLineLength:EnterNumOmniActivity.kt$EnterNumOmniActivity$val phoneNumber = phoneData.getString(phoneData.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.NUMBER))</ID>
+    <ID>MaxLineLength:EnterNumOmniActivity.kt$EnterNumOmniActivity.&lt;no name provided&gt;$inputPhoneDest.error = getString(R.string.input_min_length_required, getString(R.string.phone_number), 9)</ID>
+    <ID>MaxLineLength:EnterOTPActivity.kt$EnterOTPActivity$Toast.makeText(this@EnterOTPActivity, getString(R.string.otp_sent), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:EnterOTPActivity.kt$EnterOTPActivity$Toast.makeText(this@EnterOTPActivity, getString(R.string.otp_via_email_sent), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:EnterOTPActivity.kt$EnterOTPActivity$backgroundButton</ID>
+    <ID>MaxLineLength:EnterOTPActivity.kt$EnterOTPActivity$val menusAllFragment = ButtomSheetNotif(getString(R.string.pin_change_successfully), NotifType.NOTIF_SUCCESS)</ID>
+    <ID>MaxLineLength:EnterPINProviderFragment.kt$EnterPINProviderFragment$context = requireContext()</ID>
+    <ID>MaxLineLength:EnterPINProviderFragment.kt$EnterPINProviderFragment$val menusAllFragment = ButtomSheetNotif(getString(R.string.new_transaction_confirmation), NotifType.NOTIF_TRX_HAS_BEEN_COMPLETED,this)</ID>
+    <ID>MaxLineLength:EnterPINProviderFragment.kt$EnterPINProviderFragment$val message = getString(R.string.buying_format_successfully, trx.desc?.lowercase(), trx.dest?.replace(Regex("\\D"), ""))</ID>
+    <ID>MaxLineLength:EnterPINTopUpQrisFragment.kt$EnterPINTopUpQrisFragment$.</ID>
+    <ID>MaxLineLength:EnterPinActivity.kt$EnterPinActivity$goToMainAndSendMessage(this@EnterPinActivity, message, NotifType.NOTIF_TRX_SUCCESS, additionalToken = token)</ID>
+    <ID>MaxLineLength:EnterPinActivity.kt$EnterPinActivity$goToMainAndSendMessage(this@EnterPinActivity,trx.msg ?: "", NotifType.NOTIF_PENDING_OR_PROCESS)</ID>
+    <ID>MaxLineLength:EnterPinActivity.kt$EnterPinActivity$if</ID>
+    <ID>MaxLineLength:EnterPinActivity.kt$EnterPinActivity$val menusAllFragment = ButtomSheetNotif(getString(R.string.new_transaction_confirmation), NotifType.NOTIF_TRX_HAS_BEEN_COMPLETED,this@EnterPinActivity)</ID>
+    <ID>MaxLineLength:EnterPinActivity.kt$EnterPinActivity$val message = "Pembelian ${it.data.desc?.lowercase()} ke ${it.data.dest?.replace(Regex("\\D"), "")} berhasil, silahkan cek di halaman riwayat untuk lebih detail"</ID>
+    <ID>MaxLineLength:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$_responseTransaction.postValue(MyResponse.error(context.getString(R.string.exception_gson), null))</ID>
+    <ID>MaxLineLength:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$_responseTransaction.postValue(MyResponse.error(response.body()?.msg ?: "Terdapat kesalahan, silahkan coba lagi", null))</ID>
+    <ID>MaxLineLength:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$_responseTransaction.postValue(MyResponse.error(trxResponse.msg ?: context.getString(R.string.exception_gson), trxResponse))</ID>
+    <ID>MaxLineLength:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$class</ID>
+    <ID>MaxLineLength:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$val response = mainRepository.sendTransactionPostPaid(transactionRequest.copy(kode_produk = "TAG$productCode"), token)</ID>
+    <ID>MaxLineLength:EnterPinPayActivity.kt$EnterPinPayActivity$// getString(R.string.transaction_failed_with_prefix, trx.shortDsc), //"${trx.shortDsc} Gagal",</ID>
+    <ID>MaxLineLength:EnterPinPayActivity.kt$EnterPinPayActivity$// getString(R.string.transaction_pending_with_prefix, trx.shortDsc), //"${trx.shortDsc} pending",</ID>
+    <ID>MaxLineLength:EnterPinPayActivity.kt$EnterPinPayActivity$// getString(R.string.transaction_success_with_prefix, trx.shortDsc), //"${trx.shortDsc} berhasil",</ID>
+    <ID>MaxLineLength:EnterPinPayActivity.kt$EnterPinPayActivity$// val menusAllFragment = ButtomSheetNotif(if(trx.billData?.info.isNullOrEmpty()) trx.msg else trx.billData?.info?.replace("|","\n") , com.pasukanlangit.id.library_core.domain.model.NotifType.NOTIF_ERROR)</ID>
+    <ID>MaxLineLength:EnterPinPayActivity.kt$EnterPinPayActivity$goToMainAndSendMessage(this@EnterPinPayActivity,trx.billData?.info?.replace("|","\n") ?: "Transaksi sedang pending, cek history untuk info detailnya", com.pasukanlangit.id.library_core.domain.model.NotifType.NOTIF_PENDING_OR_PROCESS)</ID>
+    <ID>MaxLineLength:EnterPinPayActivity.kt$EnterPinPayActivity$tvError.text = if(trx.billData?.info.isNullOrEmpty()) trx.msg else trx.billData?.info?.replace("|","\n")</ID>
+    <ID>MaxLineLength:FirstRegisterFragment.kt$FirstRegisterFragment.&lt;no name provided&gt;$inputMsidnReg.error = getString(R.string.input_min_length_required, getString(R.string.phone_number), 9)</ID>
+    <ID>MaxLineLength:GameMenuActivity.kt$GameMenuActivity$if</ID>
+    <ID>MaxLineLength:GameMenuViewModel.kt$GameMenuViewModel$it.kode_produk.replace("_", " ").contains(keyword, ignoreCase = true) || it.short_dsc.contains(keyword, ignoreCase = true)</ID>
+    <ID>MaxLineLength:GetBalanceDashboard.kt$GetBalanceDashboard$it.accountInfos.first().availableBalance.value.split(".").first().toDoubleOrNull()</ID>
+    <ID>MaxLineLength:GoToMakkahBannerAdapter.kt$GoToMakkahBannerAdapter$class</ID>
+    <ID>MaxLineLength:GridMenuGameAdapter.kt$GridMenuGameAdapter$class</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$"""(?i)(HOTEL|KERETA|PESAWAT|KAPAL)""".toRegex().containsMatchIn(trxDetail.productCode!!)</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$"${Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)}" + File.separator + "Cashplus" + File.separator + "Struk"</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$.</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$feeCounter</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$if</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$isTrxPay = trxDetailIntent?.productCode?.contains("pay", ignoreCase = true) == true || trxDetailIntent?.productCode?.contains("unit", ignoreCase = true) == true</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$permissionBluetoothPrint.launch(arrayOf(Manifest.permission.BLUETOOTH_CONNECT, Manifest.permission.BLUETOOTH_SCAN))</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$permissionReadWrite.launch(arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE))</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$private</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$trxDetailIntent?.value?.toIntOrNull()?.minus(trxDetailIntent?.qty?.toIntOrNull() ?: 0).toString()</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$tvInfoSetPrice.text</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$txtFee.text = if (fee &lt; 0) getString(R.string.discount_fee) else getString(R.string.service_fee)</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$val</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$val dateDepartureSplitted = jsonObject.getString("flight_departure").split(" ").toMutableList()</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$val dateDepartureSplitted = jsonObject.getString("ship_departure").split(" ").toMutableList()</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$val menusAllFragment = ButtomSheetNotif(getString(R.string.data_not_found), NotifType.NOTIF_ERROR)</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$val outputFormat = DateTimeFormatter.ofPattern("EEEE, dd MMMM yyyy", Locale(getString(R.string.locale_language), getString(R.string.locale_country)))</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$val stringFormatted = "${getString(R.string.transaction_id)}:${trxDetail.trxId}|${getString(R.string.customer_id)}:${trxDetail.noHp}|${getString(R.string.on_behalf_of).toCapitalize()}:$customerName|Tarif:$rates|Daya:$power VA|KWH:$kwh,0|Tanggal:$dateFormatted|Jam:$timeFormatted"</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$val stringFormatted = "${getString(R.string.transaction_id)}:${trxDetail.trxId}|${getString(R.string.customer_id)}:${trxDetail.noHp}|${getString(R.string.on_behalf_of).toCapitalize()}:$namaPelanggan|Tarif:$tarif|Daya:$daya|KWH:$kwh|PPN:$ppn|PPJ:$ppj|Materai:$materai|Angsuran:$angsuran|Rp Stroom:$tokenStrom|Tanggal:$dateFormatted|Jam:$timeFormatted"</ID>
+    <ID>MaxLineLength:HistoryDetailActivity.kt$HistoryDetailActivity$}</ID>
+    <ID>MaxLineLength:HistoryDetailTransportViewModel.kt$HistoryDetailTransportViewModel$val response = mainRepository.downloadFile("${BuildConfig.BASE_URL_CASHPLUS_WEB}api/print/transportation", data)</ID>
+    <ID>MaxLineLength:HistoryFragment.kt$HistoryFragment$sdf = SimpleDateFormat("yyyyMMdd", Locale(getString(R.string.locale_language), getString(R.string.locale_country)))</ID>
+    <ID>MaxLineLength:HistoryFragment.kt$HistoryFragment.&lt;no name provided&gt;$val formatDate = SimpleDateFormat("yyyyMMdd", Locale(getString(R.string.locale_language), getString(R.string.locale_country)))</ID>
+    <ID>MaxLineLength:HistoryFragment.kt$HistoryFragment.&lt;no name provided&gt;$val formatDateLabel = SimpleDateFormat("d MMM yyyy", Locale(getString(R.string.locale_language), getString(R.string.locale_country)))</ID>
+    <ID>MaxLineLength:HistoryLoadStateAdapter.kt$HistoryLoadStateAdapter.HistoryLoadStateViewHolder$inner</ID>
+    <ID>MaxLineLength:HistoryPagingAdapter.kt$HistoryPagingAdapter.HistoryViewHolder$tvTrxHistoryDestinationAndCategory.text = root.context.getString(R.string.destinasi_riwayat_transaksi, transactionItem?.noHp, transactionItem?.category)</ID>
+    <ID>MaxLineLength:HistoryTopUpFragment.kt$HistoryTopUpFragment$sdf = SimpleDateFormat("yyyyMMdd", Locale(getString(R.string.locale_language), getString(R.string.locale_country)))</ID>
+    <ID>MaxLineLength:HistoryTrxAdapter.kt$HistoryTrxAdapter.ActivityViewHolder$tvTrxHistoryDestinationAndCategory.text = root.context.getString(R.string.destinasi_riwayat_transaksi, transactionItem.noHp, transactionItem.category)</ID>
+    <ID>MaxLineLength:HistoryTrxFragment.kt$HistoryTrxFragment$emptyHistoryTrx.text = getString(R.string.no_transaction_history_in_label, dateHistory?.dateLabel)</ID>
+    <ID>MaxLineLength:HomeFragment.kt$HomeFragment$"https://ui-avatars.com/api/?name=${profile.full_name}&amp;size=300&amp;rounded=true&amp;background=FFFFFF&amp;color=0A57FF&amp;bold=true"</ID>
+    <ID>MaxLineLength:HomeFragment.kt$HomeFragment$// val cityWithoutPrefix = addressSplitted.lowercase().replace("^(kota|kabupaten)".toRegex(), "").trim()</ID>
+    <ID>MaxLineLength:HomeFragment.kt$HomeFragment$Toast.makeText(requireContext(), getString(R.string.provide_request_permission_location), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:HomeHotelAdapter.kt$HomeHotelAdapter$class</ID>
+    <ID>MaxLineLength:HomeHotelAdapter.kt$HomeHotelAdapter.HotelViewHolder$putExtra(HOTEL_CITY_SELECTED, CitySelected(hotelModel.hotelCityName, hotelModel.hotelCityCode))</ID>
+    <ID>MaxLineLength:InjectVoucherActivity.kt$InjectVoucherActivity$"404" -&gt; Toast.makeText(this@InjectVoucherActivity, result.data?.getStringExtra(RESULT_SCAN_BARCODE), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:InjectVoucherActivity.kt$InjectVoucherActivity$getString(R.string.inject_voucher_successfully, dataProviders[providerPosition-1].kode_provider)</ID>
+    <ID>MaxLineLength:InjectVoucherActivity.kt$InjectVoucherActivity.&lt;no name provided&gt;$else</ID>
+    <ID>MaxLineLength:InputManualActivity.kt$InputManualActivity$if</ID>
+    <ID>MaxLineLength:InputManualActivity.kt$InputManualActivity$private</ID>
+    <ID>MaxLineLength:InputManualActivity.kt$InputManualActivity$txtWarning.text = getString(R.string.buy_minimum_unit_product_format, productPurchase?.kode_provider?.replace("_", " "))</ID>
+    <ID>MaxLineLength:InputManualActivity.kt$InputManualActivity$val phoneData = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id, null, null)</ID>
+    <ID>MaxLineLength:InputManualActivity.kt$InputManualActivity.&lt;no name provided&gt;$inputPhoneNumber.error = getString(R.string.input_min_length_required, getString(R.string.customer_number), 9)</ID>
+    <ID>MaxLineLength:InputVoucherDataFragment.kt$InputVoucherDataFragment$val menusAllFragment = ButtomSheetNotif("Data tidak boleh kosong", com.pasukanlangit.id.library_core.domain.model.NotifType.NOTIF_INPUT_UNCOMPLETED)</ID>
+    <ID>MaxLineLength:KycModule.kt$private</ID>
+    <ID>MaxLineLength:LoginActivity.kt$LoginActivity$Toast.makeText(this@LoginActivity, getString(R.string.update_token_fcm_failed), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:LoginActivity.kt$LoginActivity$backgroundButton</ID>
+    <ID>MaxLineLength:LoginActivity.kt$LoginActivity.&lt;no name provided&gt;$inputMsidnMasuk.error = getString(R.string.input_min_length_required, getString(R.string.phone_number), 9)</ID>
+    <ID>MaxLineLength:MainActivityNavComp.kt$MainActivityNavComp$FirebaseCrashlytics.getInstance().recordException(RuntimeException("trigger in app message throw exceptions cause : ${e.message}"))</ID>
+    <ID>MaxLineLength:MainActivityNavComp.kt$MainActivityNavComp$else</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$fun deleteProductFromCart(productStoreDataItem: ProductStoreDataItem, userId: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$fun insertProductToCart(productStoreDataItem: ProductStoreDataItem)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun calculateUnitPrice(request: CalculateUnitPriceRequestDto, accessToken: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun changePin(changePinRequest: ChangePinRequest, accessToken : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun changePinWithoutLastPin(resetPINRequestDto: ResetPINRequestDto, accessToken: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun changeReferral(referralChangeRequest: ReferralChangeRequest,token : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun checkTransaction(transactionCheckRequest: TransactionCheckRequest, accessToken : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun deleteAccount(request: DeleteAccountRequestDto, token: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun getBalanceInquiry(request: ProfileRequest, accessToken: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun getProductList(productRequest: ProductRequest, accessToken : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun getProductStore(token: String, productStoreRequest: ProductStoreRequest)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun getProfile(profileRequest: ProfileRequest, accessToken : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun getTransactionHistory(trxHistoryRequest: TrxHistoryRequest, accessToken : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun getTransactionHistoryTopUp(trxHistoryRequest: TrxHistoryRequest, accessToken : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun omniPackageList(request: OmniRequests, accessToken: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun omniPackageOrder(request: OmniRequests, accessToken: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun resetPasswordCode(resetPwCodeRequest: ResetPwCodeRequest)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun searchProductStore(token: String, request: ProductSearchRequest)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun sendOtpChangePIN(changePinOtpCodeRequest: ResetPinOtpCodeRequest, accessToken: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun sendTransactionPrePaid(transactionRequest: TransactionRequest, accessToken : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun sendTransactionTAG(transactionRequest: TransactionRequest, accessToken : String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun transactionBulk(request: TransactionBulkRequestDto, accessToken: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun updateEmail(updateEmail: UpdateEmailRequestDto, accessToken: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun updateProfile(updateProfilRequest: UpdateProfilRequest, token: String)</ID>
+    <ID>MaxLineLength:MainRepository.kt$MainRepository$suspend fun uploadKYC(request: KYCRequest, token: String): Response&lt;UserModel&gt;</ID>
+    <ID>MaxLineLength:MekkaAdapter.kt$MekkaAdapter$class</ID>
+    <ID>MaxLineLength:MenuTagihanAdapter.kt$MenuTagihanAdapter$class</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$"[L]${receiptRowIndex.first().trim().addNewLineInString(15, "\n")}:[R]${receiptRowIndex.last().trim().addCharAtEachIndex(16, "\n[R]")}\n"</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$"[L]SN :[R]${sn.last().trim().addCharAtEachIndex(16, "\n[R]")}\n"</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$"\n[L]${row.first().trim().addNewLineInString(15, "\n")}:[R]${row.last().trim().addCharAtEachIndex(16, "\n[R]")}\n"</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$SimpleDateFormat("dd MMM yyyy", Locale(this.getString(R.string.locale_language), this.getString(R.string.locale_country))).parse(date) as Date</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$SimpleDateFormat("yyyy-MM-dd", Locale(this.getString(R.string.locale_language), this.getString(R.string.locale_country))).parse(date) as Date</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$else</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$if</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$if (index == textNewLine.lastIndex) textRight.typeface = Typeface.create(Typeface.DEFAULT_BOLD, Typeface.BOLD)</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$packageManager.queryIntentActivities(chooser, PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_DEFAULT_ONLY.toLong()))</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$return SimpleDateFormat("EEEE, dd MMMM yyyy", Locale(this.getString(R.string.locale_language), this.getString(R.string.locale_country))).format(dateParser).toString()</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$stringReceipt.append("[L] :[R]${item.replace("REF:", "").trim().addCharAtEachIndex(16, "\n[R]")}\n")</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$stringReceipt.append("[L]${sn.first().trim().addNewLineInString(15, "\n")}:[R]${sn.last().trim().addCharAtEachIndex(16, "\n[R]")}\n")</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$stringReceipt.append("[L]BERITA :[R]${newsForTransfer?.addCharAtEachIndex(16, "\n[R]") ?: "-"}\n")</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$stringReceipt.append("[L]SN :[R]${newValue.trim().addCharAtEachIndex(16, "\n[R]")}\n")</ID>
+    <ID>MaxLineLength:MyUtils.kt$MyUtils$val lastValue = receiptRowIndex.last().replace("rp", "", ignoreCase = true).replace("rp.", "", ignoreCase = true).trim().getValueFromComplexString()</ID>
+    <ID>MaxLineLength:MyUtils.kt$const val URL_IMAGE_EMPTY = "https://www.bigpharmacy.com.my/scripts/timthumb.php?src=https://www.bigpharmacy.com.my//site_media/img/103303EA.jpg&amp;w=600&amp;zc=1"</ID>
+    <ID>MaxLineLength:NetworkModule.kt$ReleaseResponseHeaderInterceptor$// if (message == "uuid not login" || message == "token not valid" || message == "uuid tidak masuk" || message == "token tidak valid") {</ID>
+    <ID>MaxLineLength:NetworkModule.kt$ResponseHeaderInterceptor$"&lt;-- ${response.code}${if (response.message.isEmpty()) "" else ' ' + response.message} ${response.request.url} (${tookMs}ms${if (!logHeaders) ", $bodySize body" else ""})"</ID>
+    <ID>MaxLineLength:NetworkModule.kt$ResponseHeaderInterceptor$// if (message == "uuid not login" || message == "token not valid" || message == "uuid tidak masuk" || message == "token tidak valid") {</ID>
+    <ID>MaxLineLength:NetworkModule.kt$private</ID>
+    <ID>MaxLineLength:NobuModule.kt$private</ID>
+    <ID>MaxLineLength:OmniPackageOrder.kt$OmniPackageOrder$val requestTAG = TransactionRequest(uuid = uuid, kode_produk = "TAGOMNICHANNEL", dest = "$paymentCode-$dest", pin = "")</ID>
+    <ID>MaxLineLength:OptionOTPFragment.kt$OptionOTPFragment$Toast.makeText(requireContext(), getString(R.string.method_message_not_available), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:OtherChangePinViewModel.kt$OtherChangePinViewModel$// _user.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:OtherFragment.kt$OtherFragment$"https://ui-avatars.com/api/?name=${response.full_name}&amp;size=300&amp;rounded=true&amp;background=FFFFFF&amp;color=0A57FF&amp;bold=true"</ID>
+    <ID>MaxLineLength:OtherFragment.kt$OtherFragment$.</ID>
+    <ID>MaxLineLength:OtherFragment.kt$OtherFragment$Toast.makeText(requireContext(), getString(R.string.referral_upline_has_been_changed), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:OtherFragment.kt$OtherFragment$else</ID>
+    <ID>MaxLineLength:OtherFragment.kt$OtherFragment$val version = requireActivity().packageManager.getPackageInfoCompat(requireActivity().packageName).versionName</ID>
+    <ID>MaxLineLength:OtherFragment.kt$OtherFragment$}</ID>
+    <ID>MaxLineLength:PackageCategoryAdapter.kt$PackageCategoryAdapter$PackageCategoryViewHolder : ViewHolder</ID>
+    <ID>MaxLineLength:PackageOmniActivity.kt$PackageOmniActivity$PackageOmniEvents.FetchMenu(uuid = uuid ?: "", dest = phoneDest ?: "", accessToken = accessToken ?: "")</ID>
+    <ID>MaxLineLength:PackageOmniActivity.kt$PackageOmniActivity$PackageOmniEvents.FetchPackage(uuid = uuid ?: "", dest = phoneDest ?: "", mlId = mlid.toString(), accessToken = accessToken ?: "")</ID>
+    <ID>MaxLineLength:PackageOmniActivity.kt$PackageOmniActivity$if</ID>
+    <ID>MaxLineLength:PackageOmniActivity.kt$PackageOmniActivity$tvStateEmpty.text</ID>
+    <ID>MaxLineLength:PackageOmniViewModel.kt$PackageOmniViewModel$packageOrder(uuid = events.uuid, dest = events.dest, packageId = events.packageId, accessToken = events.accessToken)</ID>
+    <ID>MaxLineLength:PayOnlineStoreActivity.kt$PayOnlineStoreActivity$putExtra(EnterPinOnlineStoreActivity.KEY_DEST_TRANSACTION, onlineStoreOrder.data.orderTransaction.orderId)</ID>
+    <ID>MaxLineLength:PembayaranActivity.kt$PembayaranActivity$if</ID>
+    <ID>MaxLineLength:PembayaranActivity.kt$PembayaranActivity$if(imgUrl.isEmpty()) imgUrl = getAvaImagePlaceholder(productModel.kode_provider.replace("_"," "))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanAsuransi.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanCredit.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanFinance.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanGasNegara.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanPDAM.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanPascaBayar.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanPbb.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanPertagas.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanSamsat.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanTelkom.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$// _tagihanTvKabel.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$_billTrx.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_gson), null)))</ID>
+    <ID>MaxLineLength:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$class</ID>
+    <ID>MaxLineLength:PembayaranCartActivity.kt$PembayaranCartActivity$Toast.makeText(this@PembayaranCartActivity, "Pilih alamat pengiriman terlebih dahulu", Toast.LENGTH_SHORT)</ID>
+    <ID>MaxLineLength:PembayaranCartAdapter.kt$PembayaranCartAdapter$class</ID>
+    <ID>MaxLineLength:PembayaranCartViewModel.kt$PembayaranCartViewModel$// if(addressBookChoosen == null) addressBookChoosen = response.body()?.data?.singleOrNull { it.isMainAddress == "1" }</ID>
+    <ID>MaxLineLength:PembayaranCartViewModel.kt$PembayaranCartViewModel$// var addressBookChoosen = response.body()?.data?.singleOrNull { it.bookAddressId == addressFromDb?.bookAddressId }</ID>
+    <ID>MaxLineLength:PembayaranCartViewModel.kt$PembayaranCartViewModel$class</ID>
+    <ID>MaxLineLength:PembayaranGasNegaraFragment.kt$PembayaranGasNegaraFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranGasPertaminaFragment.kt$PembayaranGasPertaminaFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranKreditFragment.kt$PembayaranKreditFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranMultiFinanceFragment.kt$PembayaranMultiFinanceFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranPBBFragment.kt$PembayaranPBBFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranPDAMFragment.kt$PembayaranPDAMFragment$if</ID>
+    <ID>MaxLineLength:PembayaranPDAMFragment.kt$PembayaranPDAMFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$else</ID>
+    <ID>MaxLineLength:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$if</ID>
+    <ID>MaxLineLength:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$private</ID>
+    <ID>MaxLineLength:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$val phoneData = requireActivity().contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id, null, null)</ID>
+    <ID>MaxLineLength:PembayaranSamsatFragment.kt$PembayaranSamsatFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranTagihanActivity.kt$PembayaranTagihanActivity$if(imgUrl != null &amp;&amp; imgUrl.isNotEmpty()) Glide.with(this@PembayaranTagihanActivity).load(imgUrl).into(logoTagihan)</ID>
+    <ID>MaxLineLength:PembayaranTagihanActivity.kt$PembayaranTagihanActivity$short_dsc = transactionInfo.billData.info</ID>
+    <ID>MaxLineLength:PembayaranTelkomFragment.kt$PembayaranTelkomFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranTvFragment.kt$PembayaranTvFragment$uuid = uuid ?: ""</ID>
+    <ID>MaxLineLength:PembayaranViewModel.kt$PembayaranViewModel$// _balance.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:PrintActivity.kt$PrintActivity$private</ID>
+    <ID>MaxLineLength:PrintActivity.kt$PrintActivity$val customDialogFragment = ButtomSheetNotif(getString(R.string.bluetooth_not_supported), NotifType.NOTIF_ERROR)</ID>
+    <ID>MaxLineLength:PrintReceiptUseCase.kt$PrintReceiptUseCase$val updateRequest = UpdateSellingPriceRequest(uuid = uuid, productCode = productCode, newPrice = adjustPrice)</ID>
+    <ID>MaxLineLength:PrintReceiptUseCase.kt$PrintReceiptUseCase$val updateResponse = repository.updateSellingPrice(request = updateRequest.toUpdateSellingPriceRequestDto(), accessToken = accessToken)</ID>
+    <ID>MaxLineLength:ProductDetailActivity.kt$ProductDetailActivity$Toast.makeText(this@ProductDetailActivity, getString(R.string.successfully_added_to_cart), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:ProductDetailActivity.kt$ProductDetailActivity$Toast.makeText(this@ProductDetailActivity,getString(R.string.empty_product_stock), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:ProductDetailActivity.kt$ProductDetailActivity$tvStarDetailProduct.text = getString(R.string.product_rate_per_viewer, product.rateAverage, product.viewer)</ID>
+    <ID>MaxLineLength:ProductDetailActivity.kt$ProductDetailActivity$val menusAllFragment = ButtomSheetNotif(getString(R.string.empty_cart), NotifType.NOTIF_INPUT_UNCOMPLETED)</ID>
+    <ID>MaxLineLength:ProductDetailViewModel.kt$ProductDetailViewModel$class</ID>
+    <ID>MaxLineLength:ProductHomeAdapter.kt$ProductHomeAdapter$class</ID>
+    <ID>MaxLineLength:ProductHomeAdapter.kt$ProductHomeAdapter$return ProductViewHolder(ItemProdukEcommerceHomeBinding.inflate(LayoutInflater.from(parent.context), parent, false))</ID>
+    <ID>MaxLineLength:ProductHomeAdapter.kt$ProductHomeAdapter.ProductViewHolder$val calculateDiscount = 100 * (productStoreDataItem.price.toDouble() - price) / productStoreDataItem.price.toDouble()</ID>
+    <ID>MaxLineLength:ProductSearchFragment.kt$ProductSearchFragment$findNavController()</ID>
+    <ID>MaxLineLength:ProductSearchFragment.kt$ProductSearchFragment$if</ID>
+    <ID>MaxLineLength:ProductSearchFragment.kt$ProductSearchFragment$val menusAllFragment = ButtomSheetNotif(it.message, com.pasukanlangit.id.library_core.domain.model.NotifType.NOTIF_ERROR)</ID>
+    <ID>MaxLineLength:ProductSearchPagingSource.kt$ProductSearchPagingSource$class</ID>
+    <ID>MaxLineLength:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity.&lt;no name provided&gt;$edtReasonCloseAccount.error = getString(R.string.input_min_length_required, getString(R.string.reason_close_account), 5)</ID>
+    <ID>MaxLineLength:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity.&lt;no name provided&gt;$edtReasonCloseAccount.error = getString(R.string.input_required, getString(R.string.reason_close_account))</ID>
+    <ID>MaxLineLength:RebateModule.kt$private</ID>
+    <ID>MaxLineLength:RecapitulationModule.kt$private</ID>
+    <ID>MaxLineLength:RegisterActivity.kt$RegisterActivity$findNavController(R.id.nav_host_register).navigate(SecondRegisterFragmentDirections.actionSecondToThird(resultFromOTP.toTypedArray()))</ID>
+    <ID>MaxLineLength:RegisterActivity.kt$RegisterActivity$val</ID>
+    <ID>MaxLineLength:RegisterViewModel.kt$RegisterViewModel.&lt;no name provided&gt;$_otpRegisterResponse.postValue(MyResponse.error(mContext.getString(R.string.exception_network), null))</ID>
+    <ID>MaxLineLength:ResetPasswordActivity.kt$ResetPasswordActivity$if</ID>
+    <ID>MaxLineLength:ResetPasswordPublicActivity.kt$ResetPasswordPublicActivity.&lt;no name provided&gt;$inputMsidn.error = getString(R.string.input_min_length_required, getString(R.string.phone_number), 9)</ID>
+    <ID>MaxLineLength:SecondRegisterFragment.kt$SecondRegisterFragment$if</ID>
+    <ID>MaxLineLength:SecondRegisterFragment.kt$SecondRegisterFragment.&lt;no name provided&gt;$inputNameReg.error = getString(R.string.input_check_only_word_error, getString(R.string.account_name))</ID>
+    <ID>MaxLineLength:SecondRegisterFragment.kt$SecondRegisterFragment.&lt;no name provided&gt;$inputOwnerNameReg.error = getString(R.string.input_check_only_word_error, getString(R.string.owner_name))</ID>
+    <ID>MaxLineLength:ShareReferralActivity.kt$ShareReferralActivity$"Gunakan kode referral $myReferral untuk mendaftar menjadi downline saya di cashplus. More info: https://cashplus.id/"</ID>
+    <ID>MaxLineLength:StatusProductAdapter.kt$StatusProductAdapter$return StatusProductViewHolder(ItemStatusProductBinding.inflate(LayoutInflater.from(parent.context), parent, false))</ID>
+    <ID>MaxLineLength:TagihanResultActivity.kt$TagihanResultActivity$startActivity(Intent(this@TagihanResultActivity, MainActivityNavComp::class.java).putExtra(MainActivityNavComp.FORWARDING_TO_HISTORY, true))</ID>
+    <ID>MaxLineLength:TestDownloadPdfActivity.kt$TestDownloadPdfActivity$// downloadPdfContent("http://10.9.81.62:3000/print/transportation?ex=true&amp;data={date:,departure_date:,departure_time:,booking_code:,transport_name:,transport_number:flightcode|trainnumber,transport_class:,transport_rute:flight_info_transit|train_info_route,print_category:KERETA|PESAWAT,passengers:[{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:}]}")</ID>
+    <ID>MaxLineLength:TestDownloadPdfActivity.kt$TestDownloadPdfActivity$val uri = Uri.parse("https://cashplus.id/print/transportation?ex=true&amp;data={date:,departure_date:,departure_time:,booking_code:,transport_name:,transport_number:flightcode|trainnumber,transport_class:,transport_rute:flight_info_transit|train_info_route,print_category:KERETA|PESAWAT,passengers:[{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:}]}")</ID>
+    <ID>MaxLineLength:TopUpEcommerceViewModel.kt$TopUpEcommerceViewModel$// _productEcommerce.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:TopUpModule.kt$private</ID>
+    <ID>MaxLineLength:TopUpPLNViewModel.kt$TopUpPLNViewModel$// _tokenInfoDetail.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:TopUpPLNViewModel.kt$TopUpPLNViewModel$// _topUpPln.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:TopUpPLNViewModel.kt$TopUpPLNViewModel$// _topUpTagihanPln.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:TopUpPLNViewModel.kt$TopUpPLNViewModel$_tokenInfoDetail.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_gson), null)))</ID>
+    <ID>MaxLineLength:TopUpPLNViewModel.kt$TopUpPLNViewModel$_tokenInfoDetail.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_network), null)))</ID>
+    <ID>MaxLineLength:TopUpPLNViewModel.kt$TopUpPLNViewModel$_topUpTagihanPln.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_gson), null)))</ID>
+    <ID>MaxLineLength:TopUpPLNViewModel.kt$TopUpPLNViewModel$_topUpTagihanPln.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_network), null)))</ID>
+    <ID>MaxLineLength:TopUpPagingAdapter.kt$TopUpPagingAdapter.TopUpViewHolder$else</ID>
+    <ID>MaxLineLength:TopUpPagingAdapter.kt$TopUpPagingAdapter.TopUpViewHolder$tvTitle.text = context.getString(R.string.topUp_format, topUpItem.paymentMethod.replace("ewallet", "Via", ignoreCase = true).replace("_", " "))</ID>
+    <ID>MaxLineLength:TopUpPagingAdapter.kt$TopUpPagingAdapter.TopUpViewHolder$tvTitle.text = context.getString(R.string.transfer_topUp_format, topUpItem.paymentMethod.replace("tiket", "", ignoreCase = true))</ID>
+    <ID>MaxLineLength:TopUpProviderActivity.kt$TopUpProviderActivity$Toast.makeText(this@TopUpProviderActivity, "Aktifkan izin akses kontak untuk menggunakan fitur ini", Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:TopUpProviderActivity.kt$TopUpProviderActivity$if</ID>
+    <ID>MaxLineLength:TopUpProviderActivity.kt$TopUpProviderActivity$private</ID>
+    <ID>MaxLineLength:TopUpProviderActivity.kt$TopUpProviderActivity$val phoneNumber = phones.getString(phones.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.NUMBER))</ID>
+    <ID>MaxLineLength:TopUpProviderActivity.kt$TopUpProviderActivity$val phones = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id, null, null)</ID>
+    <ID>MaxLineLength:TopUpTokenPLNFragment.kt$TopUpTokenPLNFragment$backgroundButton = R.drawable.bg_transparent_border_primary_rounded_20</ID>
+    <ID>MaxLineLength:TopUpTokenPLNFragment.kt$TopUpTokenPLNFragment$if</ID>
+    <ID>MaxLineLength:TransactionPayViewModel.kt$TransactionPayViewModel$_responseTransaction.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_gson), null)))</ID>
+    <ID>MaxLineLength:TransactionPayViewModel.kt$TransactionPayViewModel$_responseTransaction.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_network), null)))</ID>
+    <ID>MaxLineLength:TransactionPayViewModel.kt$TransactionPayViewModel$_responseTransaction.postValue(SingleEvent(MyResponse.error(trxResponse.msg ?: context.getString(R.string.exception_gson), trxResponse)))</ID>
+    <ID>MaxLineLength:TransactionViewModel.kt$TransactionViewModel$// _responseTransaction.postValue(MyResponse.error("Anda tidak diperkenankan melakukan transaksi ini, silahkan hubungi costumer service kami", null))</ID>
+    <ID>MaxLineLength:TransactionViewModel.kt$TransactionViewModel$// _responseTransaction.postValue(MyResponse.error("Maaf internet terputus, silahkan cek jaringan atau refresh jaringan", null))</ID>
+    <ID>MaxLineLength:TransactionViewModel.kt$TransactionViewModel$_responseTransaction.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_gson), null)))</ID>
+    <ID>MaxLineLength:TransactionViewModel.kt$TransactionViewModel$_responseTransaction.postValue(SingleEvent(MyResponse.error(context.getString(R.string.exception_network), null)))</ID>
+    <ID>MaxLineLength:TransactionViewModel.kt$TransactionViewModel$_responseTransaction.postValue(SingleEvent(MyResponse.error(trxResponse.msg ?: "", trxResponse)))</ID>
+    <ID>MaxLineLength:TransferModule.kt$private</ID>
+    <ID>MaxLineLength:TravelModule.kt$private</ID>
+    <ID>MaxLineLength:TrxPendingHelper.kt$TrxPendingHelper$// builder.setChannelId(channelId).setDefaults(NotificationCompat.DEFAULT_ALL).priority = NotificationCompat.PRIORITY_HIGH</ID>
+    <ID>MaxLineLength:TrxPendingHelper.kt$TrxPendingHelper$// val filteredTrxPending = trxPendingSaved.filter { trxfilter -&gt; trxfilter.kode_provider != trx.productCode }</ID>
+    <ID>MaxLineLength:TrxPendingHelper.kt$TrxPendingHelper$// val notificationManagerCompat = context.applicationContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager</ID>
+    <ID>MaxLineLength:TrxPendingService.kt$TrxPendingService$// builder.setChannelId(channelId).setDefaults(NotificationCompat.DEFAULT_ALL).priority = NotificationCompat.PRIORITY_HIGH</ID>
+    <ID>MaxLineLength:TrxPendingService.kt$TrxPendingService$// val filteredTrxPending = trxPendingSaved.filter { trxfilter -&gt; trxfilter.kode_provider != trx!!.productCode }</ID>
+    <ID>MaxLineLength:TrxPendingService.kt$TrxPendingService$// val filteredTrxPending = trxPendingSaved.filter { trxfilter -&gt; trxfilter.kode_provider != trx.productCode }</ID>
+    <ID>MaxLineLength:TrxPendingService.kt$TrxPendingService$// val notificationManagerCompat = applicationContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager</ID>
+    <ID>MaxLineLength:UpdateAppsActivity.kt$UpdateAppsActivity$Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$packageName"))</ID>
+    <ID>MaxLineLength:UpdateListAdapter.kt$UpdateListAdapter$class</ID>
+    <ID>MaxLineLength:UpdatePriceProductFragment.kt$UpdatePriceProductFragment$Toast.makeText(requireContext(), getString(R.string.selling_price_not_allowed_capital_price), Toast.LENGTH_SHORT).show()</ID>
+    <ID>MaxLineLength:WebviewActivity.kt$WebviewActivity$myWebView.loadUrl("http://10.9.81.62:3000/print/transportation?data={%20%22date%22:%20%221%20Desember%202021%22,%20%22departure_date%22:%20%2221%20Desember%202021%22,%20%22departure_time%22:%2206:00%20-%2007:15%22,%20%22booking_code%22:%20%228875996421%22,%20%22transport_name%22:%20%22KM.KELUD%22,%20%22transport_number%22:%20%22NP-119-B10%22,%20%22transport_class%22:%20%22EKONOMI%22,%20%22transport_rute%22:%20%22Tanjung%20Priok,%20Jakarta-Batu%20Ampar,%20Batam%20(Tanjung%20Priok,%20Jakarta-Kijang,%20Bintan-Batu%20Ampar,%20Batam)%22,%20%22print_category%22:%20%22KAPAL%22,%20%22passengers%22:%20[%20{%20%22name%22%20:%20%22Andika%20Pruawna%20Nawsaga%22,%20%22id%22%20:%20%2212412312%22,%20%22title%22%20:%20%22Mr%22,%20%22type%22:%20%22Adult%22,%20%22seat%22:%20%224%22,%20%22gerbong%22%20:%20%223%22%20},%20{%20%22name%22%20:%20%22dsfsadf%22,%20%22id%22%20:%20%2212412312%22,%20%22title%22%20:%20%22Mr%22,%20%22type%22:%20%22Adult%22,%20%22seat%22:%20%22%22,%20%22gerbong%22%20:%20%22%22%20},%20{%20%22name%22%20:%20%22Andika%20Pruawna%20Nawsaga%22,%20%22id%22%20:%20%2212412312%22,%20%22title%22%20:%20%22Mr%22,%20%22type%22:%20%22Adult%22,%20%22seat%22:%20%22%22,%20%22gerbong%22%20:%20%22%22%20},%20{%20%22name%22%20:%20%22Dava%20Mohammad%20Hamka%20Alamat%22,%20%22id%22%20:%20%2212412312%22,%20%22title%22%20:%20%22Mr%22,%20%22type%22:%20%22Adult%22,%20%22seat%22:%20%22%22,%20%22gerbong%22%20:%20%22%22%20}%20]%20}")</ID>
+    <ID>NestedBlockDepth:ButtomSheetNotif.kt$ButtomSheetNotif$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>NestedBlockDepth:HistoryDetailActivity.kt$HistoryDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>NestedBlockDepth:InjectVoucherActivity.kt$InjectVoucherActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>NestedBlockDepth:NetworkModule.kt$ReleaseResponseHeaderInterceptor$override fun intercept(chain: Interceptor.Chain): Response</ID>
+    <ID>NestedBlockDepth:NetworkModule.kt$ResponseHeaderInterceptor$override fun intercept(chain: Interceptor.Chain): Response</ID>
+    <ID>NestedBlockDepth:PathUtil.kt$PathUtil$@SuppressLint("Recycle") @Throws(URISyntaxException::class) fun getPath(context: Context, uri: Uri?): String?</ID>
+    <ID>NestedBlockDepth:PembayaranActivity.kt$PembayaranActivity$private fun getDataIntent()</ID>
+    <ID>NestedBlockDepth:UpdateAppsActivity.kt$UpdateAppsActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>NewLineAtEndOfFile:AddUpdateAddressBookViewModel.kt$com.pasukanlangit.cashplus.ui.addressbook.add.AddUpdateAddressBookViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:AddressBookActivity.kt$com.pasukanlangit.cashplus.ui.addressbook.AddressBookActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:AddressBookDao.kt$com.pasukanlangit.cashplus.data.room.AddressBookDao.kt</ID>
+    <ID>NewLineAtEndOfFile:AddressBookViewModel.kt$com.pasukanlangit.cashplus.ui.addressbook.AddressBookViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:AllMenusProduct.kt$com.pasukanlangit.cashplus.ui.all_menus.AllMenusProduct.kt</ID>
+    <ID>NewLineAtEndOfFile:AllMenusViewModel.kt$com.pasukanlangit.cashplus.ui.all_menus.AllMenusViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:AllProductEcommerceActivity.kt$com.pasukanlangit.cashplus.ui.onlinestore.AllProductEcommerceActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:AllProductEcommerceViewModel.kt$com.pasukanlangit.cashplus.view_model.AllProductEcommerceViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:AllProductFragment.kt$com.pasukanlangit.cashplus.ui.onlinestore.AllProductFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:AllProductPagingAdapter.kt$com.pasukanlangit.cashplus.ui.onlinestore.AllProductPagingAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:AllProductPagingSource.kt$com.pasukanlangit.cashplus.ui.onlinestore.AllProductPagingSource.kt</ID>
+    <ID>NewLineAtEndOfFile:ApiHelper.kt$com.pasukanlangit.cashplus.data.api.ApiHelper.kt</ID>
+    <ID>NewLineAtEndOfFile:ApiHelperImplement.kt$com.pasukanlangit.cashplus.data.api.ApiHelperImplement.kt</ID>
+    <ID>NewLineAtEndOfFile:ApiService.kt$com.pasukanlangit.cashplus.data.api.ApiService.kt</ID>
+    <ID>NewLineAtEndOfFile:App.kt$com.pasukanlangit.cashplus.App.kt</ID>
+    <ID>NewLineAtEndOfFile:AppUseCases.kt$com.pasukanlangit.cashplus.domain.usecase.AppUseCases.kt</ID>
+    <ID>NewLineAtEndOfFile:ArbitraryGridDecoration.kt$com.pasukanlangit.cashplus.ui.onlinestore.ArbitraryGridDecoration.kt</ID>
+    <ID>NewLineAtEndOfFile:AsyncEscPosPresenter.kt$com.pasukanlangit.cashplus.utils.print.AsyncEscPosPresenter.kt</ID>
+    <ID>NewLineAtEndOfFile:BalanceAdapter.kt$com.pasukanlangit.cashplus.ui.pages.home.BalanceAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:BannerAdapter.kt$com.pasukanlangit.cashplus.adapter.BannerAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:BannerAdapterList.kt$com.pasukanlangit.cashplus.adapter.BannerAdapterList.kt</ID>
+    <ID>NewLineAtEndOfFile:BannerDummy.kt$com.pasukanlangit.cashplus.ui.pages.home.BannerDummy.kt</ID>
+    <ID>NewLineAtEndOfFile:BillDetailAdapter.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.BillDetailAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:BillDetailFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.BillDetailFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:BillPayTransactionUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.BillPayTransactionUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:ButtomSheetNotif.kt$com.pasukanlangit.cashplus.ui.checkout.ButtomSheetNotif.kt</ID>
+    <ID>NewLineAtEndOfFile:CalculateUnitPrice.kt$com.pasukanlangit.cashplus.domain.usecase.CalculateUnitPrice.kt</ID>
+    <ID>NewLineAtEndOfFile:CalculateUnitPriceResponse.kt$com.pasukanlangit.cashplus.domain.model.CalculateUnitPriceResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:CartAdapter.kt$com.pasukanlangit.cashplus.ui.cartproduct.CartAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:CartProductActivity.kt$com.pasukanlangit.cashplus.ui.cartproduct.CartProductActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:CartProductDao.kt$com.pasukanlangit.cashplus.data.room.CartProductDao.kt</ID>
+    <ID>NewLineAtEndOfFile:CashGoldBannerAdapter.kt$com.pasukanlangit.cashplus.adapter.CashGoldBannerAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:CashGoldModule.kt$com.pasukanlangit.cashplus.di.indigold.CashGoldModule.kt</ID>
+    <ID>NewLineAtEndOfFile:CashPlusDatabase.kt$com.pasukanlangit.cashplus.data.room.CashPlusDatabase.kt</ID>
+    <ID>NewLineAtEndOfFile:CategoryProductAdapter.kt$com.pasukanlangit.cashplus.ui.onlinestore.CategoryProductAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangeEmailFragment.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.email.ChangeEmailFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangePassViewModel.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.password.ChangePassViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangePasswordActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.password.ChangePasswordActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangePinActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.pin.ChangePinActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangePinWithoutLastPinActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.pin.ChangePinWithoutLastPinActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangePinWithoutLastViewModel.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.pin.ChangePinWithoutLastViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangeProfilActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.profile.ChangeProfilActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangeProfileViewModel.kt$com.pasukanlangit.cashplus.view_model.ChangeProfileViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangeReferralFragment.kt$com.pasukanlangit.cashplus.ui.pages.others.ChangeReferralFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ChangeReferralUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.ChangeReferralUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:ChooseCourierFragment.kt$com.pasukanlangit.cashplus.ui.pembayarancart.courir.ChooseCourierFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ChooseEwalletMethodFragment.kt$com.pasukanlangit.cashplus.ui.ewallet.ChooseEwalletMethodFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ChooseRecapitulationFragment.kt$com.pasukanlangit.cashplus.ui.pages.others.ChooseRecapitulationFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ChooseTopUpFragment.kt$com.pasukanlangit.cashplus.ui.pages.home.ChooseTopUpFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ChooseTransferFragment.kt$com.pasukanlangit.cashplus.ui.pages.home.ChooseTransferFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:CloseAccountActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.profile.close.CloseAccountActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:CloseAccountView.kt$com.pasukanlangit.cashplus.ui.compose.CloseAccountView.kt</ID>
+    <ID>NewLineAtEndOfFile:CloseAccountViewModel.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.profile.close.CloseAccountViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:CoroutinesAsyncTask.kt$com.pasukanlangit.cashplus.utils.print.CoroutinesAsyncTask.kt</ID>
+    <ID>NewLineAtEndOfFile:CoroutinesBluetoothEscPosPrint.kt$com.pasukanlangit.cashplus.utils.print.CoroutinesBluetoothEscPosPrint.kt</ID>
+    <ID>NewLineAtEndOfFile:CourierList.kt$com.pasukanlangit.cashplus.ui.pembayarancart.courir.CourierList.kt</ID>
+    <ID>NewLineAtEndOfFile:CourierListAdapter.kt$com.pasukanlangit.cashplus.ui.pembayarancart.courir.CourierListAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:CourierPriceListAdapter.kt$com.pasukanlangit.cashplus.ui.pembayarancart.courir.CourierPriceListAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:DataAdapter.kt$com.pasukanlangit.cashplus.adapter.DataAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:DataPackageAdapter.kt$com.pasukanlangit.cashplus.ui.pembayaran_provider.DataPackageAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:DataProductAdapter.kt$com.pasukanlangit.cashplus.adapter.DataProductAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:DateHistory.kt$com.pasukanlangit.cashplus.ui.pages.history.DateHistory.kt</ID>
+    <ID>NewLineAtEndOfFile:DeleteAccountUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.DeleteAccountUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailGameMenuActivity.kt$com.pasukanlangit.cashplus.ui.pembayaran_game_menu.DetailGameMenuActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailHistoryHotelActivity.kt$com.pasukanlangit.cashplus.ui.pages.history.detailhotel.DetailHistoryHotelActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailHistoryTokoActivity.kt$com.pasukanlangit.cashplus.ui.pages.history.detailtokoonline.DetailHistoryTokoActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailHistoryTokoViewModel.kt$com.pasukanlangit.cashplus.ui.pages.history.detailtokoonline.DetailHistoryTokoViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailInjectVoucherFragment.kt$com.pasukanlangit.cashplus.ui.injectvoucher.DetailInjectVoucherFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailMenusViewModel.kt$com.pasukanlangit.cashplus.ui.all_menus.DetailMenusViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailPackageAdapter.kt$com.pasukanlangit.cashplus.ui.omni.packageomni.DetailPackageAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailPackageFragment.kt$com.pasukanlangit.cashplus.ui.omni.packageomni.DetailPackageFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailPromoActivity.kt$com.pasukanlangit.cashplus.ui.info_promo.DetailPromoActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailSNAdapter.kt$com.pasukanlangit.cashplus.ui.pages.history.DetailSNAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailTopUpFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_provider.DetailTopUpFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailTopUpGameFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_game_menu.DetailTopUpGameFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailTopUpTokenBottomSheet.kt$com.pasukanlangit.cashplus.ui.pembayaran_pln.DetailTopUpTokenBottomSheet.kt</ID>
+    <ID>NewLineAtEndOfFile:DetailTrxAdapter.kt$com.pasukanlangit.cashplus.ui.checkout.DetailTrxAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:DirectProductPurchasesFragment.kt$com.pasukanlangit.cashplus.ui.ewallet.DirectProductPurchasesFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:DirectProductPurchasesViewModel.kt$com.pasukanlangit.cashplus.ui.ewallet.DirectProductPurchasesViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:DownlineModule.kt$com.pasukanlangit.cashplus.di.keagenan.downline.DownlineModule.kt</ID>
+    <ID>NewLineAtEndOfFile:Download.kt$com.pasukanlangit.cashplus.test_pdf.Download.kt</ID>
+    <ID>NewLineAtEndOfFile:DownloadService.kt$com.pasukanlangit.cashplus.test_pdf.DownloadService.kt</ID>
+    <ID>NewLineAtEndOfFile:DummyTagihan.kt$com.pasukanlangit.cashplus.ui.all_menus.DummyTagihan.kt</ID>
+    <ID>NewLineAtEndOfFile:EWalletActivity.kt$com.pasukanlangit.cashplus.ui.ewallet.EWalletActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:EWalletListAdapter.kt$com.pasukanlangit.cashplus.ui.ewallet.EWalletListAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:EditPDFFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.generatepdf.EditPDFFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:EditPriceFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.preview.EditPriceFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:EditStructFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.print.EditStructFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterNumOmniActivity.kt$com.pasukanlangit.cashplus.ui.omni.EnterNumOmniActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterOTPActivity.kt$com.pasukanlangit.cashplus.ui.register.EnterOTPActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterPINDialog.kt$com.pasukanlangit.cashplus.ui.checkout.EnterPINDialog.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterPINProviderFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_provider.EnterPINProviderFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterPINTopUpQrisFragment.kt$com.pasukanlangit.cashplus.ui.pages.home.EnterPINTopUpQrisFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterPinActivity.kt$com.pasukanlangit.cashplus.ui.checkout.EnterPinActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterPinOnlineStoreActivity.kt$com.pasukanlangit.cashplus.ui.pembayarancart.pay.EnterPinOnlineStoreActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterPinOnlineStoreViewModel.kt$com.pasukanlangit.cashplus.ui.pembayarancart.pay.EnterPinOnlineStoreViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:EnterPinPayActivity.kt$com.pasukanlangit.cashplus.ui.checkout.EnterPinPayActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:EwalletListActivity.kt$com.pasukanlangit.cashplus.ui.ewallet.EwalletListActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ExampleUnitTest.kt$com.pasukanlangit.cashplus.ExampleUnitTest.kt</ID>
+    <ID>NewLineAtEndOfFile:FirstRegisterFragment.kt$com.pasukanlangit.cashplus.ui.register.FirstRegisterFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:FourthRegisterFragment.kt$com.pasukanlangit.cashplus.ui.register.FourthRegisterFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:GameMenuActivity.kt$com.pasukanlangit.cashplus.ui.pembayaran_game_menu.GameMenuActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:GameMenuViewModel.kt$com.pasukanlangit.cashplus.ui.pembayaran_game_menu.GameMenuViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:GetBalance.kt$com.pasukanlangit.cashplus.domain.usecase.GetBalance.kt</ID>
+    <ID>NewLineAtEndOfFile:GetBalanceDashboard.kt$com.pasukanlangit.cashplus.domain.usecase.GetBalanceDashboard.kt</ID>
+    <ID>NewLineAtEndOfFile:GetProfile.kt$com.pasukanlangit.cashplus.domain.usecase.GetProfile.kt</ID>
+    <ID>NewLineAtEndOfFile:GetSellingPrice.kt$com.pasukanlangit.cashplus.domain.usecase.GetSellingPrice.kt</ID>
+    <ID>NewLineAtEndOfFile:GoToMakkahBannerAdapter.kt$com.pasukanlangit.cashplus.adapter.GoToMakkahBannerAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:GridMenuGameAdapter.kt$com.pasukanlangit.cashplus.ui.pembayaran_game_menu.GridMenuGameAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:HelpFragment.kt$com.pasukanlangit.cashplus.ui.pages.help.HelpFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryDetailActivity.kt$com.pasukanlangit.cashplus.ui.pages.history.HistoryDetailActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryDetailTransportActivity.kt$com.pasukanlangit.cashplus.ui.pages.history.HistoryDetailTransportActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryDetailTransportViewModel.kt$com.pasukanlangit.cashplus.ui.pages.history.HistoryDetailTransportViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryDetailViewModel.kt$com.pasukanlangit.cashplus.ui.pages.history.HistoryDetailViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.HistoryFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryLoadStateAdapter.kt$com.pasukanlangit.cashplus.ui.pages.history.transaction.HistoryLoadStateAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryPagingAdapter.kt$com.pasukanlangit.cashplus.ui.pages.history.transaction.HistoryPagingAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryPagingSource.kt$com.pasukanlangit.cashplus.domain.usecase.HistoryPagingSource.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryTicketActivity.kt$com.pasukanlangit.cashplus.ui.pages.history.voucher.HistoryTicketActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryTopUpFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.topup.HistoryTopUpFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryTopUpPagingSource.kt$com.pasukanlangit.cashplus.domain.usecase.HistoryTopUpPagingSource.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryTrxAdapter.kt$com.pasukanlangit.cashplus.ui.pages.history.transaction.HistoryTrxAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryTrxFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.transaction.HistoryTrxFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:HistoryViewModel.kt$com.pasukanlangit.cashplus.ui.pages.history.HistoryViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:HomeFragment.kt$com.pasukanlangit.cashplus.ui.pages.home.HomeFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:HomeHotelAdapter.kt$com.pasukanlangit.cashplus.adapter.HomeHotelAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:HomeViewModel.kt$com.pasukanlangit.cashplus.ui.pages.home.HomeViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:HotelDummy.kt$com.pasukanlangit.cashplus.ui.pages.home.HotelDummy.kt</ID>
+    <ID>NewLineAtEndOfFile:ImageAdapter.kt$com.pasukanlangit.cashplus.ui.onlinestore.image.ImageAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:ImagePhotoViewActivity.kt$com.pasukanlangit.cashplus.ui.onlinestore.image.ImagePhotoViewActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ImageProductSliderAdapter.kt$com.pasukanlangit.cashplus.ui.onlinestore.ImageProductSliderAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:ImgDummyResponse.kt$com.pasukanlangit.cashplus.model.response.ImgDummyResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:InfoPromoListActivity.kt$com.pasukanlangit.cashplus.ui.info_promo.InfoPromoListActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:InfoPromoListViewModel.kt$com.pasukanlangit.cashplus.ui.info_promo.InfoPromoListViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:InjectVoucher.kt$com.pasukanlangit.cashplus.domain.usecase.InjectVoucher.kt</ID>
+    <ID>NewLineAtEndOfFile:InjectVoucherActivity.kt$com.pasukanlangit.cashplus.ui.injectvoucher.InjectVoucherActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:InjectVoucherViewModel.kt$com.pasukanlangit.cashplus.ui.injectvoucher.InjectVoucherViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:InputManualActivity.kt$com.pasukanlangit.cashplus.ui.ewallet.InputManualActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:InputVoucherDataFragment.kt$com.pasukanlangit.cashplus.ui.ultravoucher.InputVoucherDataFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:KeagenanBottomFragment.kt$com.pasukanlangit.cashplus.ui.pages.others.KeagenanBottomFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:KycModule.kt$com.pasukanlangit.cashplus.di.kyc.KycModule.kt</ID>
+    <ID>NewLineAtEndOfFile:LicenceActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.LicenceActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ListAddressBookAdapter.kt$com.pasukanlangit.cashplus.ui.addressbook.ListAddressBookAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:ListCourierByTypeFragment.kt$com.pasukanlangit.cashplus.ui.pembayarancart.courir.ListCourierByTypeFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:LoginActivity.kt$com.pasukanlangit.cashplus.ui.login.LoginActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:LoginByOtpUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.LoginByOtpUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:LoginRequestDto.kt$com.pasukanlangit.cashplus.model.request_body.LoginRequestDto.kt</ID>
+    <ID>NewLineAtEndOfFile:LoginUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.LoginUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:LoginViewModel.kt$com.pasukanlangit.cashplus.view_model.LoginViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:LogoutUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.LogoutUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:MainActivityNavComp.kt$com.pasukanlangit.cashplus.MainActivityNavComp.kt</ID>
+    <ID>NewLineAtEndOfFile:MainEnumUtils.kt$com.pasukanlangit.cashplus.utils.MainEnumUtils.kt</ID>
+    <ID>NewLineAtEndOfFile:MainRepository.kt$com.pasukanlangit.cashplus.repository.MainRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:MainViewModel.kt$com.pasukanlangit.cashplus.view_model.MainViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:Mapper.kt$com.pasukanlangit.cashplus.data.Mapper.kt</ID>
+    <ID>NewLineAtEndOfFile:MekkaAdapter.kt$com.pasukanlangit.cashplus.ui.gotomekka.MekkaAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:MekkaListActivity.kt$com.pasukanlangit.cashplus.ui.gotomekka.MekkaListActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:MekkaMenu.kt$com.pasukanlangit.cashplus.ui.gotomekka.MekkaMenu.kt</ID>
+    <ID>NewLineAtEndOfFile:MekkaMenuAdapter.kt$com.pasukanlangit.cashplus.ui.gotomekka.MekkaMenuAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:MenuProductAllAdapter.kt$com.pasukanlangit.cashplus.ui.all_menus.MenuProductAllAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:MenuTagihanAdapter.kt$com.pasukanlangit.cashplus.ui.all_menus.MenuTagihanAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:MyFirebase.kt$com.pasukanlangit.cashplus.utils.MyFirebase.kt</ID>
+    <ID>NewLineAtEndOfFile:MyResponse.kt$com.pasukanlangit.cashplus.utils.MyResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:MyUtils.kt$com.pasukanlangit.cashplus.utils.MyUtils.kt</ID>
+    <ID>NewLineAtEndOfFile:NetworkModule.kt$com.pasukanlangit.cashplus.di.NetworkModule.kt</ID>
+    <ID>NewLineAtEndOfFile:NewAsyncEscPosPrinter.kt$com.pasukanlangit.cashplus.utils.print.NewAsyncEscPosPrinter.kt</ID>
+    <ID>NewLineAtEndOfFile:NobuModule.kt$com.pasukanlangit.cashplus.di.nobu.NobuModule.kt</ID>
+    <ID>NewLineAtEndOfFile:OmniMenuResponse.kt$com.pasukanlangit.cashplus.domain.model.OmniMenuResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:OmniMenuUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.OmniMenuUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:OmniPackageList.kt$com.pasukanlangit.cashplus.domain.usecase.OmniPackageList.kt</ID>
+    <ID>NewLineAtEndOfFile:OmniPackageOrder.kt$com.pasukanlangit.cashplus.domain.usecase.OmniPackageOrder.kt</ID>
+    <ID>NewLineAtEndOfFile:OmniPackageOrderResponse.kt$com.pasukanlangit.cashplus.domain.model.OmniPackageOrderResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:OnBoardingActivity.kt$com.pasukanlangit.cashplus.ui.onboarding.OnBoardingActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:OnBoardingAdapter.kt$com.pasukanlangit.cashplus.ui.onboarding.OnBoardingAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:OnBoardingModel.kt$com.pasukanlangit.cashplus.ui.onboarding.OnBoardingModel.kt</ID>
+    <ID>NewLineAtEndOfFile:OptionOTPFragment.kt$com.pasukanlangit.cashplus.ui.login.OptionOTPFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:OtherChangePinViewModel.kt$com.pasukanlangit.cashplus.view_model.OtherChangePinViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:OtherMenus.kt$com.pasukanlangit.cashplus.ui.pages.others.OtherMenus.kt</ID>
+    <ID>NewLineAtEndOfFile:OtherMenusAdapter.kt$com.pasukanlangit.cashplus.ui.pages.others.OtherMenusAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:OtherSettingsBottomSheet.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.OtherSettingsBottomSheet.kt</ID>
+    <ID>NewLineAtEndOfFile:PackageCategoryAdapter.kt$com.pasukanlangit.cashplus.ui.omni.packageomni.PackageCategoryAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:PackageMenuAdapter.kt$com.pasukanlangit.cashplus.ui.omni.packageomni.PackageMenuAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:PackageOmniActivity.kt$com.pasukanlangit.cashplus.ui.omni.packageomni.PackageOmniActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:PackageOmniEvents.kt$com.pasukanlangit.cashplus.ui.omni.packageomni.PackageOmniEvents.kt</ID>
+    <ID>NewLineAtEndOfFile:PackageOmniViewModel.kt$com.pasukanlangit.cashplus.ui.omni.packageomni.PackageOmniViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:PackagesAdapter.kt$com.pasukanlangit.cashplus.ui.omni.packageomni.PackagesAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:PagingLoadStateAdapter.kt$com.pasukanlangit.cashplus.ui.onlinestore.PagingLoadStateAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:PathUtil.kt$com.pasukanlangit.cashplus.utils.PathUtil.kt</ID>
+    <ID>NewLineAtEndOfFile:PayOnlineStoreActivity.kt$com.pasukanlangit.cashplus.ui.pembayarancart.pay.PayOnlineStoreActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:PayOnlineStoreViewModel.kt$com.pasukanlangit.cashplus.ui.pembayarancart.pay.PayOnlineStoreViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranActivity.kt$com.pasukanlangit.cashplus.ui.checkout.PembayaranActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranAsuransiFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranAsuransiFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranBPJSFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranBPJSFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranBulananActivity.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranBulananActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranBulananViewModel.kt$com.pasukanlangit.cashplus.view_model.PembayaranBulananViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranCartActivity.kt$com.pasukanlangit.cashplus.ui.pembayarancart.PembayaranCartActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranCartAdapter.kt$com.pasukanlangit.cashplus.ui.pembayarancart.PembayaranCartAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranCartLangsungActivity.kt$com.pasukanlangit.cashplus.ui.pembayarancart.PembayaranCartLangsungActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranCartViewModel.kt$com.pasukanlangit.cashplus.ui.pembayarancart.PembayaranCartViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranGasNegaraFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranGasNegaraFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranGasPertaminaFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranGasPertaminaFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranKreditFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranKreditFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranMultiFinanceFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranMultiFinanceFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranPBBFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranPBBFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranPDAMFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranPDAMFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranPascaBayarFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranPascaBayarFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranSamsatFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranSamsatFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranTagihanActivity.kt$com.pasukanlangit.cashplus.ui.checkout.PembayaranTagihanActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranTagihanViewModel.kt$com.pasukanlangit.cashplus.ui.checkout.PembayaranTagihanViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranTelkomFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranTelkomFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranTvFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_bulanan.PembayaranTvFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PembayaranViewModel.kt$com.pasukanlangit.cashplus.view_model.PembayaranViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:PreviewAdapter.kt$com.pasukanlangit.cashplus.adapter.PreviewAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:PreviewFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.preview.PreviewFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PreviewPDFFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.generatepdf.PreviewPDFFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PrintActivity.kt$com.pasukanlangit.cashplus.ui.pages.history.print.PrintActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:PrintPreviewFragment.kt$com.pasukanlangit.cashplus.ui.pages.history.print.PrintPreviewFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:PrintReceiptUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.PrintReceiptUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:PrintersAdapter.kt$com.pasukanlangit.cashplus.ui.pages.history.print.PrintersAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductDetailActivity.kt$com.pasukanlangit.cashplus.ui.onlinestore.ProductDetailActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductDetailViewModel.kt$com.pasukanlangit.cashplus.ui.onlinestore.ProductDetailViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductHomeAdapter.kt$com.pasukanlangit.cashplus.adapter.ProductHomeAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductModel.kt$com.pasukanlangit.cashplus.model.response.ProductModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductRequest.kt$com.pasukanlangit.cashplus.model.request_body.ProductRequest.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductResultModel.kt$com.pasukanlangit.cashplus.model.response.ProductResultModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductSearchFragment.kt$com.pasukanlangit.cashplus.ui.onlinestore.ProductSearchFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductSearchPagingSource.kt$com.pasukanlangit.cashplus.ui.onlinestore.ProductSearchPagingSource.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductStatusUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.ProductStatusUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:ProfileRequest.kt$com.pasukanlangit.cashplus.model.request_body.ProfileRequest.kt</ID>
+    <ID>NewLineAtEndOfFile:PulsaAdapter.kt$com.pasukanlangit.cashplus.adapter.PulsaAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:ReasonCloseAccountActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.profile.close.ReasonCloseAccountActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:RebateModule.kt$com.pasukanlangit.cashplus.di.keagenan.rebate.RebateModule.kt</ID>
+    <ID>NewLineAtEndOfFile:RecapitulationModule.kt$com.pasukanlangit.cashplus.di.recapitulation.RecapitulationModule.kt</ID>
+    <ID>NewLineAtEndOfFile:ReferralChangeRequest.kt$com.pasukanlangit.cashplus.model.response.ReferralChangeRequest.kt</ID>
+    <ID>NewLineAtEndOfFile:RefreshLiveData.kt$com.pasukanlangit.cashplus.utils.RefreshLiveData.kt</ID>
+    <ID>NewLineAtEndOfFile:RegisterRequestDto.kt$com.pasukanlangit.cashplus.model.request_body.RegisterRequestDto.kt</ID>
+    <ID>NewLineAtEndOfFile:RegisterUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.RegisterUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:RegisterViewModel.kt$com.pasukanlangit.cashplus.view_model.RegisterViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:RepositoryModule.kt$com.pasukanlangit.cashplus.di.RepositoryModule.kt</ID>
+    <ID>NewLineAtEndOfFile:ResetPINRequest.kt$com.pasukanlangit.cashplus.domain.model.ResetPINRequest.kt</ID>
+    <ID>NewLineAtEndOfFile:ResetPINUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.ResetPINUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:ResetPasswordActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.settings.password.ResetPasswordActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ResetPasswordPublicActivity.kt$com.pasukanlangit.cashplus.ui.login.ResetPasswordPublicActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ResetPasswordUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.ResetPasswordUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:ResetPwViewModel.kt$com.pasukanlangit.cashplus.ui.login.ResetPwViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:RootedActivity.kt$com.pasukanlangit.cashplus.ui.splashscreen.RootedActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:SKFragment.kt$com.pasukanlangit.cashplus.ui.pages.others.SKFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ScanBarcodeActivity.kt$com.pasukanlangit.cashplus.ui.injectvoucher.ScanBarcodeActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:SearchHistoryTransaction.kt$com.pasukanlangit.cashplus.domain.usecase.SearchHistoryTransaction.kt</ID>
+    <ID>NewLineAtEndOfFile:SecondRegisterFragment.kt$com.pasukanlangit.cashplus.ui.register.SecondRegisterFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:ShareReferralActivity.kt$com.pasukanlangit.cashplus.ui.pages.others.ShareReferralActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:SingleEvent.kt$com.pasukanlangit.cashplus.utils.SingleEvent.kt</ID>
+    <ID>NewLineAtEndOfFile:SingleLiveEvent.kt$com.pasukanlangit.cashplus.utils.SingleLiveEvent.kt</ID>
+    <ID>NewLineAtEndOfFile:StatusProductActivity.kt$com.pasukanlangit.cashplus.ui.product.StatusProductActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:StatusProductAdapter.kt$com.pasukanlangit.cashplus.ui.product.StatusProductAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:StatusProductViewModel.kt$com.pasukanlangit.cashplus.ui.product.StatusProductViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:TagihanResultActivity.kt$com.pasukanlangit.cashplus.ui.checkout.TagihanResultActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:TestDownloadPdfActivity.kt$com.pasukanlangit.cashplus.test_pdf.TestDownloadPdfActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:ThirdRegisterFragment.kt$com.pasukanlangit.cashplus.ui.register.ThirdRegisterFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpEcommerceViewModel.kt$com.pasukanlangit.cashplus.view_model.TopUpEcommerceViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpGameViewModel.kt$com.pasukanlangit.cashplus.view_model.TopUpGameViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpModule.kt$com.pasukanlangit.cashplus.di.topup.TopUpModule.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpPLNViewModel.kt$com.pasukanlangit.cashplus.view_model.TopUpPLNViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpPagingAdapter.kt$com.pasukanlangit.cashplus.ui.pages.history.topup.TopUpPagingAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpPlnActivity.kt$com.pasukanlangit.cashplus.ui.pembayaran_pln.TopUpPlnActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpProviderActivity.kt$com.pasukanlangit.cashplus.ui.pembayaran_provider.TopUpProviderActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpQrisFragment.kt$com.pasukanlangit.cashplus.ui.pages.home.TopUpQrisFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpQrisRequest.kt$com.pasukanlangit.cashplus.model.request_body.TopUpQrisRequest.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpQrisUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.TopUpQrisUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpSmsFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_provider.TopUpSmsFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpTeleponFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_provider.TopUpTeleponFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:TopUpTokenPLNFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_pln.TopUpTokenPLNFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:TopupDataFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_provider.TopupDataFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:TopupProviderViewModel.kt$com.pasukanlangit.cashplus.view_model.TopupProviderViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:TopupPulsaFragment.kt$com.pasukanlangit.cashplus.ui.pembayaran_provider.TopupPulsaFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:TrackingAdapter.kt$com.pasukanlangit.cashplus.ui.pages.history.detailtokoonline.TrackingAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:TrackingTokoActivity.kt$com.pasukanlangit.cashplus.ui.pages.history.detailtokoonline.TrackingTokoActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:TransactionBulk.kt$com.pasukanlangit.cashplus.domain.usecase.TransactionBulk.kt</ID>
+    <ID>NewLineAtEndOfFile:TransactionPayViewModel.kt$com.pasukanlangit.cashplus.ui.checkout.TransactionPayViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:TransactionViewModel.kt$com.pasukanlangit.cashplus.view_model.TransactionViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:TransferModule.kt$com.pasukanlangit.cashplus.di.transfer.TransferModule.kt</ID>
+    <ID>NewLineAtEndOfFile:TravelModule.kt$com.pasukanlangit.cashplus.di.travel.TravelModule.kt</ID>
+    <ID>NewLineAtEndOfFile:TrxPendingHelper.kt$com.pasukanlangit.cashplus.utils.TrxPendingHelper.kt</ID>
+    <ID>NewLineAtEndOfFile:TrxPendingReceiver.kt$com.pasukanlangit.cashplus.utils.TrxPendingReceiver.kt</ID>
+    <ID>NewLineAtEndOfFile:TrxPendingService.kt$com.pasukanlangit.cashplus.utils.TrxPendingService.kt</ID>
+    <ID>NewLineAtEndOfFile:TypeCourierFragment.kt$com.pasukanlangit.cashplus.ui.pembayarancart.courir.TypeCourierFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdateAppsActivity.kt$com.pasukanlangit.cashplus.ui.splashscreen.update.UpdateAppsActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdateEmailUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.UpdateEmailUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdateFCMToken.kt$com.pasukanlangit.cashplus.domain.usecase.UpdateFCMToken.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdateListAdapter.kt$com.pasukanlangit.cashplus.ui.splashscreen.update.UpdateListAdapter.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdatePhotoProfile.kt$com.pasukanlangit.cashplus.domain.usecase.UpdatePhotoProfile.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdatePriceProductFragment.kt$com.pasukanlangit.cashplus.ui.product.UpdatePriceProductFragment.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdateSellingPrice.kt$com.pasukanlangit.cashplus.domain.usecase.UpdateSellingPrice.kt</ID>
+    <ID>NewLineAtEndOfFile:UpdateSellingPriceRequest.kt$com.pasukanlangit.cashplus.domain.model.UpdateSellingPriceRequest.kt</ID>
+    <ID>NewLineAtEndOfFile:VerifyOtpUseCase.kt$com.pasukanlangit.cashplus.domain.usecase.VerifyOtpUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:ViewModelModule.kt$com.pasukanlangit.cashplus.di.ViewModelModule.kt</ID>
+    <ID>NewLineAtEndOfFile:VoucherActivity.kt$com.pasukanlangit.cashplus.ui.ultravoucher.VoucherActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:WebviewActivity.kt$com.pasukanlangit.cashplus.test_pdf.WebviewActivity.kt</ID>
+    <ID>NewLineAtEndOfFile:sharedPrefModule.kt$com.pasukanlangit.cashplus.di.sharedPrefModule.kt</ID>
+    <ID>PackageNaming:AddAddressBookRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:AllMenusProduct.kt$package com.pasukanlangit.cashplus.ui.all_menus</ID>
+    <ID>PackageNaming:AllMenusViewModel.kt$package com.pasukanlangit.cashplus.ui.all_menus</ID>
+    <ID>PackageNaming:AllProductEcommerceViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:BillDetailAdapter.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:BillDetailFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:CalculateUnitPriceRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ChangePWRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ChangePasswordRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ChangePinRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ChangeProfileViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:CityShipmentRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:CourierPriceRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:DataPackageAdapter.kt$package com.pasukanlangit.cashplus.ui.pembayaran_provider</ID>
+    <ID>PackageNaming:DeleteAccountRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:DetailGameMenuActivity.kt$package com.pasukanlangit.cashplus.ui.pembayaran_game_menu</ID>
+    <ID>PackageNaming:DetailMenusViewModel.kt$package com.pasukanlangit.cashplus.ui.all_menus</ID>
+    <ID>PackageNaming:DetailPromoActivity.kt$package com.pasukanlangit.cashplus.ui.info_promo</ID>
+    <ID>PackageNaming:DetailTopUpFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_provider</ID>
+    <ID>PackageNaming:DetailTopUpGameFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_game_menu</ID>
+    <ID>PackageNaming:DetailTopUpTokenBottomSheet.kt$package com.pasukanlangit.cashplus.ui.pembayaran_pln</ID>
+    <ID>PackageNaming:DistrictRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:Download.kt$package com.pasukanlangit.cashplus.test_pdf</ID>
+    <ID>PackageNaming:DownloadService.kt$package com.pasukanlangit.cashplus.test_pdf;</ID>
+    <ID>PackageNaming:DummyTagihan.kt$package com.pasukanlangit.cashplus.ui.all_menus</ID>
+    <ID>PackageNaming:EnterPINProviderFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_provider</ID>
+    <ID>PackageNaming:GameMenuActivity.kt$package com.pasukanlangit.cashplus.ui.pembayaran_game_menu</ID>
+    <ID>PackageNaming:GameMenuViewModel.kt$package com.pasukanlangit.cashplus.ui.pembayaran_game_menu</ID>
+    <ID>PackageNaming:GridMenuGameAdapter.kt$package com.pasukanlangit.cashplus.ui.pembayaran_game_menu</ID>
+    <ID>PackageNaming:HotelListByCityRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:InfoPromoListActivity.kt$package com.pasukanlangit.cashplus.ui.info_promo</ID>
+    <ID>PackageNaming:InfoPromoListViewModel.kt$package com.pasukanlangit.cashplus.ui.info_promo</ID>
+    <ID>PackageNaming:KYCRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:LoginByOtpRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:LoginRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:LoginViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:MainViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:MenuProductAllAdapter.kt$package com.pasukanlangit.cashplus.ui.all_menus</ID>
+    <ID>PackageNaming:MenuTagihanAdapter.kt$package com.pasukanlangit.cashplus.ui.all_menus</ID>
+    <ID>PackageNaming:NicePayEwalletRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:NicepayRegistrationRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:OmniRequests.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:OnlineStoreOrderRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:OprNameRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:OrderCheckTokoRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:OtherChangePinViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:ParamPrintTransport.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:PembayaranAsuransiFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranBPJSFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranBulananActivity.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranBulananViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:PembayaranGasNegaraFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranGasPertaminaFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranKreditFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranMultiFinanceFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranPBBFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranPDAMFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranPascaBayarFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranSamsatFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranTelkomFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranTvFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_bulanan</ID>
+    <ID>PackageNaming:PembayaranViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:PrintReceiptRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ProductRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ProductSearchRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ProductStoreRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ProfileRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:QrisRegistrationRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:QrisRegistrationResponse.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:RegisterRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:RegisterViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:ResetPINRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ResetPassRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ResetPinOtpCodeRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:ResetPwCodeRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:SellingPriceRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:StationsRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:SubdistrictRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:SubdistrictShipmentRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TestDownloadPdfActivity.kt$package com.pasukanlangit.cashplus.test_pdf</ID>
+    <ID>PackageNaming:TokoOnlineListRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TopUpBankRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TopUpEcommerceViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:TopUpGameViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:TopUpPLNViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:TopUpPlnActivity.kt$package com.pasukanlangit.cashplus.ui.pembayaran_pln</ID>
+    <ID>PackageNaming:TopUpProviderActivity.kt$package com.pasukanlangit.cashplus.ui.pembayaran_provider</ID>
+    <ID>PackageNaming:TopUpQrisRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TopUpSmsFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_provider</ID>
+    <ID>PackageNaming:TopUpTagihanPLNFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_pln</ID>
+    <ID>PackageNaming:TopUpTeleponFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_provider</ID>
+    <ID>PackageNaming:TopUpTokenPLNFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_pln</ID>
+    <ID>PackageNaming:TopupDataFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_provider</ID>
+    <ID>PackageNaming:TopupProviderViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:TopupPulsaFragment.kt$package com.pasukanlangit.cashplus.ui.pembayaran_provider</ID>
+    <ID>PackageNaming:TrainPriceRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TrainScheduleRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TransactionBulkRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TransactionCheckRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TransactionRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:TransactionViewModel.kt$package com.pasukanlangit.cashplus.view_model</ID>
+    <ID>PackageNaming:TrxHistoryRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:UpdateEmailRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:UpdateFirebaseTokenRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:UpdateLatLongRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:UpdateProfilRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:UpdateSellingPriceRequestDto.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:VillageRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:VirtualAccountTopUpRequest.kt$package com.pasukanlangit.cashplus.model.request_body</ID>
+    <ID>PackageNaming:WebviewActivity.kt$package com.pasukanlangit.cashplus.test_pdf</ID>
+    <ID>PrintStackTrace:AsyncEscPosPresenter.kt$AsyncEscPosPresenter$e</ID>
+    <ID>PrintStackTrace:CoroutinesBluetoothEscPosPrint.kt$CoroutinesBluetoothEscPosPrint$e</ID>
+    <ID>PrintStackTrace:HistoryDetailActivity.kt$HistoryDetailActivity$e</ID>
+    <ID>PrintStackTrace:TestDownloadPdfActivity.kt$TestDownloadPdfActivity$e</ID>
+    <ID>RethrowCaughtException:NetworkModule.kt$ReleaseResponseHeaderInterceptor$throw io</ID>
+    <ID>ReturnCount:AsyncEscPosPresenter.kt$AsyncEscPosPresenter$@DelicateCoroutinesApi protected open fun doInBackground(vararg printersData: NewAsyncEscPosPrinter): Int</ID>
+    <ID>ReturnCount:EnterNumOmniActivity.kt$EnterNumOmniActivity.&lt;no name provided&gt;$override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int)</ID>
+    <ID>ReturnCount:FirstRegisterFragment.kt$FirstRegisterFragment.&lt;no name provided&gt;$override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int)</ID>
+    <ID>ReturnCount:HistoryDetailActivity.kt$HistoryDetailActivity$private fun permissionBluetooth()</ID>
+    <ID>ReturnCount:HistoryDetailActivity.kt$HistoryDetailActivity$private fun permissionReadWrite()</ID>
+    <ID>ReturnCount:HistoryFragment.kt$HistoryFragment.HistoryPagerAdapter$override fun createFragment(position: Int): Fragment</ID>
+    <ID>ReturnCount:InjectVoucherActivity.kt$InjectVoucherActivity.&lt;no name provided&gt;$override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int)</ID>
+    <ID>ReturnCount:InputManualActivity.kt$InputManualActivity$private fun validationInput()</ID>
+    <ID>ReturnCount:InputManualActivity.kt$InputManualActivity.&lt;no name provided&gt;$override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int)</ID>
+    <ID>ReturnCount:LoginActivity.kt$LoginActivity.&lt;no name provided&gt;$override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int)</ID>
+    <ID>ReturnCount:NetworkModule.kt$ResponseHeaderInterceptor$override fun intercept(chain: Interceptor.Chain): Response</ID>
+    <ID>ReturnCount:PathUtil.kt$PathUtil$@SuppressLint("Recycle") @Throws(URISyntaxException::class) fun getPath(context: Context, uri: Uri?): String?</ID>
+    <ID>ReturnCount:ResetPasswordPublicActivity.kt$ResetPasswordPublicActivity.&lt;no name provided&gt;$override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int)</ID>
+    <ID>SpreadOperator:HomeFragment.kt$HomeFragment$( (activity as MainActivityNavComp), *animView )</ID>
+    <ID>SwallowedException:AddUpdateAddressBookViewModel.kt$AddUpdateAddressBookViewModel$e: IOException</ID>
+    <ID>SwallowedException:AddUpdateAddressBookViewModel.kt$AddUpdateAddressBookViewModel$ex : Exception</ID>
+    <ID>SwallowedException:AddressBookViewModel.kt$AddressBookViewModel$e: IOException</ID>
+    <ID>SwallowedException:AddressBookViewModel.kt$AddressBookViewModel$ex : Exception</ID>
+    <ID>SwallowedException:AllMenusViewModel.kt$AllMenusViewModel$e: IOException</ID>
+    <ID>SwallowedException:AllMenusViewModel.kt$AllMenusViewModel$ex : Exception</ID>
+    <ID>SwallowedException:AllProductEcommerceViewModel.kt$AllProductEcommerceViewModel$e: java.io.IOException</ID>
+    <ID>SwallowedException:AllProductEcommerceViewModel.kt$AllProductEcommerceViewModel$ex : Exception</ID>
+    <ID>SwallowedException:ChangePassViewModel.kt$ChangePassViewModel$e: IOException</ID>
+    <ID>SwallowedException:ChangePassViewModel.kt$ChangePassViewModel$ex : Exception</ID>
+    <ID>SwallowedException:ChangePinWithoutLastViewModel.kt$ChangePinWithoutLastViewModel$e: IOException</ID>
+    <ID>SwallowedException:ChangePinWithoutLastViewModel.kt$ChangePinWithoutLastViewModel$ex : Exception</ID>
+    <ID>SwallowedException:ChangeProfileViewModel.kt$ChangeProfileViewModel$e: IOException</ID>
+    <ID>SwallowedException:ChangeProfileViewModel.kt$ChangeProfileViewModel$ex : Exception</ID>
+    <ID>SwallowedException:DetailHistoryTokoViewModel.kt$DetailHistoryTokoViewModel$e: IOException</ID>
+    <ID>SwallowedException:DetailHistoryTokoViewModel.kt$DetailHistoryTokoViewModel$ex : Exception</ID>
+    <ID>SwallowedException:DetailMenusViewModel.kt$DetailMenusViewModel$e: IOException</ID>
+    <ID>SwallowedException:DetailMenusViewModel.kt$DetailMenusViewModel$ex : Exception</ID>
+    <ID>SwallowedException:EnterOTPActivity.kt$EnterOTPActivity$e: PackageManager.NameNotFoundException</ID>
+    <ID>SwallowedException:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$e: IOException</ID>
+    <ID>SwallowedException:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$ex : Exception</ID>
+    <ID>SwallowedException:GameMenuViewModel.kt$GameMenuViewModel$e: IOException</ID>
+    <ID>SwallowedException:GameMenuViewModel.kt$GameMenuViewModel$ex : Exception</ID>
+    <ID>SwallowedException:HistoryDetailTransportViewModel.kt$HistoryDetailTransportViewModel$ex : Exception</ID>
+    <ID>SwallowedException:HomeViewModel.kt$HomeViewModel$ex: Exception</ID>
+    <ID>SwallowedException:MyUtils.kt$MyUtils$e: Exception</ID>
+    <ID>SwallowedException:NetworkModule.kt$ReleaseResponseHeaderInterceptor$e: Exception</ID>
+    <ID>SwallowedException:OtherChangePinViewModel.kt$OtherChangePinViewModel$e: IOException</ID>
+    <ID>SwallowedException:OtherChangePinViewModel.kt$OtherChangePinViewModel$ex : Exception</ID>
+    <ID>SwallowedException:PayOnlineStoreViewModel.kt$PayOnlineStoreViewModel$e: IOException</ID>
+    <ID>SwallowedException:PayOnlineStoreViewModel.kt$PayOnlineStoreViewModel$ex : Exception</ID>
+    <ID>SwallowedException:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$e: Exception</ID>
+    <ID>SwallowedException:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$e: IOException</ID>
+    <ID>SwallowedException:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$ex : Exception</ID>
+    <ID>SwallowedException:PembayaranCartViewModel.kt$PembayaranCartViewModel$e: IOException</ID>
+    <ID>SwallowedException:PembayaranCartViewModel.kt$PembayaranCartViewModel$ex : Exception</ID>
+    <ID>SwallowedException:PembayaranPDAMFragment.kt$PembayaranPDAMFragment$e: NoSuchElementException</ID>
+    <ID>SwallowedException:PembayaranTagihanViewModel.kt$PembayaranTagihanViewModel$e: IOException</ID>
+    <ID>SwallowedException:PembayaranTagihanViewModel.kt$PembayaranTagihanViewModel$ex : Exception</ID>
+    <ID>SwallowedException:PembayaranViewModel.kt$PembayaranViewModel$e: IOException</ID>
+    <ID>SwallowedException:PembayaranViewModel.kt$PembayaranViewModel$ex : Exception</ID>
+    <ID>SwallowedException:ResetPwViewModel.kt$ResetPwViewModel$e: IOException</ID>
+    <ID>SwallowedException:ResetPwViewModel.kt$ResetPwViewModel$ex : Exception</ID>
+    <ID>SwallowedException:TopUpEcommerceViewModel.kt$TopUpEcommerceViewModel$e: IOException</ID>
+    <ID>SwallowedException:TopUpEcommerceViewModel.kt$TopUpEcommerceViewModel$ex : Exception</ID>
+    <ID>SwallowedException:TopUpGameViewModel.kt$TopUpGameViewModel$e: IOException</ID>
+    <ID>SwallowedException:TopUpGameViewModel.kt$TopUpGameViewModel$ex : Exception</ID>
+    <ID>SwallowedException:TopUpPLNViewModel.kt$TopUpPLNViewModel$e: IOException</ID>
+    <ID>SwallowedException:TopUpPLNViewModel.kt$TopUpPLNViewModel$ex : Exception</ID>
+    <ID>SwallowedException:TopupProviderViewModel.kt$TopupProviderViewModel$e: IOException</ID>
+    <ID>SwallowedException:TopupProviderViewModel.kt$TopupProviderViewModel$ex : Exception</ID>
+    <ID>SwallowedException:TransactionPayViewModel.kt$TransactionPayViewModel$e: IOException</ID>
+    <ID>SwallowedException:TransactionPayViewModel.kt$TransactionPayViewModel$ex : Exception</ID>
+    <ID>SwallowedException:TransactionViewModel.kt$TransactionViewModel$e: IOException</ID>
+    <ID>SwallowedException:TransactionViewModel.kt$TransactionViewModel$ex : Exception</ID>
+    <ID>SwallowedException:UpdateAppsActivity.kt$UpdateAppsActivity$e: ActivityNotFoundException</ID>
+    <ID>SwallowedException:sharedPrefModule.kt$e: Exception</ID>
+    <ID>ThrowingExceptionsWithoutMessageOrCause:AllProductEcommerceViewModel.kt$AllProductEcommerceViewModel$Exception()</ID>
+    <ID>TooGenericExceptionCaught:AddUpdateAddressBookViewModel.kt$AddUpdateAddressBookViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:AddressBookViewModel.kt$AddressBookViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:AllMenusViewModel.kt$AllMenusViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:AllProductEcommerceViewModel.kt$AllProductEcommerceViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:AllProductPagingSource.kt$AllProductPagingSource$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:BillPayTransactionUseCase.kt$BillPayTransactionUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CalculateUnitPrice.kt$CalculateUnitPrice$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ChangePassViewModel.kt$ChangePassViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:ChangePinWithoutLastViewModel.kt$ChangePinWithoutLastViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:ChangeProfileViewModel.kt$ChangeProfileViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:ChangeReferralUseCase.kt$ChangeReferralUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:DeleteAccountUseCase.kt$DeleteAccountUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:DetailHistoryTokoViewModel.kt$DetailHistoryTokoViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:DetailMenusViewModel.kt$DetailMenusViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:EWalletActivity.kt$EWalletActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:EditPriceFragment.kt$EditPriceFragment.&lt;no name provided&gt;$ex: Exception</ID>
+    <ID>TooGenericExceptionCaught:EnterNumOmniActivity.kt$EnterNumOmniActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:EnterPinOnlineStoreViewModel.kt$EnterPinOnlineStoreViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:GameMenuViewModel.kt$GameMenuViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:GetBalance.kt$GetBalance$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetBalanceDashboard.kt$GetBalanceDashboard$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetProfile.kt$GetProfile$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GetSellingPrice.kt$GetSellingPrice$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:HistoryDetailTransportViewModel.kt$HistoryDetailTransportViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:HistoryDetailViewModel.kt$HistoryDetailViewModel.&lt;no name provided&gt;$ex: Exception</ID>
+    <ID>TooGenericExceptionCaught:HistoryPagingSource.kt$HistoryPagingSource$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:HistoryTopUpPagingSource.kt$HistoryTopUpPagingSource$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:HomeViewModel.kt$HomeViewModel$ex: Exception</ID>
+    <ID>TooGenericExceptionCaught:InjectVoucher.kt$InjectVoucher$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:InputManualActivity.kt$InputManualActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:LoginByOtpUseCase.kt$LoginByOtpUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:LoginUseCase.kt$LoginUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:LogoutUseCase.kt$LogoutUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MainActivityNavComp.kt$MainActivityNavComp$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MyUtils.kt$MyUtils$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:NetworkModule.kt$ReleaseResponseHeaderInterceptor$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:NetworkModule.kt$ResponseHeaderInterceptor$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:OmniMenuUseCase.kt$OmniMenuUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:OmniPackageList.kt$OmniPackageList$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:OmniPackageOrder.kt$OmniPackageOrder$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:OtherChangePinViewModel.kt$OtherChangePinViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:PathUtil.kt$PathUtil$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:PayOnlineStoreViewModel.kt$PayOnlineStoreViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:PembayaranBulananViewModel.kt$PembayaranBulananViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:PembayaranCartViewModel.kt$PembayaranCartViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:PembayaranKreditFragment.kt$PembayaranKreditFragment.&lt;no name provided&gt;$ex: Exception</ID>
+    <ID>TooGenericExceptionCaught:PembayaranPascaBayarFragment.kt$PembayaranPascaBayarFragment$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:PembayaranTagihanViewModel.kt$PembayaranTagihanViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:PembayaranViewModel.kt$PembayaranViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:PrintReceiptUseCase.kt$PrintReceiptUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ProductSearchPagingSource.kt$ProductSearchPagingSource$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ProductStatusUseCase.kt$ProductStatusUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:RegisterUseCase.kt$RegisterUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:RegisterViewModel.kt$RegisterViewModel.&lt;no name provided&gt;$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:ResetPINUseCase.kt$ResetPINUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ResetPasswordUseCase.kt$ResetPasswordUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ResetPwViewModel.kt$ResetPwViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:SearchHistoryTransaction.kt$SearchHistoryTransaction$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TestDownloadPdfActivity.kt$TestDownloadPdfActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TopUpEcommerceViewModel.kt$TopUpEcommerceViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:TopUpGameViewModel.kt$TopUpGameViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:TopUpPLNViewModel.kt$TopUpPLNViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:TopUpProviderActivity.kt$TopUpProviderActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TopUpQrisFragment.kt$TopUpQrisFragment.&lt;no name provided&gt;$ex: Exception</ID>
+    <ID>TooGenericExceptionCaught:TopUpQrisUseCase.kt$TopUpQrisUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TopupProviderViewModel.kt$TopupProviderViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:TransactionBulk.kt$TransactionBulk$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TransactionPayViewModel.kt$TransactionPayViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:TransactionViewModel.kt$TransactionViewModel$ex : Exception</ID>
+    <ID>TooGenericExceptionCaught:UpdateEmailUseCase.kt$UpdateEmailUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:UpdateFCMToken.kt$UpdateFCMToken$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:UpdatePhotoProfile.kt$UpdatePhotoProfile$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:UpdatePriceProductFragment.kt$UpdatePriceProductFragment.&lt;no name provided&gt;$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:UpdateSellingPrice.kt$UpdateSellingPrice$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:VerifyOtpUseCase.kt$VerifyOtpUseCase$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:sharedPrefModule.kt$e: Exception</ID>
+    <ID>TooGenericExceptionThrown:AllProductEcommerceViewModel.kt$AllProductEcommerceViewModel$throw Exception()</ID>
+    <ID>TooGenericExceptionThrown:BillPayTransactionUseCase.kt$BillPayTransactionUseCase$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooGenericExceptionThrown:CalculateUnitPrice.kt$CalculateUnitPrice$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooGenericExceptionThrown:GetBalance.kt$GetBalance$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooGenericExceptionThrown:GetBalanceDashboard.kt$GetBalanceDashboard$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooGenericExceptionThrown:GetSellingPrice.kt$GetSellingPrice$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooGenericExceptionThrown:InjectVoucher.kt$InjectVoucher$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooGenericExceptionThrown:OmniPackageList.kt$OmniPackageList$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooGenericExceptionThrown:PrintReceiptUseCase.kt$PrintReceiptUseCase$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooGenericExceptionThrown:TransactionBulk.kt$TransactionBulk$throw Exception(Constants.invalidAuth)</ID>
+    <ID>TooManyFunctions:ApiHelper.kt$ApiHelper</ID>
+    <ID>TooManyFunctions:ApiHelperImplement.kt$ApiHelperImplement : ApiHelper</ID>
+    <ID>TooManyFunctions:ApiService.kt$ApiService</ID>
+    <ID>TooManyFunctions:CoroutinesAsyncTask.kt$CoroutinesAsyncTask&lt;Params, Progress, Result&gt;</ID>
+    <ID>TooManyFunctions:EnterOTPActivity.kt$EnterOTPActivity : AppCompatActivity</ID>
+    <ID>TooManyFunctions:HistoryDetailActivity.kt$HistoryDetailActivity : AppCompatActivityOnButtonSetPriceClickListenerOnButtonClickListener</ID>
+    <ID>TooManyFunctions:HomeFragment.kt$HomeFragment : Fragment</ID>
+    <ID>TooManyFunctions:MainRepository.kt$MainRepository</ID>
+    <ID>TooManyFunctions:MainViewModel.kt$MainViewModel : ViewModel</ID>
+    <ID>TooManyFunctions:Mapper.kt$com.pasukanlangit.cashplus.data.Mapper.kt</ID>
+    <ID>TooManyFunctions:MyUtils.kt$MyUtils</ID>
+    <ID>TooManyFunctions:PackageOmniViewModel.kt$PackageOmniViewModel : ViewModel</ID>
+    <ID>TooManyFunctions:PembayaranBulananViewModel.kt$PembayaranBulananViewModel : ViewModel</ID>
+    <ID>UnusedParameter:TrxPendingHelper.kt$TrxPendingHelper$context: Context</ID>
+    <ID>UnusedParameter:TrxPendingHelper.kt$TrxPendingHelper$intent: Intent</ID>
+    <ID>UnusedPrivateMember:SecondRegisterFragment.kt$SecondRegisterFragment$private fun showModalError(message: String)</ID>
+    <ID>UnusedPrivateMember:TrxPendingHelper.kt$TrxPendingHelper$private fun cancelAlarm(context: Context)</ID>
+    <ID>UnusedPrivateMember:TrxPendingService.kt$TrxPendingService$private fun cancelAlarm()</ID>
+    <ID>UnusedPrivateProperty:HistoryFragment.kt$HistoryFragment$i</ID>
+    <ID>UnusedPrivateProperty:InjectVoucherActivity.kt$InjectVoucherActivity$index</ID>
+    <ID>UnusedPrivateProperty:PembayaranCartViewModel.kt$PembayaranCartViewModel$private var sharedPref: com.pasukanlangit.id.core.datasource.sharedpref.SharedPrefDataSource</ID>
+    <ID>UnusedPrivateProperty:TestDownloadPdfActivity.kt$TestDownloadPdfActivity$val uri = Uri.parse("https://cashplus.id/print/transportation?ex=true&amp;data={date:,departure_date:,departure_time:,booking_code:,transport_name:,transport_number:flightcode|trainnumber,transport_class:,transport_rute:flight_info_transit|train_info_route,print_category:KERETA|PESAWAT,passengers:[{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:},{name:dsfsadf,id:12412312,title:Mr,type:Adult|young,seat:,gerbong:}]}")</ID>
+    <ID>UnusedPrivateProperty:TrxPendingHelper.kt$TrxPendingHelper$private val mainRepository: MainRepository by inject()</ID>
+    <ID>UnusedPrivateProperty:TrxPendingHelper.kt$TrxPendingHelper$private val sharedPrefDataSource: com.pasukanlangit.id.core.datasource.sharedpref.SharedPrefDataSource by inject()</ID>
+    <ID>UnusedPrivateProperty:TrxPendingService.kt$TrxPendingService$private val mainRepository by inject&lt;MainRepository&gt;()</ID>
+    <ID>UnusedPrivateProperty:TrxPendingService.kt$TrxPendingService$private val sharedPrefDataSource: com.pasukanlangit.id.core.datasource.sharedpref.SharedPrefDataSource by inject()</ID>
+    <ID>VariableNaming:TestDownloadPdfActivity.kt$TestDownloadPdfActivity$val `is`: InputStream = c.inputStream</ID>
+    <ID>WildcardImport:AddAddressBookActivity.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:AddAddressBookActivity.kt$import com.pasukanlangit.id.core.utils.*</ID>
+    <ID>WildcardImport:AddUpdateAddressBookViewModel.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:AddUpdateAddressBookViewModel.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:AddressBookViewModel.kt$import androidx.lifecycle.*</ID>
+    <ID>WildcardImport:AllMenusProduct.kt$import com.pasukanlangit.id.core.*</ID>
+    <ID>WildcardImport:AllProductEcommerceViewModel.kt$import androidx.lifecycle.*</ID>
+    <ID>WildcardImport:ApiHelper.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:ApiHelper.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:ApiHelperImplement.kt$import com.pasukanlangit.cashplus.BuildConfig.*</ID>
+    <ID>WildcardImport:ApiHelperImplement.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:ApiHelperImplement.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:ApiService.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:ApiService.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:ApiService.kt$import retrofit2.http.*</ID>
+    <ID>WildcardImport:App.kt$import com.pasukanlangit.cashplus.di.*</ID>
+    <ID>WildcardImport:CartProductDao.kt$import androidx.room.*</ID>
+    <ID>WildcardImport:CartViewModel.kt$import androidx.lifecycle.*</ID>
+    <ID>WildcardImport:CashGoldModule.kt$import com.pasukanlangit.id.usecase.*</ID>
+    <ID>WildcardImport:ChangePinActivity.kt$import com.pasukanlangit.cashplus.utils.*</ID>
+    <ID>WildcardImport:ChangePinWithoutLastViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:ChangeProfilActivity.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:ChangeProfilActivity.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:ChangeProfilActivity.kt$import com.pasukanlangit.cashplus.utils.*</ID>
+    <ID>WildcardImport:ChangeProfilActivity.kt$import com.pasukanlangit.id.core.presentation.components.*</ID>
+    <ID>WildcardImport:ChangeProfilActivity.kt$import com.pasukanlangit.id.core.utils.*</ID>
+    <ID>WildcardImport:ChangeProfileViewModel.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:ChangeProfileViewModel.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:CloseAccountViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:CoroutinesAsyncTask.kt$import kotlinx.coroutines.*</ID>
+    <ID>WildcardImport:DetailGameMenuActivity.kt$import com.pasukanlangit.id.core.utils.*</ID>
+    <ID>WildcardImport:DirectProductPurchasesViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:DownlineModule.kt$import com.pasukanlangit.id.domain_downline.usecases.*</ID>
+    <ID>WildcardImport:DownloadService.kt$import java.io.*</ID>
+    <ID>WildcardImport:EnterOTPActivity.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:ExampleUnitTest.kt$import org.junit.Assert.*</ID>
+    <ID>WildcardImport:GameMenuViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:HistoryDetailTransportActivity.kt$import java.io.*</ID>
+    <ID>WildcardImport:HistoryDetailViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:HistoryViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:HomeFragment.kt$import com.google.android.gms.location.*</ID>
+    <ID>WildcardImport:HomeFragment.kt$import com.pasukanlangit.cashplus.adapter.*</ID>
+    <ID>WildcardImport:HomeFragment.kt$import com.pasukanlangit.cashplus.utils.*</ID>
+    <ID>WildcardImport:HomeFragment.kt$import com.pasukanlangit.id.core.*</ID>
+    <ID>WildcardImport:HomeHotelAdapter.kt$import com.pasukanlangit.id.core.*</ID>
+    <ID>WildcardImport:HomeViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:InjectVoucherViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:KycModule.kt$import com.pasukanlangit.id.kyc_domain.domain.usecase.*</ID>
+    <ID>WildcardImport:LoginViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:MainRepository.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:MainRepository.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:MainViewModel.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:MainViewModel.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:MainViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:Mapper.kt$import com.pasukanlangit.cashplus.domain.model.*</ID>
+    <ID>WildcardImport:Mapper.kt$import com.pasukanlangit.cashplus.model.request_body.*</ID>
+    <ID>WildcardImport:Mapper.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:MyUtils.kt$import android.content.*</ID>
+    <ID>WildcardImport:MyUtils.kt$import android.graphics.*</ID>
+    <ID>WildcardImport:NetworkModule.kt$import okhttp3.*</ID>
+    <ID>WildcardImport:NobuModule.kt$import com.pasukanlangit.id.nobu.domain.usecase.*</ID>
+    <ID>WildcardImport:PackageOmniViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:PembayaranActivity.kt$import com.pasukanlangit.cashplus.utils.*</ID>
+    <ID>WildcardImport:PembayaranActivity.kt$import com.pasukanlangit.id.core.utils.*</ID>
+    <ID>WildcardImport:PembayaranCartLangsungActivity.kt$import com.pasukanlangit.cashplus.utils.*</ID>
+    <ID>WildcardImport:PembayaranCartViewModel.kt$import com.pasukanlangit.cashplus.model.response.*</ID>
+    <ID>WildcardImport:ProductDetailViewModel.kt$import androidx.lifecycle.*</ID>
+    <ID>WildcardImport:RecapitulationModule.kt$import com.pasukanlangit.id.recapitulation.domain.usecase.*</ID>
+    <ID>WildcardImport:RegisterViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:ResetPwViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:StatusProductViewModel.kt$import kotlinx.coroutines.flow.*</ID>
+    <ID>WildcardImport:TopUpModule.kt$import com.pasukanlangit.cash_topup.domain.usecase.*</ID>
+    <ID>WildcardImport:TransferModule.kt$import com.pasukanlangit.id.cash_transfer.domain.usecase.*</ID>
+    <ID>WildcardImport:TrxPendingHelper.kt$import android.app.*</ID>
+    <ID>WildcardImport:TrxPendingService.kt$import android.app.*</ID>
+    <ID>WildcardImport:ViewModelModule.kt$import com.pasukanlangit.cashplus.domain.usecase.*</ID>
+    <ID>WildcardImport:ViewModelModule.kt$import com.pasukanlangit.cashplus.view_model.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
