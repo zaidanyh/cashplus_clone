@@ -131,9 +131,9 @@ complexity:
     threshold: 60
   LongParameterList:
     active: true
-    functionThreshold: 6
+    functionThreshold: 15
     constructorThreshold: 7
-    ignoreDefaultParameters: false
+    ignoreDefaultParameters: true
     ignoreDataClasses: true
     ignoreAnnotatedParameter: []
   MethodOverloading:
@@ -329,6 +329,7 @@ naming:
     active: false
     minimumFunctionNameLength: 3
   FunctionNaming:
+    ignoreAnnotated: ['Composable']
     active: true
     excludes: ['**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/androidUnitTest/**', '**/androidInstrumentedTest/**', '**/jsTest/**', '**/iosTest/**']
     functionPattern: '[a-z][a-zA-Z0-9]*'
@@ -364,7 +365,7 @@ naming:
     packagePattern: '[a-z]+(\.[a-z][A-Za-z0-9]*)*'
   TopLevelPropertyNaming:
     active: true
-    constantPattern: '[A-Z][_A-Z0-9]*'
+    constantPattern: '[A-Z][A-Za-z0-9]*'
     propertyPattern: '[A-Za-z][_A-Za-z0-9]*'
     privatePropertyPattern: '_?[A-Za-z][_A-Za-z0-9]*'
   VariableMaxLength:
@@ -615,7 +616,7 @@ style:
       - '1'
       - '2'
     ignoreHashCodeFunction: true
-    ignorePropertyDeclaration: false
+    ignorePropertyDeclaration: true
     ignoreLocalVariableDeclaration: false
     ignoreConstantDeclaration: true
     ignoreCompanionObjectPropertyDeclaration: true
@@ -740,6 +741,7 @@ style:
   UnusedPrivateMember:
     active: true
     allowedNames: ''
+    ignoreAnnotated: ['Preview']
   UnusedPrivateProperty:
     active: true
     allowedNames: '_|ignored|expected|serialVersionUID'
@@ -784,3 +786,49 @@ style:
     active: true
     excludeImports:
       - 'java.util.*'
+
+TwitterCompose:
+  CompositionLocalAllowlist:
+    active: true
+    # You can optionally define a list of CompositionLocals that are allowed here
+    # allowedCompositionLocals: LocalSomething,LocalSomethingElse
+  CompositionLocalNaming:
+    active: true
+  ContentEmitterReturningValues:
+    active: true
+    # You can optionally add your own composables here
+    # contentEmitters: MyComposable,MyOtherComposable
+  ModifierComposable:
+    active: true
+  ModifierMissing:
+    active: true
+  ModifierReused:
+    active: true
+  ModifierWithoutDefault:
+    active: true
+  MultipleEmitters:
+    active: true
+      # You can optionally add your own composables here
+    # contentEmitters: MyComposable,MyOtherComposable
+  MutableParams:
+    active: true
+  ComposableNaming:
+    active: true
+    # You can optionally disable the checks in this rule for regex matches against the composable name (e.g. molecule presenters)
+    # allowedComposableFunctionNames: .*Presenter,.*MoleculePresenter
+  ComposableParamOrder:
+    active: true
+  PreviewNaming:
+    active: true
+  PreviewPublic:
+    active: true
+    # You can optionally disable that only previews with @PreviewParameter are flagged
+    # previewPublicOnlyIfParams: false
+  RememberMissing:
+    active: true
+  UnstableCollections:
+    active: true
+  ViewModelForwarding:
+    active: true
+  ViewModelInjection:
+    active: true

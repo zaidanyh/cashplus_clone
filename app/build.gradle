@@ -8,7 +8,7 @@ plugins {
     id 'com.google.firebase.crashlytics'
     id 'com.google.firebase.firebase-perf'
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
-    id("io.gitlab.arturbosch.detekt") version "1.23.0" //static analysis code
+    id("io.gitlab.arturbosch.detekt") version "1.23.4" //static analysis code
 }
 
 android {
@@ -94,6 +94,7 @@ detekt {
 }
 
 dependencies {
+    detektPlugins "com.twitter.compose.rules:detekt:0.0.26"
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation Androidx.app_compact

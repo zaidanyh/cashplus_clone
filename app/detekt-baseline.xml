@@ -94,10 +94,6 @@
     <ID>EmptyFunctionBlock:TopupPulsaFragment.kt$TopupPulsaFragment.&lt;no name provided&gt;${}</ID>
     <ID>EmptyFunctionBlock:UpdatePriceProductFragment.kt$UpdatePriceProductFragment.&lt;no name provided&gt;${}</ID>
     <ID>EmptyFunctionBlock:VoucherActivity.kt$VoucherActivity.&lt;no name provided&gt;${ }</ID>
-    <ID>FunctionNaming:CloseAccountView.kt$@Composable fun CloseAccountView( modifier: Modifier = Modifier, visibility: Boolean = false )</ID>
-    <ID>FunctionNaming:CloseAccountView.kt$@Preview @Composable fun CloseAccountViewPreview()</ID>
-    <ID>FunctionNaming:SplashScreenView.kt$@Composable fun SplashScreenView( modifier: Modifier = Modifier )</ID>
-    <ID>FunctionNaming:SplashScreenView.kt$@Preview @Composable fun SplashScreenViewPreview()</ID>
     <ID>ImplicitDefaultLocale:DownloadService.kt$DownloadService$String.format( "Downloaded (%d/%d) MB", download.currentFileSize, download.totalFileSize )</ID>
     <ID>ImplicitDefaultLocale:MyUtils.kt$MyUtils$String.format("%032x", bigInt)</ID>
     <ID>ImplicitDefaultLocale:TestDownloadPdfActivity.kt$TestDownloadPdfActivity.&lt;no name provided&gt;$String.format( "Downloaded (%d/%d) MB", download?.currentFileSize, download?.totalFileSize )</ID>
@@ -154,10 +150,7 @@
     <ID>LongMethod:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
     <ID>LongMethod:StatusProductActivity.kt$StatusProductActivity$private fun collectData()</ID>
     <ID>LongMethod:TopUpTokenPLNFragment.kt$TopUpTokenPLNFragment$private fun observeTokenPLN()</ID>
-    <ID>LongParameterList:BillPayTransactionUseCase.kt$BillPayTransactionUseCase$( uuid: String?, codeProduct: String, destination: String, pin: String, accessToken: String?, qty: String? = null, reqId: String? = null )</ID>
-    <ID>LongParameterList:DirectProductPurchasesViewModel.kt$DirectProductPurchasesViewModel$( uuid: String?, productCode: String, dest: String, pin: String, qty: String, reqId: String, accessToken: String? )</ID>
     <ID>LongParameterList:ProductModel.kt$ProductModel$( val kode_provider :String, val kode_produk: String, val dsc : String, val short_dsc: String, val category: String, val price : String, val outlet_price: String, val admin: String, val img_url: String, val img_url_2: String, val opr_name : String, val product_type: String )</ID>
-    <ID>LongParameterList:ReasonCloseAccountActivity.kt$ReasonCloseAccountActivity$( first: Boolean = false, second: Boolean = false, third: Boolean = false, fourth: Boolean = false, fifth: Boolean = false, sixth: Boolean = false, seventh: Boolean = false, eighth: Boolean = false, other: Boolean = false )</ID>
     <ID>MagicNumber:AddUpdateAddressBookViewModel.kt$AddUpdateAddressBookViewModel$200</ID>
     <ID>MagicNumber:AddressBookViewModel.kt$AddressBookViewModel$200</ID>
     <ID>MagicNumber:AllMenusProduct.kt$AllMenusProduct$3</ID>
@@ -241,7 +234,6 @@
     <ID>MagicNumber:GameMenuActivity.kt$GameMenuActivity$3</ID>
     <ID>MagicNumber:GameMenuViewModel.kt$GameMenuViewModel$200</ID>
     <ID>MagicNumber:GameMenuViewModel.kt$GameMenuViewModel$800</ID>
-    <ID>MagicNumber:HistoryDetailActivity.kt$HistoryDetailActivity$100</ID>
     <ID>MagicNumber:HistoryDetailActivity.kt$HistoryDetailActivity$3</ID>
     <ID>MagicNumber:HistoryDetailActivity.kt$HistoryDetailActivity$4</ID>
     <ID>MagicNumber:HistoryDetailTransportActivity.kt$HistoryDetailTransportActivity$1024</ID>
@@ -282,9 +274,7 @@
     <ID>MagicNumber:LoginActivity.kt$LoginActivity.&lt;no name provided&gt;$9</ID>
     <ID>MagicNumber:MainActivityNavComp.kt$MainActivityNavComp$1700</ID>
     <ID>MagicNumber:MekkaAdapter.kt$MekkaAdapter$3</ID>
-    <ID>MagicNumber:MenuProductAllAdapter.kt$MenuProductAllAdapter$40</ID>
     <ID>MagicNumber:MenuProductAllAdapter.kt$MenuProductAllAdapter.MenuViewHolder$100</ID>
-    <ID>MagicNumber:MenuTagihanAdapter.kt$MenuTagihanAdapter$40</ID>
     <ID>MagicNumber:MenuTagihanAdapter.kt$MenuTagihanAdapter.MenuViewHolder$60</ID>
     <ID>MagicNumber:MyFirebase.kt$MyFirebase$10000</ID>
     <ID>MagicNumber:MyUtils.kt$MyUtils$100</ID>
@@ -408,7 +398,6 @@
     <ID>MagicNumber:SplashScreenView.kt$6f</ID>
     <ID>MagicNumber:StatusProductActivity.kt$StatusProductActivity$24</ID>
     <ID>MagicNumber:TestDownloadPdfActivity.kt$TestDownloadPdfActivity$1024</ID>
-    <ID>MagicNumber:TestDownloadPdfActivity.kt$TestDownloadPdfActivity.&lt;no name provided&gt;$100</ID>
     <ID>MagicNumber:ThirdRegisterFragment.kt$ThirdRegisterFragment.&lt;no name provided&gt;$6</ID>
     <ID>MagicNumber:TopUpEcommerceViewModel.kt$TopUpEcommerceViewModel$200</ID>
     <ID>MagicNumber:TopUpGameViewModel.kt$TopUpGameViewModel$200</ID>
@@ -816,6 +805,7 @@
     <ID>MaxLineLength:UpdateListAdapter.kt$UpdateListAdapter$class</ID>
     <ID>MaxLineLength:UpdatePriceProductFragment.kt$UpdatePriceProductFragment$Toast.makeText(requireContext(), getString(R.string.selling_price_not_allowed_capital_price), Toast.LENGTH_SHORT).show()</ID>
     <ID>MaxLineLength:WebviewActivity.kt$WebviewActivity$myWebView.loadUrl("http://10.9.81.62:3000/print/transportation?data={%20%22date%22:%20%221%20Desember%202021%22,%20%22departure_date%22:%20%2221%20Desember%202021%22,%20%22departure_time%22:%2206:00%20-%2007:15%22,%20%22booking_code%22:%20%228875996421%22,%20%22transport_name%22:%20%22KM.KELUD%22,%20%22transport_number%22:%20%22NP-119-B10%22,%20%22transport_class%22:%20%22EKONOMI%22,%20%22transport_rute%22:%20%22Tanjung%20Priok,%20Jakarta-Batu%20Ampar,%20Batam%20(Tanjung%20Priok,%20Jakarta-Kijang,%20Bintan-Batu%20Ampar,%20Batam)%22,%20%22print_category%22:%20%22KAPAL%22,%20%22passengers%22:%20[%20{%20%22name%22%20:%20%22Andika%20Pruawna%20Nawsaga%22,%20%22id%22%20:%20%2212412312%22,%20%22title%22%20:%20%22Mr%22,%20%22type%22:%20%22Adult%22,%20%22seat%22:%20%224%22,%20%22gerbong%22%20:%20%223%22%20},%20{%20%22name%22%20:%20%22dsfsadf%22,%20%22id%22%20:%20%2212412312%22,%20%22title%22%20:%20%22Mr%22,%20%22type%22:%20%22Adult%22,%20%22seat%22:%20%22%22,%20%22gerbong%22%20:%20%22%22%20},%20{%20%22name%22%20:%20%22Andika%20Pruawna%20Nawsaga%22,%20%22id%22%20:%20%2212412312%22,%20%22title%22%20:%20%22Mr%22,%20%22type%22:%20%22Adult%22,%20%22seat%22:%20%22%22,%20%22gerbong%22%20:%20%22%22%20},%20{%20%22name%22%20:%20%22Dava%20Mohammad%20Hamka%20Alamat%22,%20%22id%22%20:%20%2212412312%22,%20%22title%22%20:%20%22Mr%22,%20%22type%22:%20%22Adult%22,%20%22seat%22:%20%22%22,%20%22gerbong%22%20:%20%22%22%20}%20]%20}")</ID>
+    <ID>ModifierMissing:SplashScreenView.kt$SplashScreenView</ID>
     <ID>NestedBlockDepth:ButtomSheetNotif.kt$ButtomSheetNotif$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
     <ID>NestedBlockDepth:HistoryDetailActivity.kt$HistoryDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
     <ID>NestedBlockDepth:InjectVoucherActivity.kt$InjectVoucherActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
@@ -1410,6 +1400,22 @@
     <ID>TooManyFunctions:MyUtils.kt$MyUtils</ID>
     <ID>TooManyFunctions:PackageOmniViewModel.kt$PackageOmniViewModel : ViewModel</ID>
     <ID>TooManyFunctions:PembayaranBulananViewModel.kt$PembayaranBulananViewModel : ViewModel</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$//DEEPLINK BASE_URL private const val DEEPLINK_SCHEME = "app"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$//DEEPLINK PATH //NOTE: this should match with pathPrefix at manifest in each activity private const val GAME_PATH = "game_menu"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$//DEEPLINK QUERY PARAMS KEY const val KEY_GAME_DEEPLINK = "search"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$const val KEY_GLOBAL_DETAIL_MENU_PROVIDER_CODE = "providerCode"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$const val KEY_PULSA_DAN_DATA_ACTIVE_PAGE = "activePage"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$private const val DEEPLINK_HOST = "www.cashplus.id"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$private const val DEEPLINK_URL = "$DEEPLINK_SCHEME://$DEEPLINK_HOST"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$private const val DETAIL_MENU_E_WALLET_PATH = "detail_menu_e_wallet"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$private const val PEMBAYARAN_PLN_PATH = "pln"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$private const val PEMBAYARAN_PULSA_DAN_DATA_PATH = "pulsa_data"</ID>
+    <ID>TopLevelPropertyNaming:BannerDummy.kt$private const val PEMBAYARAN_TAGIHAN_PATH = "pembayaran_tagihan"</ID>
+    <ID>TopLevelPropertyNaming:MyUtils.kt$const val CITY_CODE_BALI_MMBC = "17193"</ID>
+    <ID>TopLevelPropertyNaming:MyUtils.kt$const val DAY_IN_MILES = 86400000</ID>
+    <ID>TopLevelPropertyNaming:MyUtils.kt$const val FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS = UPDATE_INTERVAL_IN_MILLISECONDS / 2</ID>
+    <ID>TopLevelPropertyNaming:MyUtils.kt$const val UPDATE_INTERVAL_IN_MILLISECONDS = 10000.toLong()</ID>
+    <ID>TopLevelPropertyNaming:MyUtils.kt$const val URL_IMAGE_EMPTY = "https://www.bigpharmacy.com.my/scripts/timthumb.php?src=https://www.bigpharmacy.com.my//site_media/img/103303EA.jpg&amp;w=600&amp;zc=1"</ID>
     <ID>UnusedParameter:TrxPendingHelper.kt$TrxPendingHelper$context: Context</ID>
     <ID>UnusedParameter:TrxPendingHelper.kt$TrxPendingHelper$intent: Intent</ID>
     <ID>UnusedPrivateMember:SecondRegisterFragment.kt$SecondRegisterFragment$private fun showModalError(message: String)</ID>
