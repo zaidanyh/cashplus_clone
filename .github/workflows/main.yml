@@ -1,0 +1,26 @@
+name: Android Pull Request & Master CI
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  detekt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          ref: ${{ github.head_ref }}
+
+      - name: Create Fake local.properties #somehow when running gradle task it need's local.properties file
+        run: touch local.properties
+
+      - name: Run Detekt
+        run: ./gradlew detekt
