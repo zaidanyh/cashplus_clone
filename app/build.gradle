@@ -84,13 +84,13 @@ detekt {
 
     // Define the detekt configuration(s) you want to use.
     // Defaults to the default detekt configuration.
-    // config.setFrom("path/to/config.yml")
+     config.setFrom("$rootDir/config/detekt/detekt.yml")
 
     // Applies the config files on top of detekt's default config file. `false` by default.
     buildUponDefaultConfig = false
 
     // Specifying a baseline file. All findings stored in this file in subsequent runs of detekt.
-    // baseline = file("path/to/baseline.xml")
+     baseline = file("$rootDir/app/detekt-baseline.xml")
 }
 
 dependencies {
