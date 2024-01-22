@@ -14,7 +14,7 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 import com.google.gson.GsonBuilder
 import com.pasukanlangit.cashplus.MainActivityNavComp
-import com.pasukanlangit.cashplus.ui.compose.SplashScreenView
+import com.pasukanlangit.cashplus.ui.compose.screen.SplashScreenView
 import com.pasukanlangit.cashplus.ui.ewallet.EWalletActivity
 import com.pasukanlangit.cashplus.ui.login.LoginActivity
 import com.pasukanlangit.cashplus.ui.onboarding.OnBoardingActivity

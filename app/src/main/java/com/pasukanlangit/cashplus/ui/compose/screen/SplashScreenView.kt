@@ -1,4 +1,4 @@
-package com.pasukanlangit.cashplus.ui.compose
+package com.pasukanlangit.cashplus.ui.compose.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

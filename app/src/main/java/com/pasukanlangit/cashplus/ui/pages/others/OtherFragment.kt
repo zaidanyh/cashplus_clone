@@ -9,6 +9,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -24,11 +29,11 @@ import com.pasukanlangit.cashplus.PageMenu
 import com.pasukanlangit.cashplus.R
 import com.pasukanlangit.cashplus.databinding.FragmentOtherBinding
 import com.pasukanlangit.cashplus.ui.checkout.ButtomSheetNotif
+import com.pasukanlangit.cashplus.ui.compose.component.ProfileIdView
 import com.pasukanlangit.cashplus.ui.login.LoginActivity
 import com.pasukanlangit.cashplus.ui.pages.others.settings.OtherSettingsBottomSheet
 import com.pasukanlangit.cashplus.ui.pages.others.settings.email.ChangeEmailFragment
 import com.pasukanlangit.cashplus.ui.product.StatusProductActivity
-import com.pasukanlangit.id.library_core.domain.model.NotifType
 import com.pasukanlangit.cashplus.utils.MyUtils.callCustomerService
 import com.pasukanlangit.cashplus.utils.MyUtils.getPackageInfoCompat
 import com.pasukanlangit.cashplus.utils.MyUtils.shareText
@@ -43,6 +48,7 @@ import com.pasukanlangit.id.core.presentation.components.NegativeButtonAction
 import com.pasukanlangit.id.core.utils.CoreUtils.copyClipboard
 import com.pasukanlangit.id.core.utils.TIME_SHOW_NOTIF
 import com.pasukanlangit.id.kyc_presentation.AspectRatioCrop
+import com.pasukanlangit.id.library_core.domain.model.NotifType
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -53,8 +59,8 @@ class OtherFragment : Fragment() {
 
     private var _binding: FragmentOtherBinding? = null
     private val binding get() = _binding!!
-    private val viewModel : MainViewModel by sharedViewModel()
-    private val sharedPrefDataSource : SharedPrefDataSource by inject()
+    private val viewModel: MainViewModel by sharedViewModel()
+    private val sharedPrefDataSource: SharedPrefDataSource by inject()
     private val uuid get() = sharedPrefDataSource.getUUID()
     private val token get() = sharedPrefDataSource.getAccessToken()
 
@@ -74,7 +80,8 @@ class OtherFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         with(binding) {
-            val version = requireActivity().packageManager.getPackageInfoCompat(requireActivity().packageName).versionName
+            val version =
+                requireActivity().packageManager.getPackageInfoCompat(requireActivity().packageName).versionName
             tvVersionCashplus.text = getString(R.string.cashplus_version, version)
             swiperefreshOthers.setOnRefreshListener {
                 viewModel.getProfile(uuid ?: "", token ?: "")
@@ -82,9 +89,15 @@ class OtherFragment : Fragment() {
             }
             ivProfileOther.setOnClickListener {
                 ImagePicker.with(requireActivity())
-                    .crop(AspectRatioCrop.PROFILE_PICT_RATIO.widthRatio, AspectRatioCrop.PROFILE_PICT_RATIO.heightRatio)
+                    .crop(
+                        AspectRatioCrop.PROFILE_PICT_RATIO.widthRatio,
+                        AspectRatioCrop.PROFILE_PICT_RATIO.heightRatio
+                    )
                     .compress(1024)
-                    .maxResultSize(AspectRatioCrop.PROFILE_PICT_RATIO.widthPixels, AspectRatioCrop.PROFILE_PICT_RATIO.heightPixels)
+                    .maxResultSize(
+                        AspectRatioCrop.PROFILE_PICT_RATIO.widthPixels,
+                        AspectRatioCrop.PROFILE_PICT_RATIO.heightPixels
+                    )
                     .createIntent { intent ->
                         (activity as MainActivityNavComp).startForProfileImageResult.launch(intent)
                     }
@@ -92,9 +105,15 @@ class OtherFragment : Fragment() {
 
             iconChangeProfile.setOnClickListener {
                 ImagePicker.with(requireActivity())
-                    .crop(AspectRatioCrop.PROFILE_PICT_RATIO.widthRatio, AspectRatioCrop.PROFILE_PICT_RATIO.heightRatio)
+                    .crop(
+                        AspectRatioCrop.PROFILE_PICT_RATIO.widthRatio,
+                        AspectRatioCrop.PROFILE_PICT_RATIO.heightRatio
+                    )
                     .compress(1024)
-                    .maxResultSize(AspectRatioCrop.PROFILE_PICT_RATIO.widthPixels, AspectRatioCrop.PROFILE_PICT_RATIO.heightPixels)
+                    .maxResultSize(
+                        AspectRatioCrop.PROFILE_PICT_RATIO.widthPixels,
+                        AspectRatioCrop.PROFILE_PICT_RATIO.heightPixels
+                    )
                     .createIntent { intent ->
                         (activity as MainActivityNavComp).startForProfileImageResult.launch(intent)
                     }
@@ -115,7 +134,10 @@ class OtherFragment : Fragment() {
                 if (!profileResponse?.my_referral_code.isNullOrEmpty()) {
                     startActivity(
                         Intent(requireContext(), ShareReferralActivity::class.java).apply {
-                            putExtra(ShareReferralActivity.KEY_MY_REFERRAL_CODE, profileResponse?.my_referral_code)
+                            putExtra(
+                                ShareReferralActivity.KEY_MY_REFERRAL_CODE,
+                                profileResponse?.my_referral_code
+                            )
                         }
                     )
                     return@setOnClickListener
@@ -125,11 +147,29 @@ class OtherFragment : Fragment() {
             with(rvOtherMenus) {
                 layoutManager = GridLayoutManager(activity, 4)
                 adapter = OtherMenusAdapter(OtherMenus.getMenus(requireContext())) { position ->
-                    when(position) {
+                    when (position) {
                         0 -> KeagenanBottomFragment().show(childFragmentManager, null)
-                        1 -> startActivity(Intent(requireContext(), StatusProductActivity::class.java))
-                        2 -> startActivity(ModuleRoute.internalIntent(requireContext(), UNBIND_NOBU_PATH))
-                        3 -> startActivity(ModuleRoute.internalIntent(requireContext(), CLOSEST_AGENT_PATH_CLASS))
+                        1 -> startActivity(
+                            Intent(
+                                requireContext(),
+                                StatusProductActivity::class.java
+                            )
+                        )
+
+                        2 -> startActivity(
+                            ModuleRoute.internalIntent(
+                                requireContext(),
+                                UNBIND_NOBU_PATH
+                            )
+                        )
+
+                        3 -> startActivity(
+                            ModuleRoute.internalIntent(
+                                requireContext(),
+                                CLOSEST_AGENT_PATH_CLASS
+                            )
+                        )
+
                         4 -> ChooseRecapitulationFragment().show(childFragmentManager, null)
                         5 -> startActivity(Intent(requireContext(), LicenceActivity::class.java))
                         6 -> SKFragment().show(childFragmentManager, null)
@@ -138,12 +178,42 @@ class OtherFragment : Fragment() {
                                 data = Uri.parse("https://cashplus.id/faq")
                             }
                         )
+
                         else -> {}
                     }
                 }
             }
         }
         collectData()
+        setComposeId()
+    }
+
+    private fun setComposeId() {
+        binding.wrapperComposeId.setContent {
+            val profile by viewModel.profile.collectAsState()
+            val firstPhone = remember(profile) { profile?.phones?.firstOrNull()?.phone.orEmpty() }
+            val referralCode = remember(profile) { profile?.my_referral_code }
+            val referralResult = remember(referralCode) {
+                if (referralCode.isNullOrEmpty()) firstPhone
+                else profile?.my_referral_code
+            }
+
+            ProfileIdView(
+                modifier = Modifier.fillMaxWidth(),
+                id = firstPhone,
+                onBtnCopyClick = {
+                    copyClipboard(requireContext(), firstPhone)
+                },
+                onBtnShareClick = {
+                    shareText(
+                        requireContext(),
+                        "Ayoo daftar cashplus",
+                        "Gunakan kode referral $referralResult untuk mendaftar menjadi " +
+                                "downline saya di cashplus. More info: https://cashplus.id/"
+                    )
+                }
+            )
+        }
     }
 
     private fun collectData() {
@@ -168,33 +238,17 @@ class OtherFragment : Fragment() {
                             }
                             with(binding) {
                                 profileResponse = response
-                                val phoneNumber = response.phones?.getOrNull(0)?.phone
                                 tvNameOther.text = response.full_name
                                 if (tvNameOther.lineCount == 2) tvNameOther.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14F)
                                 else if (tvNameOther.lineCount == 3) tvNameOther.setTextSize(TypedValue.COMPLEX_UNIT_SP, 12F)
                                 tvOwnerName.isInvisible = response.owner_name.isEmpty()
-                                tvOwnerName.text = getString(R.string.owner_name, response.owner_name)
-                                tvPhoneOther.text = phoneNumber
+                                tvOwnerName.text =
+                                    getString(R.string.owner_name, response.owner_name)
                                 tvReferralName.text = (response.referral_full_name)
-                                btnShare.setOnClickListener {
-                                    shareText(
-                                        requireContext(),
-                                        "Ayoo daftar cashplus",
-                                        "Gunakan kode referral ${
-                                            if (response.my_referral_code.isNullOrEmpty()) response.phones?.getOrNull(0)?.phone
-                                            else response.my_referral_code
-                                        } untuk mendaftar menjadi downline saya di cashplus. More info: https://cashplus.id/"
-                                    )
-                                }
 
                                 var imgProfile = response.img_url
                                 if (imgProfile.isEmpty()) imgProfile =
                                     "https://ui-avatars.com/api/?name=${response.full_name}&size=300&rounded=true&background=FFFFFF&color=0A57FF&bold=true"
-
-                                btnCopyId.setOnClickListener {
-                                    copyClipboard(requireContext(), phoneNumber)
-                                }
-
                                 Glide.with(requireContext())
                                     .load(imgProfile)
                                     .thumbnail(
@@ -223,7 +277,7 @@ class OtherFragment : Fragment() {
                         message.peek()?.let { info ->
                             val menusAllFragment = ButtomSheetNotif(info, NotifType.NOTIF_ERROR)
                             menusAllFragment.show(childFragmentManager, menusAllFragment.tag)
-                            delay(TIME_SHOW_NOTIF/2)
+                            delay(TIME_SHOW_NOTIF / 2)
                             viewModel.removeProfileError()
                         }
                     }
@@ -236,7 +290,11 @@ class OtherFragment : Fragment() {
                     viewModel.changeReferral.collectLatest { response ->
                         if (response != null) {
                             viewModel.getProfile(uuid ?: "", token ?: "")
-                            Toast.makeText(requireContext(), getString(R.string.referral_upline_has_been_changed), Toast.LENGTH_SHORT).show()
+                            Toast.makeText(
+                                requireContext(),
+                                getString(R.string.referral_upline_has_been_changed),
+                                Toast.LENGTH_SHORT
+                            ).show()
 //                            GenericModalDialogCashplus.Builder()
 //                                .title(getString(R.string.changes_successful))
 //                                .image(R.drawable.illustration_success2)
@@ -292,9 +350,12 @@ class OtherFragment : Fragment() {
                     viewModel.logoutError.collectLatest { message ->
                         message.peek()?.let { info ->
                             val menusAllFragment = ButtomSheetNotif(info, NotifType.NOTIF_ERROR)
-                            menusAllFragment.show(requireActivity().supportFragmentManager, menusAllFragment.tag)
+                            menusAllFragment.show(
+                                requireActivity().supportFragmentManager,
+                                menusAllFragment.tag
+                            )
 
-                            delay(TIME_SHOW_NOTIF/2)
+                            delay(TIME_SHOW_NOTIF / 2)
                             viewModel.removeLogoutError()
                         }
                     }
@@ -312,8 +373,11 @@ class OtherFragment : Fragment() {
                     viewModel.uploadPhotoError.collectLatest { message ->
                         message.peek()?.let { info ->
                             val menusAllFragment = ButtomSheetNotif(info, NotifType.NOTIF_ERROR)
-                            menusAllFragment.show(requireActivity().supportFragmentManager, menusAllFragment.tag)
-                            delay(TIME_SHOW_NOTIF/2)
+                            menusAllFragment.show(
+                                requireActivity().supportFragmentManager,
+                                menusAllFragment.tag
+                            )
+                            delay(TIME_SHOW_NOTIF / 2)
                             viewModel.removeUploadPhotoError()
                         }
                     }
