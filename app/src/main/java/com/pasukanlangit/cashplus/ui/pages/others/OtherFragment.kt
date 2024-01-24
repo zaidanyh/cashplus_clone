@@ -30,6 +30,7 @@ import com.pasukanlangit.cashplus.R
 import com.pasukanlangit.cashplus.databinding.FragmentOtherBinding
 import com.pasukanlangit.cashplus.ui.checkout.ButtomSheetNotif
 import com.pasukanlangit.cashplus.ui.compose.component.ProfileIdView
+import com.pasukanlangit.cashplus.ui.compose.component.ReferralCodeView
 import com.pasukanlangit.cashplus.ui.login.LoginActivity
 import com.pasukanlangit.cashplus.ui.pages.others.settings.OtherSettingsBottomSheet
 import com.pasukanlangit.cashplus.ui.pages.others.settings.email.ChangeEmailFragment
@@ -130,20 +131,6 @@ class OtherFragment : Fragment() {
                 setting = OtherSettingsBottomSheet.newInstance(profileResponse)
                 setting.show(requireActivity().supportFragmentManager, setting.tag)
             }
-            btnShareReferral.setOnClickListener {
-                if (!profileResponse?.my_referral_code.isNullOrEmpty()) {
-                    startActivity(
-                        Intent(requireContext(), ShareReferralActivity::class.java).apply {
-                            putExtra(
-                                ShareReferralActivity.KEY_MY_REFERRAL_CODE,
-                                profileResponse?.my_referral_code
-                            )
-                        }
-                    )
-                    return@setOnClickListener
-                }
-                (activity as MainActivityNavComp).navigateToPage(PageMenu.HELP)
-            }
             with(rvOtherMenus) {
                 layoutManager = GridLayoutManager(activity, 4)
                 adapter = OtherMenusAdapter(OtherMenus.getMenus(requireContext())) { position ->
@@ -185,10 +172,10 @@ class OtherFragment : Fragment() {
             }
         }
         collectData()
-        setComposeId()
+        setComposeContent()
     }
 
-    private fun setComposeId() {
+    private fun setComposeContent() {
         binding.wrapperComposeId.setContent {
             val profile by viewModel.profile.collectAsState()
             val firstPhone = remember(profile) { profile?.phones?.firstOrNull()?.phone.orEmpty() }
@@ -211,6 +198,26 @@ class OtherFragment : Fragment() {
                         "Gunakan kode referral $referralResult untuk mendaftar menjadi " +
                                 "downline saya di cashplus. More info: https://cashplus.id/"
                     )
+                }
+            )
+        }
+        binding.wrapperComposeReferralCode.setContent {
+            val profile by viewModel.profile.collectAsState()
+            val referralCode = remember(profile) { profile?.my_referral_code }
+
+            ReferralCodeView(
+                myReferralCode = referralCode,
+                onBtnCallCsClick = {
+                    if (!referralCode.isNullOrEmpty()) {
+                        startActivity(
+                            Intent(requireContext(), ShareReferralActivity::class.java).apply {
+                                putExtra(
+                                    ShareReferralActivity.KEY_MY_REFERRAL_CODE,
+                                    profileResponse?.my_referral_code
+                                )
+                            }
+                        )
+                    } else (activity as MainActivityNavComp).navigateToPage(PageMenu.HELP)
                 }
             )
         }
@@ -260,13 +267,6 @@ class OtherFragment : Fragment() {
                                     .skipMemoryCache(true)
                                     .into(ivProfileOther)
 
-                                if (response.my_referral_code.isNullOrEmpty()) {
-                                    tvReferralCode.text = getString(R.string.not_available)
-                                    btnShareReferral.text = getString(R.string.call_cs)
-                                } else {
-                                    tvReferralCode.text = response.my_referral_code
-                                    btnShareReferral.text = getString(R.string.invite_friend)
-                                }
                                 openEmailConfigFromHome()
                             }
                         }

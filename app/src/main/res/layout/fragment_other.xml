@@ -148,89 +148,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/guideline_center" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/wrapper_referral"
+                <androidx.compose.ui.platform.ComposeView
+                    android:id="@+id/wrapper_compose_referral_code"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dimen_6"
-                    android:padding="@dimen/dimen_10"
-                    android:background="@drawable/bg_transparent_border_slate200_rounded_8"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="@id/wrapper_compose_id"
-                    app:layout_constraintStart_toEndOf="@id/guideline_center"
-                    app:layout_constraintEnd_toEndOf="parent">
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/decoration3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/ic_decoration_green"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"/>
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/decoration4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/ic_decoration_green2"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"/>
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/icon_referral"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:src="@drawable/ic_referral"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"/>
-
-                    <TextView
-                        android:id="@+id/tv_label_referral"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/dimen_6"
-                        android:fontFamily="@font/poppins_regular"
-                        android:textSize="12sp"
-                        android:text="@string/referral_code"
-                        android:textColor="#475569"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/icon_referral"/>
-
-                    <TextView
-                        android:id="@+id/tv_referral_code"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dimen_4"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textSize="14sp"
-                        tools:text="@string/not_available"
-                        android:textColor="#1E293B"
-                        app:layout_constraintTop_toBottomOf="@id/tv_label_referral"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"/>
-
-                    <TextView
-                        android:id="@+id/btn_share_referral"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dimen_6"
-                        android:layout_marginBottom="@dimen/dimen_4"
-                        android:paddingTop="@dimen/dimen_4"
-                        android:paddingBottom="@dimen/dimen_4"
-                        android:paddingStart="@dimen/dimen_12"
-                        android:paddingEnd="@dimen/dimen_12"
-                        android:background="@drawable/bg_primary_rounded_20"
-                        android:backgroundTint="#0D9488"
-                        android:fontFamily="@font/poppins_regular"
-                        android:textSize="11sp"
-                        android:text="@string/call_cs"
-                        android:textColor="#FFFFFF"
-                        app:layout_constraintHorizontal_bias="1"
-                        app:layout_constraintTop_toBottomOf="@id/tv_referral_code"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"/>
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideline_center"/>
 
                 <TextView
                     android:id="@+id/txtOther"
