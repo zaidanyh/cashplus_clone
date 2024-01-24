@@ -1,6 +1,7 @@
 package com.pasukanlangit.cashplus.ui.compose.component
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -26,53 +27,50 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pasukanlangit.cashplus.R
 
-private val backgroundColor = Color(0xFFE2E8F0)
-private val textColorIdLabel = Color(0XFF475569)
-private val textColorId = Color(0XFF1E293B)
+private val textColor = Color(0xFFF8FAFC)
+private val borderColor = Color(0xFFE2E8F0)
+private val textReferralColor = Color(0XFF475569)
+private val textReferralCodeColor = Color(0XFF1E293B)
+private val backgroundButton = Color(0xFF0D9488)
 
 @Composable
-internal fun ProfileIdView(
-    id: String,
-    onBtnCopyClick: () -> Unit,
-    onBtnShareClick: () -> Unit,
-    modifier: Modifier = Modifier,
+internal fun ReferralCodeView(
+    myReferralCode: String?,
+    onBtnCallCsClick: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Box(
         modifier = modifier
             .border(
                 width = 1.dp,
-                color = backgroundColor,
+                color = borderColor,
                 shape = RoundedCornerShape(8.dp)
             )
             .padding(10.dp)
     ) {
         Image(
             modifier = Modifier.align(Alignment.TopEnd),
-            painter = painterResource(id = R.drawable.ic_decoration_primary),
+            painter = painterResource(id = R.drawable.ic_decoration_green),
             contentDescription = null
         )
-
         Image(
             modifier = Modifier.align(Alignment.BottomStart),
-            painter = painterResource(id = R.drawable.ic_decoration_primary2),
+            painter = painterResource(id = R.drawable.ic_decoration_green2),
             contentDescription = null
         )
-
         Column(
             modifier = Modifier.fillMaxWidth(),
             verticalArrangement = Arrangement.Center
         ) {
             Row {
                 Image(
-                    painter = painterResource(id = R.drawable.ic_user_octagon),
+                    painter = painterResource(id = R.drawable.ic_referral),
                     contentDescription = null
                 )
-
                 Spacer(modifier = Modifier.width(6.dp))
-
                 Text(
-                    text = stringResource(id = R.string.id_anda),
-                    color = textColorIdLabel,
+                    text = stringResource(id = R.string.referral_code),
+                    color = textReferralColor,
                     fontFamily = FontFamily(Font(R.font.poppins_regular)),
                     fontSize = 12.sp
                 )
@@ -80,31 +78,28 @@ internal fun ProfileIdView(
 
             Text(
                 modifier = Modifier.padding(top = 4.dp),
-                text = id,
-                color = textColorId,
+                text = myReferralCode ?: stringResource(id = R.string.not_available),
+                color = textReferralCodeColor,
                 fontFamily = FontFamily(Font(R.font.poppins_medium)),
                 fontSize = 14.sp
             )
-
             Row(
                 modifier = Modifier
-                    .padding(top = 8.dp)
-                    .fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically,
+                    .fillMaxWidth()
+                    .padding(top = 8.dp),
                 horizontalArrangement = Arrangement.End
             ) {
-                Image(
-                    modifier = Modifier.clickable(onClick = onBtnCopyClick),
-                    painter = painterResource(id = R.drawable.ic_copy_blue),
-                    contentDescription = null
-                )
-
-                Spacer(modifier = Modifier.width(6.dp))
-
-                Image(
-                    modifier = Modifier.clickable(onClick = onBtnShareClick),
-                    painter = painterResource(id = R.drawable.icon_share_blue),
-                    contentDescription = null
+                Text(
+                    modifier = Modifier
+                        .background(backgroundButton, shape = RoundedCornerShape(20.dp))
+                        .padding(horizontal = 12.dp, vertical = 4.dp)
+                        .clickable(onClick = onBtnCallCsClick),
+                    text = if (myReferralCode.isNullOrEmpty())
+                        stringResource(id = R.string.call_cs)
+                    else stringResource(id = R.string.invite_friend),
+                    color = textColor,
+                    fontFamily = FontFamily(Font(R.font.poppins_regular)),
+                    fontSize = 11.sp
                 )
             }
         }
@@ -113,10 +108,9 @@ internal fun ProfileIdView(
 
 @Preview
 @Composable
-private fun ProfileIdViewPreview() {
-    ProfileIdView(
-        id = "081221312412321",
-        onBtnCopyClick = {},
-        onBtnShareClick = {}
+private fun ReferralCodeViewPreview() {
+    ReferralCodeView(
+        myReferralCode = "REF143",
+        onBtnCallCsClick = {}
     )
 }
